@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#000"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/large_margine"
+    android:paddingLeft="@dimen/common_margine"
+    android:paddingRight="@dimen/common_margine">
+
+    <TextView
+        android:id="@+id/scriptrate_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Scrip Rate Found :"
+        android:textSize="@dimen/common_textsize"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:textColor="@color/silver"/>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/common_margine"
+        android:paddingRight="@dimen/common_margine"
+        android:layout_marginTop="@dimen/common_margine"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Scrip Name:"
+            android:textSize="@dimen/common_textsize"
+            android:textColor="@color/white"
+            android:singleLine="true"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="Rate:"
+            android:textSize="@dimen/common_textsize"
+            android:textColor="@color/white"
+            android:singleLine="true"/>
+        <ImageButton
+            android:layout_width="@dimen/item_height"
+            android:layout_height="@dimen/item_height"
+            android:layout_marginLeft="@dimen/common_margine"
+            android:src="@drawable/img_cross"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:visibility="invisible"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/dash_line"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="@dimen/common_margine"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/alert_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/common_margine"/>
+
+</LinearLayout>

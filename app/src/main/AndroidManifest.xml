@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ventura.venturawealth">
+
+    <uses-sdk tools:overrideLibrary="one.upswing.sdk, androidx.security" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" tools:ignore="QueryAllPackagesPermission" /> -->
+    <queries>
+        <package android:name="com.google.android.apps.authenticator2" />
+    </queries>
+
+    <application
+        android:name=".VenturaApplication"
+        android:allowBackup="false"
+        android:icon="@drawable/ventura_icon_curved"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="false"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:allowBackup">
+        <activity
+            android:name=".temp"
+            android:exported="false" />
+        <activity
+            android:name="chart.TradingViewChart"
+            android:configChanges="orientation|screenSize"
+            android:exported="false" />
+
+        <meta-data
+            android:name="android.webkit.WebView.EnableSafeBrowsing"
+            android:value="true" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity android:name=".WebViewSSO" />
+        <activity android:name=".WebViewFD" />
+        <activity
+            android:name=".activities.splash.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="ventura"
+                    android:scheme="venturawealth" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.termscondition.TermsConditionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ssologin.Sso_Login_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.homescreen.HomeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+
+        <receiver
+            android:name="utils.IncomingSMS"
+            android:exported="true"
+            android:permission="FriendsOnly">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="fcm_gsm_receiver.NotificationReceiver"
+            android:exported="true"
+            android:permission="FriendsOnly" /> <!-- FIREBASE -->
+        <service
+            android:name="fcm_gsm_receiver.VenturaNotificationService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/notification_icon_new" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/ventura_color" />
+        <!--
+<meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="8472d7b71697569f341c5363a9acae634ceb749c" />
+        -->
+        <!--
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="false" />
+        -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".WebViewLayout"
+            android:label="@string/title_activity_web_view_layout"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".activities.permission.PermissionActivity" />
+        <activity
+            android:name="fragments.pledge.WebViewForPledgeFragment"
+            android:exported="false" />
+        <activity
+            android:name=".activities.upswing.UpswingInitActivity"
+            android:exported="false">
+            <intent-filter>
+
+                <!-- action should be matched what we defined in our sdk -->
+                <action android:name="one.upswing.partner.action.${applicationId}.${partnerUid}" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+    </application>
+
+</manifest>

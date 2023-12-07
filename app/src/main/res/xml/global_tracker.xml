@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="ga_sessionTimeout">300</integer>
+
+    <!-- Enable automatic Activity measurement -->
+    <bool name="ga_autoActivityTracking">true</bool>
+
+    <!-- The screen names that will appear in reports -->
+    <screenName name="com.ventura.venturawealth.activities.firstscreen.FirstScreenActivity">
+        FirstScreenActivity
+    </screenName>
+    <screenName name="com.ventura.venturawealth.activities.guestlogin.GuestLoginActivity">
+        GuestLoginActivity
+    </screenName>
+    <!--<string name="ga_trackingId" translatable="false">UA-133175987-1</string>-->
+
+    <string name="ga_trackingId" translatable="false">221416444</string>
+
+</resources>

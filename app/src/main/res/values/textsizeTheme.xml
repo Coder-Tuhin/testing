@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="FontSizeSmall">
+        <item name="android:textSize">@dimen/small_textsize</item>
+    </style>
+
+    <style name="FontSizeMedium">
+        <item name="android:textSize">@dimen/common_textsize</item>
+    </style>
+
+    <style name="FontSizeLarge">
+        <item name="android:textSize">@dimen/large_textsize</item>
+    </style>
+</resources>

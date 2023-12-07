@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/custom_background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Complete Your Payment"
+        android:textColor="@color/ventura_color"
+        android:textSize="@dimen/dimen_20"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click on the notification received on your UPI app and enter your UPI PIN"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_17"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/timetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5.00"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_50"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Note : Do not close this page or press the back button"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_17"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"/>
+
+</LinearLayout>

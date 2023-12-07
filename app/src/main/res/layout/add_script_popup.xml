@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/popup_border">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/common_margine">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Add Scrip"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"/>
+
+        <ImageButton
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@android:drawable/btn_dialog"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/silver"
+        android:layout_marginBottom="@dimen/common_margine"/>
+
+
+    <LinearLayout
+        android:id="@+id/search_by"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/common_margine">
+
+
+        <RadioGroup
+            android:id="@+id/searchbyRd"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/symbol"
+                style="@style/wrap"
+                android:text="Symbol or Scripcode"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:checked="true"
+                android:buttonTint="@color/colorAccent"
+                />
+
+            <RadioButton
+                android:id="@+id/name"
+                style="@style/wrap"
+                android:layout_weight="1"
+                android:layout_marginLeft="6dp"
+                android:text="Company Name"
+                android:textColor="@color/white"
+                android:buttonTint="@color/colorAccent" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/comByLinear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/common_margine">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+         android:layout_weight="1"
+         android:text="Company name"
+         android:gravity="left"
+         android:textColor="@color/white"
+         android:paddingLeft="@dimen/common_margine"/>
+            <RadioGroup
+                android:id="@+id/comByRd"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/startwith"
+                    style="@style/wrap"
+                    android:text="Starts with"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:checked="true"
+                    android:buttonTint="@color/colorAccent"
+                    />
+
+                <RadioButton
+                    android:id="@+id/contains"
+                    style="@style/wrap"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="6dp"
+                    android:text="Contains"
+                    android:textColor="@color/white"
+                    android:buttonTint="@color/colorAccent" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <RadioGroup
+        android:id="@+id/rdgroup"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <RadioButton
+            android:id="@+id/bse"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@android:color/transparent"
+            android:checked="true"
+            android:gravity="center"
+            android:layout_marginRight="6dp"
+            android:layout_marginLeft="6dp"
+            android:text="BSE"
+            android:background="@drawable/radiobutton_selector"
+            android:textColor="@drawable/checked_text_color"/>
+
+        <RadioButton
+            android:id="@+id/nse"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:text="NSE"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/radiobutton_selector"
+            android:textColor="@drawable/checked_text_color"
+            />
+
+        <RadioButton
+            android:id="@+id/nse_fno"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:text="FNO"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/radiobutton_selector"
+            android:textColor="@drawable/checked_text_color"/>
+        <RadioButton
+            android:id="@+id/nse_curr"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:text="NSE CURR"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/radiobutton_selector"
+            android:textColor="@drawable/checked_text_color"/>
+        <RadioButton
+            android:id="@+id/slbs"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:text="SLBS"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/radiobutton_selector"
+            android:textColor="@drawable/checked_text_color"/>
+    </RadioGroup>
+    <!-- <View
+         android:layout_width="match_parent"
+         android:layout_height="1dp"
+         android:background="@color/silver" />-->
+
+    <LinearLayout
+        android:id="@+id/fno_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:text="Instrument:"
+                android:textColor="@color/white"
+                android:paddingLeft="@dimen/common_margine"/>
+
+            <include
+                android:id="@+id/spinner_Instrument"
+                layout="@layout/popup_spinner"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:text="Contract:"
+                android:textColor="@color/white"
+                android:paddingLeft="@dimen/common_margine"/>
+
+            <include
+                android:id="@+id/spinner_Contract"
+                layout="@layout/popup_spinner"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"></include>
+
+            <!-- <Spinner android:layout_width="fill_parent" android:layout_height="fill_parent"
+                      android:layout_weight="1"
+                      android:background="@drawable/img_dropdowns"
+                      android:id="@+id/spinner_Contract"
+                      android:spinnerMode="dropdown"></Spinner>-->
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/expiry_type_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                style="@style/match_height_width_weight_1"
+                android:text="Expiry"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/white"
+                android:paddingLeft="@dimen/common_margine"/>
+            <RadioGroup
+                android:id="@+id/monthWeekExpiry"
+                style="@style/wrap_height_width_weight_1"
+                android:layout_weight="2.5"
+                android:orientation="horizontal"
+                android:gravity="left">
+                <RadioButton
+                    android:id="@+id/rbMonthlyExpiry"
+                    style="@style/wrap"
+                    android:layout_marginRight="5dp"
+                    android:text="month"
+                    android:checked="true"
+                    android:textColor="@color/white"
+                    android:buttonTint="@color/colorAccent" />
+                <RadioButton
+                    android:id="@+id/rbWeeklyExpiry"
+                    style="@style/wrap"
+                    android:text="week"
+                    android:textColor="@color/white"
+                    android:buttonTint="@color/colorAccent"
+                    />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="6dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edit_query"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_weight="3"
+            android:gravity="center_vertical|left"
+            android:hint=" Symbol Or Scripcode"
+            android:layout_marginRight="6dp"
+            android:maxLength="20"
+            android:paddingLeft="6dp"
+            android:textSize="14sp"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789&amp;-* "
+            android:background="@drawable/button_background_round"
+            android:textColorHint="@color/silver"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_background_round"
+            android:textAllCaps="false"
+            android:text="Search"/>
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/searchedListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/silver"
+        android:dividerHeight="0.3dp"
+        android:listSelector="@android:color/transparent">
+    </ListView>
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:paddingTop="@dimen/dimen_4">
+    <view.TvRegular
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="AXIS MUTUAL FUND"
+        android:textSize="@dimen/text_13"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dimen_2"
+        android:paddingBottom="@dimen/dimen_4"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <view.TvRegular
+                android:id="@+id/shortdebt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/green1"
+                android:text="1,000"
+                android:gravity="center"
+                android:textSize="@dimen/text_14"/>
+
+            <view.TvRegular
+                android:id="@+id/longdebt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/green1"
+                android:text="2,000"
+                android:gravity="center"
+                android:textSize="@dimen/text_14"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <view.TvRegular
+                android:id="@+id/shortequity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/red"
+                android:text="-3,000"
+                android:textSize="@dimen/text_14"/>
+
+            <view.TvRegular
+                android:id="@+id/longequity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/green1"
+                android:text="3,000"
+                android:textSize="@dimen/text_14"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lineseperator"/>
+
+</LinearLayout>

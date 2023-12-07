@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/dimen_6"
+    android:layout_marginBottom="@dimen/dimen_6"
+    android:background="@color/black">
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/fundchkbox"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_54"
+            android:button="@null"
+            android:gravity="center"
+            android:textSize="@dimen/text_13"
+            android:background="@drawable/selector_tab_bg"
+            android:textColor="@color/white"
+            android:text="Nippon India" />
+</LinearLayout>

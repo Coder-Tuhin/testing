@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/item_height"
+    android:gravity="center_vertical"
+    android:layout_gravity="center_vertical"
+    android:background="@color/black"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/common_textsize"
+        android:gravity="center"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_height"
+    android:background="@drawable/border">
+    <Button
+        android:id="@+id/down"
+        android:layout_width="@dimen/item_height"
+        android:layout_height="match_parent"
+        android:text=" - "
+        android:textColor="@color/white"
+        android:background="@android:color/transparent"/>
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/silver"
+        android:id="@+id/leftSep"/>
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:textColorHint="@color/gray_color"
+        android:focusable="true"
+        android:gravity="center"
+        android:maxLength="6"
+        android:hint="Qty"
+        android:inputType="number"
+        android:numeric="decimal"
+        android:background="@android:color/transparent"/>
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/silver"
+        android:id="@+id/rightSep"
+        />
+    <Button
+        android:id="@+id/up"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:text=" + "
+        android:textColor="@color/white"
+        android:background="@android:color/transparent"
+ />
+</LinearLayout>
+        <!--android:layout_alignRight="@+id/textView"-->
+
+</LinearLayout>

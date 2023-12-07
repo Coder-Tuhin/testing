@@ -1,0 +1,461 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_4"
+    tools:context="wealth.new_mutualfund.factSheet.FactSheetAllocationFragment">
+    <view.TvLarge
+        android:id="@+id/scheme_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_4"
+        android:layout_marginBottom="@dimen/dimen_18"
+        android:text="-"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_18"
+        android:textStyle="bold" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/black"
+                    android:layout_margin="@dimen/dimen_6">
+
+                    <view.TvRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Instrument Break Up"
+                        android:textColor="@color/ventura_color"
+                        android:textSize="@dimen/text_15"
+                        android:layout_centerInParent="true"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_28"
+                        android:visibility="gone">
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_14"
+                            android:background="@color/report_heading_color"/>
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/fact_sheet_allocation_header_drawable"
+                            android:layout_marginLeft="@dimen/dimen_20">
+                            <view.TvRegular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="INSTRUMENT BREAK UP"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_11"
+                                android:layout_centerInParent="true"
+                                android:paddingLeft="@dimen/dimen_24"
+                                android:paddingRight="@dimen/dimen_24"/>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/dimen_10"
+                        android:layout_marginLeft="@dimen/dimen_6"
+                        android:visibility="gone">
+                        <view.TvRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Instrument: "
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_11"/>
+                        <view.TvRegular
+                            android:id="@+id/instrument_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Domestic Equities"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_11"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="@dimen/dimen_6"
+                        android:visibility="gone">
+                        <view.TvRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Holding Percentage: "
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_11"/>
+                        <view.TvRegular
+                            android:id="@+id/holding_percentage_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="82.5%"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_11"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/pieChartLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:layout_marginTop="@dimen/dimen_10">
+                        <view
+                            android:id="@+id/pieChart"
+                            android:layout_width="@dimen/db_chart_size"
+                            android:layout_height="@dimen/db_chart_size"
+                            android:layout_centerVertical="true"
+                            class="com.xtrem.chartxtrem.piechart.PieView" />
+
+                        <LinearLayout
+                            android:id="@+id/pieIndicatorLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/db_chart_size"
+                            android:layout_marginLeft="@dimen/l_margin"
+                            android:orientation="vertical"
+                            android:gravity="center_vertical"
+                            android:layout_marginTop="5dp">
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="@dimen/dimen_6"
+                        android:layout_marginBottom="@dimen/dimen_6"
+                        android:visibility="gone">
+                        <view.TvRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Note: "
+                            android:textStyle="italic"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_10"/>
+                        <view.TvRegular
+                            android:id="@+id/asOnDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Date as on 25 Sep 2020"
+                            android:textStyle="italic"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_11"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1"
+                    android:background="@color/ventura_color"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_marginTop="@dimen/dimen_14"
+                    android:layout_marginBottom="@dimen/dimen_14"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/black"
+                    android:layout_margin="@dimen/dimen_6">
+
+                    <view.TvRegular
+                        android:id="@+id/marketCap_ratingTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Market Cap Allocation"
+                        android:textColor="@color/ventura_color"
+                        android:textSize="@dimen/text_15"
+                        android:layout_centerInParent="true"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_28"
+                        android:visibility="gone">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_14"
+                            android:background="@color/report_heading_color" />
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/fact_sheet_allocation_header_drawable"
+                            android:layout_marginLeft="@dimen/dimen_20">
+                            <view.TvRegular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="MARKET CAP ALLOCATION"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_11"
+                                android:layout_centerInParent="true"
+                                android:paddingLeft="@dimen/dimen_24"
+                                android:paddingRight="@dimen/dimen_24"/>
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/dimen_10"
+                        android:layout_marginLeft="@dimen/dimen_6"
+                        android:visibility="gone">
+                        <view.TvRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Market Cap: "
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_11"/>
+                        <view.TvRegular
+                            android:id="@+id/market_cap_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Domestic Equities"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_11"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="@dimen/dimen_6"
+                        android:visibility="gone">
+                        <view.TvRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Holding Percentage: "
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_11"/>
+                        <view.TvRegular
+                            android:id="@+id/market_cap_percentage_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="82.5%"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_11"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible"
+                        android:layout_marginTop="@dimen/dimen_10">
+                        <view
+                            android:id="@+id/pieChart_market_cap"
+                            android:layout_width="@dimen/db_chart_size"
+                            android:layout_height="@dimen/db_chart_size"
+                            android:layout_centerVertical="true"
+                            class="com.xtrem.chartxtrem.piechart.PieView" />
+
+                        <ScrollView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/db_chart_size"
+                            android:scrollbars="none">
+                            <LinearLayout
+                                android:id="@+id/pieIndicatorLayout_market_cap"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/db_chart_size"
+                                android:layout_marginLeft="@dimen/l_margin"
+                                android:orientation="vertical"
+                                android:gravity="center_vertical"
+                                android:layout_marginTop="@dimen/dimen_6"
+                                android:layout_marginBottom="@dimen/dimen_6"
+                                android:layout_gravity="center_vertical">
+                            </LinearLayout>
+                        </ScrollView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="@dimen/dimen_6"
+                        android:layout_marginBottom="@dimen/dimen_6"
+                        android:layout_marginTop="@dimen/dimen_10">
+                        <view.TvRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Note: "
+                            android:textStyle="italic"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_10"/>
+                        <view.TvRegular
+                            android:id="@+id/marketCapNote"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/FactSheetAllocationNote"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_11"/>
+
+                        <view.TvRegular
+                            android:id="@+id/note_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textStyle="italic"
+                            android:textSize="@dimen/text_10"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <view.TvLarge
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_4"
+                    android:layout_marginBottom="@dimen/dimen_4"
+                    android:text="Asset Allocation"
+                    android:textColor="@color/ventura_color"
+                    android:textSize="@dimen/text_18"
+                    android:textStyle="bold" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_10"/>
+
+                <LinearLayout
+                    android:id="@+id/asset_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/fact_sheet_layout_border">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_30"
+                        android:orientation="horizontal">
+
+                        <view.TvRegular
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_alignParentRight="true"
+                            android:gravity="left|center_vertical"
+                            android:text="Instrument Type"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_16"
+                            android:paddingLeft="@dimen/dimen_10"/>
+
+                        <View
+                            android:layout_width="@dimen/dimen_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/ventura_color" />
+
+                        <view.TvRegular
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center"
+                            android:text="Allocation (%)"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_16" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_1"
+                        android:background="@color/ventura_color"/>
+
+                    <ListView
+                        android:id="@+id/listView_asset"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@color/ventura_color"
+                        android:dividerHeight="@dimen/dimen_1"
+                        android:layout_margin="@dimen/dimen_2"
+                        tools:listitem="@layout/fact_sheet_asset_allocation_list_item" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_40"/>
+
+                <view.TvLarge
+                    android:id="@+id/credit_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_4"
+                    android:layout_marginBottom="@dimen/dimen_4"
+                    android:text="Credit Rating Profile"
+                    android:textColor="@color/ventura_color"
+                    android:textSize="@dimen/text_18"
+                    android:textStyle="bold" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_10"/>
+                <LinearLayout
+                    android:id="@+id/credit_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/fact_sheet_layout_border">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_30"
+                        android:orientation="horizontal">
+
+                        <view.TvRegular
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_alignParentRight="true"
+                            android:gravity="left|center_vertical"
+                            android:text="Instrument Type"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_16"
+                            android:paddingLeft="@dimen/dimen_10"/>
+
+                        <View
+                            android:layout_width="@dimen/dimen_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/ventura_color" />
+
+                        <view.TvRegular
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center"
+                            android:text="Allocation (%)"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_16" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_1"
+                        android:background="@color/ventura_color"/>
+
+                    <ListView
+                        android:id="@+id/listView_credit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@color/ventura_color"
+                        android:dividerHeight="@dimen/dimen_1"
+                        android:layout_margin="@dimen/dimen_2"
+                        tools:listitem="@layout/fact_sheet_asset_allocation_list_item"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

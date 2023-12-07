@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+
+                <view.TvRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/header"
+                    android:padding="@dimen/dimen_4"
+                    android:gravity="center_horizontal"
+                    android:text="Set up your AutoPay Mandate"
+                    android:textStyle="italic|bold"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:textColor="@color/text_primary"
+                    android:textSize="@dimen/dimen_18" />
+                <view.TvRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dimen_4"
+                    android:gravity="center_horizontal"
+                    android:text="You need to set up AutoPay Mandate to enable smooth processing of your SIP every month"
+                    android:textStyle="italic|bold"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:textColor="@color/text_primary"
+                    android:textSize="@dimen/text_16" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/dimen_20"
+                    android:paddingLeft="@dimen/dimen_20"
+                    android:layout_marginTop="@dimen/dimen_30"
+                    android:weightSum="3">
+                    <TextView
+                        android:id="@+id/tv_10000"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="\u20B9 10,000"
+                        android:textStyle="bold"
+                        android:textColor="@drawable/bg_selectortext_two"
+                        android:textSize="@dimen/text_16"
+                        android:background="@drawable/bg_selector_two"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/dimen_6"
+                        android:paddingBottom="@dimen/dimen_6"/>
+                    <View
+                        android:layout_width="@dimen/text_20"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:id="@+id/tv_25000"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="\u20B9 25,000"
+                        android:textStyle="bold"
+                        android:textColor="@drawable/bg_selectortext_two"
+                        android:textSize="@dimen/text_16"
+                        android:background="@drawable/bg_selector_two"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/dimen_6"
+                        android:paddingBottom="@dimen/dimen_6"/>
+                    <View
+                        android:layout_width="@dimen/text_20"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:id="@+id/tv_50000"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="\u20B9 50,000"
+                        android:textStyle="bold"
+                        android:textColor="@drawable/bg_selectortext_two"
+                        android:textSize="@dimen/text_16"
+                        android:background="@drawable/bg_selector_two"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/dimen_6"
+                        android:paddingBottom="@dimen/dimen_6"/>
+                </LinearLayout>
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_60"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/dimen_30">
+                    <view.TvRegular
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_20"
+                        android:text="AutoPay Mandate Amount (\u20B9)"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_14" />
+
+                    <view.EtRegular
+                        android:id="@+id/mandateamt"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dimen_36"
+                        android:background="@drawable/mf_et_border"
+                        android:gravity="center"
+                        android:text="25000"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:imeOptions="actionDone"
+                        android:layout_marginRight="@dimen/dimen_20"
+                        android:paddingLeft="@dimen/dimen_6"
+                        android:paddingRight="@dimen/dimen_6"
+
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/spinner_divider"
+                        android:textSize="@dimen/text_14" >
+                        <requestFocus/>
+                    </view.EtRegular>
+                    <ImageView
+                        android:id="@+id/Info_icon"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="@dimen/dimen_4"
+                        android:layout_marginBottom="@dimen/dimen_10"
+                        android:visibility="gone"
+                        android:layout_marginRight="@dimen/dimen_20"
+                        android:src="@drawable/i_icon"/>
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <view.TvRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Min. Rs. 5,000"
+                        android:textColor="@color/white"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/dimen_50"
+                        android:textSize="@dimen/dimen_16" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/header"
+                    android:gravity="bottom"
+                    android:layout_marginTop="@dimen/dimen_30"
+                    android:padding="@dimen/dimen_4">
+
+                    <view.TvRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your Bank A/C for AutoPay Mandate"
+                        android:layout_marginLeft="@dimen/dimen_10"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_14" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/bank_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_40"
+                        android:background="@drawable/mf_et_boarder_white"
+                        android:textColor="@color/white"
+                        android:text="ICICI BANK LTD..."
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:textSize="@dimen/dimen_18"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10"
+                        android:orientation="horizontal">
+                        <include layout="@layout/mf_spinner"
+                            android:id="@+id/sipSpinnerBankList"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dimen_40"
+                            android:layout_weight="2"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/dimen_4"
+                    android:paddingRight="@dimen/dimen_4">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="@dimen/dimen_8"
+                        android:paddingTop="@dimen/dimen_8"
+                        android:visibility="gone">
+
+                        <view.TvRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="bottom"
+                            android:text="Bank Name: "
+                            android:textColor="@color/text_secondary"
+                            android:textSize="@dimen/text_14" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_44"
+                        android:layout_marginTop="@dimen/dimen_30"
+                        android:layout_marginBottom="@dimen/dimen_12">
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.2" />
+
+                        <view.TvLarge
+                            android:id="@+id/saveMandate"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:background="@drawable/mf_button_bg"
+                            android:gravity="center"
+                            android:text="SUBMIT"
+                            android:textColor="@color/text_primary"
+                            android:textSize="@dimen/text_18" />
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.2" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:text="@string/reactemandate_text"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="@dimen/dimen_20"
+                        android:textSize="@dimen/text_16"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <view.TvRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mandate_icon_info"
+                        android:textColor="@color/white"
+                        android:justificationMode="inter_word"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/dimen_20"
+                        android:layout_marginRight="@dimen/dimen_10"
+                        android:layout_marginLeft="@dimen/dimen_10"
+                        android:textSize="@dimen/dimen_16" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

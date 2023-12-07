@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/invest_border_black">
+
+    <ImageView
+        android:id="@+id/closeTv"
+        android:layout_alignParentRight="true"
+        android:layout_width="@dimen/dimen_20"
+        android:layout_height="@dimen/dimen_20"
+        android:textSize="@dimen/text_15"
+        android:src="@android:drawable/btn_dialog"
+        android:textColor="@color/black"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:gravity="right"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/closeTv"
+        android:padding="@dimen/dimen_14">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Note : "
+            android:textSize="@dimen/text_16"
+            android:textStyle="bold"
+            android:textColor="@color/ventura_color"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.Please make a note of PRAN,you will be further asked to enter the same"
+            android:textSize="@dimen/text_13"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/dimen_6"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.OTP will be received on your registered mobile number"
+            android:textSize="@dimen/text_13"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/dimen_6"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3.At the end of the transaction doenload the acknowledgement pdf for your reference"
+            android:textSize="@dimen/text_13"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/dimen_6"
+            android:layout_marginBottom="@dimen/dimen_20"/>
+    </LinearLayout>
+</RelativeLayout>

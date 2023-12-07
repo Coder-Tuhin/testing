@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ocHeader"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/analytics_oc_header_size">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/padding"
+        android:text="Features"
+        android:textSize="@dimen/fist_small_font_size" />
+
+    <TextView
+        android:id="@+id/callValue"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="right|center_vertical"
+        android:paddingRight="@dimen/padding"
+        android:text="Call"
+        android:textSize="@dimen/fist_small_font_size" />
+
+    <TextView
+        android:id="@+id/putValue"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="right|center_vertical"
+        android:paddingRight="@dimen/padding"
+        android:text="Put"
+        android:textSize="@dimen/fist_small_font_size" />
+</LinearLayout>

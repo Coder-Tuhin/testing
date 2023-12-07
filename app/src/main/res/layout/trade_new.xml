@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black">
+    <RadioGroup
+        android:id="@+id/loginRd"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/loginRdBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/depth_rdselector"
+            android:button="@android:color/transparent"
+            android:checked="true"
+            android:gravity="center"
+            android:text="Login"
+            android:textColor="@drawable/checked_text_color"
+            android:textSize="@dimen/common_textsize"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/mpinRdBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/depth_rdselector"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:text="MPIN"
+            android:textColor="@drawable/checked_text_color"
+            android:textSize="@dimen/common_textsize"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingLeft="@dimen/item_height"
+            android:paddingRight="@dimen/item_height"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingBottom="@dimen/common_margine">
+            <RelativeLayout
+                android:id="@+id/main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/generalLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/border">
+                        <EditText
+                            android:id="@+id/clientID"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/item_height"
+                            android:hint="@string/c_id"
+                            android:singleLine="true"
+                            android:maxLength="12"
+                            android:padding="@dimen/common_margine"
+                            android:longClickable="false"
+                            android:gravity="center_vertical"
+                            android:imeOptions="actionNext"
+                            android:textSize="@dimen/common_textsize"
+                            android:background="@null"
+                            android:textColorHint="@color/silver"
+                            android:drawablePadding="@dimen/common_margine"
+                            android:textColor="@color/white"
+                            android:drawableLeft="@drawable/img_man" />
+                        <include layout="@layout/view"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <EditText
+                                android:id="@+id/password"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/item_height"
+                                android:hint="@string/password"
+                                android:singleLine="true"
+                                android:maxLength="12"
+                                android:password="true"
+                                android:layout_weight="5"
+                                android:background="@null"
+                                android:padding="@dimen/common_margine"
+                                android:longClickable="false"
+                                android:gravity="center_vertical"
+                                android:imeOptions="actionNext"
+                                android:textSize="@dimen/common_textsize"
+                                android:textColorHint="@color/silver"
+                                android:drawablePadding="@dimen/common_margine"
+                                android:textColor="@color/white"
+                                android:drawableLeft="@drawable/img_lock" />
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/password_toggle_close"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/eyeclose"
+                                    android:visibility="visible" />
+                                <ImageView
+                                    android:id="@+id/password_toggle_open"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:visibility="invisible"
+                                    android:background="@drawable/eyeopen"/>
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                        <include layout="@layout/view"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <EditText
+                                android:id="@+id/pin"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/item_height"
+                                android:hint="@string/pin"
+                                android:singleLine="true"
+                                android:password="true"
+                                android:maxLength="12"
+                                android:layout_weight="5"
+                                android:background="@null"
+                                android:padding="@dimen/common_margine"
+                                android:longClickable="false"
+                                android:gravity="center_vertical"
+                                android:imeOptions="actionNext"
+                                android:textSize="@dimen/common_textsize"
+                                android:textColorHint="@color/silver"
+                                android:drawablePadding="@dimen/common_margine"
+                                android:textColor="@color/white"
+                                android:drawableLeft="@drawable/img_lock" />
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/pin_toggle_close"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:visibility="visible"
+                                    android:background="@drawable/eyeclose"/>
+                                <ImageView
+                                    android:id="@+id/pin_toggle_open"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:visibility="invisible"
+                                    android:background="@drawable/eyeopen"/>
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                        <include layout="@layout/view"/>
+                        <RadioGroup
+                            android:id="@+id/tradeRDgroup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/item_height"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+                            <RadioButton
+                                android:id="@+id/panRDbutton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="@color/colorAccent"
+                                android:text="@string/pan"
+                                android:checked="true"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/common_textsize"/>
+                            <RadioButton
+                                android:id="@+id/dobRDbutton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="@color/colorAccent"
+                                android:text="@string/dob"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/common_textsize"
+                                android:layout_marginStart="@dimen/common_margine"
+                                android:layout_marginLeft="@dimen/common_margine" />
+                        </RadioGroup>
+                        <include layout="@layout/view"/>
+                        <LinearLayout
+                            android:id="@+id/panlayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <EditText
+                                android:id="@+id/pan"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/item_height"
+                                android:hint="@string/pan_hint"
+                                android:background="@null"
+                                android:layout_weight="5"
+                                android:singleLine="true"
+                                android:inputType="textCapCharacters"
+                                android:password="true"
+                                android:maxLength="10"
+                                android:padding="@dimen/common_margine"
+                                android:longClickable="false"
+                                android:gravity="center_vertical"
+                                android:imeOptions="actionDone"
+                                android:textSize="@dimen/common_textsize"
+                                android:textColorHint="@color/silver"
+                                android:textColor="@color/white" />
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/pan_toggle_close"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:visibility="visible"
+                                    android:background="@drawable/eyeclose"/>
+                                <ImageView
+                                    android:id="@+id/pan_toggle_open"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:visibility="invisible"
+                                    android:background="@drawable/eyeopen"/>
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                        <RelativeLayout
+                            android:id="@+id/dobRelative"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/item_height"
+                            android:gravity="center_vertical"
+                            android:visibility="gone">
+                            <EditText
+                                android:id="@+id/dob"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/dob_hint"
+                                android:singleLine="true"
+                                android:inputType="date"
+                                android:password="true"
+                                android:background="@null"
+                                android:maxLength="10"
+                                android:longClickable="false"
+                                android:imeOptions="actionDone"
+                                android:textSize="@dimen/common_textsize"
+                                android:textColorHint="@color/silver"
+                                android:layout_marginStart="@dimen/common_margine"
+                                android:drawablePadding="@dimen/common_margine"
+                                android:padding="@dimen/common_margine"
+                                android:textColor="@color/white"
+                                android:layout_marginLeft="@dimen/common_margine" />
+                            <ImageView
+                                android:id="@+id/calenderImage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:imeOptions="actionDone"
+                                android:src="@drawable/img_cal"
+                                android:layout_marginEnd="4dp"
+                                android:layout_alignParentEnd="true"
+                                android:contentDescription="@string/desc"
+                                android:layout_marginRight="4dp"
+                                android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/genmpinnote"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/your_mpin"
+                        android:layout_marginTop="5dp"
+                        android:textSize="@dimen/text_15"
+                        android:textColor="@android:color/white"/>
+                    <CheckBox
+                        android:id="@+id/generateMpin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/white"
+                        android:layout_marginTop="5dp"
+                        android:checked="false"
+                        android:textColor="@color/silver"
+                        android:text="Generate MPIN"/>
+
+                    <TextView
+                        android:id="@+id/forgot_PasswordNew"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:layout_gravity="center"
+                        android:text="@string/forgot_password"
+                        android:textColor="@android:color/white"
+                        android:textStyle="italic"
+                        android:textSize="@dimen/common_textsize"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mpinLinear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/border">
+                        <EditText
+                            android:id="@+id/clientCodeMPIN"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/item_height"
+                            android:hint="Client Code"
+                            android:enabled="true"
+                            android:padding="@dimen/common_margine"
+                            android:background="@null"
+                            android:textSize="@dimen/common_textsize"
+                            android:textColorHint="@color/silver"
+                            android:textColor="@color/white"
+                            android:inputType="text"
+                            android:visibility="gone" />
+                        <include layout="@layout/view"/>
+                        <EditText
+                            android:id="@+id/mpin"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/item_height"
+                            android:hint="4 digits pin*"
+                            android:textColor="@color/white"
+                            android:padding="@dimen/common_margine"
+                            android:background="@null"
+                            android:textColorHint="@color/silver"
+                            android:textSize="@dimen/common_textsize"
+                            android:inputType="number"
+                            android:visibility="gone"
+                            android:password="true"
+                            android:maxLength="4"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/item_height"
+                android:layout_marginTop="@dimen/big_margine"
+                android:background="@drawable/border"
+                android:text="@string/login"
+                android:textSize="@dimen/common_textsize"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:paddingStart="@dimen/item_height"
+                android:paddingEnd="@dimen/item_height"/>
+            <TextView
+                android:id="@+id/forgotMpin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot MPIN?"
+                android:textColor="@color/white"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:visibility="gone"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/mPinNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/login_note"
+                android:textColor="@color/silver"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/fingerLayout"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="OR"
+                    android:textSize="@dimen/text_15"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/finger"
+                    android:id="@+id/icon"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:layout_marginBottom="@dimen/dimen_10"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:textSize="14sp"
+                    android:textAlignment="center"
+                    android:id="@+id/errorText"
+                    android:paddingEnd="30dp"
+                    android:paddingStart="30dp"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

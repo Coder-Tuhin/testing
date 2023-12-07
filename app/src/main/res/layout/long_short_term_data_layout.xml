@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <wealth.FontTextView
+                    android:id="@+id/txt_purchase_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="PurDate"
+                    android:textColor="@color/white" />
+
+                <wealth.FontTextView
+                    android:id="@+id/txt_purchase_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="PurPrice"
+                    android:textColor="@color/white" />
+
+                <wealth.FontTextView
+                    android:id="@+id/txt_cmp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="CMP"
+                    android:textColor="@color/white" />
+
+<!--                <wealth.FontTextView-->
+<!--                    android:id="@+id/"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:gravity="right|center_vertical"-->
+<!--                    android:text="SellDate"-->
+<!--                    android:textColor="@color/white" />-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <wealth.FontTextView
+                    android:id="@+id/txt_qty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="Qty"
+                    android:textColor="@color/white" />
+
+                <wealth.FontTextView
+                    android:id="@+id/txt_purchase_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="PurVal"
+                    android:textColor="@color/white" />
+
+                <wealth.FontTextView
+                    android:id="@+id/txt_current_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="CurVal"
+                    android:textColor="@color/white" />
+
+<!--                <wealth.FontTextView-->
+<!--                    android:id="@+id/txt_gainloss"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:gravity="right|center_vertical"-->
+<!--                    android:text="Gain/Loss"-->
+<!--                    android:textColor="@color/white" />-->
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <wealth.FontTextView
+                android:id="@+id/sell_purchase_date"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text=""
+                android:visibility="visible"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textColor="@color/white"
+                tools:ignore="NestedWeights" />
+
+            <wealth.FontTextView
+                android:id="@+id/txt_gainloss"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="end"
+                android:text="Gain/Loss"
+                android:layout_weight="1"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_color" />
+</LinearLayout>

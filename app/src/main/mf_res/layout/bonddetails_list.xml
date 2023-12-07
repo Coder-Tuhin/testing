@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/totalLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black">
+    <LinearLayout
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginBottom="@dimen/dimen_4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/dimen_6"
+        android:layout_marginRight="@dimen/dimen_6">
+
+
+        <view.TvRegular
+            android:id="@+id/tenor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="3Y"
+            android:gravity="left"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_15"
+            android:textColor="@color/white"/>
+        <view.TvRegular
+            android:id="@+id/interestfreq"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textSize="@dimen/text_15"
+            android:textColor="@color/white"/>
+        <view.TvRegular
+            android:id="@+id/interestrate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="9.6"
+            android:gravity="left"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_15"
+            android:textColor="@color/white"/>
+
+
+
+        <view.TvRegular
+            android:id="@+id/totalamount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="10,000"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="@dimen/text_15"
+            android:textColor="@color/white"/>
+
+        <CheckBox
+            android:id="@+id/checkboxlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:buttonTint="@color/white"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_color"/>
+
+
+</LinearLayout>

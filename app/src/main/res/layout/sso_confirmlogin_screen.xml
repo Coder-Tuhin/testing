@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress AndroidDomInspection -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/black">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_40"
+        android:layout_marginEnd="@dimen/dimen_40"
+        android:orientation="vertical">
+
+        <view.TvRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="You are all set to start trading with Ventura Wealth!"
+            android:textSize="@dimen/text_22"/>
+        <view.TvRegular
+            android:layout_marginTop="@dimen/dimen_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/ventura_color"
+            android:textStyle="bold"
+            android:text="Your password and PIN are used to authenticate your login, never share these with anyone"
+            android:textSize="@dimen/dimen_14"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/continuelogin"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/text_45"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:background="@drawable/bg_oange_corner_8dp"
+        android:text="Continue to Login"
+        android:gravity="center"
+        android:textSize="@dimen/text_20"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:paddingStart="@dimen/item_height"
+        android:paddingEnd="@dimen/item_height"
+        android:layout_gravity="center_horizontal"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_new"
+        android:layout_marginRight="@dimen/dimen_70"
+        android:layout_marginLeft="@dimen/dimen_70"/>
+
+</LinearLayout>

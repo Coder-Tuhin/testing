@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/avl_bal_layout">
+    </include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp">
+
+        <include
+            android:id="@+id/fund_Spinner"
+            layout="@layout/custom_spinner_layout">
+        </include>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <include
+            android:id="@+id/category_Spinner"
+            layout="@layout/custom_spinner_layout">
+
+        </include>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <include
+            android:id="@+id/subcategory_Spinner"
+            layout="@layout/custom_spinner_layout">
+        </include>
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <RadioButton
+            android:id="@+id/rb_growth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="Growth"
+            android:buttonTint="@color/colorAccent"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_textsize" />
+
+        <RadioButton
+            android:id="@+id/rb_dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="DP"
+            android:buttonTint="@color/colorAccent"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_textsize" />
+
+        <RadioButton
+            android:id="@+id/rb_dr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:checked="false"
+            android:text="DR"
+            android:buttonTint="@color/colorAccent"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_textsize" />
+
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <include
+            android:id="@+id/scheme_Spinner"
+            layout="@layout/custom_spinner_layout">
+        </include>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnLinear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+    <wealth.FontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:text="DP : Dividend Payout" />
+    <wealth.FontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:text="DR : Dividend Re-Invest" />
+
+</LinearLayout>

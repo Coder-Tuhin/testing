@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:paddingTop="@dimen/dimen_2">
+    <include layout="@layout/custom_spinner"
+        android:id="@+id/mfSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height" />
+    <FrameLayout
+        android:id="@+id/mfBody"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:id="@+id/servicesLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@color/ventura_color">
+        <view.TvRegular
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="@dimen/dimen_6"
+            android:paddingBottom="@dimen/dimen_6"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_primary"
+            android:text="Email Report"
+            android:textSize="@dimen/text_15"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/header"/>
+        <view.TvRegular
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_primary"
+            android:text="Call Us"
+            android:textSize="@dimen/text_15"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/header"/>
+
+        <view.TvRegular
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_primary"
+            android:text="Service Request"
+            android:textSize="@dimen/text_15"/>
+
+    </LinearLayout>
+
+</LinearLayout>

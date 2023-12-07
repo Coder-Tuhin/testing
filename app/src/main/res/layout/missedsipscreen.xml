@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+    <view.TvRegular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header"
+        android:padding="@dimen/dimen_4"
+        android:text="@string/missedsip"
+        android:gravity="center"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/text_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1"
+        android:background="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:weightSum="3.5"
+        >
+
+        <view.TvLarge
+            android:id="@+id/SchemeName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Scheme Name"
+            android:textColor="@color/ventura_color"
+            android:layout_weight="1.5"
+            android:gravity="left|center_vertical"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_17"/>
+        <view.TvLarge
+            android:id="@+id/amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="SIP Amt.\n(Rs.)"
+            android:textColor="@color/ventura_color"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_17"/>
+        <view.TvLarge
+            android:id="@+id/missedinstallment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Missed \nInstallments"
+            android:textColor="@color/ventura_color"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_17"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1"
+        android:background="@color/white"/>
+    <LinearLayout
+        android:id="@+id/noMissedSip_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:padding="@dimen/dimen_6"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="@dimen/dimen_140"
+            android:layout_height="@dimen/dimen_140"
+            android:src="@drawable/thumbsup"/>
+        <view.TvLarge
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nomissedsip"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_17"/>
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginRight="@dimen/dimen_10"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+</LinearLayout>

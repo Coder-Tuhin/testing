@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:paddingHorizontal="10dp">
+
+    <LinearLayout
+        android:id="@+id/layout_long_term"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <wealth.FontTextView
+            android:id="@+id/longtermtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Long Term" />
+
+        <TextView
+            android:id="@+id/longtermdivider"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/gray_color" />
+
+        <LinearLayout
+            android:id="@+id/title_long_term"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/data_layout_long_term"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+      <!--  <LinearLayout
+            android:id="@+id/layout_total_longterm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>-->
+
+        <View
+            android:id="@+id/lsView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:background="@color/spinner_backcolor"
+            android:layout_marginTop="@dimen/common_margine"
+            android:visibility="gone"
+            android:layout_marginBottom="@dimen/common_margine"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_short_term"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <wealth.FontTextView
+            android:id="@+id/shorttermtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Short Term" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/gray_color" />
+
+        <LinearLayout
+            android:id="@+id/title_short_term"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/data_layout_short_term"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+  <!--  <LinearLayout
+        android:id="@+id/layout_total_term"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>-->
+</LinearLayout>

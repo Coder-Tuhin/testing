@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dummy_border_fs"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:orientation="horizontal"
+        android:minHeight="@dimen/dimen_30"
+        android:gravity="center_vertical">
+
+        <view.TvRegular
+            android:id="@+id/instrument_name_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:text="Government Securities"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_13" />
+
+        <View
+            android:layout_width="@dimen/dimen_1"
+            android:layout_height="match_parent"
+            android:background="@color/ventura_color" />
+
+        <view.TvRegular
+            android:id="@+id/allocation_per_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="97.38"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_13" />
+    </LinearLayout>
+</LinearLayout>

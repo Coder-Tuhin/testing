@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/totalLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black">
+    <LinearLayout
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginBottom="@dimen/dimen_4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/dimen_6"
+        android:layout_marginRight="@dimen/dimen_6">
+
+
+        <CheckBox
+            android:id="@+id/checkboxlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/white"/>
+        <view.TvRegular
+            android:id="@+id/stockname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="BHEL"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textSize="@dimen/text_13"
+            android:textColor="@color/white"/>
+        <view.TvRegular
+            android:id="@+id/isinno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="INE257A010"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_13"
+            android:textColor="@color/white"/>
+        <view.TvRegular
+            android:id="@+id/nonpoa_quantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="85"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/text_13"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/nonPOA_request_et"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_30"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/mf_et_ventura"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="7"
+            android:paddingLeft="@dimen/dimen_6"
+            android:text=""
+            android:textColor="@color/white"
+            android:textColorHint="@color/spinner_divider"
+            android:textSize="@dimen/text_13">
+        </EditText>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_color"/>
+</LinearLayout>

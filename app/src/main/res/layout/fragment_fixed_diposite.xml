@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/analytics_background">
+
+    <LinearLayout
+        android:id="@+id/topHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:paddingLeft="@dimen/dimen_16"
+            android:paddingRight="@dimen/dimen_16">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_70"
+                android:layout_height="@dimen/dimen_70"
+                android:padding="5dp"
+                android:src="@drawable/deposit" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:text="Fixed Deposit"
+
+                android:textColor="@color/ventura_color"
+                android:textSize="@dimen/text_20"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen_54"
+        android:layout_above="@+id/disclaimer_note"
+        android:layout_below="@+id/topHeader"
+        android:gravity="center"
+        android:paddingRight="@dimen/dimen_54">
+        <LinearLayout
+            android:id="@+id/bankFd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_20dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_imageround_white_1dp"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_30"
+                    android:layout_height="@dimen/dimen_30"
+                    android:src="@drawable/bank_fd" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:text="Bank FD"
+                android:textColor="@color/ventura_color"
+                android:textSize="@dimen/dimen_18" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/corporateFd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:background="@drawable/bg_white_20dp"
+            android:gravity="center"
+            android:layout_marginBottom="100dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_imageround_white_1dp"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_36"
+                    android:layout_height="@dimen/dimen_36"
+                    android:src="@drawable/corporate_fd" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:text="Corporate FD"
+                android:textColor="@color/ventura_color"
+                android:textSize="@dimen/dimen_18" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/disclaimer_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="25dp"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:padding="15dp">
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/disclaimer_fd_txt"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_below="@+id/disclaimer_fd"-->
+        <!--                android:layout_marginTop="10dp"-->
+        <!--                android:text="Disclaimer"-->
+        <!--                android:textAlignment="center"-->
+        <!--                android:textColor="@color/white"-->
+        <!--                android:textSize="16sp"-->
+        <!--                android:textStyle="bold" />-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:justificationMode="inter_word"
+            android:text="Disclaimer: You are advised to carry out your own due diligence for the investment proposed to be done. Bank FDs are insured for upto Rs. 5 Lac as per RBI (DICGC)"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

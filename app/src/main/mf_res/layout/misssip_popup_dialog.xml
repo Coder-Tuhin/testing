@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/main_Layout"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@drawable/custom_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/dimen_10">
+        <view.TvLarge
+            android:id="@+id/SchemeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Axis Bluechip Fund (G)"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_17"/>
+
+        <ImageView
+            android:id="@+id/closebtn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/img_cross"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <view.TvRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Missed SIP"
+                android:textSize="@dimen/text_17"
+                android:textColor="@color/ventura_color"
+                android:gravity="center"
+                android:layout_weight="1"/>
+            <view.TvRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount(Rs.)"
+                android:textSize="@dimen/text_17"
+                android:textColor="@color/ventura_color"
+                android:gravity="center"
+                android:layout_weight="1"/>
+            <view.TvRegular
+                android:id="@+id/selectallbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select All"
+                android:textSize="@dimen/text_17"
+                android:textColor="@color/ventura_color"
+                android:gravity="center"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_2"
+        android:layout_marginRight="@dimen/dimen_2"
+        android:orientation="vertical"
+        >
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button_buy"
+        android:layout_width="100dp"
+        android:layout_height="@dimen/item_height"
+        android:background="@drawable/bg_orange_btn"
+        android:text="Invest"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginBottom="@dimen/dimen_10"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1"
+        android:background="@color/white"/>
+
+</LinearLayout>

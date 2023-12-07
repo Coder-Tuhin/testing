@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/black">
+    <view.TvRegular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/ventura_color"
+        android:text="Set your PIN"
+        android:textSize="@dimen/dimen_30"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:gravity="center"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TIL_pin"
+        android:layout_marginTop="@dimen/dimen_40"
+        android:theme="@style/TextInputLayoutStyle"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:textColorHint="@color/ventura_color"
+        app:boxStrokeColor="@drawable/selector_box_stroke_color"
+        app:boxStrokeWidth="@dimen/dimen_1"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_marginRight="@dimen/dimen_20"
+        app:expandedHintEnabled="false"
+        app:passwordToggleTint="@color/white"
+        app:hintEnabled="true"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleDrawable="@drawable/eye_password"
+        app:errorIconDrawable="@null"
+        app:errorTextColor="@color/highlight"
+        android:hint="Enter Your 4 digit numerical PIN">
+
+        <!--this is the actual edit text which takes the input-->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_pin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:longClickable="false"
+            android:inputType="numberPassword|number"
+            android:maxLength="4"
+            android:textColor="@color/white"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/confirmPinText"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:theme="@style/TextInputLayoutStyle"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:textColorHint="@color/ventura_color"
+        app:boxStrokeColor="@drawable/selector_box_stroke_color"
+        app:boxStrokeWidth="@dimen/dimen_1"
+        android:layout_marginRight="@dimen/dimen_20"
+        android:layout_marginLeft="@dimen/dimen_20"
+        app:expandedHintEnabled="false"
+        app:hintEnabled="true"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/white"
+        app:passwordToggleDrawable="@drawable/eye_password"
+        app:errorIconDrawable="@null"
+        app:errorTextColor="@color/highlight"
+        android:hint="Confirm your 4 digit numerical PIN">
+
+        <!--this is the actual edit text which takes the input-->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_confirmpin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:inputType="numberPassword|number"
+            android:longClickable="false"
+            android:maxLength="4"
+            android:textColor="@color/white"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/btn_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/text_45"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:background="@drawable/bg_oange_corner_8dp"
+        android:text="Confirm"
+        android:gravity="center"
+        android:textSize="@dimen/text_20"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:paddingStart="@dimen/item_height"
+        android:paddingEnd="@dimen/item_height"
+        android:layout_gravity="center_horizontal"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_new"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginRight="@dimen/dimen_70"
+        android:layout_marginLeft="@dimen/dimen_70"/>
+
+</LinearLayout>

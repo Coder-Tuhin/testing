@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dimen_10"
+        android:paddingBottom="@dimen/dimen_2"
+        android:background="@color/header">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_30">
+            <!--<view.TvRegular-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:textColor="@color/text_secondary"-->
+                <!--android:text="Status:"-->
+                <!--android:layout_marginRight="@dimen/dimen_4"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:textSize="@dimen/text_14"/>-->
+
+            <!--<include layout="@layout/mf_spinner_round"-->
+                <!--android:id="@+id/statusSpinner"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_height="match_parent" />-->
+            <view.TvRegular
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/text_secondary"
+                android:text="Transaction Type:"
+                android:layout_marginRight="@dimen/dimen_4"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/text_14"/>
+
+            <include layout="@layout/mf_spinner_round"
+                android:id="@+id/mfSpinnerAssetType"
+                android:layout_width="150dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingTop="@dimen/dimen_4">
+            <view.TvRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_secondary"
+                android:text="@string/period"
+                android:layout_marginRight="@dimen/dimen_4"
+                android:textSize="@dimen/text_14"/>
+            <view.TvRegular
+                android:id="@+id/asondate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_primary"
+                android:text="Last 1 month"
+                android:textSize="@dimen/text_16"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dimen_4"
+        android:paddingBottom="@dimen/dimen_4"
+        android:paddingLeft="@dimen/dimen_2"
+        android:paddingRight="@dimen/dimen_2"
+        android:orientation="horizontal">
+        <view.TvRegular
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/ventura_color"
+            android:text="@string/scheme_name"
+            android:textSize="@dimen/text_13"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="5dp">
+            <view.TvRegular
+                android:id="@+id/amounttxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="@color/ventura_color"
+                android:text="@string/amount"
+                android:textSize="@dimen/text_13"/>
+
+            <view.TvRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginTop="@dimen/dimen_2"
+                android:textColor="@color/ventura_color"
+                android:text="@string/status"
+                android:textSize="@dimen/text_13"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <view.TvRegular
+                android:id="@+id/start_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="@color/ventura_color"
+                android:text="Start Date"
+                android:textSize="@dimen/text_13"/>
+
+            <view.TvRegular
+                android:id="@+id/end_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="@color/ventura_color"
+                android:text="End Date"
+                android:layout_marginTop="@dimen/dimen_2"
+                android:textSize="@dimen/text_13"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <view.TvRegular
+                android:id="@+id/notxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="@color/ventura_color"
+                android:text="No.of SIP"
+                android:textSize="@dimen/text_13"/>
+            <view.TvRegular
+                android:id="@+id/amountbaltxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginTop="@dimen/dimen_2"
+                android:textColor="@color/ventura_color"
+                android:text="Exec./Rej./Bal"
+                android:textSize="@dimen/text_13"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_2"
+        android:background="@color/header"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+
+</LinearLayout>

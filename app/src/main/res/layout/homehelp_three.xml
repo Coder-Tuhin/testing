@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/demo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"> <!-- This is alpha 68/255, black -->
+
+    <RelativeLayout
+        android:id="@+id/relative_Content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/subscribearrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/help_arrow_left"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"/>
+        <TextView
+            android:id="@+id/subscribetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/subscribearrow"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="60dp"
+            android:textSize="17sp"
+            android:textColor="@color/help_textcolor"
+            android:text="\t\tUse 'Subscribe Online' to \n\t\t\tapply for IPO / Bonds / \nMutual Funds / Funds Transfer"/>
+
+        <RelativeLayout
+            android:id="@+id/button_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+        </RelativeLayout>
+        <!-- Contents of your overlay layout -->
+    </RelativeLayout>
+
+</LinearLayout>

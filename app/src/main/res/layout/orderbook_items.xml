@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/s_margin">
+        <TextView
+            android:id="@+id/scripame_ordbook_textview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Scrept Name"
+            android:textStyle="normal"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/small_textsize"
+            android:textColor="@color/white"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/buyorsell_ordbk_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="buy 2 @ 1,0559.00"
+                android:textSize="@dimen/common_textsize"
+                android:gravity="right"
+                android:textColor="@color/silver" />
+            <LinearLayout
+                android:id="@+id/ltpview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LTP : "
+                    android:textSize="@dimen/common_textsize"
+                    android:textColor="@color/silver" />
+                <TextView
+                    android:id="@+id/ltp_ordbk_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.00"
+                    android:textSize="@dimen/common_textsize"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/status_ordbk_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AH Cancelled"
+                android:gravity="right"
+                android:textSize="@dimen/common_textsize"
+                android:textColor="@color/silver" />
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/view"/>
+</LinearLayout>

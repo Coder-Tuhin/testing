@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/large_textsize"
+        android:text="Please confirm your investment"
+        android:textColor="@color/white"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/large_textsize"
+            android:text="Total Amount: "
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/common_margine"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/large_textsize"
+            android:text="502.0 "
+            android:textColor="@color/ventura_color"
+            android:layout_marginTop="@dimen/common_margine"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/large_textsize"
+        android:text="Please select your payment method."
+        android:textColor="@color/silver"
+        android:layout_marginTop="@dimen/common_margine"/>
+
+    <RadioGroup
+        android:id="@+id/numbersRdGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/large_margine">
+        <RadioButton
+            android:id="@+id/ZtoN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Master/Visa Debit Card"
+            android:textStyle="bold"
+            android:textSize="@dimen/common_textsize"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"/>
+        <RadioButton
+            android:id="@+id/TtoN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RuPay Debit Card"
+            android:textStyle="bold"
+            android:textSize="@dimen/common_textsize"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"/>
+        <RadioButton
+            android:id="@+id/HtoN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Internet banking"
+            android:textStyle="bold"
+            android:textSize="@dimen/common_textsize"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"/>
+    </RadioGroup>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/item_height"
+        android:background="@drawable/bg_orange_btn"
+        android:layout_marginTop="@dimen/item_height"
+        android:text="Invest Securely"
+        android:paddingLeft="@dimen/large_margine"
+        android:paddingRight="@dimen/large_margine"
+        android:textAllCaps="false"
+        android:textSize="@dimen/large_textsize"
+        android:textColor="@color/white" />
+
+</LinearLayout>

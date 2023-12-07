@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/analytics_background"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:paddingRight="@dimen/dimen_16"
+        android:paddingLeft="@dimen/dimen_16">
+        <ImageView
+            android:layout_width="@dimen/dimen_70"
+            android:layout_height="@dimen/dimen_70"
+            android:src="@drawable/ic_basketof"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Would you prefet"
+                android:textColor="@color/ventura_color"
+                android:textSize="@dimen/text_20"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="to have ?"
+                android:textColor="@color/ventura_color"
+                android:textSize="@dimen/text_20"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/dimen_16"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/dimen_16"
+        android:layout_marginTop="@dimen/dimen_50">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/tv_65equity"
+                android:layout_width="@dimen/dimen_250"
+                android:layout_height="@dimen/dimen_100"
+                android:src="@drawable/equity6070"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="right">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/play" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_30">
+            <ImageView
+                android:id="@+id/tv_35equity"
+                android:layout_width="@dimen/dimen_250"
+                android:layout_height="@dimen/dimen_100"
+                android:src="@drawable/equity3565"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="right">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/play" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_30">
+            <ImageView
+                android:id="@+id/tv_upto35equity"
+                android:layout_width="@dimen/dimen_250"
+                android:layout_height="@dimen/dimen_100"
+                android:src="@drawable/equity35"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="right">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/play" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ventura_color"
+            android:textSize="@dimen/text_16"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:text="Since your time horizon is less than 3 years it is advisable to invest in conservative funds with less exposure to equity "/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_8"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="@dimen/dimen_60"
+            android:layout_height="@dimen/dimen_40"
+            android:src="@drawable/play"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Watch the video to know more"
+            android:textSize="@dimen/text_11"
+            android:textColor="@color/ventura_color"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/dimen_10"/>
+    </LinearLayout>
+
+
+</LinearLayout>

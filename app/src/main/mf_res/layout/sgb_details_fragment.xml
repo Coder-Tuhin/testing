@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <view.TvRegular
+        android:id="@+id/screen_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header"
+        android:padding="@dimen/dimen_4"
+        android:text="Sovereign Gold Bonds"
+        android:textStyle="italic|bold"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/text_16" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header"
+        android:gravity="bottom"
+        android:padding="@dimen/dimen_4">
+
+        <view.TvRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scheme_name"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/text_14"
+            android:visibility="gone"/>
+
+        <view.TvLarge
+            android:id="@+id/schemeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_4"
+            android:text="-"
+            android:textColor="@color/ventura_color"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_16" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:paddingLeft="@dimen/dimen_6"
+        android:paddingRight="@dimen/dimen_6"
+        android:gravity="bottom">
+        <view.TvRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bid Qty (Gms.):"
+            android:textSize="@dimen/text_14"
+            android:textColor="@color/spinner_divider"/>
+        <view.TvRegular
+            android:id="@+id/qty_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="-"
+            android:textSize="@dimen/text_16"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_6"
+        android:paddingRight="@dimen/dimen_6"
+        android:gravity="bottom">
+        <view.TvRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bid Price (Rs.):"
+            android:textSize="@dimen/text_14"
+            android:textColor="@color/spinner_divider"/>
+        <view.TvRegular
+            android:id="@+id/bid_price_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="-"
+            android:textSize="@dimen/text_16"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_6"
+        android:paddingRight="@dimen/dimen_6"
+        android:gravity="bottom">
+        <view.TvRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bid Amount (Rs.)"
+            android:textSize="@dimen/text_14"
+            android:textColor="@color/spinner_divider"/>
+        <view.TvRegular
+            android:id="@+id/bit_amount_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="-"
+            android:textSize="@dimen/text_16"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_6"
+        android:paddingRight="@dimen/dimen_6"
+        android:gravity="bottom">
+        <view.TvRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Holder/Applicant"
+            android:textSize="@dimen/text_14"
+            android:textColor="@color/ventura_color"/>
+        <view.TvRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="PAN No."
+            android:textSize="@dimen/text_16"
+            android:textColor="@color/ventura_color"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/acc_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_6"
+        android:paddingRight="@dimen/dimen_6"
+        android:gravity="bottom"
+        android:visibility="gone">
+        <view.TvRegular
+            android:id="@+id/acc_holder_tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hars"
+            android:textSize="@dimen/text_14"
+            android:textColor="@color/white"/>
+        <view.TvRegular
+            android:id="@+id/pan_tv_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="AAAAA1111A"
+            android:textSize="@dimen/text_16"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/acc_layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_6"
+        android:paddingRight="@dimen/dimen_6"
+        android:gravity="bottom"
+        android:visibility="gone">
+        <view.TvRegular
+            android:id="@+id/acc_holder_tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Goutam D"
+            android:textSize="@dimen/text_14"
+            android:textColor="@color/white"/>
+        <view.TvRegular
+            android:id="@+id/pan_tv_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="AAAAA1111A"
+            android:textSize="@dimen/text_16"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/acc_layout_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_6"
+        android:paddingRight="@dimen/dimen_6"
+        android:gravity="bottom"
+        android:visibility="gone">
+        <view.TvRegular
+            android:id="@+id/acc_holder_tv_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="John Doa"
+            android:textSize="@dimen/text_14"
+            android:textColor="@color/white"/>
+        <view.TvRegular
+            android:id="@+id/pan_tv_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="AAAAA1111A"
+            android:textSize="@dimen/text_16"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_6"
+        android:paddingRight="@dimen/dimen_6"
+        android:gravity="bottom">
+        <view.TvRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DP ID:"
+            android:textSize="@dimen/text_14"
+            android:textColor="@color/spinner_divider"/>
+        <view.TvRegular
+            android:id="@+id/dp_id_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="-"
+            android:textSize="@dimen/text_16"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_6"
+        android:paddingRight="@dimen/dimen_6"
+        android:gravity="bottom">
+        <view.TvRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beneficiary ID:"
+            android:textSize="@dimen/text_14"
+            android:textColor="@color/spinner_divider"/>
+        <view.TvRegular
+            android:id="@+id/beneficiary_id_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="-"
+            android:textSize="@dimen/text_16"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_20"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_6"
+        android:paddingRight="@dimen/dimen_6"
+        android:gravity="bottom">
+        <view.TvRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bank Name"
+            android:textSize="@dimen/text_14"
+            android:textColor="@color/spinner_divider"/>
+        <view.TvRegular
+            android:id="@+id/bank_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="-"
+            android:textSize="@dimen/text_16"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_6"
+        android:paddingRight="@dimen/dimen_6"
+        android:gravity="bottom">
+        <view.TvRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bank Account No:"
+            android:textSize="@dimen/text_14"
+            android:textColor="@color/spinner_divider"/>
+        <view.TvRegular
+            android:id="@+id/acc_no_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="-"
+            android:textSize="@dimen/text_16"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_6"
+        android:paddingRight="@dimen/dimen_6"
+        android:gravity="bottom">
+        <view.TvRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IFSC Code:"
+            android:textSize="@dimen/text_14"
+            android:textColor="@color/spinner_divider"/>
+        <view.TvRegular
+            android:id="@+id/ifsc_code_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="-"
+            android:textSize="@dimen/text_16"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/termcondChkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/text_primary"
+            android:text="I agree with the"
+            android:textColor="@color/text_secondary" />
+
+        <view.TvLarge
+            android:id="@+id/termcondclick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Terms \u0026 Conditions "
+            android:textColor="@color/colorAccent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_44"
+        android:layout_marginTop="@dimen/dimen_30">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3" />
+
+        <view.TvLarge
+            android:id="@+id/applyBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="@drawable/mf_button_bg"
+            android:gravity="center"
+            android:text="Submit"
+            android:clickable="true"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_18" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3" />
+    </LinearLayout>
+</LinearLayout>

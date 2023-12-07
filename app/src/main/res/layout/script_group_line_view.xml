@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/black">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginBottom="@dimen/common_margine"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/common_margine"
+        android:paddingRight="@dimen/common_margine"
+        android:layout_marginTop="@dimen/common_margine">
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="WatchList Name:"
+            android:textSize="@dimen/common_textsize"
+            android:textColor="@color/white"
+            android:singleLine="true"/>
+        <ImageButton
+            android:id="@+id/edit"
+            android:layout_width="@dimen/item_height"
+            android:layout_height="@dimen/item_height"
+            android:src="@drawable/img_edit"
+            android:background="@null"
+            android:scaleType="fitXY" />
+        <ImageButton
+            android:id="@+id/close"
+            android:layout_width="@dimen/item_height"
+            android:layout_height="@dimen/item_height"
+            android:layout_marginLeft="@dimen/common_margine"
+            android:src="@drawable/img_cross"
+            android:background="@null"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.6dp"
+        android:layout_marginBottom="@dimen/common_margine"
+        android:background="@color/silver" />
+</LinearLayout>

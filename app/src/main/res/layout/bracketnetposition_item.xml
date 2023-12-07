@@ -1,0 +1,97 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:padding="@dimen/common_margine">
+        <TextView
+            android:id="@+id/scrept_name_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scrept name"
+            android:textAllCaps="true"
+            android:textColor="@color/silver"
+            android:textSize="@dimen/small_textsize"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:id="@+id/scrept_vol_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 @ 531.00"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_textsize"
+            android:layout_alignParentRight="true" />
+        <TextView
+            android:id="@+id/mtm_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MTM : "
+            android:textColor="@color/silver"
+            android:textSize="@dimen/small_textsize"
+            android:layout_below="@+id/scrept_name_textview"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:id="@+id/mtm_vol_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:textColor="@color/white"
+            android:layout_below="@+id/scrept_name_textview"
+            android:textSize="@dimen/common_textsize"
+            android:layout_toRightOf="@+id/mtm_textview" />
+        <TextView
+            android:id="@+id/booked_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Booked : "
+            android:textColor="@color/silver"
+            android:layout_below="@+id/scrept_name_textview"
+            android:layout_toLeftOf="@+id/booked_vol_textview"
+            android:textSize="@dimen/small_textsize" />
+        <TextView
+            android:id="@+id/booked_vol_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-46.25"
+            android:textColor="@color/white"
+            android:layout_below="@+id/scrept_name_textview"
+            android:textSize="@dimen/common_textsize"
+            android:layout_alignParentRight="true" />
+        <TextView
+            android:id="@+id/posid_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Position ID : "
+            android:textColor="@color/silver"
+            android:textSize="@dimen/small_textsize"
+            android:layout_below="@+id/mtm_vol_textview"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:id="@+id/posid_vol_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/white"
+            android:layout_below="@+id/mtm_vol_textview"
+            android:textSize="@dimen/common_textsize"
+            android:layout_toRightOf="@+id/posid_textview" />
+        <!--<TextView
+            android:id="@+id/booked_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Booked : "
+            android:textColor="@color/silver"
+            android:layout_below="@+id/scrept_name_textview"
+            android:layout_toLeftOf="@+id/booked_vol_textview"
+            android:textSize="@dimen/small_textsize" />
+        <TextView
+            android:id="@+id/booked_vol_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-46.25"
+            android:textColor="@color/white"
+            android:layout_below="@+id/scrept_name_textview"
+            android:textSize="@dimen/common_textsize"
+            android:layout_alignParentRight="true" />-->
+</RelativeLayout>

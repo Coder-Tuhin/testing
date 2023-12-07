@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/demo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transperent"
+    android:paddingLeft="100dp"
+    android:paddingTop="60dp">
+        <ImageView
+            android:id="@+id/sensexvisiblearrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/help_arrow_right"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/sensexvisibletext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sensexvisiblearrow"
+            android:layout_alignParentLeft="true"
+            android:text="You can visible and invisible \nNifty/Sensex"
+            android:textColor="@color/help_textcolor"
+            android:textSize="18sp"
+            android:visibility="invisible"/>
+        <ImageView
+            android:id="@+id/textsizearrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sensexvisiblearrow"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/help_arrow_right"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/textsizetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textsizearrow"
+            android:layout_alignParentLeft="true"
+            android:text="You can change the text size"
+            android:textColor="@color/help_textcolor"
+            android:textSize="18sp"
+            android:visibility="invisible"/>
+        <ImageView
+            android:id="@+id/amountunitarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textsizearrow"
+            android:src="@drawable/help_arrow_right"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/amountunittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/amountunitarrow"
+            android:layout_alignParentLeft="true"
+            android:text="You can change amount unit \nin Rupees/Lacs/Crore"
+            android:textColor="@color/help_textcolor"
+            android:textSize="18sp"
+            android:visibility="invisible"/>
+        <ImageView
+            android:id="@+id/eventstylearrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/amountunitarrow"
+            android:src="@drawable/help_arrow_right"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/eventstyletext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eventstylearrow"
+            android:layout_alignParentLeft="true"
+            android:text="You can change the Event style \nin ONE or THREE line"
+            android:textColor="@color/help_textcolor"
+            android:textSize="18sp"
+            android:visibility="invisible"/>
+    <ImageView
+        android:id="@+id/watchstylearrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/eventstylearrow"
+        android:src="@drawable/help_arrow_right"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/watchstyletext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/watchstylearrow"
+        android:layout_alignParentLeft="true"
+        android:text="You can change the Watch style \nin ONE or TWO line"
+        android:textColor="@color/help_textcolor"
+        android:textSize="18sp"
+        android:visibility="invisible"/>
+    </RelativeLayout>

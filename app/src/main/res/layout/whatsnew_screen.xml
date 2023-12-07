@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transperent"
+    android:orientation="vertical">
+    <view.TvRegular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What's New"
+        android:layout_marginTop="@dimen/dimen_40"
+        android:layout_marginLeft="@dimen/dimen_40"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/text_26"
+        android:textStyle="italic" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_40"
+            android:paddingRight="@dimen/dimen_40">
+            <androidx.legacy.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="@dimen/dimen_12"
+                    android:layout_height="@dimen/dimen_12"
+                    android:layout_margin="@dimen/dimen_6"
+                    android:src="@drawable/dot" />
+
+                <view.TvRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/whatsnew1"
+                    android:textColor="@color/text_primary"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+<!--
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10">
+                <ImageView
+                    android:layout_width="@dimen/dimen_12"
+                    android:layout_height="@dimen/dimen_12"
+                    android:layout_margin="@dimen/dimen_6"
+                    android:src="@drawable/dot" />
+                <view.TvRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/whatsnew2"
+                    android:textColor="@color/text_primary"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10">
+                <ImageView
+                    android:layout_width="@dimen/dimen_12"
+                    android:layout_height="@dimen/dimen_12"
+                    android:layout_margin="@dimen/dimen_6"
+                    android:src="@drawable/dot" />
+                <view.TvRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/whatsnew3"
+                    android:textColor="@color/text_primary"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10">
+                <ImageView
+                    android:layout_width="@dimen/dimen_12"
+                    android:layout_height="@dimen/dimen_12"
+                    android:layout_margin="@dimen/dimen_6"
+                    android:src="@drawable/dot" />
+                <view.TvRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/whatsnew4"
+                    android:textColor="@color/text_primary"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="italic" />
+            </LinearLayout>
+-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10">
+                <ImageView
+                    android:layout_width="@dimen/dimen_12"
+                    android:layout_height="@dimen/dimen_12"
+                    android:layout_margin="@dimen/dimen_6"
+                    android:src="@drawable/dot" />
+                <view.TvRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/whatsnew5"
+                    android:textColor="@color/text_primary"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="italic" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10">
+
+                <view.TvRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/whatsnew_footer"
+                    android:textColor="@color/text_primary"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <view.TvRegular
+        android:id="@+id/gotIt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="@dimen/dimen_30"
+        android:background="@drawable/rounded_btn"
+        android:paddingBottom="@dimen/dimen_10"
+        android:paddingLeft="@dimen/dimen_24"
+        android:paddingRight="@dimen/dimen_24"
+        android:paddingTop="@dimen/dimen_10"
+        android:textStyle="bold"
+        android:text="Got it"
+        android:textColor="@color/white" />
+</LinearLayout>

@@ -1,0 +1,178 @@
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@color/black">
+        <FrameLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/item_height"
+            android:layout_marginRight="@dimen/item_height">
+            <LinearLayout
+                android:id="@+id/registration_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/upi"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"/>
+                <RadioGroup
+                    android:id="@+id/rdg_ec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+                    <RadioButton
+                        android:id="@+id/rbtnEquity"
+                        android:buttonTint="@color/white"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Equity"/>
+                    <RadioButton
+                        android:id="@+id/rbtnCommodity"
+                        android:buttonTint="@color/white"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Commodity"/>
+                </RadioGroup>
+                <TextView
+                    android:id="@+id/txtTransfer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:text="@string/transfer_msg"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/common_textsize"/>
+
+                <LinearLayout
+                    android:id="@+id/amount_linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/border_white"
+                    android:layout_marginTop="@dimen/large_margine">
+
+
+                    <EditText
+                        android:id="@+id/edt_upi_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edittext_height"
+                        android:background="@null"
+                        android:maxLength="10"
+                        android:padding="@dimen/common_margine"
+                        android:longClickable="false"
+                        android:inputType="numberDecimal"
+                        android:imeOptions="actionNext"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/common_textsize"
+                        android:textColorHint="@color/silver"
+                        android:hint="0.00"
+                        android:drawablePadding="@dimen/common_margine"
+                        android:textColor="@android:color/black"/>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/radiogrpschemlist_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginRight="@dimen/dimen_10"
+                    />
+
+<!--
+                <RadioGroup
+                    android:id="@+id/rgrpExchange"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+
+                        <RadioButton
+                            android:id="@+id/rbtnNSE"
+                            android:buttonTint="@color/white"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="NSE"/>
+                        <RadioButton
+                            android:id="@+id/rbtnBSE"
+                            android:buttonTint="@color/white"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="BSE"/>
+                        <RadioButton
+                            android:id="@+id/rbtnNSEFNO"
+                            android:buttonTint="@color/white"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="NSE FNO"/>
+                        <RadioButton
+                            android:id="@+id/rbtnNSECURRENCY"
+                            android:buttonTint="@color/white"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="NSE CURRENCY"/>
+                        <RadioButton
+                            android:visibility="gone"
+                            android:id="@+id/rbtnMCX"
+                            android:buttonTint="@color/white"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MCX"/>
+                        <RadioButton
+                            android:id="@+id/rbtnNCDEX"
+                            android:buttonTint="@color/white"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:text="NCDEX"/>
+                </RadioGroup>
+-->
+
+
+                <LinearLayout
+                    android:id="@+id/linearButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_height"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/common_margine"
+                    android:layout_marginRight="@dimen/common_margine"
+                    android:layout_marginTop="@dimen/activity_vertical_margin">
+                    <Button
+                        android:id="@+id/button_submit"
+                        android:layout_width="@dimen/l_btn_width"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border"
+                        android:text="Submit"
+                        android:layout_gravity="left"
+                        android:textSize="@dimen/common_textsize"
+                        android:textColor="@color/white"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+    </ScrollView>

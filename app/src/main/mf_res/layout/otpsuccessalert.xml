@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:background="@drawable/custom_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_cross"
+            android:layout_width="@dimen/dimen_20"
+            android:layout_height="@dimen/dimen_20"
+            android:src="@drawable/img_cross"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+
+    <view.TvRegular
+        android:id="@+id/otpsuccesstext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/text_16"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"/>
+
+
+
+    <View
+        android:layout_width="@dimen/dimen_10"
+        android:layout_height="@dimen/dimen_10"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <view.TvLarge
+            android:id="@+id/ok_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/mf_button_bg"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dimen_24"
+            android:paddingTop="@dimen/dimen_6"
+            android:paddingRight="@dimen/dimen_24"
+            android:paddingBottom="@dimen/dimen_6"
+            android:text="OK"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_15" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/dimen_20"
+        android:layout_height="@dimen/dimen_20"/>
+
+
+</LinearLayout>

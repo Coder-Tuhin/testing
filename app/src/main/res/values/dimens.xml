@@ -1,0 +1,160 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="logoHeight">60dp</dimen>
+    <dimen name="toolbar_height">48dp</dimen>
+    <dimen name="extralarge_textsize">22sp</dimen>
+    <dimen name="navigation_textsize">16sp</dimen>
+    <dimen name="common_margine">6dp</dimen>
+    <dimen name="nav_drawer_width">240dp</dimen>
+    <dimen name="navitem_height">40dp</dimen>
+    <dimen name="header_height">20dp</dimen>
+    <dimen name="edittext_height">40dp</dimen>
+    <dimen name="divider_height">0.6dp</dimen>
+    <dimen name="bottombar_height">30dp</dimen>
+    <dimen name="large_margine">10dp</dimen>
+
+
+    <!--ITEM HEIGHT-->
+    <dimen name="item_height">38dp</dimen>
+    <dimen name="item_height_large">44dp</dimen>
+    <dimen name="event_height">32dp</dimen>
+
+
+    <!--TEXT SIZES-->
+    <dimen name="small_textsize1">6sp</dimen>
+    <dimen name="small_textsize2">7sp</dimen>
+    <dimen name="small_textsize3">8sp</dimen>
+
+    <dimen name="small_textsize">13sp</dimen>
+    <dimen name="common_textsize">15sp</dimen>
+    <dimen name="large_textsize">17sp</dimen>
+
+    <!-- for chart-->
+
+    <dimen name="bar_margin">42dp</dimen>
+    <dimen name="crosshair_squre">20dp</dimen>
+    <dimen name="indicator_width">40dp</dimen>
+    <dimen name="left_bar_height">60dp</dimen>
+    <dimen name="chart_medium_text_size">12sp</dimen>
+    <dimen name="chart_small_text_size">10sp</dimen>
+    <dimen name="graph_list_width">180dp</dimen>
+
+    <dimen name="graph_left_vswidth">10dp</dimen>
+    <dimen name="graph_left_swidth">15dp</dimen>
+    <dimen name="graph_left_mwidth">20dp</dimen>
+    <dimen name="graph_left_lwidth">25dp</dimen>
+
+    <dimen name="report_row_height">50dp</dimen>
+
+    <dimen name="notification_header_height">35dp</dimen>
+
+    <dimen name="s_margin">5dp</dimen>
+    <dimen name="m_margin">7dp</dimen>
+    <dimen name="l_margin">10dp</dimen>
+    <dimen name="padding">3dp</dimen>
+    <dimen name="padding_two">2dp</dimen>
+
+    <dimen name="wealth_textSize">13sp</dimen>
+    <dimen name="btn_height">35dp</dimen>
+
+    <dimen name="logo_height">48dp</dimen>
+
+    <dimen name="close_btn_width">32dp</dimen>
+    <dimen name="list_divider">0.3dp</dimen>
+
+
+    <dimen name="bs_btn_width">60dp</dimen>
+    <dimen name="bs_btn_height">35dp</dimen>
+    <dimen name="s_btn_height">25dp</dimen>
+    <dimen name="l_btn_width">100dp</dimen>
+    <dimen name="l_big_btn_width">120dp</dimen>
+    <dimen name="el_btn_width">160dp</dimen>
+    <dimen name="l_btn_height">50dp</dimen>
+    <dimen name="el_btn_height">55dp</dimen>
+
+    <dimen name="depth_viewfourMargine">20dp</dimen>
+
+    <dimen name="circle">25dp</dimen>
+    <dimen name="indicator_height">10dp</dimen>
+    <dimen name="speed_meter_size">46dp</dimen>
+
+    <dimen name="vertical_line_width">10dp</dimen>
+    <dimen name="indicator_corner_radius">2dp</dimen>
+
+    <dimen name="squre">13dp</dimen>
+
+    <dimen name="db_chart_size">160dp</dimen>
+    <dimen name="el_margin">20dp</dimen>
+
+    <!--NEW CHANGES-->
+    <dimen name="big_margine">20dp</dimen>
+
+
+    <dimen name="dimen_0.5">0.5dp</dimen>
+    <dimen name="dimen_0.6">0.6dp</dimen>
+    <dimen name="dimen_1">1dp</dimen>
+    <dimen name="dimen_2">2dp</dimen>
+    <dimen name="dimen_3">3dp</dimen>
+    <dimen name="dimen_4">4dp</dimen>
+    <dimen name="dimen_6">6dp</dimen>
+    <dimen name="dimen_8">8dp</dimen>
+    <dimen name="dimen_10">10dp</dimen>
+    <dimen name="dimen_12">12dp</dimen>
+    <dimen name="dimen_14">14dp</dimen>
+    <dimen name="dimen_16">16dp</dimen>
+    <dimen name="dimen_18">18dp</dimen>
+    <dimen name="dimen_19">19dp</dimen>
+    <dimen name="dimen_20">20dp</dimen>
+    <dimen name="dimen_22">22dp</dimen>
+    <dimen name="dimen_24">24dp</dimen>
+    <dimen name="dimen_28">28dp</dimen>
+    <dimen name="dimen_30">30dp</dimen>
+    <dimen name="dimen_36">36dp</dimen>
+    <dimen name="dimen_40">40dp</dimen>
+    <dimen name="dimen_44">44dp</dimen>
+    <dimen name="dimen_48">48dp</dimen>
+    <dimen name="dimen_50">50dp</dimen>
+    <dimen name="dimen_54">54dp</dimen>
+    <dimen name="dimen_60">60dp</dimen>
+    <dimen name="dimen_65">65dp</dimen>
+    <dimen name="dimen_70">70dp</dimen>
+    <dimen name="dimen_80">80dp</dimen>
+    <dimen name="dimen_90">90dp</dimen>
+    <dimen name="dimen_95">95dp</dimen>
+    <dimen name="dimen_100">100dp</dimen>
+    <dimen name="dimen_110">110dp</dimen>
+    <dimen name="dimen_120">120dp</dimen>
+    <dimen name="dimen_130">130dp</dimen>
+    <dimen name="dimen_140">140dp</dimen>
+    <dimen name="dimen_160">160dp</dimen>
+    <dimen name="dimen_180">180dp</dimen>
+    <dimen name="dimen_200">200dp</dimen>
+    <dimen name="dimen_220">220dp</dimen>
+    <dimen name="dimen_250">250dp</dimen>
+
+    <dimen name="text_8">8sp</dimen>
+    <dimen name="text_9">9sp</dimen>
+    <dimen name="text_10">10sp</dimen>
+    <dimen name="text_11">11sp</dimen>
+    <dimen name="text_12">12sp</dimen>
+    <dimen name="text_13">13sp</dimen>
+    <dimen name="text_14">14sp</dimen>
+    <dimen name="text_15">15sp</dimen>
+    <dimen name="text_16">16sp</dimen>
+    <dimen name="text_17">17sp</dimen>
+    <dimen name="text_18">18sp</dimen>
+    <dimen name="text_20">20sp</dimen>
+    <dimen name="text_22">22sp</dimen>
+    <dimen name="text_24">24sp</dimen>
+    <dimen name="text_26">26sp</dimen>
+    <dimen name="text_30">30sp</dimen>
+    <dimen name="text_45">45sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <dimen name="chart_size">90dp</dimen>
+    <dimen name="analytics_oc_header_size">25dp</dimen>
+    <dimen name="fist_small_font_size">12sp</dimen>
+
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/dropdownarrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/help_arrow_right"
+        android:layout_marginTop="75dp"
+        android:layout_marginRight="80dp"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:id="@+id/dropdowntext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/dropdownarrow"
+        android:layout_below="@+id/dropdownarrow"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="130dp"
+        android:textSize="17sp"
+        android:textColor="@color/help_textcolor"
+        android:text="Use drop down arrow \nto view scrip name"/>
+
+    <ImageView
+        android:id="@+id/arrow31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/help_arrow_down"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"/>
+    <TextView
+        android:id="@+id/handText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textColor="@color/help_textcolor"
+        android:layout_toRightOf="@+id/arrow31"
+        android:layout_marginTop="220dp"
+        android:text="Short press on it \nto change view"/>
+
+    <ImageView
+        android:id="@+id/arrow32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/help_arrow_down"
+        android:layout_centerHorizontal="true"
+        android:paddingRight="35dp"
+        android:layout_marginTop="445dp"/>
+    <TextView
+        android:id="@+id/handText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textColor="@color/help_textcolor"
+        android:layout_toRightOf="@+id/arrow32"
+        android:layout_marginTop="420dp"
+        android:text="Tap here to view short/long detail"/>
+    <RelativeLayout
+        android:id="@+id/button_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+    </RelativeLayout>
+</RelativeLayout>

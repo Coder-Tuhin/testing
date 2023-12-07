@@ -1,0 +1,96 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/popup_border">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/common_margine">
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Message"
+                android:paddingBottom="@dimen/common_margine"
+                android:paddingTop="@dimen/common_margine"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"/>
+
+            <ImageButton
+                android:id="@+id/message_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView2"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@android:drawable/btn_dialog"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white" />
+
+        <RadioGroup
+            android:id="@+id/message_radioGrp"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/item_height"
+            android:layout_margin="@dimen/common_margine"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:weightSum="3">
+
+            <RadioButton
+                android:id="@+id/message_orderbook"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:layout_marginRight="@dimen/common_margine"
+                android:text="ORDER BOOK"
+                android:textSize="@dimen/small_textsize"
+                android:textColor="@color/white"
+                android:background="@drawable/border"/>
+
+            <RadioButton
+                android:id="@+id/message_tradebook"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="TRADE BOOK"
+                android:layout_marginRight="@dimen/common_margine"
+                android:textSize="@dimen/small_textsize"
+                android:textColor="@color/white"
+                android:background="@drawable/border"/>
+
+            <RadioButton
+                android:id="@+id/message_netposition"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="DAY POSITION"
+                android:background="@drawable/border"
+                android:textSize="@dimen/small_textsize"
+                android:textColor="@color/white"/>
+        </RadioGroup>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"
+        android:layout_marginBottom="@dimen/common_margine"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/message_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+</LinearLayout>

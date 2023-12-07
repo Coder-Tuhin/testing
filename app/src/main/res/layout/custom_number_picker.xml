@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="35dp">
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Q : " />
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="fill_parent"
+        android:background="@drawable/border"
+        android:text=" - " />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/border"
+        android:textColor="#fff"
+        android:textColorHint="#ffaeaeae"
+        android:focusable="true"
+        android:gravity="center"
+        android:hint="Qty"
+        android:inputType="number"
+        android:numeric="decimal"/>
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:text=" + " />
+</LinearLayout>

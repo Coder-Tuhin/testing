@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F96129</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#0ee98a</color>
+    <!-- <color name="colorAccent">#1DE9B6</color>-->
+    <color name="logo_bg_color">#fff26722</color>
+    <color name="ventura_color">#F96129</color>
+    <!--<color name="silver">#B3B3B3</color>-->
+    <color name="silver">#cfcfcf</color>
+    <color name="black">#000000</color>
+    <color name="black_faded">#1E1E1E</color>
+    <color name="white">#FFFFFF</color>
+    <color name="deep_dark_gray">#ff151515</color>
+    <color name="dark_gray">#191611</color>
+    <color name="gray_color_light">#AEAEAE</color>
+
+    <color name="spinner_backcolor">#4D4D4F</color>
+    <color name="spinner_backnonselected">#4D4D4F</color>
+    <color name="spinner_backselected">#313131</color>
+    <color name="spinner_divider">#757575</color>
+
+    <color name="popupback">#303030</color>
+    <!--  <color name="dark_gray">#ff252525</color>-->
+
+    <color name="red">#f9fc0303</color> <!-- tick down color   #d20000 -->
+    <color name="green1">#17ae1c</color><!-- tick up color -->
+    <color name="gray_color">#555555</color>
+    <color name="gray_color1">#7e7e7e</color>
+    <color name="gotit">#ffffc215</color>
+
+    <color name="sep">@color/white</color>
+    <color name="dim_background">#88151515</color>
+    <color name="background">@color/dark_gray</color>
+    <color name="tick_down_dull_color">#c9ff393f</color>
+    <color name="filter_background">#0d72a1</color>
+
+    <color name="toast_background">#e5151515</color>
+
+    <color name="chart_ohlc_color">@color/colorPrimary</color>
+    <color name="ohlc_color">#ffafaf</color>
+    <color name="text_color">#003886</color>
+    <color name="border_color_black">#003886</color>
+    <color name="chart_menu_bkg">#cf131212</color>
+
+    <color name="selected_mw_indicator">#b4630e42</color>
+
+    <!--Report colors-->
+    <color name="report_heading_color">#B3B3B3</color>
+    <!-- <color name="odd_row_color">@color/spinner_color</color>
+     <color name="even_row_color">#FFE06D</color>-->
+    <color name="odd_row_color">#fff26722</color>
+    <color name="even_row_color">#b6f26722</color>
+    <color name="menu_text_color">#DBE4EF</color>
+
+    <color name="spinner_color">#0c5bcc</color>
+
+    <color name="nse_color">#03B2E4</color>
+    <color name="bse_color">#8DD02A</color>
+    <color name="fno_color">#B35FCA</color>
+
+    <color name="piechart_col1">#03B2E4</color>
+    <color name="piechart_col2">#8DD02A</color>
+    <color name="piechart_col3">#B35FCA</color>
+
+    <!--added by Mr Goutam D on 25 Sep 2020-->
+    <color name="piechart_col4">#fff26722</color>
+    <color name="piechart_col5">#b4630e42</color>
+    <color name="piechart_col6">#b6f26722</color>
+    <color name="piechart_col7">#17ae1c</color>
+    <color name="piechart_col8">#f9fc0303</color>
+    <color name="piechart_col9">#8837F7</color>
+    <color name="piechart_col10">#259ebc</color>
+    <color name="piechart_col11">#FD5E02</color>
+    <color name="piechart_col12">#cf131212</color>
+    <color name="piechart_col13">#ffa500</color>
+    <color name="piechart_col14">#0ee98a</color>
+    <color name="piechart_col15">#372097</color>
+    <color name="piechart_col16">#C8FCD1</color>
+    <color name="piechart_col17">#d7fff309</color>
+    <color name="piechart_col18">#BFADEE</color>
+    <color name="piechart_col19">#24734F</color>
+    <color name="piechart_col20">#259ebc</color>
+    <color name="piechart_col21">#E65B0A</color>
+    <color name="piechart_col22">#BFADEE</color>
+
+    <color name="analytics_oc_color1">#372097</color>
+    <color name="analytics_oc_color2">#C8FCD1</color>
+    <color name="analytics_oc_color3">#666098</color>
+
+    <color name="highlight">#d7fff309</color><!--#ffffc215-->
+
+    <color name="endGradient">#BFADEE</color>
+    <color name="startGradient">#8837F7</color>
+
+    <color name="transperent">#b9000000</color>
+    <color name="help_textcolor">#ffa500</color>
+
+  <!--  <color name="chart_text_color">#fff309</color>--><!--fff309-->
+
+    <!--for passbook-->
+    <color name="circle_green">#17ae1c</color>
+    <color name="circle_red">#f9fc0303</color>
+    <color name="circle_purple">#8837F7</color>
+    <color name="circle_default">#F96129</color>
+
+
+    <color name="iosprogress_default_color">#00000000</color>
+    <color name="iosprogress_grey_color">#e2e2e2</color>
+    <color name="light_black">#101010</color>
+    <color name="text_secondary">#78787d</color>
+    <color name="text_primary">#f5f5ff</color>
+    <color name="text_primary_light">#bdbdc2</color>
+    <color name="header">#151515</color>
+    
+    <!--MF Dashboard-->
+    <color name="equity">#FA8010</color>
+    <color name="debt">#B5E61D</color>
+    <color name="othrs">#61DEAF</color>
+    <color name="xirr">#259ebc</color>
+    <color name="bottom_options_bg">#fbe4d5</color>
+
+    <!--Analysis-->
+    <color name="analytics_background">#000</color>
+    <color name="analytics_text_color">#fff</color>
+    <color name="nsecur_color">#1f236b</color>
+    <color name="child_background">#0c5bcc</color>
+    <color name="login_btn_back">#ff2d619d</color>
+
+    <color name="lineseperator">#6b6b6b</color>
+
+    <!--Fact sheet Gause View-->
+    <color name="centerHaldfMoonColor">#00ADF2</color>
+    <color name="lowHollowColor">#058441</color>
+    <color name="moderateLowHollowColor">#60AE34</color>
+    <color name="moderateHollowColor">#FFF001</color>
+    <color name="moderateHighHollowColor">#FD5E02</color>
+    <color name="highHollowColor">#FA1317</color>
+    <color name="black_deep">#010203</color>
+    <color name="cyan">#00FFFF</color>
+
+    <color name="nse_site_color">#3a2d7d</color>
+    <color name="bse_site_color">#0089d0</color>
+    <color name="dark_183d3d">#183D3D</color>
+</resources>

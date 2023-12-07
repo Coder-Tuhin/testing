@@ -1,0 +1,914 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40">
+
+        <LinearLayout
+            android:id="@+id/logo"
+            android:layout_width="@dimen/dimen_40"
+            android:layout_height="@dimen/dimen_40"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_30"
+                android:layout_height="@dimen/dimen_30"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ventura_icon" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dimen_10"
+            android:paddingRight="@dimen/dimen_10"
+            android:text="Features of Securities lending and borrowing scheme"
+            android:textColor="@color/text_primary"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_16" />
+        <LinearLayout
+            android:id="@+id/close"
+            android:layout_width="@dimen/dimen_40"
+            android:layout_height="@dimen/dimen_40"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="@dimen/dimen_30"
+                android:layout_height="@dimen/dimen_30"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/close" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dimen_6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10">
+                <ImageView
+                    android:layout_width="@dimen/dimen_12"
+                    android:layout_height="@dimen/dimen_12"
+                    android:layout_margin="@dimen/dimen_6"
+                    android:src="@drawable/dot" />
+                <view.TvRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tenure of lending and borrowing available upto a period of 12 months"
+                    android:textColor="@color/silver"
+                    android:textSize="@dimen/text_12"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10">
+                <ImageView
+                    android:layout_width="@dimen/dimen_12"
+                    android:layout_height="@dimen/dimen_12"
+                    android:layout_margin="@dimen/dimen_6"
+                    android:src="@drawable/dot" />
+                <view.TvRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A facility for placing early recall request for the securities lent is provided to the lender"
+                    android:textColor="@color/silver"
+                    android:textSize="@dimen/text_12"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10">
+                <ImageView
+                    android:layout_width="@dimen/dimen_12"
+                    android:layout_height="@dimen/dimen_12"
+                    android:layout_margin="@dimen/dimen_6"
+                    android:src="@drawable/dot" />
+                <view.TvRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The transactions are based on fixed monthly tenures with specified reverse leg settlement dates and the tenure ranges from 1 month up to 12 months."
+                    android:textColor="@color/silver"
+                    android:textSize="@dimen/text_12"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10">
+                <ImageView
+                    android:layout_width="@dimen/dimen_12"
+                    android:layout_height="@dimen/dimen_12"
+                    android:layout_margin="@dimen/dimen_6"
+                    android:src="@drawable/dot" />
+                <view.TvRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The specified reverse leg settlement date is the first Thursday of the corresponding month. Each reverse leg settlement date is assigned a specific series number. Majorly securities traded in F&amp;O segment are eligible for lending &amp; borrowing under the scheme."
+                    android:textColor="@color/silver"
+                    android:textSize="@dimen/text_12"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10">
+                <ImageView
+                    android:layout_width="@dimen/dimen_12"
+                    android:layout_height="@dimen/dimen_12"
+                    android:layout_margin="@dimen/dimen_6"
+                    android:src="@drawable/dot" />
+                <view.TvRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Two separate series of contracts are made available as given below:-"
+                    android:textColor="@color/silver"
+                    android:textSize="@dimen/text_12"
+                    />
+            </LinearLayout>
+            <view.TvRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dimen_20"
+                android:paddingTop="@dimen/dimen_10"
+                android:text="A.Contracts which shall continue to be mandatorily foreclosed in the event of AGM/EGM"
+                android:textColor="@color/silver"
+                android:textSize="@dimen/text_12"
+                />
+            <view.TvRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dimen_20"
+                android:paddingTop="@dimen/dimen_10"
+                android:text=" B. Contracts which shall not be foreclosed in the event of AGM/EGM."
+                android:textColor="@color/silver"
+                android:textSize="@dimen/text_12"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:background="@color/popupback"
+                android:padding="@dimen/dimen_4">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Sr."
+                    android:textColor="@color/text_primary_light"
+                    android:textSize="@dimen/text_12" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Series (A)"
+                    android:textColor="@color/text_primary_light"
+                    android:textSize="@dimen/text_12" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Series (B)"
+                    android:textColor="@color/text_primary_light"
+                    android:textSize="@dimen/text_12" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:gravity="right"
+                    android:text="ROLLOVER Series  (A)"
+                    android:textColor="@color/text_primary_light"
+                    android:textSize="@dimen/text_12" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:gravity="right"
+                    android:text="ROLLOVER Series  (B)"
+                    android:textColor="@color/text_primary_light"
+                    android:textSize="@dimen/text_12" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Month"
+                    android:textColor="@color/text_primary_light"
+                    android:textSize="@dimen/text_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_10"
+                android:padding="@dimen/dimen_4">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="1"
+                    android:gravity="right"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="X1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:gravity="right"
+                    android:text="JF"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:gravity="right"
+                    android:text="J1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Jan"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:background="@color/popupback" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_10"
+                android:padding="@dimen/dimen_4">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="2"
+                    android:gravity="right"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="X2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:gravity="right"
+                    android:text="FM"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:gravity="right"
+                    android:text="F1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Feb"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:background="@color/popupback" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_10"
+                android:padding="@dimen/dimen_4">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="3"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="3"
+                    android:gravity="right"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="X3"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:gravity="right"
+                    android:text="MA"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:gravity="right"
+                    android:text="M1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Mar"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:background="@color/popupback" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_10"
+                android:padding="@dimen/dimen_4">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="4"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="4"
+                    android:gravity="right"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="X4"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:gravity="right"
+                    android:text="AM"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:gravity="right"
+                    android:text="A1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Apr"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:background="@color/popupback" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_10"
+                android:padding="@dimen/dimen_4">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="5"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="5"
+                    android:gravity="right"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="X5"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:gravity="right"
+                    android:text="MJ"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:gravity="right"
+                    android:text="Y1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="May"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:background="@color/popupback" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_10"
+                android:padding="@dimen/dimen_4">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="6"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="6"
+                    android:gravity="right"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="X6"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:gravity="right"
+                    android:text="JL"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:gravity="right"
+                    android:text="U1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Jun"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:background="@color/popupback" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_10"
+                android:padding="@dimen/dimen_4">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="7"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="7"
+                    android:gravity="right"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="X7"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:gravity="right"
+                    android:text="LA"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:gravity="right"
+                    android:text="L1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Jul"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:background="@color/popupback" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_10"
+                android:padding="@dimen/dimen_4">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="8"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="8"
+                    android:gravity="right"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="X8"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:gravity="right"
+                    android:text="AS"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:gravity="right"
+                    android:text="G1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Aug"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:background="@color/popupback" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_10"
+                android:padding="@dimen/dimen_4">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="9"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="9"
+                    android:gravity="right"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="X9"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:gravity="right"
+                    android:text="SO"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:gravity="right"
+                    android:text="S1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Sep"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:background="@color/popupback" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_10"
+                android:padding="@dimen/dimen_4">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="10"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="10"
+                    android:gravity="right"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="XO"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:gravity="right"
+                    android:text="ON"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:gravity="right"
+                    android:text="O1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Oct"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:background="@color/popupback" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_10"
+                android:padding="@dimen/dimen_4">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="11"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="11"
+                    android:gravity="right"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="XN"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:gravity="right"
+                    android:text="ND"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:gravity="right"
+                    android:text="N1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Nov"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:background="@color/popupback" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_10"
+                android:padding="@dimen/dimen_4">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="12"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="12"
+                    android:gravity="right"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="XD"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:gravity="right"
+                    android:text="DJ"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:gravity="right"
+                    android:text="D1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Dec"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

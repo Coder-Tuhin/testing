@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+    <ImageView
+        android:id="@+id/handImage"
+        android:layout_width="@dimen/dimen_50"
+        android:layout_height="@dimen/dimen_50"
+        android:src="@drawable/one_finger"
+        android:layout_marginTop="175dp"
+        android:layout_marginLeft="40dp"
+        />
+    <TextView
+        android:id="@+id/handText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/help_textcolor"
+        android:layout_marginBottom="360dp"
+        android:layout_marginTop="@dimen/dimen_250"
+        android:layout_marginLeft="95dp"
+        android:text="Click on the scheme name to view the details of the Scheme."/>
+
+    <RelativeLayout
+        android:id="@+id/button_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <view.TvRegular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6"
+        android:background="@color/header"
+        android:padding="@dimen/dimen_6"
+        android:text="Initial Public Offering (IPO)"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/text_16"
+        android:textStyle="bold" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_4"
+                android:layout_marginTop="@dimen/dimen_6"
+                android:layout_marginRight="@dimen/dimen_4"
+                android:nestedScrollingEnabled="false"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+            <LinearLayout
+                android:id="@+id/noipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:background="@color/black"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <view.TvRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_10"
+                    android:paddingTop="@dimen/dimen_10"
+                    android:text="@string/noipo"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_15" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dimen_10"
+                    android:paddingTop="@dimen/dimen_10">
+
+                    <view.TvRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="UPI ID"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/text_14" />
+
+                    <LinearLayout
+                        android:id="@+id/addUpiNoIPO"
+                        android:layout_width="@dimen/dimen_36"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dimen_10"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/actionIV"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:contentDescription="@string/DEFAULT_DESCRIPTION"
+                            android:src="@mipmap/plus" />
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <include
+                        android:id="@+id/upiSpinnerNoIPO"
+                        layout="@layout/mf_spinner_round"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen_30"
+                        android:layout_weight="6" />
+                    <!--android:layout_width="140dp"-->
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/noteLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:background="@color/black"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <view.TvRegular
+                    android:id="@+id/banklist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_10"
+                    android:paddingTop="@dimen/dimen_10"
+                    android:text="@string/banklist"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_15" />
+
+                <view.TvRegular
+                    android:id="@+id/notetitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dimen_10"
+                    android:text="@string/iponotetitle"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_15"
+                    android:visibility="visible" />
+                <view.TvRegular
+                    android:id="@+id/notetitle1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dimen_10"
+                    android:text="@string/iponotetitle1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_15"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

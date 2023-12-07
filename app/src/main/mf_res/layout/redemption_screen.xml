@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <view.TvRegular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header"
+        android:padding="@dimen/dimen_4"
+        android:text="Redemption"
+        android:textStyle="bold|italic"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/text_16" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header"
+        android:gravity="bottom"
+        android:padding="@dimen/dimen_4">
+
+        <view.TvRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scheme_name"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/text_14" />
+
+        <view.TvLarge
+            android:id="@+id/schemeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_4"
+            android:text=""
+            android:textColor="@color/ventura_color"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_16" />
+    </LinearLayout>
+    <!--
+        <include layout="@layout/mf_spinner"
+            android:id="@+id/schemeNameSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40" />
+    -->
+
+    <view.TvRegular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_4"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:text="@string/Open_ended_equity"
+        android:textColor="@color/text_secondary"
+        android:textSize="@dimen/text_13"
+        android:textStyle="italic" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_36"
+                android:id="@+id/folioLayout"
+                android:orientation="horizontal">
+                <view.TvRegular
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/dimen_4"
+                    android:gravity="center_vertical|right"
+                    android:text="Folio: "
+                    android:textColor="@color/text_secondary"
+                    android:textSize="@dimen/text_13"/>
+
+                <include layout="@layout/mf_spinner"
+                    android:id="@+id/folioSpinner"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mf_layer_bg"
+                android:padding="@dimen/dimen_6"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:padding="@dimen/dimen_4">
+
+                    <view.TvRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Current_value"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="@dimen/text_14" />
+
+                    <view.TvLarge
+                        android:id="@+id/currentvalue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_4"
+                        android:text="0.00"
+                        android:textColor="@color/text_primary"
+                        android:textSize="@dimen/text_16" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:padding="@dimen/dimen_4">
+                    <view.TvRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Total_no_of_units"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="@dimen/text_14" />
+
+                    <view.TvLarge
+                        android:id="@+id/totalunits"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_4"
+                        android:text="0.000"
+                        android:textColor="@color/text_primary"
+                        android:textSize="@dimen/text_16" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:padding="@dimen/dimen_4">
+                    <view.TvRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/avl_units"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="@dimen/text_14" />
+
+                    <view.TvLarge
+                        android:id="@+id/avlunits"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_4"
+                        android:text="0.000"
+                        android:textColor="@color/text_primary"
+                        android:textSize="@dimen/text_16" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_6">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <view.TvRegular
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/text_secondary"
+                        android:text="Redeem in"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/text_14"/>
+                    <RadioGroup
+                        android:id="@+id/unitamountRG"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:checkedButton="@id/unitsRd"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/unitsRd"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:text=" Units"
+                            android:textSize="@dimen/text_13"
+                            android:checked="true"
+                            android:buttonTint="@color/ventura_color"
+                            android:textColor="@color/white" />
+
+                        <RadioButton
+                            android:id="@+id/amountRd"
+                            android:buttonTint="@color/ventura_color"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:text=" Amount"
+                            android:checked="false"
+                            android:textSize="@dimen/text_13"
+                            android:textColor="@color/white" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_6">
+                    <view.TvRegular
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/text_secondary"
+                        android:text="How Much?"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/text_14"/>
+                    <RadioGroup
+                        android:id="@+id/allpartialRG"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:checkedButton="@id/allRd"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/allRd"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:text=" All"
+                            android:textSize="@dimen/text_13"
+                            android:checked="true"
+                            android:buttonTint="@color/ventura_color"
+                            android:textColor="@color/white" />
+
+                        <RadioButton
+                            android:id="@+id/partialRd"
+                            android:buttonTint="@color/ventura_color"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:text=" Partial"
+                            android:textSize="@dimen/text_13"
+                            android:checked="false"
+                            android:textColor="@color/white" />
+                    </RadioGroup>
+                </LinearLayout>
+                <com.google.android.flexbox.FlexboxLayout
+                    android:id="@+id/balanceCreditLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:flexWrap="wrap"
+                    app:alignItems="stretch"
+                    app:alignContent="stretch"
+                    android:layout_marginTop="@dimen/dimen_6">
+                    <view.TvRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_secondary"
+                        android:text="Do you want redemption Payout to be transfered to your bank A/c?"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/text_14"/>
+                </com.google.android.flexbox.FlexboxLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_6"
+                android:background="@drawable/mf_layer_bg">
+                <view.TvRegular
+                    android:id="@+id/toRedeem"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dimen_4"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/Units_to_redeem"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="@dimen/text_14" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dimen_36"
+                    android:layout_weight="1"
+                    android:gravity="center">
+                    <view.EtRegular
+                        android:id="@+id/toRedeemEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/mf_et_border"
+                        android:gravity="center"
+                        android:hint="Enter Units"
+                        android:text=""
+                        android:inputType="numberDecimal"
+                        android:maxLength="15"
+                        android:imeOptions="actionDone"
+                        android:layout_marginRight="@dimen/dimen_4"
+                        android:paddingLeft="@dimen/dimen_6"
+                        android:paddingRight="@dimen/dimen_6"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/text_secondary"
+                        android:textSize="@dimen/text_16" >
+                        <requestFocus/>
+                    </view.EtRegular>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bankdetails_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_Bank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:text=""/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/termcondChkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/text_primary"
+                    android:text="I/ We hereby agree with "
+                    android:textColor="@color/text_secondary" />
+
+                <view.TvLarge
+                    android:id="@+id/termcondclick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/terms_conditions"
+                    android:textColor="@color/colorAccent" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen_4">
+
+                <view.TvLarge
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" as well as "
+                    android:textColor="@color/text_secondary" />
+
+                <view.TvLarge
+                    android:id="@+id/cuttofclick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Cut off Timings "
+                    android:textColor="@color/colorAccent" />
+
+                <view.TvLarge
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=" for applicability "
+                    android:textColor="@color/text_secondary" />
+
+            </LinearLayout>
+            <view.TvLarge
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="of NAV."
+                android:textColor="@color/text_secondary" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_48"
+                android:layout_marginTop="@dimen/dimen_20">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <view.TvLarge
+                    android:id="@+id/redeemnowbtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/mf_button_bg"
+                    android:gravity="center"
+                    android:text="REDEEM NOW"
+                    android:textColor="@color/text_primary"
+                    android:textSize="@dimen/text_18" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:gravity="bottom">
+                <view.TvRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Last_nav"
+                    android:textSize="@dimen/text_14"
+                    android:textColor="@color/text_secondary"/>
+                <view.TvRegular
+                    android:id="@+id/navvalue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text=""
+                    android:textSize="@dimen/text_16"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_10"
+                android:paddingBottom="@dimen/dimen_6"
+                android:gravity="bottom">
+                <view.TvRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Exit_load"
+                    android:textSize="@dimen/text_14"
+                    android:textColor="@color/text_secondary"/>
+                <view.TvRegular
+                    android:id="@+id/exitloadvalue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text=""
+                    android:textSize="@dimen/text_16"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

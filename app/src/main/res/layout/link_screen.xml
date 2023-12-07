@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/item_height"
+    android:background="@color/black">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/item_height"
+                    android:layout_marginRight="@dimen/item_height"
+                    android:orientation="vertical">
+                        <LinearLayout
+                            android:id="@+id/equitylink"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="visible"
+                            android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/nselink_textview"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/common_margine"
+                                    android:autoLink="web"
+                                    android:gravity="center"
+                                    android:text="NATIONAL STOCK EXCHANGE"
+                                    android:textSize="@dimen/common_textsize"
+                                    android:textColor="@android:color/white"
+                                    android:background="@drawable/border" />
+
+                                <TextView
+                                    android:id="@+id/bselink_textview"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/common_margine"
+                                    android:padding="@dimen/common_margine"
+                                    android:autoLink="web"
+                                    android:gravity="center"
+                                    android:text="BOMBAY STOCK EXCHANGE"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="@dimen/common_textsize"
+                                    android:background="@drawable/border"/>
+                                <TextView
+                                    android:id="@+id/sebilink_textview"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/common_margine"
+                                    android:padding="@dimen/common_margine"
+                                    android:autoLink="web"
+                                    android:gravity="center"
+                                    android:text="SEBI"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="@dimen/common_textsize"
+                                    android:background="@drawable/border"/>
+                                <TextView
+                                    android:id="@+id/vhomelink_textview"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/common_margine"
+                                    android:padding="@dimen/common_margine"
+                                    android:autoLink="web"
+                                    android:gravity="center"
+                                    android:text="VENTURA HOME"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="@dimen/common_textsize"
+                                    android:background="@drawable/border" />
+                                <TextView
+                                    android:id="@+id/ipnlink_textview"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/common_margine"
+                                    android:padding="@dimen/common_margine"
+                                    android:autoLink="web"
+                                    android:gravity="center"
+                                    android:text="INVESTOR PROTECTION NSE"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="@dimen/common_textsize"
+                                    android:background="@drawable/border"/>
+                                <TextView
+                                    android:id="@+id/ipblink_textview"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/common_margine"
+                                    android:padding="@dimen/common_margine"
+                                    android:autoLink="web"
+                                    android:gravity="center"
+                                    android:text="INVESTOR PROTECTION BSE"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="@dimen/common_textsize"
+                                    android:background="@drawable/border"/>
+                                <TextView
+                                    android:id="@+id/usermanuallink_textview"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/common_margine"
+                                    android:padding="@dimen/common_margine"
+                                    android:autoLink="web"
+                                    android:gravity="center"
+                                    android:text="DOWNLOAD USER MANUAL"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="@dimen/common_textsize"
+                                    android:background="@drawable/border"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/commoditylink"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:orientation="vertical">
+                                <TextView
+                                    android:id="@+id/venturalink_textview"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/common_margine"
+                                    android:autoLink="web"
+                                    android:gravity="center"
+                                    android:text="Ventura Securities Ltd."
+                                    android:textSize="@dimen/common_textsize"
+                                    android:textColor="@android:color/white"
+                                    android:background="@drawable/border" />
+
+                                <TextView
+                                    android:id="@+id/mcxlink_textview"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/common_margine"
+                                    android:padding="@dimen/common_margine"
+                                    android:autoLink="web"
+                                    android:gravity="center"
+                                    android:text="Multi Commodity Exchange of India Ltd."
+                                    android:textColor="@android:color/white"
+                                    android:textSize="@dimen/common_textsize"
+                                    android:background="@drawable/border"/>
+                                <TextView
+                                    android:id="@+id/ncdexlink_textview"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/common_margine"
+                                    android:padding="@dimen/common_margine"
+                                    android:autoLink="web"
+                                    android:gravity="center"
+                                    android:text="National Commodity and Derivatives Exchange Ltd."
+                                    android:textColor="@android:color/white"
+                                    android:textSize="@dimen/common_textsize"
+                                    android:background="@drawable/border"/>
+                                <TextView
+                                    android:id="@+id/sebiclink_textview"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/common_margine"
+                                    android:padding="@dimen/common_margine"
+                                    android:autoLink="web"
+                                    android:gravity="center"
+                                    android:text="SEBI"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="@dimen/common_textsize"
+                                    android:background="@drawable/border" />
+                                <TextView
+                                    android:id="@+id/mcxmarginlink_textview"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/common_margine"
+                                    android:padding="@dimen/common_margine"
+                                    android:autoLink="web"
+                                    android:gravity="center"
+                                    android:text="MCX Margin file"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="@dimen/common_textsize"
+                                    android:background="@drawable/border"/>
+                                <TextView
+                                    android:id="@+id/ncdexmarginlink_textview"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/common_margine"
+                                    android:padding="@dimen/common_margine"
+                                    android:autoLink="web"
+                                    android:gravity="center"
+                                    android:text="NCDEX Margin file"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="@dimen/common_textsize"
+                                    android:background="@drawable/border"/>
+                                <TextView
+                                    android:id="@+id/pivotmcxlink_textview"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/common_margine"
+                                    android:padding="@dimen/common_margine"
+                                    android:autoLink="web"
+                                    android:gravity="center"
+                                    android:text="Pivot Table Mcx"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="@dimen/common_textsize"
+                                    android:background="@drawable/border"/>
+                                <TextView
+                                    android:id="@+id/pivotncdexlink_textview"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/common_margine"
+                                    android:padding="@dimen/common_margine"
+                                    android:autoLink="web"
+                                    android:gravity="center"
+                                    android:text="Pivot Table  Ncdex"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="@dimen/common_textsize"
+                                    android:background="@drawable/border"/>
+                                <TextView
+                                    android:id="@+id/dailypointerlink_textview"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/common_margine"
+                                    android:padding="@dimen/common_margine"
+                                    android:autoLink="web"
+                                    android:gravity="center"
+                                    android:text="Daily Pointer"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="@dimen/common_textsize"
+                                    android:background="@drawable/border"/>
+                        </LinearLayout>
+                </LinearLayout>
+        </ScrollView>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/valuation"
+        android:title="Valuation" />
+    <item
+        android:id="@+id/mkt_depth"
+        android:title="Market Depth" />
+    <item
+        android:id="@+id/view_charts"
+        android:title="View Charts" />
+    <item
+        android:id="@+id/latest_result"
+        android:title="Latest Result" />
+    <item
+        android:id="@+id/marginDetails"
+        android:title="Margin Details" />
+    <item
+        android:id="@+id/set_script_alert"
+        android:title="Set Scrip Alert" />
+    <item
+        android:id="@+id/delete"
+        android:title="Delete" />
+</menu>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/helpFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transperent"/>
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/btnGot"
+            android:layout_width="@dimen/dimen_100"
+            android:layout_height="@dimen/item_height"
+            android:background="@drawable/button_got"
+            android:text="GOT IT"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dimen_18"
+            android:layout_marginLeft="@dimen/dimen_30"
+            android:layout_marginRight="@dimen/dimen_30"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

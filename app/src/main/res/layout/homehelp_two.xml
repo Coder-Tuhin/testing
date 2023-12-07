@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/demo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"> <!-- This is alpha 68/255, black -->
+
+    <RelativeLayout
+        android:id="@+id/relative_Content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/gridarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/help_arrow_right" />
+
+        <TextView
+            android:id="@+id/gridarrowtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/gridarrow"
+            android:layout_marginRight="45dp"
+            android:text="\tClick the Grid Button to \nchange view from List to Grid"
+            android:textColor="@color/help_textcolor"
+            android:textSize="17sp" />
+
+
+        <TextView
+            android:id="@+id/liveText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100dp"
+            android:layout_marginLeft="50dp"
+            android:text="Live 'Action Watch' displays \nHighs and Lows as they happen"
+            android:textColor="@color/help_textcolor"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/liveImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/event_circle" />
+        <ImageView
+            android:id="@+id/pointingtocircleimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_down"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="230dp"
+            android:layout_marginBottom="50dp"/>
+
+        <RelativeLayout
+            android:id="@+id/button_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"></RelativeLayout>
+        <!-- Contents of your overlay layout -->
+    </RelativeLayout>
+
+</LinearLayout>

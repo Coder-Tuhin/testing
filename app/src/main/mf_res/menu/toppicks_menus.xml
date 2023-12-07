@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/purchase"
+        android:visible="false"
+        android:title="Purchase" />
+    <item
+        android:id="@+id/sip"
+        android:visible="false"
+        android:title="SIP" />
+</menu>

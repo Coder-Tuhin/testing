@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RadioGroup
+            android:id="@+id/homeRDgroup"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_36"
+            android:background="@color/black"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/watchRDbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/hometab_drawable"
+                android:button="@android:color/transparent"
+                android:checked="true"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimen_10"
+                android:paddingRight="@dimen/dimen_10"
+                android:text="WATCH"
+                android:textColor="@drawable/hometab_textcolor"
+                android:textSize="@dimen/common_textsize"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/tradeRDbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/dimen_10"
+                android:paddingRight="@dimen/dimen_10"
+                android:background="@drawable/hometab_drawable"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="REPORTS"
+                android:textColor="@drawable/hometab_textcolor"
+                android:textSize="@dimen/common_textsize"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/optionRDbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/dimen_10"
+                android:paddingRight="@dimen/dimen_10"
+                android:background="@drawable/hometab_drawable"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="OPTIONS"
+                android:textColor="@drawable/hometab_textcolor"
+                android:textSize="@dimen/common_textsize"
+                android:textStyle="bold" />
+            <RadioButton
+                android:id="@+id/mywealthRDbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/dimen_10"
+                android:paddingRight="@dimen/dimen_10"
+                android:background="@drawable/hometab_drawable"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="WEALTH"
+                android:textColor="@drawable/hometab_textcolor"
+                android:textSize="@dimen/common_textsize"
+                android:textStyle="bold" />
+            <RadioButton
+                android:id="@+id/moversRDbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/dimen_10"
+                android:paddingRight="@dimen/dimen_10"
+                android:background="@drawable/hometab_drawable"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="MOVERS"
+                android:textColor="@drawable/hometab_textcolor"
+                android:textSize="@dimen/common_textsize"
+                android:textStyle="bold" />
+            <RadioButton
+                android:id="@+id/slbsRDbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/dimen_10"
+                android:paddingRight="@dimen/dimen_10"
+                android:background="@drawable/hometab_drawable"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="SLBS"
+                android:textColor="@drawable/hometab_textcolor"
+                android:textSize="@dimen/common_textsize"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/bseRDbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/dimen_10"
+                android:paddingRight="@dimen/dimen_10"
+                android:background="@drawable/hometab_drawable"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="BSE"
+                android:textColor="@drawable/hometab_textcolor"
+                android:textSize="@dimen/common_textsize"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/nseRDbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/dimen_10"
+                android:paddingRight="@dimen/dimen_10"
+                android:background="@drawable/hometab_drawable"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="NSE"
+                android:textColor="@drawable/hometab_textcolor"
+                android:textSize="@dimen/common_textsize"
+                android:textStyle="bold"
+                android:visibility="gone" />
+            <RadioButton
+                android:id="@+id/mcxRDbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/dimen_10"
+                android:paddingRight="@dimen/dimen_10"
+                android:background="@drawable/hometab_drawable"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="MCX"
+                android:textColor="@drawable/hometab_textcolor"
+                android:textSize="@dimen/common_textsize"
+                android:textStyle="bold"
+                android:visibility="gone" />
+            <RadioButton
+                android:id="@+id/ncdexRDbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/dimen_10"
+                android:paddingRight="@dimen/dimen_10"
+                android:background="@drawable/hometab_drawable"
+                android:button="@android:color/transparent"
+                android:gravity="center"
+                android:text="NCDEX"
+                android:textColor="@drawable/hometab_textcolor"
+                android:textSize="@dimen/common_textsize"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </RadioGroup>
+    </LinearLayout>
+</HorizontalScrollView>

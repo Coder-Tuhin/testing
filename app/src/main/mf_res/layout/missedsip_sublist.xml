@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <view.TvRegular
+            android:id="@+id/installment_date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:textSize="@dimen/text_17"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_weight="1"/>
+        <view.TvRegular
+            android:id="@+id/ammount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="2000"
+            android:textSize="@dimen/text_17"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_weight="1"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/ventura_color"
+                style="@style/Widget.AppCompat.CompoundButton.CheckBox"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

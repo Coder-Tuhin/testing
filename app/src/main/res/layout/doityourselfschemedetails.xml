@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="AXIS MUTUAL FUND"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="14dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_marginLeft="4dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginLeft="6dp"
+            android:text="35.750"
+            android:textSize="24dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:text="0.48"
+            android:textSize="14dp"
+            android:textColor="@color/green1" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="(10.2%)"
+            android:textSize="14dp"
+            android:textColor="@color/green1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="(NAV as on 16Apr18)"
+            android:gravity="right"
+            android:textSize="14dp"
+            android:textColor="@color/spinner_divider" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/spinner_divider"/>
+    <RadioGroup android:id="@+id/rdGrp"
+        android:layout_width="fill_parent"
+        android:layout_height="36dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        android:background="@color/black">
+        <RadioButton
+            android:id="@+id/overView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:checked="true"
+            android:text="Overview"
+            android:textSize="@dimen/common_textsize"
+            android:background="@drawable/hometab_drawable"
+            android:textColor="@drawable/hometab_textcolor" />
+        <RadioButton
+            android:id="@+id/portfolio"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:text="Portfolio"
+            android:textSize="@dimen/common_textsize"
+            android:background="@drawable/hometab_drawable"
+            android:textColor="@drawable/hometab_textcolor"/>
+    </RadioGroup>
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/schemeDetail">
+</FrameLayout>
+
+</LinearLayout>

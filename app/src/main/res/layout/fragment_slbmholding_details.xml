@@ -1,0 +1,217 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_10"
+                android:gravity="bottom"
+                android:background="@color/light_black">
+                <view.TvRegular
+                    android:id="@+id/textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Holding:"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="@dimen/text_15" />
+                <view.TvRegular
+                    android:id="@+id/scripName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:textColor="@color/text_primary"
+                    android:textSize="@dimen/text_15" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/square_bg"
+                android:layout_margin="@dimen/dimen_10"
+                android:padding="@dimen/dimen_6">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom">
+                    <view.TvRegular
+                        android:id="@+id/bfTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="B/F Qty:"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="@dimen/text_15" />
+
+                    <view.TvRegular
+                        android:id="@+id/bfQty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/text_primary"
+                        android:textSize="@dimen/text_15" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_2"
+                    android:gravity="bottom">
+                    <view.TvRegular
+                        android:id="@+id/netQtyTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Net Qty:"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="@dimen/text_15" />
+
+                    <view.TvRegular
+                        android:id="@+id/netQty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/text_primary"
+                        android:textSize="@dimen/text_15" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_2"
+                    android:gravity="bottom">
+                    <view.TvRegular
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="LTP:"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="@dimen/text_15" />
+
+                    <view.TvRegular
+                        android:id="@+id/ltp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/text_primary"
+                        android:textSize="@dimen/text_15" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_2"
+                    android:gravity="bottom">
+                    <view.TvRegular
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Borrow/Lend:"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="@dimen/text_15" />
+
+                    <view.TvRegular
+                        android:id="@+id/netOblization"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/text_primary"
+                        android:textSize="@dimen/text_15" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <view.TvRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note :- Lending fees (Payable+Receivable) will be calculated at the EOD.\n\nEffect of SLBS fees will be reflected in Accounts on T+1 basis."
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:textColor="@color/text_secondary"
+                android:textSize="@dimen/text_15" />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/light_black"
+        android:padding="@dimen/dimen_10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/initPage"
+                android:layout_width="@dimen/dimen_40"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/DEFAULT_DESCRIPTION"
+                android:src="@drawable/img_backbtn" />
+
+            <ImageButton
+                android:id="@+id/prevBtn"
+                android:layout_width="@dimen/dimen_40"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:background="@null"
+                android:contentDescription="@string/DEFAULT_DESCRIPTION"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_prevbtn" />
+
+            <view.TvRegular
+                android:id="@+id/pageCount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimen_10"
+                android:paddingRight="@dimen/dimen_10"
+                android:text="1/2"
+                android:textColor="@color/white" />
+
+            <ImageButton
+                android:id="@+id/nextBtn"
+                android:layout_width="@dimen/dimen_40"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/DEFAULT_DESCRIPTION"
+                android:src="@drawable/img_nextbtn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/squareOff"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_40"
+            android:background="@drawable/square_bg">
+            <view.TvRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/dimen_10"
+                android:paddingRight="@dimen/dimen_10"
+                android:text="RECALL"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_14" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

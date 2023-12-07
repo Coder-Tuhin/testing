@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:background="@color/black">
+
+
+    <view.TvRegular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/ventura_color"
+        android:text="Let's Change your PIN"
+        android:textSize="@dimen/dimen_20"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/dimen_20"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TIL_oldpassword"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:theme="@style/TextInputLayoutStyle"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintEnabled="true"
+        android:clickable="false"
+        android:textColorHint="@color/ventura_color"
+        app:boxStrokeColor="@drawable/selector_box_stroke_color"
+        app:boxStrokeWidth="@dimen/dimen_1"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_marginRight="@dimen/dimen_20"
+        app:expandedHintEnabled="false"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleDrawable="@drawable/eye_password"
+        app:errorIconDrawable="@null"
+        app:passwordToggleTint="@color/white"
+        app:errorTextColor="@color/highlight"
+        android:hint="Enter Old PIN">
+
+        <!--this is the actual edit text which takes the input-->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_oldpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:longClickable="false"
+            android:maxLength="4"
+            android:inputType="numberPassword|number"
+            android:textColor="@color/white"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TIL_newpassword"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:theme="@style/TextInputLayoutStyle"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintEnabled="true"
+        android:clickable="false"
+        android:textColorHint="@color/ventura_color"
+        app:boxStrokeColor="@drawable/selector_box_stroke_color"
+        app:boxStrokeWidth="@dimen/dimen_1"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_marginRight="@dimen/dimen_20"
+        app:expandedHintEnabled="false"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleDrawable="@drawable/eye_password"
+        app:errorIconDrawable="@null"
+        app:passwordToggleTint="@color/white"
+        app:errorTextColor="@color/highlight"
+        android:hint="Enter New PIN">
+
+        <!--this is the actual edit text which takes the input-->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_newpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:longClickable="false"
+            android:maxLength="4"
+            android:inputType="numberPassword|number"
+            android:textColor="@color/white"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TIL_confirmpass"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:theme="@style/TextInputLayoutStyle"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintEnabled="true"
+        android:clickable="false"
+        android:textColorHint="@color/ventura_color"
+        app:boxStrokeColor="@drawable/selector_box_stroke_color"
+        app:boxStrokeWidth="@dimen/dimen_1"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_marginRight="@dimen/dimen_20"
+        app:expandedHintEnabled="false"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleDrawable="@drawable/eye_password"
+        app:errorIconDrawable="@null"
+        app:passwordToggleTint="@color/white"
+        app:errorTextColor="@color/highlight"
+        android:hint="Confirm New PIN">
+
+        <!--this is the actual edit text which takes the input-->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/confirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:maxLength="4"
+            android:longClickable="false"
+            android:inputType="numberPassword|number"
+            android:textColor="@color/white"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/btn_Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/text_45"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:background="@drawable/bg_oange_corner_8dp"
+        android:text="Submit"
+        android:gravity="center"
+        android:textSize="@dimen/text_20"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:paddingStart="@dimen/item_height"
+        android:paddingEnd="@dimen/item_height"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

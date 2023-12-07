@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/research_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_44"
+            android:layout_gravity="center_horizontal"
+            android:overScrollMode="never"
+            app:tabBackground="@color/light_black"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/white"
+            app:tabIndicatorHeight="2dp"
+            app:tabMode="fixed"
+            android:layout_marginTop="@dimen/dimen_4"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextColor="@color/silver" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_10" />
+                <LinearLayout
+                    android:id="@+id/mainBody"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"/>
+                <LinearLayout
+                    android:id="@+id/getMoreDataLinear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dimen_20"
+                    android:background="#101010"
+                    android:visibility="gone"
+                    android:gravity="center">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/getMoreData"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dimen_40"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dimen_10">
+                        <view.TvRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="More Data"
+                            android:paddingLeft="@dimen/dimen_20"
+                            android:paddingRight="@dimen/dimen_20"
+                            android:textColor="@color/ventura_color"
+                            android:textSize="@dimen/text_16"
+                            android:gravity="center"/>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/customSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#101010"
+                    android:visibility="gone"
+                    android:padding="@dimen/dimen_20">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <view.TvRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Company Name"
+                            android:textColor="@color/white" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_36"
+                            android:layout_marginTop="@dimen/dimen_4"
+                            android:background="@drawable/bg_stroke">
+
+                            <view.EtRegular
+                                android:id="@+id/companyName"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="Enter Company Name"
+                                android:maxLength="50"
+                                android:singleLine="true"
+                                android:paddingLeft="@dimen/dimen_10"
+                                android:paddingRight="@dimen/dimen_10"
+                                android:inputType="textCapWords|textNoSuggestions"
+                                android:background="@null"
+                                android:textColor="@color/white"
+                                android:textColorHint="@color/gray_color"
+                                android:textSize="@dimen/text_14" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/dimen_10">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/dimen_10"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <view.TvRegular
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="From Date"
+                                android:textColor="@color/white" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dimen_36"
+                                android:layout_marginTop="@dimen/dimen_4"
+                                android:background="@drawable/bg_stroke">
+
+                                <view.EtRegular
+                                    android:id="@+id/etFromDate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:hint="dd/mm/yyyy"
+                                    android:maxLength="10"
+                                    android:inputType="number|textNoSuggestions"
+                                    android:background="@null"
+                                    android:textColor="@color/white"
+                                    android:textColorHint="@color/gray_color"
+                                    android:textSize="@dimen/text_14" />
+
+                                <LinearLayout
+                                    android:id="@+id/fromCalBtn"
+                                    android:layout_width="@dimen/dimen_40"
+                                    android:layout_height="match_parent"
+                                    android:onClick="clickResearchCalender"
+                                    android:gravity="center">
+                                    <ImageView
+                                        android:layout_width="@dimen/dimen_22"
+                                        android:layout_height="@dimen/dimen_22"
+                                        android:contentDescription="@string/DEFAULT_DESCRIPTION"
+                                        android:src="@drawable/calender" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dimen_10"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <view.TvRegular
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="To Date"
+                                android:textColor="@color/white" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dimen_36"
+                                android:layout_marginTop="@dimen/dimen_4"
+                                android:background="@drawable/bg_stroke">
+
+                                <view.EtRegular
+                                    android:id="@+id/etTodate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:digits="01234567890/"
+                                    android:gravity="center"
+                                    android:hint="dd/mm/yyyy"
+                                    android:background="@null"
+                                    android:inputType="number|textNoSuggestions"
+                                    android:maxLength="10"
+                                    android:textColor="@color/white"
+                                    android:textColorHint="@color/gray_color"
+                                    android:textSize="@dimen/text_14" />
+
+                                <LinearLayout
+                                    android:id="@+id/toCalBtn"
+                                    android:layout_width="@dimen/dimen_40"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="right"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/dimen_22"
+                                        android:layout_height="@dimen/dimen_22"
+                                        android:contentDescription="@string/DEFAULT_DESCRIPTION"
+                                        android:src="@drawable/calender" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dimen_40"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dimen_10">
+                        <view.TvRegular
+                            android:id="@+id/fetchDetails"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Fetch Details"
+                            android:paddingLeft="@dimen/dimen_20"
+                            android:paddingRight="@dimen/dimen_20"
+                            android:textColor="@color/ventura_color"
+                            android:textSize="@dimen/text_16"
+                            android:gravity="center"/>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:fitsSystemWindows="true">
+    <include layout="@layout/custom_spinner"
+    android:id="@+id/ordersetting_spinner"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_height" />
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/common_margine"
+        android:layout_below="@+id/ordersetting_spinner">
+        <CheckBox
+            android:id="@+id/enable_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/white"
+            android:button="@drawable/chk_btn"
+            android:text=""
+            android:layout_marginRight="@dimen/common_margine"
+            android:textSize="@dimen/common_textsize"/>
+        <TextView
+            android:id="@+id/ioc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Enable"
+            android:layout_toRightOf="@+id/enable_checkbox"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginTop="@dimen/common_margine"
+        android:layout_below="@+id/relative"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/scrip_textview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/common_textsize"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/select_security_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Select Security"
+            android:textAllCaps="false"
+            android:textSize="@dimen/common_textsize"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@drawable/border"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buy_sell_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/common_margine"
+        android:layout_below="@+id/linear"/>
+</RelativeLayout>

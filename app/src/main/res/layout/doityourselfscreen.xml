@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="6dp">
+
+     <LinearLayout
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:orientation="vertical">
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Category"
+             android:textSize="14dp"
+             android:textColor="@color/white"/>
+         <Spinner
+             android:id="@+id/CategorySpinner"
+             android:layout_width="match_parent"
+             android:layout_height="35dp"
+             android:background="@drawable/spinner_background"
+             android:ellipsize="middle"
+             android:gravity="start"
+             android:layout_marginTop="2dp"
+             android:overlapAnchor="true"
+             android:popupBackground="@color/white"
+             android:spinnerMode="dropdown" />
+
+     </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sub Category"
+                android:textSize="14dp"
+                android:textColor="@color/white"/>
+            <Spinner
+                android:id="@+id/SubcategorySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/spinner_background"
+                android:ellipsize="middle"
+                android:gravity="start"
+                android:overlapAnchor="true"
+                android:popupBackground="@color/white"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/showbtn"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_gravity="bottom"
+            android:layout_weight=".7"
+            android:text="Show"
+            android:background="@color/ventura_color"
+            android:layout_marginLeft="4dp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/containerdoityourself"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"/>
+
+
+</LinearLayout>

@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="My Wealth"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/my_wealth_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/question_mark"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/particulars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Particulars" />
+
+        <TextView
+            android:id="@+id/amount_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="Amount" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="2dp"
+        android:background="#fff" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+            <LinearLayout
+                android:id="@+id/tbl_option_menu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/layout_balances"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <wealth.FontTextView
+                    android:id="@+id/btn_add_balances"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="left|center_vertical"
+                    android:text="+"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1.3"
+                    android:background="@android:color/transparent"
+                    android:gravity="left"
+                    android:textColor="@color/silver"
+                    android:text="BALANCES" />
+
+                <wealth.FontTextView
+                    android:id="@+id/btn_val_balances"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.7"
+                    android:background="@android:color/transparent"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/question_mark" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_balances_inner_detail_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="2">
+
+                <wealth.FontTextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="left|center_vertical"
+                    android:text=""
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1.3"
+                    android:textColor="@color/silver"
+                    android:textSize="14dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="left|center_vertical"
+                    android:text="Cash, Futures, Currency" />
+
+                <TextView
+                    android:id="@+id/btn_val_cash"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.7"
+                    android:textSize="14dp"
+                    android:textColor="@color/silver"
+                    android:background="@android:color/transparent"
+                    android:gravity="right|center_vertical"
+                    android:text="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_balances_inner_detail_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="2">
+
+                <wealth.FontTextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="left|center_vertical"
+                    android:text=""
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1.3"
+                    android:textColor="@color/silver"
+                    android:textSize="14dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="left|center_vertical"
+                    android:text="Commodities" />
+
+                <TextView
+                    android:id="@+id/btn_val_commodity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.7"
+                    android:textSize="14dp"
+                    android:textColor="@color/silver"
+                    android:background="@android:color/transparent"
+                    android:gravity="right|center_vertical"
+                    android:text="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <wealth.FontTextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="left|center_vertical"
+                    android:text=""
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1.3"
+                    android:background="@android:color/transparent"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/silver"
+                    android:text="MARGIN" />
+
+                <wealth.FontTextView
+                    android:id="@+id/btn_val_margin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.7"
+                    android:background="@android:color/transparent"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/question_mark" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_holdings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <wealth.FontTextView
+                    android:id="@+id/btn_add_holdings"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="left|center_vertical"
+                    android:text=""
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1.3"
+                    android:background="@android:color/transparent"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/silver"
+                    android:text="EQUITY HOLDING" />
+
+                <wealth.FontTextView
+                    android:id="@+id/btn_val_holdings"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.7"
+                    android:background="@android:color/transparent"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/question_mark" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_mutual_funds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <wealth.FontTextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="left|center_vertical"
+                    android:text=""
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1.3"
+                    android:background="@android:color/transparent"
+                    android:gravity="left|center_vertical"
+                    android:textColor="@color/silver"
+                    android:text="MUTUAL FUNDS" />
+
+                <wealth.FontTextView
+                    android:id="@+id/btn_val_mutual_funds"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.7"
+                    android:background="@android:color/transparent"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/question_mark" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_fixed_income"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <wealth.FontTextView
+                    android:id="@+id/btn_add_fixed_income"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="left|center_vertical"
+                    android:text="+"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1.3"
+                    android:background="@android:color/transparent"
+                    android:gravity="left"
+                    android:textColor="@color/silver"
+                    android:text="FIXED INCOME" />
+
+                <wealth.FontTextView
+                    android:id="@+id/btn_val_fixed_income"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.7"
+                    android:background="@android:color/transparent"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/question_mark" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_fixed_income_inner_detail_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="2">
+
+                <wealth.FontTextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="left|center_vertical"
+                    android:text=""
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1.3"
+                    android:textColor="@color/silver"
+                    android:textSize="14dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="left|center_vertical"
+                    android:text="Bonds" />
+
+                <TextView
+                    android:id="@+id/btn_val_bonds"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.7"
+                    android:textSize="14dp"
+                    android:textColor="@color/silver"
+                    android:background="@android:color/transparent"
+                    android:gravity="right|center_vertical"
+                    android:text="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_fixed_income_inner_detail_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="2">
+
+                <wealth.FontTextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="left|center_vertical"
+                    android:text=""
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1.3"
+                    android:textColor="@color/silver"
+                    android:textSize="14dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="left|center_vertical"
+                    android:text="Fixed Deposit" />
+
+                <TextView
+                    android:id="@+id/btn_val_deposits"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.7"
+                    android:textSize="14dp"
+                    android:textColor="@color/silver"
+                    android:background="@android:color/transparent"
+                    android:gravity="right|center_vertical"
+                    android:text="0" />
+            </LinearLayout>
+
+            </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        >
+        <TextView
+            android:id="@+id/lastupdate_wealth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/silver"
+            android:textSize="12dp"
+            android:background="@android:color/transparent"
+            android:gravity="left|center_vertical"
+            android:text="" />
+        <TextView
+            android:id="@+id/nextupdate_wealth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:textSize="12dp"
+            android:textColor="@color/silver"
+            android:background="@android:color/transparent"
+            android:gravity="left|center_vertical"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/errornote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:textSize="12dp"
+            android:textColor="@color/silver"
+            android:background="@android:color/transparent"
+            android:gravity="left|center_vertical"
+            android:text="" />
+    </LinearLayout>
+</LinearLayout>

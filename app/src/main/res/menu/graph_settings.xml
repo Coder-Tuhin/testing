@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.stockchart.chart.VirtualAxisActivity">
+
+    <item android:id="@+id/defaultOpt"
+        android:title="1 Min"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        tools:ignore="AppCompatResource" />
+    <item android:id="@+id/twoMin"
+        android:title="2 Min"
+        android:orderInCategory="101"
+        android:showAsAction="never"
+        tools:ignore="AppCompatResource" />
+    <item android:id="@+id/fiveMin"
+        android:title="5 Min"
+        android:orderInCategory="102"
+        android:showAsAction="never"
+        tools:ignore="AppCompatResource" />
+    <item android:id="@+id/tenMin"
+        android:title="10 Min"
+        android:orderInCategory="103"
+        android:showAsAction="never"
+        tools:ignore="AppCompatResource" />
+
+    <item android:id="@+id/style"
+        android:title="Style"
+        android:orderInCategory="105"
+        android:showAsAction="never"
+        tools:ignore="AppCompatResource" />
+    <item android:id="@+id/showPoint"
+        android:title="Show Point"
+        android:orderInCategory="105"
+        android:showAsAction="never"
+        android:visible="true"
+        tools:ignore="AppCompatResource" />
+
+</menu>

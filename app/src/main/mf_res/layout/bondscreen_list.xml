@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginLeft="5dp">
+        <view.TvRegular
+            android:id="@+id/bondName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Aadhar Housing NCD"
+            android:textColor="@color/ventura_color"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_15"/>
+        <view.TvRegular
+            android:id="@+id/bondRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Credit rating AA+"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:textSize="@dimen/text_13"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <view.TvRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Close Date"
+                android:textColor="@color/ventura_color"
+                android:textSize="@dimen/text_15"/>
+            <view.TvRegular
+                android:id="@+id/closedate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 Feb 2021"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_13"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <view.TvRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Face Value (Rs)"
+                android:layout_centerVertical="true"
+                android:textColor="@color/ventura_color"
+                android:textSize="@dimen/text_15"/>
+            <view.TvRegular
+
+                android:layout_alignParentRight="true"
+                android:id="@+id/amountEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_30"
+                android:gravity="left|center_vertical"
+                android:text="1000"
+
+                android:layout_marginRight="@dimen/dimen_4"
+                android:paddingLeft="@dimen/dimen_6"
+                android:paddingRight="@dimen/dimen_6"
+                android:textColor="@color/text_primary"
+                android:textSize="@dimen/text_16" >
+                <requestFocus/>
+            </view.TvRegular>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10">
+            <view.TvRegular
+                android:id="@+id/upitext"
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:text="UPI ID"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_15"/>
+            <ImageView
+                android:id="@+id/upiimage"
+                android:layout_toRightOf="@id/upitext"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/dimen_1"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:contentDescription="@string/DEFAULT_DESCRIPTION"
+                android:src="@mipmap/plus" />
+            <include layout="@layout/mf_spinner_round"
+                android:id="@+id/mfSpinnerfamily"
+                android:layout_width="@dimen/dimen_200"
+                android:layout_alignParentRight="true"
+                android:layout_height="@dimen/dimen_30" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/button_apply"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/item_height"
+            android:background="@drawable/background_border_popup"
+            android:text="Apply"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:layout_marginBottom="@dimen/dimen_10"/>
+    </LinearLayout>
+
+    <view.TvRegular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:text="Note: Only individual category can apply"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_11"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@color/gray_color"/>
+
+
+
+
+
+</LinearLayout>

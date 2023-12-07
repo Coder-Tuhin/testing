@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <view.TvRegular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header"
+        android:padding="@dimen/dimen_4"
+        android:textStyle="italic|bold"
+        android:text="@string/Smart_investment_plan"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/text_16" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header"
+        android:gravity="bottom"
+        android:padding="@dimen/dimen_4">
+
+        <view.TvRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Available_balance"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/text_14" />
+
+        <view.TvLarge
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_4"
+            android:text="50,000.30"
+            android:textColor="@color/ventura_color"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_16" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header"
+        android:padding="@dimen/dimen_4"
+        android:gravity="right">
+        <view.TvRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Investment_amt"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/text_14" />
+        <view.TvRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rupees"
+            android:layout_marginLeft="@dimen/dimen_4"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_24"/>
+
+        <view.TvRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25,000"
+            android:layout_marginLeft="@dimen/dimen_4"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_24"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1.4"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <view.TvRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_secondary"
+                android:text="@string/Scheme_name"
+                android:textSize="@dimen/text_13"/>
+            <view.TvRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_secondary"
+                android:text="@string/Nav_rs"
+                android:textSize="@dimen/text_13"/>
+
+        </LinearLayout>
+        <view.TvRegular
+            android:id="@+id/sipDayTv"
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:textColor="@color/text_secondary"
+            android:text="@string/Sip_day"
+            android:textSize="@dimen/text_13"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <view.TvRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_secondary"
+                android:text="@string/sip_amt"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimen_2"
+                android:paddingRight="@dimen/dimen_2"
+                android:singleLine="true"
+                android:textSize="@dimen/text_13"/>
+            <view.TvRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimen_2"
+                android:paddingRight="@dimen/dimen_2"
+                android:textColor="@color/text_secondary"
+                android:text="@string/Allocation_percent"
+                android:singleLine="true"
+                android:textSize="@dimen/text_13"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1.4"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <view.TvRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_secondary"
+                android:text="@string/XIRR_return"
+                android:textSize="@dimen/text_13"
+                android:singleLine="true"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <view.TvRegular
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_secondary"
+                    android:text="1yr"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_13"/>
+                <view.TvRegular
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_secondary"
+                    android:text="3Yrs"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_13"/>
+                <view.TvRegular
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_secondary"
+                    android:gravity="center"
+                    android:text="5Yrs"
+                    android:textSize="@dimen/text_13"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_2"
+        android:background="@color/header"
+        android:layout_marginTop="@dimen/dimen_4"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dimen_120"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/header"
+            android:orientation="vertical"
+            android:layout_gravity="bottom">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/text_primary"
+                    android:text="I/ We hereby agree with"
+                    android:textColor="@color/text_secondary" />
+                <view.TvLarge
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" T\u0026 C "
+                    android:textColor="@color/colorAccent" />
+                <view.TvLarge
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=" as well as"
+                    android:textColor="@color/text_secondary" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen_4">
+                <view.TvLarge
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Cut off Timings "
+                    android:textColor="@color/colorAccent" />
+                <view.TvLarge
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=" for applicability of NAV."
+                    android:textColor="@color/text_secondary" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_48"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_marginBottom="@dimen/dimen_10">
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+                <view.TvLarge
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/mf_button_bg"
+                    android:gravity="center"
+                    android:text="START A SIP"
+                    android:textColor="@color/text_primary"
+                    android:textSize="@dimen/text_18" />
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

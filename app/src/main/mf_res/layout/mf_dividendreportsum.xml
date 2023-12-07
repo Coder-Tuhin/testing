@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dimen_8"
+        android:paddingBottom="@dimen/dimen_4"
+        android:paddingLeft="@dimen/dimen_2"
+        android:paddingRight="@dimen/dimen_2"
+        android:background="@color/header">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_30">
+            <view.TvRegular
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/text_secondary"
+                android:text="Family:"
+                android:layout_marginRight="@dimen/dimen_4"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/text_14"/>
+
+            <include layout="@layout/mf_spinner_round"
+                android:id="@+id/mfSpinnerfamily"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+            <!--
+            <view.TvRegular
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/text_secondary"
+                android:text="Asset Type:"
+                android:layout_marginRight="@dimen/dimen_4"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/text_14"/>
+
+            <include layout="@layout/mf_spinner_round"
+                android:id="@+id/mfSpinnerAssetType"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+                -->
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|bottom"
+            android:paddingTop="@dimen/dimen_4">
+            <view.TvRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_secondary"
+                android:text="For F.Y. "
+                android:layout_marginRight="@dimen/dimen_4"
+                android:textSize="@dimen/text_13"/>
+            <view.TvRegular
+                android:id="@+id/financialYr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_primary"
+                android:text="2018-19"
+                android:textSize="@dimen/text_16"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dimen_6"
+        android:paddingBottom="@dimen/dimen_6"
+        android:paddingLeft="@dimen/dimen_2"
+        android:paddingRight="@dimen/dimen_2">
+        <view.TvRegular
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ventura_color"
+            android:text="Scheme Name"
+            android:textSize="@dimen/text_13"/>
+        <view.TvRegular
+            android:layout_width="wrap_content"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ventura_color"
+            android:text="Amount(\u20B9)"
+            android:textSize="@dimen/text_13"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_2"
+        android:background="@color/header"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dimen_6"
+        android:paddingBottom="@dimen/dimen_6"
+        android:paddingLeft="@dimen/dimen_2"
+        android:paddingRight="@dimen/dimen_2"
+        android:background="@color/header">
+        <view.TvRegular
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="@string/Grand_Total"
+            android:textSize="@dimen/text_15"/>
+        <view.TvRegular
+            android:id="@+id/totgd"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text=""
+            android:textSize="@dimen/text_15"/>
+
+    </LinearLayout>
+</LinearLayout>

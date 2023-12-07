@@ -1,0 +1,956 @@
+<resources>
+
+    <string name="app_name">Ventura Wealth</string>
+
+    <string name="term_condition_description">1.\tVentura Wealth is an application belonging to Ventura Securities Limited.
+        By accessing the application you agree to abide by and bound by the Terms and Conditions. Ventura reserves the right
+        to modify the terms and conditions (Terms) of the Service and Disclaimer without any prior notification. You are advised
+        to regularly review the Terms. If you do not agree with any of the Terms and any amendments thereof, you must not use
+        this site/service.\n\n
+        2.\tYou are aware about the features, risks, responsibilities, obligations and liabilities associated with securities
+        trading through wireless technology/internet/smart order routing or any other technology which is offered to you
+        through Ventura.\n\n
+        3.\tYou are aware that Ventura IBT system itself generates the initial password and its password policy as stipulated
+        is in line with norms prescribed by Exchanges/SEBI.\n\n
+        4.\tYou shall be responsible for keeping the user id and password confidential and secure and shall be solely
+        responsible for all orders entered and transactions done by any person whomsoever through Ventura Wealth using your
+        User Id and/or Password whether or not such person authorized to do so. You are aware that authentication technologies
+        and strict security measures are required for the securities trading through wireless technology through order routed
+        system and undertake to ensure that you/your authorized representatives password are not revealed to any third party
+        including employees and dealers of stock broker.\n\n
+        5.\tYou will immediately notify Ventura in writing if your forget password, discover security flaw in Ventura Wealth,
+        discovers/suspects discrepancies / unauthorized access through your userid/password/account with full details of such
+        unauthorized use, the date, the manner and the transactions effected pursuant to such unauthorized use, etc.\n\n
+        6.\tYou are fully aware of and understand the risks associated with availing of a service for routing orders over the
+        securities trading through wireless technology and Client shall be fully liable and responsible for any and all acts
+        done in the Clients UserId/password in any manner whatsoever.\n\n
+        7.\tVentura shall send the order/trade confirmation on the device of the client.\n\n
+        8.\tYou are aware that trading over the internet and through wireless technology involves many uncertain factors and
+        complex hardware, software, systems communication lines, peripherals, etc. are susceptible to interruptions and
+        dislocation. Ventura and the Exchange do not make any representation or warranty that the Venturas IBT Service will be
+        available to you at all the times without any interruption.\n\n
+        9.\tYou shall not have any claim against the Exchange or Ventura on account of any suspension/interruption,
+        non-availability of malfunctioning of Venturas IBT system or Service or the Exchanges service or systems or
+        non-execution of your orders due to any link/system failure at your end/Ventura/Exchanges and for any reason beyond
+        the control of Ventura/Exchange.\n\n
+        10.\tThe information provided on this Site is for General information purposes and should not be substituted for
+        professional advice. No advice or information, whether oral or written, which the user obtains from Ventura or through
+        the application shall create any warranty not expressly made herein.\n\n
+        11.\tVentura disclaims all warrants and conditions with regards to the accuracy, adequacy or any information and is not
+        responsible for any errors or omissions of the information provided on the application, you should verify the veracity
+        of all content/information on your own before undertaking reliance and auctioning. In no event shall Ventura be
+        responsible for any direct, indirect, punitive incidental, special, consequential damage, loss, loss of profit, harm
+        or injury arising in any manner whatsoever, including those arising directly, indirectly, consequentially or otherwise
+        and whether financial, mental or otherwise, caused to any person arising out of or in any way connected with the user
+        or performance of the Ventura Wealth/service or related service whether based on contract, tort, negligence, strict
+        liability or otherwise by Ventura or any of its soldieries, affiliates, officers, employees, agents, representatives,
+        licensors, content providers, enabling partners.\n\n
+        12.\tYou agree that this Service is made available to you for personal non-commercial use and you further undertake not
+        to sell, use reproduce, modify, alter, decompile, reengineer, edit, translate, transmit, copy, publish, perform, display
+        or post any content emanating from this application.\n\n
+        13.\tYou agree to indemnify and hold Ventura, subsidiaries, affiliates, officers and employees, harmless from any claim,
+        demand, or damage, including reasonable attorneys fees asserted by any third party due to or arising out of your use
+        or conduct on the Ventura sites/services/applications.\n\n
+        14.\tThe graphics and content on this site are the copyrighted work of Ventura and contain proprietary trademarks
+        and trade names of the Company. No right or license is granted under copyright, patent or trademark of Ventura to
+        any person.\n\n
+        15.\tThe information, software, products, and services included in or available through Ventura Wealth
+        application/services may include inaccuracies or typographical errors. Changes are periodically made to the Ventura
+        Wealth application/services and to the information therein. Ventura may make improvements and/or changes in the Ventura
+        Wealth application/services at any time. Advice received via the Ventura Wealth application/services should not be relied
+        upon for personal, medical, legal or financial decisions and you should consult an appropriate professional for specific
+        advice tailored to your situation.\n\n
+        16.\tVentura and/or its respective suppliers make no representations about the suitability reliability, availability,
+        timeliness, lack of viruses or other harmful components and accuracy of the information, software, products, services
+        and related graphics contained within the Ventura Wealth application/services for any purpose. All such information,
+        software products, services and related graphics are provided as is without warranty of any kind. Ventura Wealth and/or
+        its respective suppliers hereby disclaim all warranties and conditions with regard to this information, software,
+        products, services and related graphics, including all implied warranties and conditions of merchantability, fitness
+        for a particular purpose, workmanlike effort, title and non-infringement.\n\n
+        17.\tThe application may contain link to other web sites/applications operated by third parties (linked sites).
+        You acknowledge that, when you click on a link to visit a linked site. You also acknowledge that Ventura Wealth is
+        providing these links to you only as a convenience.\n\n
+        18.\tYou specifically agree that Ventura shall not be responsible for unauthorized access to or alteration of your
+        transmissions or data, any material or data sent or received or not sent or received, or any transactions entered into
+        through a Ventura Wealth application/service. You specifically agree that Ventura Wealth is not responsible or liable
+        for any threatening, defamatory, obscene, offensive or illegal  content or conduct of any other party or any
+        infringement of anothers rights, including intellectual property rights. You specifically agree that Ventura Wealth
+        is not responsible for any content sent using and/or included in a Ventura Wealth
+        application/service by any third party.\n</string>
+
+    <string name="disclaimer_description">1.\tVentura Wealth is an application belonging to Ventura Securities Limited.
+        By accessing the application you agree to abide by and bound by the Terms and Conditions. Ventura reserves the
+        right to modify the terms and conditions (Terms) of the Service and Disclaimer without any prior notification.
+        You are advised to regularly review the Terms. If you do not agree with any of the Terms and any amendments thereof,
+        you must not use this site/service.\n\n
+        2.\tYou are aware about the features, risks, responsibilities, obligations and liabilities associated with securities
+        trading through wireless technology/internet/smart order routing or any other technology which is offered to you through
+        Ventura.\n\n
+        3.\tYou are aware that Ventura IBT system itself generates the initial password and its password policy as stipulated is
+        in line with norms prescribed by Exchanges/SEBI.\n\n
+        4.\tYou shall be responsible for keeping the user id and password confidential and secure and shall be solely responsible
+        for all orders entered and transactions done by any person whomsoever through Ventura Wealth using your User Id and/or
+        Password whether or not such person authorized to do so. You are aware that authentication technologies and strict
+        security measures are required for the securities trading through wireless technology through order routed system and
+        undertake to ensure that you/your authorized representatives password are not revealed to any third party including
+        employees and dealers of stock broker.\n\n
+        5.\tYou will immediately notify Ventura in writing if your forget password, discover security flaw in Ventura Wealth,
+        discovers/suspects discrepancies / unauthorized access through your userid/password/account with full details of such
+        unauthorized use, the date, the manner and the transactions effected pursuant to such unauthorized use, etc.\n\n
+        6.\tYou are fully aware of and understand the risks associated with availing of a service for routing orders over the
+        securities trading through wireless technology and Client shall be fully liable and responsible for any and all acts done
+        in the Clients UserId/password in any manner whatsoever.\n\n
+        7.\tVentura shall send the order/trade confirmation on the device of the client.\n\n
+        8.\tYou are aware that trading over the internet and through wireless technology involves many uncertain factors and complex
+        hardware, software, systems communication lines, peripherals, etc. are susceptible to interruptions and dislocation.
+        Ventura and the Exchange do not make any representation or warranty that the Venturas IBT Service will be available to
+        you at all the times without any interruption.\n\n
+        9.\tYou shall not have any claim against the Exchange or Ventura on account of any suspension/interruption,
+        non-availability of malfunctioning of Venturas IBT system or Service or the Exchanges service or systems or non-execution
+        of your orders due to any link/system failure at your end/Ventura/Exchanges and for any reason beyond the control of
+        Ventura/Exchange.\n\n
+        10.\tNews / information provided on this Site is for General information purposes and should not be substituted for
+        professional advice. No advice or information, whether oral or written, which the user obtains from Ventura or through
+        the application shall create any warranty not expressly made herein.\n\n
+        11.\tVentura disclaims all warrants and conditions with regards to the accuracy, adequacy or any news / information and
+        is not responsible for any errors or omissions of the news / information provided on the application, you should verify
+        the veracity of all content / news / information on your own before undertaking reliance and auctioning. In no event
+        shall Ventura be responsible for any direct, indirect, punitive incidental, special, consequential damage, loss, loss
+        of profit, harm or injury arising in any manner whatsoever, including those arising directly, indirectly, consequentially
+        or otherwise and whether financial, mental or otherwise, caused to any person arising out of or in any way connected with
+        the user or performance of the Ventura Wealth/service or related service whether based on contract, tort, negligence,
+        strict liability or otherwise by Ventura or any of its soldieries, affiliates, officers, employees, agents,
+        representatives, licensors, content providers, enabling partners.\n\n
+        12.\tYou agree that this Service is made available to you for personal non-commercial use and you further undertake not
+        to sell, use reproduce, modify, alter, decompile, reengineer, edit, translate, transmit, copy, publish, perform, display
+        or post any content emanating from this application.\n\n
+        13.\tYou agree to indemnify and hold Ventura, subsidiaries, affiliates, officers and employees, harmless from any claim,
+        demand, or damage, including reasonable attorneys fees asserted by any third party due to or arising out of your use or
+        conduct on the Ventura sites/services/applications.\n\n
+        14.\tThe graphics and content on this site are the copyrighted /Licensed work of Ventura and may contain proprietary
+        trademarks and trade names of the Company. No right or license is granted under copyright, patent or trademark of Ventura
+        to any person.\n\n
+        15.\t News / information, software, products, and services included in or available through Ventura Wealth
+        application/services may include inaccuracies or typographical errors. Changes are periodically made to the Ventura Wealth
+        application/services and to the news /  information therein. Ventura may make improvements and/or changes in the Ventura
+        Wealth application/services at any time. Advice received via the Ventura Wealth application/services should not be relied
+        upon for personal, medical, legal or financial decisions and you should consult an appropriate professional for specific
+        advice tailored to your situation.\n\n
+        16.\tVentura and/or its respective suppliers make no representations about the suitability reliability, availability,
+        timeliness, lack of viruses or other harmful components and accuracy of the news / information, software, products,
+        services and related graphics contained within the Ventura Wealth application/services for any purpose. All such
+        news /  information, software products, services and related graphics are provided as is without warranty of any kind.
+        Ventura Wealth and/or its respective suppliers hereby disclaim all warranties and conditions with regard to this
+        news /  information, software, products, services and related graphics, including all implied warranties and conditions
+        of merchantability, fitness for a particular purpose, workmanlike effort, title and non-infringement.\n\n
+        17.\tThe application may contain link to other web sites/applications operated by third parties (linked sites).
+        You acknowledge that, when you click on a link to visit a linked site. You also acknowledge that Ventura Wealth is
+        providing these links to you only as a convenience.\n\n
+        18.\tYou specifically agree that Ventura shall not be responsible for unauthorized access to or alteration of your
+        transmissions or data, any material or data sent or received or not sent or received, or any transactions entered into
+        through a Ventura Wealth application/service. You specifically agree that Ventura Wealth is not responsible or liable for
+        any threatening, defamatory, obscene, offensive or illegal  content or conduct of any other party or any infringement of
+        anothers rights, including intellectual property rights. You specifically agree that Ventura Wealth is not responsible
+        for any content sent using and/or included in a Ventura Wealth application/service by any third party.\n</string>
+
+
+    <string name="margin_trading_desc">"
+1.	I am registered with you as a client pursuant to submission of KYC and other related documents.
+
+2.	I am desirous of carrying out trading in securities under Margin Trading Facility as permitted by SEBI vide its circular number CIR/MRD/SE/SU/Cir-08/2005 dated March 04, 2005 and NSE’s circular number 340/2017 dated June 30, 2017.\n
+3.	I hereby agree to avail the Margin Trading Facility in NSE in accordance with terms and conditions of Margin Trading Facility offered by you.\n
+4.	I understand that margin trading facility will be available only in the scrips approved by Ventura Securities Limited (VSL) as per the list of scrips available on www.ventura1.com.\n
+5.	I understand that VSL may add or delete the scrips available for margin trading facility without giving any prior notice to me.\n
+6.	I understand that all the transactions (approved for margin trading) carried out on T day for which payment is not made by 5.00 p.m. on T+1 day shall be treated as transactions under Margin Trading Facility.\n
+7.	I agree to pay the brokerage and other levies as per commercial terms agreed by me from time to time.\n
+8.	I agree to pay interest @18 % per annum plus applicable GST/ statutory levies and I understand that the interest shall be debited in my account on weekly basis. I understand that the rate of interest may be subjected to upward or downward revision by VSL.\n
+9.	I state that I have read and fully understood the circulars stated in paragraph number 2 above and the Rights and Obligation of Stock Broker &amp; Clients for Margin Trading Facility as stipulated by NSE. I undertake to abide by it at all points of time.\n
+10.	I state that I have read and fully understood the Additional Rights and Obligation Document as stipulated by you and I undertake to abide by it at all points of time.\n
+11.	I state that I have read and fully understood your Risk Management System (RMS) Policy that will be followed by you from time to time and I undertake to abide by it at all point of time. I agree and understand that the said RMS policy can be revised at any time as per your sole discretion.\n
+12.	I state that I have understood the risks involved in trading under Margin Trading Facility.\n
+13.	I state that I shall send written request for withdrawal of securities on email id mtf@ventura1.com and the securities withdrawal request shall be honoured by VSL only upon fulfilment of obligation to the satisfaction of VSL.\n
+14.	I state that since I shall be dealing in leveraged products whereby my trades will be funded by you, I shall monitor my account at all time and furnish the amount as required to ensure that the securities or position held in my account is not liquidated for requirement of funds.\n
+15.	I understand that the margin call / shortfall in the account shall be made by you through telephone or email or SMS.\n
+16.	I understand that the I may be called upon to make the payment of all the amount outstanding and due from me as per the time stipulated by you and I agree to abide by it.\n
+17.	I hereby agree to lodge dispute in respect of any transaction under margin trading within 24 hrs from the receipt of funding statement from VSL.
+    "</string>
+
+    <string name="click_here_for_rights_obligation"><u>Click here for Rights and Obligations and Additional Rights and Obligations documents.</u></string>
+    <string name="click_here_for_rms"><u>Click here for RMS policy.</u></string>
+    <string name="activate_margin_tc">I agree and accept all the terms and conditions of margin trading facility.</string>
+
+
+    <string name="rights_obligations">"
+  CLIENT RIGHTS
+
+1.	Client shall receive all communications in a mode mutually agreed between the broker and the client regarding confirmation of orders/trades, margin calls, decision to liquidate the position / security.
+
+2.	Client shall be free to take the delivery of the securities at any time by repaying the amounts that was paid by the Stock Broker to the Exchange towards securities after paying all dues.
+
+3.	Client has a right to change the securities collateral offered for Margin Trading Facility at any time so long as the securities so offered are approved for margin trading facility.
+
+4.	Client may close / terminate the Margin Trading Account at any time after paying the dues.
+
+
+CLIENT OBLIGATIONS
+
+
+1.	Client shall, in writing in his own hand or in any irrefutable electronic method, agree to avail of Margin Trading Facility in accordance with the terms and conditions of Margin Trading Facility offered by the broker, method of communication for confirmation of orders/trades, margin calls and calls for liquidation of collateral/security/position.
+
+2.	Client shall inform the broker of its intent to shift the identified transaction under Margin Trading Facility within the time lines specified by the broker failing which the transaction will be treated under the normal trading facility
+
+3.	Client shall place the margin amounts as the Stock Broker may specify to the client from time to time.
+
+4.	On receipt of 'margin call', the client shall make good such deficiency in the amount of margin placed with the Stock Broker within such time as the Stock Broker may specify.
+
+5.	By agreeing to avail Margin Trading Facility with the broker, client is deemed to have authorized the broker to retain and/or pledge the securities provided as collateral or purchased under the Margin Trading Facility till the amount due in respect of the said transaction including the dues to the broker is paid in full by the client.
+
+6.	Client shall lodge protest or disagreement with any transaction done under the margin trading facility within the timelines as may be agreed between the client and broker.
+
+STOCK BROKER RIGHTS
+
+
+1.	Stock Broker and client may agree between themselves the terms and condition including commercial terms if any before commencement of MTF.
+
+2.	Stock broker may set up its own risk management policy that will be applicable to the transactions done under the Margin Trading Facility. Stock broker may make amendments there to at any time but give effect to such policy after the amendments are duly communicated to the clients registered under the Margin Trading Facility.
+
+3.	The broker has a right to retain and/or pledge the securities provided as collateral or the securities bought by the client under the Margin Trading Facility.
+
+4.	The broker may liquidate the securities if the client fails to meet the margin call made by the broker as mutually agreed of liquidation terms but not exceeding 5 working days from the day of margin call.
+
+
+STOCK BROKER OBLIGATIONS
+
+
+1.	Stock broker shall agree with the client the terms and condition before extending Margin Trading Facility to such client. However, for clients who already have existing trading relationship and want to avail of Margin Trading Facility, stock broker may take consent in writing in his own hand or in any irrefutable electronic method after stock broker has communicated the terms and conditions of Margin Trading Facility to such existing clients.
+
+2.	The terms and conditions of Margin Trading Facility shall be identified separately, in a distinct section if given as a part of account opening agreement.
+
+3.	The mode of communication of order confirmation, margin calls or liquidation of position/security shall be as agreed between the broker and the client and shall be in writing in his own hand or in any irrefutable electronic method. Stock broker shall prescribe and communicate its margin policies on haircuts/ VAR margins subject to minimum requirements specified by SEBI and exchanges from time to time.
+
+4.	The Stock Broker shall monitor and review on a continuous basis the client's positions with regard to MTF. It is desirable that appropriate alert mechanism is set up through which clients are alerted on possible breach of margin requirements.
+
+5.	Any transaction to be considered for exposure to MTF shall be determined as per the policy of the broker provided that such determination shall happen not later than T + 1 day.
+
+6.	If the transaction is entered under margin trading account, there will not be any further confirmation that it is margin trading transaction other than contract note.
+
+7.	In case the determination happens after the issuance of contract, the broker shall issue appropriate records to communicate to Client the change in status of transaction from Normal to Margin trading and should include information like the original contract number and the margin statement and the changed data.
+
+8.	The Stock Broker shall make a 'margin call' requiring the client to place such margin; any such call shall clearly indicate the additional/deficient margin to be made good.
+
+9.	Time period for liquidation of position/security shall be in accordance declared policy of the broker as applicable to all MTF clients consistently. However, the same should not be later than 5 working (trading) days from the day of ‘margin call’. If securities are liquidated, the contract note issued for such margin call related transactions shall carry an asterisk or identifier that the transaction has arisen out of margin call.
+
+10.	The daily margin statements sent by broker to the client shall identify the margin/collateral for Margin Trading separately.
+
+11.	Margin Trading Accounts where there was no transactions for 90 days shall be settled immediately.
+
+12.	The stocks deposited as collateral with the stock broker for availing margin trading facility (Collaterals) and the stocks purchased under the margin trading facility (Funded stocks) shall be identifiable separately and there shall not be any comingling for the purpose of computing funding amount;
+
+13.	Stock Broker shall close/terminate the account of the client forthwith upon receipt of such request from the client subject to the condition that the client has paid dues under Margin Trading Facility.
+
+
+TERMINATION OF RELATIONSHIP
+
+
+1.	The margin trading arrangement between the stock broker and the client shall be terminated; if the Stock Exchange, for any reason, withdraws the margin trading facility provided to the Stock Broker or the Stock Broker surrenders the facility or the Stock Broker ceases to be a member of the stock exchange.
+
+2.	The MTF facility may be withdrawn by the broker, in the event of client committing any breach of any terms or conditions therein or at anytime after due intimation to client allowing such time to liquidate the MTF position as per the agreed liquidation terms without assigning any reason. Similarly, client may opt to terminate the margin trading facility in the event of broker committing any breach of any terms or conditions therein or for any other reason.
+
+3.	In the event of termination of this arrangement, the client shall forthwith settle the dues of the Stock Broker. The Stock Broker shall be entitled to immediately adjust the Margin Amount against the dues of the client, and the client hereby authorizes the Stock Broker to make such adjustment.
+
+4.	After such adjustment, if any further amount is due from the client to the Stock Broker, the client shall settle the same forthwith. Upon full settlement of all the dues of the client to the Stock Broker, the Stock Broker shall release the balance amount to the client.
+
+5.	If the client opts to terminate the margin trading facility, broker shall forthwith return to the client all the collaterals provided and funded securities retained on payment of all the dues by clients.
+
+
+ADDITIONAL RIGHTS AND OBLIGATION DOCUMENT OF VENTURA SECURITIES LIMITED BINDING ON THE CLIENT
+
+1.	The client understands that Margin Trading Facility hereinafter referred to as 'MTF', is a facility offered by Ventura Securities Limited hereinafter referred to as VSL which allows the Client to take positions by providing prescribed margin and the balance amount is funded by VSL to meet the pay-in obligation of the Client . The Client can later take delivery either by making the necessary funds settlement or square up such positions. The client agrees that any fresh position under MTF shall be allowed to be created only when client has provided necessary Margin as specified by VSL. The balance obligation would be funded by VSL and will be paid to the stock exchange for meeting the client’s pay-in obligation. Client then needs to ensure that the available margin is always above the Minimum Margin specified VSL to avoid squaring off the positions.
+2.	The client understands that the positions will be permitted to be continued upon fulfilment of the necessary Margin requirements as specified by VSL for the particular scrip from time to time. The client agrees that VSL reserves the right at its discretion to stipulate a maximum time within which Client will have to take the delivery thereof.
+3.	The client understands that all the delivery transactions carried out by the client in VSL approved securities in NSE shall be treated as transaction under MTF unless the payment in full is received by VSL on or before 5.00 p.m. on T+1 day.
+4.	The client agrees that, securities purchased by the client shall be retained by VSL in its demat account until the client fulfils the contractual obligation for the respective BUY transaction in which the securities are bought. On settlement of the contractual obligations to the satisfaction of VSL, the securities will be delivered to the Demat account of the client maintained with VSL as Depository Participant.
+5.	The client agrees that VSL may at its discretion, in accordance with its risk management policy, disable certain securities from MTF. In such an event, the client shall be required to make the payment towards such securities within the time stipulated by VSL. The VSL may sell off the securities of the client if the payment is not received by VSL within the time stipulated by it. The client agrees that VSL cannot be held liable for any losses arising out of such disablement or selling off of the security.
+
+6.	The Client confirms that he is aware of the charges and other statutory levies as are prevailing and as they apply to the MTF transactions. The schedule of charges would be subject to change by VSL and statutory levies may change from time to time and client agrees and accepts to comply by these charges.
+7.	The client agrees that he/she shall be liable to pay Interest at the rate as may be decided from time to time by VSL. on all outstanding payment beyond the due date (i.e. pay-in-date) by the client to VSL.
+8.	The Client understands that under MTF, Client would not be able to take further positions and/or existing positions may be squared off by VSL at its discretion on occurrence of any of the following events :
+
+
+(i)	If at any point of time total exposure across all stocks of all the Clients of VSL taken together under this facility exceeds the SEBI / Stock Exchange prescribed maximum allowable exposure limit specified for a stock broker. Client agrees that VSL may set this limit at its discretion which can be lower than the limits prescribed by SEBI as part of its risk management process.
+(ii)	If the Client exceeds or is about to exceed the maximum allowable exposure for a single Client. Client understands that SEBI has prescribed a maximum limit for allowing exposure to a single Client. Client agrees that VSL may set this single Client exposure limit at its discretion which can be lower than the limits prescribed by SEBI as part of its risk management process.
+(iii)	If the total exposure in a particular stock of all the Clients of VSL taken together under this facility reaches the maximum allowable limit for that stock as defined by VSL.
+(iv)	If the exposure in a particular stock by a single Client under this facility reaches the maximum allowable limit for that stock for a single Client as defined by VSL.
+(v)	If the stock moves out from the list of eligible stocks under MTF and becomes ineligible for offering under MTF.
+(vi)	If limit given to the client under MTF is breached.
+(vii)	If the available margin in any security has fallen below the minimum margin as stipulated by SEBI / Stock Exchanges.
+(viii)	For non payment of margin, additional margin, mark to market amount.
+(ix)	For non payment of any amount due to VSL under MTF.
+(x)	If MTF relationship is terminated by VSL and amount due under MTF is not paid by the client within timeline stipulated by VSL.
+(xi)	Any other circumstances due to change in regulatory requirements from time to time or risk management process due to changing market conditions.
+
+9.	The client understands that presently the Margin Trading Facility is offered by VSL only in NSE. This Facility may be offered subsequently in BSE for which the same terms shall apply unless otherwise communicated.
+
+
+10.	The client understands that VSL shall be reporting to stock exchanges on a daily basis the details of client's funded positions/collateral stocks and such other details as may be required by stock exchanges from time to time.
+
+11.	The client understands that client is required to disclose whether he is a promoter or forming part of the promoter group of the stock in which he has taken an MTF position or given as collateral which is required for daily reporting to stock exchanges. In absence of any such disclosure, VSL shall consider the client as a non promoter and will report to stock exchanges accordingly.
+
+12.	The Client understands that regulators have prescribed stocks which are eligible to be offered in MTF. Hence, MTF shall not be offered in all the stocks traded on Stock Exchanges. The client agrees that VSL shall have the discretion to select securities that will be enabled for trading under the MTF as per its internal risk management policy and the number of stocks enabled for trading under MTF by VSL can be smaller than the number of stocks allowed by regulators.
+
+
+13.	The client agrees that VSL may require the client to provide such margin (in such form and manner as acceptable to VSL) depending on the security and market volatility as it deems fit in its sole discretion as necessary for risk mitigation. This margin requirement may be more than the margin prescribed by SEBI/ stock exchanges. Margin may be taken in cash, Cash equivalent or eligible shares as may be acceptable to VSL.
+
+
+14.	The Client agrees that VSL may at its sole discretion, change the margin requirement on the Transactions, in which the Client has taken or proposes to take positions depending on its own risk mitigation measures and without intimating or consulting the client. Due to increased volatility in the prices, the margin requirement may be increased and in such event the Client undertakes to allocate additional funds/securities to continue with the open position within the timeframe stipulated by VSL. If such Margin requirement is not met, the position may be squared off by VSL due to insufficient Margin. The Client undertakes to maintain sufficient margin at all times to safeguard the open position from being squared off or pending orders being cancelled.
+
+15.	The Client understands that the Client's positions are continuously monitored and the Client agrees to provide Margin (including additional Margin) as may be determined by VSL from time to time.
+
+
+16.	The clients undertakes to monitor his position on real time basis and furnish the necessary margin as may be required to safeguard his position from being squared off.  The client agrees that the mode of communication to clients pertaining to order/trade confirmation, margin requirements/shortfall and liquidation of stocks will be electronic.
+
+17.	The client understands that Stocks bought under the MTF shall be marked to market on daily basis and collateral stocks as well as securities purchased under MTF shall be re-valued frequently. Further, client agrees that no exposure shall be given on increased value of stock funded by VSL.
+
+
+18.	VSL, at its sole discretion, reserves the right to either temporarily or permanently, withdraw or suspend the Facility at any time without giving any notice or assigning any reason for the same, whether in respect of one or more Clients.
+
+19.	VSL shall decide upon the list of Securities in which the Clients would be permitted to take Positions under MTF.  VSL may also at its sole discretion decide to withdraw a particular security from the list without notice to the clients and without assigning any reasons whatsoever.
+
+20.	VSL shall decide upon the Security specific Margin applicable for taking Positions in various Securities under the MTF. VSL reserves the right to alter the Security specific Margin applicable for a Security without notice to the Client and without assigning any reasons whatsoever.
+
+
+21.	No delay in exercising or omission to exercise any right, power or remedy accruing to VSL upon any default by the Client or otherwise under these Right and Obligations document or the Client Agreement shall impair any such right, power or remedy or shall be construed to be a waiver thereof or any acquiescence in such default, nor shall the action or inaction of VSL in respect of any default or any acquiescence by it in any default, affect or impair any right, power or remedy of VSL in respect of any other default. The rights of VSL under these Terms and Conditions and the Client Agreement are cumulative and not exclusive of their rights under the general law and may be waived only in writing and specifically and at the sole discretion of VSL.
+
+
+22.	The client agrees that in case of any disagreement or dispute pertaining to transactions done under MTF, client shall lodge the complaint within one day of execution of the disputed transaction or such other time as maybe specified by VSL from time to time.
+
+23.	The client agrees and undertakes to provide VSL with all the documents and particulars, which may be required by VSL, pursuant to the Client availing of this Facility.
+
+24.	The use of this facility is entirely voluntary and the facility has to be used in accordance with the applicable rules/ regulations/ guidelines specified by the Securities and Exchange Board of India and other competent authorities from time to time.VSL disclaims all liability for any loss caused to the Client out of the purchase or sale of securities through use of this facility.
+
+25.	The Client hereby directs and authorises VSL as the Depository Participant to act on the directions given by VSL pursuant to the terms and conditions mentioned herein, power of attorney and Client Agreement executed by the Client in favour of/with VSL.
+
+26.	Under no circumstances shall VSL be liable to the Client for indirect, incidental, consequential, special or exemplary damages arising from or in connection with the Facility provided to the Client, even if VSL have been advised of the possibility of such damages, such as, but not limited to, loss of revenue or anticipated profits or lost business.
+
+27.	The Client agrees and understands that client shall, at all times, be responsible for the client's investment decisions and/or orders placed or applications preferred by the Client, either electronically or otherwise. VSL shall not be deemed to have received any electronically transmitted order or application until VSL has confirmed the receipt of such an order or application. The client further understands that trading through trading platforms provided by VSL is in electronic mode, based on satellite/leased line based communications, combination of technologies and computer systems to place and route orders. Thus, there exists a possibility of communication failure or system problems or slow or delayed response from system or trading halt, or any such other problem/glitch whereby not being able to establish access to the trading system/network, which may be beyond control and may result in delay in processing or not processing buy or sell orders either in part or in full. The client understands and agrees that although these problems may be temporary in nature, in case when the client has outstanding open positions or unexecuted orders, these represent a risk because of the client's obligations to settle all executed transactions. The Client understands that placing an order with VSL, either electronically or otherwise, does not guarantee execution of the said order or acceptance of an application. The Client shall not hold, nor seek to hold, VSL and/or any of its officers, directors, employees, agents, subsidiaries or affiliates, liable for any loss including but not limited to trading losses incurred by the Client due to exchange or market regulation, suspension of trading, war, strike, equipment failure, communication line failure, system failure, security failure on the Internet, unauthorised access, theft, or any problem, technological or otherwise, or other condition beyond the control of VSL that might prevent the Client from entering an order or VSL from executing an order.
+
+28.	The Margin Securities would constitute the security towards due performance of the Client's obligations, commitments, operations, obligations and liabilities arising out of or incidental to any Transactions made, executed, undertaken, carried out or entered into by the Client.
+
+29.	The Client undertakes that the Margin Securities shall be owned by the Client and shall be free of any charge, lien or other encumbrances at the time of offering the same towards margin to VSL. The client understands that VSL shall apply applicable haircut on the value of margin securities for giving exposure limits.
+
+30.	The client understands that securities provided as margin can be withdrawn by the client only to the extent of free limits available in trading account.
+
+31.	SEBI/ Stock Exchanges have specified category of securities which are eligible to be accepted as collateral towards MTF by the stock broker. The client agrees that if specific stock given by the client towards collateral moves out of the eligible list of securities, then the limit given against such stock shall be withdrawn by VSL immediately. In view of the same, MTF open positions of the client may fall under shortage of margin and positions may get squared off if sufficient additional margin is not replenished by the client. Client agrees that VSL reserves the right to decide the securities which it may accept as margin from clients.
+
+32.	The Client agrees that the Client shall not create any charge, lien or encumbrance of any kind over the Margin Securities offered to VSL and further agrees that, the Client shall not do or allow anything to be done that may prejudice the interest of VSL in respect of the Margin Securities while the Client remains liable to VSL, in any manner whatsoever.
+
+33.	The Client agrees and acknowledges that pursuant to the Power of Attorney executed by the Client in favour of VSL, the VSL shall be entitled to submit necessary documents on behalf of the Client to VSL, acting as the Depository Participant, for enabling the Depository to block the securities or mark a pledge or transfer securities in favour of VSL in respect of the Margin Securities and also submit further documents on behalf of the Client to request the Depository to remove the pledge/block created with respect of the Margin Securities.
+
+34.	If in the opinion of VSL, the Client has failed to perform and/or failed to fulfil any of its engagements, commitments, operations, obligations or liabilities as a Client of VSL including for any sums being due by him to VSL arising out of or incidental to any Transactions made, executed, undertaken, carried out or entered into by it or in terms of regulations, laws, rules governing VSL or the Client in this behalf, then the Client agrees that VSL without giving any notice to the Client except through the margin call process as mentioned in these terms in relevant sections, shall be empowered/entitled to invoke pledge, sell, dispose of or otherwise effect any transfer of any or all of the Margin Securities in such manner and subject to such terms and conditions as it may deem fit and that the money realized, if any, from such sale/disposal/transfer subject to dues payable to VSL for such sale/ disposal/or other transfer shall be utilized/disbursed by VSL in such manner and subject to terms and conditions as it may deem fit. Further, the Client shall do all such things, deeds, acts and execute all such documents as are necessary to enable VSL to effect such sale/disposal/ transfer. All decisions by VSL in respect of the obligations or liabilities or commitments of the Client and the amount claimed in respect thereof shall be binding on the Client. The Client agrees that VSL shall not be under any liability whatsoever to the Client or any other person for any loss, damage, expenses, costs etc, either actual or notional, consequent to such sale/disposal/ transfer.
+
+35.	If the total amounts realized from such sale/disposal/transfer is insufficient to fulfil the Client's engagements, commitments, operations, obligations or liabilities in entirety, the Client shall, forthwith and without demur, upon being requested by VSL, furnish the balance amount together with interest at such rate as decided by ICICI Securities and for costs and expenses from time to time. VSL shall also have the right to sell/dispose/ transfer any other securities of the Client, at the cost of the Client and without intimation to the Client.
+
+36.	The Margin Securities shall be at the disposal of VSL and remain available in respect of the obligations, liabilities or commitments of the Client and may be utilized with the discretion of VSL.
+
+37.	Further it is hereby agreed by the Client that benefits such as dividends, bonus, redemption benefits, interest accruing on the Margin Securities shall accrue to the Client and the Client shall be entitled to receive the same from VSL.
+"</string>
+
+    <string name="rms_policy" formatted="false">"
+1.	VSL shall offer Margin Trading Facility to its clients in accordance with SEBI’s circular number CIR/MRD/SE/SU/Cir-08/2005 dated March 04, 2005 and NSE’s circular number 340/2017 dated June 30, 2017.
+
+2.	The Margin Trading Facility shall be offered only in Group I securities only as per SEBI Master circular no. SEBI/HO/MRD/DP/CIR/P/2016/135 dated December 16, 2016.
+3.	VSL shall levy initial margin as applicable in our scrip category on the securities to be funded by it under the Margin Trading Facility. VSL shall accept margin in the form of cash and or cash equivalent and or exchange approved securities at its sole discretion.
+4.	VSL may allow client to take position on the basis of margin available in CM or Derivatives segment or on shares held by client in his beneficiary demat account under POA executed in favour of VSL.
+5.	VSL shall transfer securities funded by it in specific demat account opened in its name.
+6.	VSL may levy higher or lower initial margin at its sole discretion.
+7.	VSL may at its sole discretion remove a particular security or securities from the Margin Trading Facility.
+8.	VSL shall monitor the positions of the clients on online basis.
+9.	VSL as per its own risk perception may demand additional margin or mark to market amount from the client by making margin call or mark to market call on the telephone or email id of the client.
+10.	VSL upon the non payment of margin call or mark to market call by client may liquidate the position of the client and also may sell the collaterals lying with it.
+11.	The methodology which shall be adopted by VSL for making margin or and mark to market call to clients and liquidating the position and or collateral of the clients shall be as under:-
+
+A-	Value of the Collateral
+B-	Value at Risk (VaR)
+C-	Net Collateral Value (A-B)
+D-	Debit in the Margin Trading or Funded Stock ledger.
+E-	Value of the Funded Stock
+F-	Mark to Market loss on Funded Stock (D-E)
+G-	Margin on Funded Stock (VaR plus Extreme Loss Margin)
+
+If C-F is ≤ 110% of G 110 % of G then margin or mark to market call will be made on the telephone or email id of the client.
+
+If C-F is ≤ 99% of G then VSL shall start liquidating the position and or collateral securities of the client.
+ "</string>
+
+    <string name="whatsnew1">Now apply for the \"Bank FD\" from the Fixed Deposit option.</string>
+    <string name="whatsnew2">Troubleshooting Connectivity Woes: Stay informed with enhanced and tailored messages during instances of poor internet connectivity, enabling you to take swift, appropriate action</string>
+    <string name="whatsnew3">In Option Chain, you can now add ALL strike prices and not just 3, 6, 9 strike prices.</string>
+    <string name="whatsnew4">News and Action watch has been provided in Market depth, similar to what is available in Market Watch.</string>
+    <string name="whatsnew5">Improvements in Performance and User Interface.</string>
+
+    <string name="whatsnew_footer">Have a profitable day!</string>
+
+    <string name="term_and_condition">Terms &amp; Conditions</string>
+    <string name="open_an_account"><u>Open an account</u></string>
+    <string name="forgot_password"><u>Forgot Password?</u></string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="crosshair">Crosshair</string>
+    <string name="show_data">Show Data</string>
+    <string name="edit_popup_title">Enter Parameter</string>
+
+    <string name="holding_equitytext_one">DP= Depository Holding; VB= Ventura Beneficiary; SR1= T-1 Stock Receivable; SR2= T-2 Stock Receivable; Collateral Quantity= Collateral Stock Qty.
+        \n\nNote: Sale out of SR1Qty and SR2Qty carries the risk of Short Delivery and Auction.</string>
+
+    <string name="holding_equitytext_two">DP= Depository Holding; VB= Ventura Beneficiary; SR1= T-1 Stock Receivable; SR2= T-2 Stock Receivable;
+        FSL Quantity= Funded Stock Qty;\nCollateral Quantity= Collateral Stock Qty.\n\nNote: Sale out of SR1Qty and SR2Qty carries the risk of Short Delivery and Auction.</string>
+    <string name="margin_text">Note: Opening Margin is sum of above figures</string>
+    <string-array name="instrument_array">
+        <item>Any</item>
+        <item>Futures</item>
+        <item>All Options</item>
+        <item>Call Options</item>
+        <item>Put Options</item>
+    </string-array>
+    <string-array name="contract_array">
+        <item>Any</item>
+        <item>Near</item>
+        <item>Next</item>
+        <item>Far</item>
+        <item>Far Next</item>
+    </string-array>
+
+    <string-array name="message_type">
+        <item>All</item>
+        <item>Trade</item>
+        <item>Placed</item>
+        <item>Cancelled</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="backofficeAmtType">
+        <item>\u20B9</item>
+        <item>Lacs</item>
+        <item>Cr</item>
+    </string-array>
+    <string-array name="backofficeEntryType">
+        <item>Latest 10 entries</item>
+        <item>Latest 20 entries</item>
+        <item>Last one Month entries</item>
+    </string-array>
+    <string-array name="security_settings">
+        <item>3</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>60</item>
+    </string-array>
+
+    <string-array name="ipospinner_items">
+        <item>Place Order</item>
+        <item>Order Book</item>
+        <item>Allotment Status</item>
+    </string-array>
+
+    <string name="wk_high">52 Week High (\u20B9) :</string>
+    <string name="wk_low">52 Week Low (\u20B9) :</string>
+
+    <string name="mtm"> MTM P&amp;L :</string>
+    <string name="booked"> Booked P&amp;L :</string>
+    <string name="forgot_verify">Your request has been accepted successfully. Please enter the 4-digit
+        verification code sent on your registered mobile number.</string>
+
+    <!-- Chart -->
+    <string name="hide_chart">Hide Chart</string>
+    <string name="show_chart">Show Chart</string>
+    <string name="sticker_simple">Simple</string>
+    <string name="sticker_speed_lines">Speed lines</string>
+    <string name="sticker_Fibonacci_retracement">Fibonacci Retracement</string>
+    <string name="sticker_Fibonacci_fans">Fibonacci Fans</string>
+    <string name="sticker_Fibonacci_arcs">Fibonacci Arcs</string>
+    <string name="preview_image">Preview</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="successfully_saved_fmt">Successfully saved to %s</string>
+    <string name="save_img">Save as image </string>
+    <string name="scroller">Scroller</string>
+    <string name="volume_chart">Volume chart</string>
+    <string name="display">Display</string>
+    <string name="indicator">Indicator</string>
+    <string name="add_indicator">Add Indicator</string>
+    <string name="clear_indicator">Clear Indicator</string>
+
+    <string name="indicator_atr">Average True Range</string>
+    <string name="indicator_bb">Bollinger Bands</string>
+    <string name="indicator_ema">Exponential MA</string>
+    <string name="indicator_envelopes">Envelopes</string>
+    <string name="indicator_sma">Simple MA</string>
+    <string name="indicator_macd">MACD</string>
+    <string name="indicator_rsi">Relative Strength Index</string>
+    <string name="indicator_stoch">Stochastic</string>
+    <string name="indicator_adx">Average Directional Index</string>
+
+    <!--WEALTH PART -->
+    <string name="action_nodatatext">Sorry, currently no issues going on.
+        \n\nWould you like to be reminded for future issue?</string>
+    <string name="action_nodatatext_reminded">Currently No Issues Available.\n\nYou will receive an SMS/ E-mail
+        on your Mobile/ E-mail ID registered with Ventura.\n\nFor any query you can contact us on </string>
+    <string name="action_bond_email">bondsonline@ventura1.com</string>
+
+    <string name="action_nodata">Currently No Issues Available.</string>
+
+    <string name="action_market">Market</string>
+    <string name="action_mywealth">My Wealth</string>
+    <string name="action_mutualfunds">Mutual Funds</string>
+    <string name="action_ipo">IPO</string>
+    <string name="action_bonds">Bonds</string>
+    <string name="action_fundtransfer">Fund Transfer</string>
+    <string name="action_nse">NSE</string>
+    <string name="action_bse">BSE</string>
+    <string name="action_changepassword">Change Password</string>
+    <string name="action_alerts">Alerts</string>
+    <string name="action_notification">Notifications</string>
+    <string name="action_forgotpassword">Forgot Password</string>
+    <string name="forgot_pwd_underline"><u>Forgot Password?</u></string>
+    <string name="action_subscribe_online">Subscribe Online :</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_rateus">Rate Us</string>
+    <string name="action_share">Share App</string>
+    <string name="action_help">Help</string>
+    <string name="action_trade">Trade</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_exit">Exit</string>
+
+    <string name="permission_message">VenturaWealth needs permission</string>
+    <string name="read_phone_desc">To capture IMEI number for logging in first level automatically.</string>
+    <string name="call_message">To save trading chart image in local storage.</string>
+
+    <!-- Alerts-->
+    <string name="research_text">Research Call</string>
+    <string name="event_text">Event :</string>
+    <string name="fno_text">FNO Trade Confirmation :</string>
+    <string name="cash_text">Cash Trade Confirmation :</string>
+    <string name="greater"> &gt;</string>
+    <string name="smaller"> &lt;</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="title_activity_notify">NotifyActivity</string>
+    <string name="title_activity_alerts">Alerts</string>
+    <string name="title_activity_notification">Notification</string>
+
+    <string name="connection_error">Unable to load content. Check your network connection.</string>
+    <string name="xml_error">Error parsing XML.</string>
+    <string name="cfd_txt">Show B/F?</string>
+
+    <string name="nse">NSE</string>
+    <string name="bse">BSE</string>
+    <string name="nse_fno">NSE FNO</string>
+
+    <!--CHANGES NEW-->
+    <string name="desc">image</string>
+    <!--register_indicator-->
+    <string name="indicatorTitle">You are not currently registered with ventura.</string>
+    <string name="openAC">Click here to open an account</string>
+
+    <!--tradefragment_screen-->
+    <string name="c_id">Client Id</string>
+    <string name="password">Password</string>
+    <string name="pin">Pin</string>
+    <string name="pan">PAN</string>
+    <string name="dob">DOB</string>
+    <string name="pan_hint">Pan: 10 Characters</string>
+    <string name="dob_hint">DOB : DD/MM/YYYY</string>
+    <string name="login">Login</string>
+
+    <!-- //for new observation-->
+    <string name="reliance"><u>RELIANCE LIQUID FUND - TREASURY PLAN - IP Growth</u></string>
+    <string name="click_addmoney"><u>By clicking ADD MONEY you agree to have read </u></string>
+    <string name="summaryText">Earn more than savings A/C.\nReceive credit in 30 mins on redemption(T&amp;C apply)</string>
+
+    <!--<string name="AUTH_IP">vw.ventura1.com</string>-->
+
+    <string name="AUTH_IP">180.179.130.232</string>
+    <string name="LT">L-</string>
+    <string name="AUTH_PORT">46037</string>
+
+    <!--
+    <string name="AUTH_IP">114.143.213.76</string>
+    <string name="AUTH_PORT">46033</string>
+    <string name="LT">T-</string>
+-->
+    <!--
+    <string name="AUTH_IP">219.64.39.27</string>
+    <string name="AUTH_PORT">46033</string>
+    <string name="LT">T-</string>
+    -->
+    <!--
+    <string name="AUTH_IP">114.143.213.80</string>
+    <string name="AUTH_PORT">46037</string>
+    <string name="LT">CM-</string>
+-->
+    <string name="AUTH_IP_1">43.242.213.73</string>
+
+    <!--
+    <string name="AUTH_IP_2">43.205.184.25</string>
+    <string name="AUTH_IP_3">220.226.206.51</string>
+    -->
+
+    <string name="SIMPLYSAVE_SERVERIP">180.179.130.232</string>
+    <string name="SIMPLYSAVE_SERVERPORT">46038</string>
+
+    <string name="question_mark">\u003F</string>
+    <string name="rupees">\u20B9</string>
+
+    <string name="adhar_update">
+        Dear Investor, As per Govt. directive, please link your Aadhaar
+        to your account with VENTURA by 31 Dec 2017 to avoid blocking of your account. To update
+        now click on this link.http://bit.ly/2iMAodlTeam Ventura.
+    </string>
+    <string name="margintrading_update">
+        Buy approved securities on NSE in Q,A and B Category stocks. Just pay applicable upfront Margin and balance amount within 90 days.
+    </string>
+    <string name="withdrawn_note">
+        1.	The maximum withdrawal amount per day is 90% of  Market Value or \u20B9. 50,000/- whichever is less.\n
+        2.	Redemption amount less than \u20B9. 100/- will be credited on the next business day.\n
+        3. In case entire amount is entered for redemption the same will be  credited to your bank account on the next business day.\n
+        4.	If market value is less than \u20B9. 100/-, kindly click on \'\ALL UNITS\'\ for processing your redemption request.
+    </string>
+
+    <string name="facebook_app_id">1148756215154433</string>
+    <string name="fb_login_protocol_scheme">fb1148756215154433</string>
+
+    <string name="DEFAULT_DESCRIPTION">@string/app_name</string>
+    <string name="title_activity_web_view_layout">WebViewLayout</string>
+
+    <!--NEW-->
+    <string name="No_internet">Oops! It appears you temporarily do not have internet connectivity. Try establishing connectivity and login again.</string>
+
+    <!--<string name="No_internet">Failed to connect. Please check internet connection and restart the application.</string>-->
+    <string name="No_ping">Failed to connect. Please check internet connection.</string>
+    <string name="root_msg">Not able open App. Root device detect. Please try the app in other device.</string>
+
+    <string name="AadharDialogDesc">Dear Investor, As per Govt. directive, please link your Aadhaar to your account with VENTURA"
+        +" to avoid blocking of your account. To update now click on this link.http://bit.ly/2iMAodl\nTeam Ventura.</string>
+
+    <!--Client Login-->
+    <string name="Enter_userid">Request you to enter your registered user id.</string>
+    <string name="Enter_password">Enter valid password for this user id.</string>
+    <string name="Enter_dob">Enter your valid Date of birth.</string>
+    <string name="Enter_pan">Enter your valid PAN.</string>
+    <string name="Enter_otp">Enter valid OTP sent to your registered mobile number.</string>
+    <string name="Enter_mobile">Enter your ten digit mobile number.</string>
+    <string name="Enter_email">Enter your valid email id.</string>
+    <string name="Enter_name">Please enter your name.</string>
+    <string name="Enter_city">Please enter your city name.</string>
+    <string name="Select_state">Please select your state name from dropdown.</string>
+    <string name="System_under_maintainance">Currently System is under maintenance. Please retry after sometime.</string>
+    <string name="Something_wrong">Something went wrong. Please retry again.</string>
+
+    <!--Messages-->
+    <string name="Loading_groups">Please wait loading groups</string>
+    <string name="Scrip_not_allowed_intraday">Scrip is not allowed for additional Intraday Multiplier</string>
+
+    <string name="login_note">Note: MPIN will be generated on successful login. Your first login on any day has to be with full login credentials. Subsequent logins can be done using your MPIN, which will be valid for 90 days.</string>
+
+    <!--<string name="login_note">Note: To generate MPIN select the \'\Generate MPIN\'\ checkbox. Your first login on any day has to be with full login credentials. Subsequent logins can be done using your MPIN, which will be valid for 90 days.</string>-->
+    <string name="your_mpin">Note: Your current MPIN is valid for 90 days. To generate a new MPIN select the \'\Generate New MPIN\'\ checkbox</string>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_fingerprint">One-touch Sign In</string>
+    <string name="desc_fingerprint">Please place your fingertip on the scanner to verify your identity and login without mpin.</string>
+    <string name="note">(Fingerprint sign in makes your app login much faster. Your device should have at least one fingerprint registered in device settings)</string>
+    <string name="title_activity_home">Fingerprint</string>
+    <string name="activity_home_desc">You have successfully logged in with fingerprint authentication</string>
+    <string name="activity_home_note">Close and re-open the app to see the fingerprint auth screen again</string>
+    <string name="transfer_msg">I would like to transfer (Rs.):</string>
+    <string-array name="option_chain_column">
+        <item>Strk Price+</item>
+        <!--<item>CPType+</item>-->
+        <item>LTP+</item>
+        <item>R1+</item>
+        <item>R2+</item>
+        <item>R3+</item>
+        <item>S1+</item>
+        <item>S2+</item>
+        <item>S3+</item>
+    </string-array>
+
+    <!--Mutual Funds-->
+    <string name="Investment_value">Investment(\u20B9)</string>
+    <string name="Investment_amt">Investment Amt.(\u20B9)</string>
+    <string name="Amount">Amount(\u20B9)</string>
+    <string name="Switch_amount">Switch Amt.(\u20B9)</string>
+    <string name="Reedem_amount">Redeem Amt.(\u20B9)</string>
+    <string name="Redemption">Redemption:</string>
+    <string name="Units_to_redeem">Units to Redeem</string>
+    <string name="Units_to_switch">Units to Switch</string>
+    <string name="Amount_to_redeem">Amount to Redeem(\u20B9)</string>
+    <string name="Amount_to_switch">Amount to Switch(\u20B9)</string>
+    <string name="Switch_units">Switch Units</string>
+    <string name="Reedem_units">Redeem Units</string>
+    <string name="Current_value">Cur. Val(\u20B9)</string>
+    <string name="Gain_Loss">* Gain / (Loss) (\u20B9)</string>
+    <string name="Gain_Loss1">*Gain/Loss(\u20B9)</string>
+    <string name="Xirr">XIRR(%)</string>
+    <string name="Ventura_top_picks">Performing Funds</string> <!--Invest Now->Performing Funds-->
+    <string name="Quick_transact">Quick Transact</string>
+    <string name="Missed_SIP">Missed SIP</string>
+    <string name="Goals">Goals</string>
+    <string name="Bucket_investment">Bucket Investment</string>
+    <string name="period">Period:</string>
+    <string name="AS_on">As on:</string>
+    <string name="Grand_Total">Grand Total</string>
+    <string name="No_of_units">No. of Units</string>
+    <string name="Sip_pm_rs">SIP(p.m.)(\u20B9)</string>
+    <string name="Pur_Amt">Pur. Amt.(\u20B9)</string>
+    <string name="Mandate_Amt">Mandate Amt.(\u20B9)</string>
+    <string name="Avl_Amt">Available Amt.(\u20B9)</string>
+    <string name="Curr_Amt">Curr. Amt.(\u20B9)</string>
+
+    <string name="Abs_ret">Abs. Ret.(%)</string>
+    <string name="Available_balance">Available Balance(\u20B9) :</string>
+    <string name="Estimated_monthly_income">Estimated Monthly Income(\u20B9) :</string>
+    <string name="Scheme">Scheme</string>
+    <string name="CAGR_return">CAGR Returns(%)</string>
+    <string name="XIRR_return">XIRR Returns(%)</string>
+    <string name="Absolute_return">Abs. Returns(%)</string>
+    <string name="Scheme_name">Scheme Name</string>
+    <string name="Nav_rs">NAV(\u20B9)</string>
+    <string name="Aum_rs">AUM(\u20B9)(Cr.)</string>
+    <string name="Open_ended_equity">Open ended equity scheme</string>
+    <string name="Multiple_of_1000">Multiples of \u20B9 1,000</string>
+    <string name="Multiple_of_5000">Multiples of \u20B9 5,000</string>
+    <string name="Liquid_scheme">Liquid scheme</string>
+    <string name="Income_fund">Income Fund</string>
+    <string name="Last_nav">Last NAV(\u20B9): </string>
+    <string name="Minimum_amt">Minimum amount(\u20B9): </string>
+    <string name="Minimum_sip_amt">Minimum SIP amount(\u20B9): </string>
+    <string name="Minimum_stp_amt">Minimum STP amount(\u20B9): </string>
+    <string name="Minimum_swp_amt">Minimum SWP amount(\u20B9): </string>
+    <string name="Minimum_switch_amt">Minimum Switch amount(\u20B9): </string>
+    <string name="Multiples_of">Multiples of(\u20B9): </string>
+    <string name="Exit_load">Exit Load: </string>
+    <string name="Total_no_of_units">Total No. of Units: </string>
+    <string name="avl_units">Available Units: </string>
+
+    <string name="sip_day">SIP Day:</string>
+    <string name="stp_day">STP Day:</string>
+    <string name="swp_day">SWP Day:</string>
+    <string name="sip_start_date">SIP Start Date:</string>
+    <string name="redemption_date">Redemption Date:</string>
+    <string name="stp_start_date">STP Start Date:</string>
+    <string name="swp_start_date">SWP Start Date:</string>
+    <string name="sip_end_date">SIP End Date:</string>
+    <string name="stp_end_date">STP End Date:</string>
+    <string name="swp_end_date">SWP End Date:</string>
+    <string name="sip_startdate_format">DD/MMM/YYYY</string>
+    <string name="sip_period">SIP Period:</string>
+    <string name="stp_period">STP Period:</string>
+    <string name="swp_period">SWP Period:</string>
+    <string name="no_of_mnths_qrtr">No. of Months/ Quarters</string>
+    <string name="sip_amount">SIP Amount (\u20B9)</string>
+    <string name="sip_amt">SIP Amt.(\u20B9)</string>
+    <string name="stp_amount">STP Amount (\u20B9)</string>
+    <string name="swp_amount">SWP Amount (\u20B9)</string>
+    <string name="switch_description">NOTE: For Switch amounting \u20B9 2 Lacs &amp; avobe NAV applicable
+        for Switch-in would be as on T+3 business days.</string>
+    <string name="dashboard_note">* Gain also includes the dividend amount.</string>
+
+    <string name="Save_tax">Save Tax</string>
+    <string name="Do_it_yourself">Explore Funds</string>
+    <string name="DIY">DIY</string>
+    <string name="Park_funds">Park Funds</string>
+    <string name="Regular_income">Regular Income</string>
+    <string name="Smart_investment_plan">Smart Investment Plan (SIP)</string>
+    <string name="Allocation_percent">Alloc(%)</string>
+    <string name="Sip_day">SIP Day</string>
+    <string name="bankingadnpsu">Banking &amp; PSU Fund</string>
+    <!--Quick Transactions-->
+
+    <string name="Purchase">Purchase</string>
+    <string name="Sip">SIP</string>
+    <string name="Top_up">Top Up</string>
+    <string name="Redeem">Redeem</string>
+    <string name="Swp">SWP</string>
+    <string name="Stp">STP</string>
+    <string name="Switch">Switch</string>
+    <string name="Spread_order">Spread Order</string>
+    <string name="Park_earn">Park &amp; Earn</string>
+    <!--SIP Mandate-->
+
+    <string name="existing_bank_details">Use existing bank deatils</string>
+    <string name="account_no">Account No.</string>
+    <string name="account_type">Account Type</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="city">City</string>
+    <string name="branch_name">Branch Name</string>
+    <string name="ifsc">IFSC</string>
+    <string name="micr">MICR</string>
+    <string name="account_holder_name">A/c Holder name (as per bank records)</string>
+    <string name="mandate_amount_upto">Mandate amount upto (\u20B9)</string>
+    <string name="avl_amount">Available Amount(\u20B9)</string>
+    <!--    <string name="select_sip_type">Select SIP Type</string>-->
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="sip_type">SIP Type</string>
+    <string name="missedsip">Missed SIP Report</string>
+    <string name="nomissedsip"><b>Fantastic!</b> You have not missed any SIP installment.</string>
+
+    <!--Order Book-->
+
+    <string name="scheme_name">Scheme name</string>
+    <string name="hint">* C- Cumulative; A- Annual; H- Half Yearly; Q- Quarterly; M- Monthly</string>
+    <string name="note1"><b>Note :</b> An application of maximum Rs. 5 lac is allowed with UPI ID.</string>
+    <string name="note2"> All Applications received on Saturday, Sunday and public holiday will be banked on the next working day.</string>
+    <string name="transaction_type">Trans. Type</string>
+    <string name="status">Status</string>
+    <string name="date">Date</string>
+    <string name="amount">Amount</string>
+    <string name="units">Units</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="mf_terms_conditions">
+        "1.	I/We hereby allow Ventura Securities to utilize my KYC information such as identity (name, PAN, age etc.), address and signature for sending it to Asset Management Companies (AMC) for the purpose of validation and to comply with the legal and regulatory requirements.
+2.	I agree and understand that I/we shall be solely liable to inform Ventura Securities / AMC in case of any change in my / our KYC information including change in signature/ signatories etc. and in the event of my / our signature not being updated, available or legible in KYC records, Ventura Securities / AMC would be within its rights to carry out further checks to validate the authenticity of the request or reject any such offline request based on existing KYC information.
+3.	I/We have checked the personal and bank related details provided by me/us. Neither Ventura Securities Ltd nor any of the Mutual Funds chosen shall accept any liability which may arise as a consequence of the erroneous information provided by me/us.
+4.	I/We hereby declare that the amount invested in the scheme is through legitimate source only and does not involve designed for the purpose of the contravention of any Act, Rules, Regulations, Notifications or Directives of the provisions of the Income Tax Act, Anti Money Laundering Laws, Anti-Corruption Laws or any other applicable laws enacted by the Government of India from time to time.
+5.	I/we have not received nor have been induced by any rebate or gifts, directly or indirectly in making this investment.
+6.	I/we are aware that the units of the schemes shall be allotted, redeemed or switched, as the case may be, at the Net Asset Value (NAV) prevalent on the date of the application, if the application for purchase, redemption or switch is received by the Fund before the cut-off time as specified on the website and consistent with the terms of the Scheme. Ventura Securities Ltd shall take all necessary action to ensure that the NAV allotted is the NAV applicable on the date of the transaction. However Ventura Securities Ltd shall not be liable for any loss that may arise to me/us as a result of the correct NAV not being allotted to my/our transactions on the website.
+7.	I/we are aware any request falling due on a holiday would be processed on the next business day and respective NAV would be applicable as per the Mutual Fund's offer document.
+8.	Ventura Securities Ltd or the concerned Mutual Fund or their respective registrars shall not entertain any offline transaction requests.
+9.	I/we are aware that in the case of Automatic Investment Plan, in the absence of sufficient allocated funds, unallocated funds to the extent available shall also be utilised. In the absence of sufficient funds, both allocated and unallocated, no investment shall be made for that particular period.
+10.	Ventura Securities Ltd does not accept any liability for delay in processing time at the Mutual Fund's or Registrar's end.
+11.	Ventura Securities Ltd shall provide its services on a best effort basis. Neither Ventura Securities Ltd, nor any of the Mutual Funds shall be liable for any failure to perform its obligations, to the extent that such performance has been delayed, hindered or prevented by: a) System failure including failure of ancillary or associated systems, or fluctuation of power, or other environmental conditions; or b) Accident, transportation, neglect, misuse, errors, frauds of the clients or agents or any third party, acts of God, floods, epidemics, quarantine, riot or civil commotion and war.; or c) Any fault in any attachments or associated equipment of the clients; or d) Any incidental, special or consequential damages including without limitation of loss of profit. The client further agrees to indemnify Ventura Securities Ltd for any loss that may arise as a result of system failure, accident or any of the reasons mentioned above.
+12.	Ventura Securities Ltd shall not send a physical copy of the transaction statement or the accounts statement to the customer. The customer can view the same on the website.
+13.	The client service team of Ventura Securities Ltd shall handle all Mutual Fund related queries of the client.
+14.	For all correspondences with Ventura Securities Ltd, the client shall quote his e-broking account no. The Terms and Conditions set hereinabove may be modified by Ventura Securities Ltd without any prior notice to the client and the client's continued usage of the services shall be deemed to be an acceptance of the modified terms.
+15.	For NRIs only - I / We confirm that I am/ we are Non Residents of Indian nationality/origin and that I/We have remitted funds from abroad through approved banking channels or from funds in my/ our Non Resident External / Non Resident Ordinary / FCNR account.
+16.	Applicable only for transactions executed under the investment advisory services offered by Ventura Securities Limited: I give my consent to share data feeds of my transaction to the SEBI Registered advisors.
+17.	Applicable only for transactions not executed under the investment advisory services offered by Ventura Securities Ltd.
+18.	It is explicitly stated herein that the Mutual Fund schemes offered online, have not been recommended by Ventura Securities Limited. I/We have understood the products suitable to me/us based on my/our risk profile and I/We acknowledge that Ventura Securities will not be held liable for any losses suffered by me/us. I/We hereby confirm that since this is an Execution Only transaction, Employee Unique Identity Number (EUIN) allotted to Sales employee by AMFI is not applicable.
+19.	I/We confirm that details provided by me/us are true and correct.
+20.	I/we have understood that Mutual funds are subject to market risks and I/We have carefully read all the Statement of Additional information, Scheme information document and all other relevant offer documents before deciding to make this investment in the mutual fund scheme
+21.	I/we hereby apply for units of the scheme. I have read and understood the terms, conditions, details, rules and regulations governing the scheme."\n
+22. Transaction brokerage charge amounting Rs. 50/- will be levied on redemption of non-liquid schemes.
+    </string>
+    <string name="sgb_terms_conditions">
+<b>Terms \u0026 Conditions for applying on-line through Ventura Securities Ltd. in Sovereign Gold Bond:</b>\n\n
+
+I understand that Ventura Securities Ltd. (hereinafter referred to as \'Ventura\') allows me to apply for placing the Sovereign Gold Bond through their website www.ventura1.com and mobile application on the terms and conditions specified below. By making the SGB application I explicitly agree to be bound by the Terms and Conditions mentioned here in below including any terms \u0026 conditions as  may be notified by Ventura from time to time in any mode of communication. I understand and agree that Ventura reserves the right to change, modify and/or alter the terms and conditions at any point of time with or without notice.\n
+I hereby instruct and authorize Ventura Securities Ltd to make an application for placing the SGB through the Website (www.ventura1.com) or mobile application.\n
+
+1.The Client may purchase the Sovereign Bonds using the facilities offered by Ventura Securities Ltd on www.ventura1.com. The Client\'s transaction instruction for an investment in any Sovereign Bonds scheme shall, at all times, be subject to the same being processed by ,Ventura.\n
+2. It shall be the Client\'s responsibility to ensure that any information made available by the Client to Ventura  is true, accurate and free from error. Ventura Securities Ltd, and/or their affiliates shall not be responsible for any loss or damage that may result from any erroneous information, or any omission in the information that is provided by the Client to Ventura.Ventura Securities Ltd shall not accept any liability that may arise as a consequence of the incomplete /incorrect data or information provided by the Client and/or any error in the execution of an order due to such incomplete/incorrect data. \n
+3. All orders placed by Ventura Securities Ltd on behalf of the Client shall be deemed to have been placed by the Client himself. Ventura Securities Ltd shall not be liable for any loss that may be incurred by the Client due to a third party placing orders regarding SGB through the Website after getting hold of the Client\'s personal identification details.\n
+4. Demat account credit would be the default option for all customers with active linked demat a/c. Client may select his/her preferred demat a/c at the time of placing order in case of multiple demat accounts. Client agrees that Certificate of Holding shall be emailed only to those customers who hold investment account with Ventura Securities Ltd without any linked demat a/c.\n
+5. The funds of the Client allocated for investment in SGB shall be transferred back to the Client’s bank account in case the Client’s instruction for application for SGB is not executed for any reasons whatsoever. Ventura Securities Ltd would have the right to reject all or any of the investment instructions regarding SGB received from the Client and the Client agrees that Ventura Securities Ltd shall not be held liable, in any manner whatsoever, for the same. No interest shall be payable by Ventura Securities Ltd on the amount refunded due to rejection for any reason\n
+I / WE have read and accepted the above terms and conditions.\n\n
+
+RBI CIRCULAR\n\n
+1. Eligibility for Investment:\n
+The Bonds under this Scheme may be held by a person resident in India, being an individual, in his capacity as such individual, or on behalf of minor child, or jointly with any other individual. The bond may also be held by a Trust, Charitable Institution and University. \"Person resident in India\" is defined under section 2(v) read with section 2(u) of the Foreign Exchange Management Act, 1999\n
+2. Form of Security\n
+The Bonds shall be issued in the form of Government of India Stock in accordance with section 3 of the Government Securities Act, 2006. The investors will be issued a Holding Certificate. The Bonds shall be eligible for conversion into de-mat form.\n
+3. Denomination\n
+The Bonds shall be denominated in units of one gram of gold and multiples thereof. Minimum investment in the Bonds shall be one gram with a maximum limit of subscription of 4 kg for individuals, 4 kg for Hindu Undivided Family (HUF) and 20 kg for trusts and similar entities notified by the government from time to time per fiscal year (April – March), provided that
+a.	annual ceiling will include bonds subscribed under different tranches during initial issuance by Government and those purchased from the secondary market; and\n
+b.	the ceiling on investment will not include the holdings as collateral by banks and other Financial Institutions.\n
+4. Issue Price\n
+Price of the Bonds shall be fixed in Indian Rupees on the basis of simple average of closing price of gold of 999 purity published by the India Bullion and Jewelers Association Limited for the last three business days of the week preceding the subscription period. The issue price of the Gold Bonds will be ₹ 50 per gram less than the nominal value to those investors applying online and the payment against the application is made through digital mode.\n
+5. Interest\n
+The Bonds shall bear interest at the rate of 2.50 percent (fixed rate) per annum on the amount of initial investment. Interest shall be paid in half-yearly rests and the last interest shall be payable on maturity along with the principal.\n
+6. Payment Options\n
+Payment shall be accepted in Indian Rupees through cash up to a maximum of ₹ 20,000/- or Demand Drafts or Cheque or Electronic banking. Where payment is made through cheque or demand draft, the same shall be drawn in favour of receiving office.\n
+7. Redemption\n
+i) The Bonds shall be repayable on the expiration of eight years from the date of issue of Gold bonds. Pre-mature redemption of the Bond is permitted from fifth year of the date of issue on the interest payment dates.\n
+ii) The redemption price shall be fixed in Indian Rupees and the redemption price shall be based on simple average of closing price of gold of 999 purity of previous 3 business days from the date of repayment, published by the India Bullion and Jewelers Association Limited.\n
+
+    </string>
+    <string name="capital_gainloss_note">Note- Effect of Grandfathering is considered.</string>
+
+    <string name="notepledge"><b>Shares in DP and Ventura Beneficiary (VB)</b>\n\n
+    ⦁	The shares seen by you in the options above\n\n
+i.	Lying in your demat a/c ( Shares in DP )\n\n
+ii.	Shares that are lying with Ventura Securities  Shares in Ventura Beneficiary (VB).\n\n
+⦁	You can select the shares from both the above options to pledge to Ventura, thereby enhancing your buying power.\n\n
+⦁	Once you select the shares to be pledged the system shows you the approximate amount that would be available as margin (this is after adjusting the hair cut value)\n\n
+⦁	The quantity to be pledged by you should be equal to or less than the available quantity in both the options (DP and VB)\n\n
+⦁	Once you click on the Pledge button, system will direct you to the NSDL Page where you will be able to see all those stocks which you wished to pledge. You need to select those stocks on the NSDL Page and click on the submit button. You will immediately receive an OTP from NSDL which you need to validate on the NSDL Page after which the shares in you DP are marked as pledge.\n\n
+⦁	Incase you sell the shares post you pledge them, the pledge would fail if the quantity in your DP is not found to the extent of the quantity you have pledged.\n\n
+⦁	Facility for pledge is available to you on all trading days between 9:00 am and 5:00 pm\n\n
+⦁	Charges for pledge would be Rs.15/- + GST....\n\n
+    <b>Shares Receivable</b>\n\n
+        ⦁	We allow you to pledge the share on the very next day of purchase. This gives you an option to create a margin against the shares receivable in the fastest possible time.\n\n
+⦁	The above option can also be used for margin funding in case you have bought shares that you wish to be margin funded. At the same time you can also create a collateral for those shares that you have requested to be funded.\n\n
+⦁	We explain this via an example : You have bought 100 shares of SBI worth Rs 25000 which you want to be margin funded. So against this 25000 you will need about 30 % as collateral margin. You may create this margin by pledging further shares of about Rs 8000…. ( we give you the option of selecting the shares of your choice )\n\n
+⦁	The charges for pledge for margin funding are Rs 35/- and for unpledge of margin funded shares Rs 15/- plus GST in both the cases.\n\n
+⦁	Only those shares which can be margin funded would show up in your margin funding option ( please note we do not have the option to margin fund shares bought on the BSE )\n\n
+⦁	We advise you to margin fund the shares only when you plan to hold them for more than 7 trading days to avoid paying the higher pledge charges of NSDL\n\n
+⦁	You have the option to select shares for margin funding till T + 1 day only. For example: shares bought on Monday you request them to be margin funding till Tuesday 4 pm.\n\n
+⦁	The value of margin is seen by you as and when you select the shares to be funded.. ( the system will allow you to margin fund shares as per your ledger balances available with us )\n\n
+⦁	If you are in credit there would no option for you to avail the margin funding facility\n\n
+⦁	The margin funding is available on all shares in Q / A / B category\n
+
+    </string>
+
+    <string name="sso_loginnote">NRI users can login <b>only</b> with their email or client id</string>
+    <string name="sso_otpsent">
+        OTP has been sent on your registered mobile number and email id
+        <!--OTP has been sent in registered email to <font color='#F96129'>xxxx@gmail.com</font> and on your mobile number <font color='#F96129'>xxxxxx9301</font>-->
+    </string>
+
+
+    <string name="start_authenticator_app">Open Google Authenticator app on your phone, click on add account &amp; enter the below key to link your Ventura account</string>
+    <string name="authenticator_app">Typically used on a smartphone,an authenticator app adds Two-Factor
+        Authentication to the accounts you want to protect. \n
+        Your authenticator app will generate a 6 digit code that changes every 30 seconds.You can use it to sign in,
+        trade,deposit or withdraw money from your account securely. \n Authenticator apps are not linked to your SIM card or phone number.
+        It simply enhances security by guarding against SIM switching. \n Please keep in mind,while this option enhances
+        security due to the 30-second window,it may still be vulnerable to phishing attacks.</string>
+    <string name="authenticatorcode_description1"><b><font color="#FFFFFF">Instructions : </font></b>
+        \n- In the GA App long press on the Authentication Code to copy it.
+        \n- Come back to this screen, long press to paste the copied code.</string>
+
+    <string name="authenticatorcode_description2"><b><u><font size="20">Tap here to Open Google Authenticator</font></u></b></string>
+
+    <string name="authenticatorcode_description">You can find this code in your <b><font size="20">authenticator app</font></b>. Remember that the codes refresh every 30 secs.</string>
+    <string name="verification_method">Proceed with your preferred two-factor authentication route</string>
+    <string name="authenticator_desc1">You have already experienced our blazing fast login process with just OTP and PIN.
+        \n\nNow go a step further and avoid waiting for OTP by switching to Google Authenticator.
+        \n\nYou can set it up in just <b><font color="#FFFFFF">2 minutes</font></b>.</string>
+
+
+    <string name="authenticator_desc2">Download the latest Authenticator App <u><b>from here</b>.</u></string>
+
+    <string name="authenticator_desc10">Looks like you haven\'t set up Google Authenticator. For faster authentication and enhanced security please complete the setup now</string>
+
+    <string name="authenticator_desc11">It is a simple process and gets done in no time. \n<b><font color="#FFFFFF">Check here</font></b> for instructions.</string>
+
+    <string name="authenticator_desc12"><b><font color="#FFFFFF">Instructions : </font></b>
+        \n\n1. Enter OTP and Pin when prompted.
+        \n\n2. Tap on 📑 to copy the setup code and tap on \'Google Authenticator\' button.
+        \n\n3. Tap on \'Add\' button then tap on \'Enter a setup key\'
+        \n\n4. In \'Account Name\' type \'Ventura Wealth\' and in \'Your key\' long press and paste the copied Setup Code.
+        \n\n5. Tap on \'Add\' button and you are done!</string>
+
+    <string name="auth_yes">Yes, I want to Setup Authenticator Now</string>
+    <string name="auth_no"><u>No, I will register later</u></string>
+    <string name="verify_gauth"><u>Verify via Authenticator app</u></string>
+    <string name="verify_otpauth"><u>Verify via OTP</u></string>
+    <string name="charges_estimator"><u>Charges\nEstimator</u></string>
+
+    <string name="risk_note">⦁ 9 out of 10 individual traders in equity Futures and Options Segment, incurred net losses.\n\n
+        ⦁ On an average, loss makers registered net trading loss close to ₹ 50,000.\n\n
+        ⦁ Over and above the net trading losses incurred, loss makers expended an additional 28% of net trading losses as transaction costs.\n\n
+        ⦁ Those making net trading profits, incurred between 15% to 50% of such profits as transaction cost.\n\n
+
+        <b>Source:</b> <a href="https://www.sebi.gov.in/reports-and-statistics/research/jan-2023/study-analysis-of-profit-and-loss-of-individual-traders-dealing-in-equity-fando-segment_67525.html">SEBI study dated January 25, 2023 on “Analysis of Profit and Loss of Individual Traders dealing in equity Futures and Options (F&amp;O) Segment”, wherein Aggregate Level findings are based on annual Profit/Loss incurred by individual traders in equity F&amp;O during FY 2021-22.</a>
+        </string>
+    <string name="past_holding"><b><font size="20">Past</font></b> Holding</string>
+    <string name="current_holding"><b><font size="20">Current</font></b> Holding</string>
+
+</resources>

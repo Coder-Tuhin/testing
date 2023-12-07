@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/large_margine"
+        android:paddingTop="@dimen/common_margine">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/small_textsize"
+            android:text="Market Value (\u20B9.): "
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/mktValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/common_textsize"
+            android:text=""
+
+            android:textStyle="bold"
+            android:textColor="@color/ventura_color"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/large_margine"
+        android:paddingTop="4dp"
+        android:paddingBottom="@dimen/common_margine">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/small_textsize"
+            android:text="Instant Withdrawable (\u20B9.): "
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/withdrawable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/common_textsize"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="@color/ventura_color"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@drawable/dash_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/item_height"
+        android:paddingLeft="@dimen/item_height"
+        android:paddingTop="@dimen/activity_vertical_margin">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/common_textsize"
+            android:textStyle="bold"
+            android:text="WITHDRAW:"
+            android:textColor="@color/silver"
+            android:layout_gravity="left"/>
+
+        <RadioGroup
+            android:id="@+id/withdrawRG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_margine"
+            android:layout_marginTop="@dimen/common_margine"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/amountRd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount"
+                android:textStyle="bold"
+                android:checked="true"
+                android:textSize="@dimen/common_textsize"
+                android:textColor="@color/silver"
+                android:button="@drawable/radio_chkbtn"/>
+            <RadioButton
+                android:id="@+id/unitsRd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All Units"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/item_height"
+                android:textSize="@dimen/common_textsize"
+                android:textColor="@color/silver"
+                android:button="@drawable/radio_chkbtn"/>
+        </RadioGroup>
+
+
+        <EditText
+            android:id="@+id/amountEt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:longClickable="false"
+            android:gravity="center_vertical"
+            android:inputType="number"
+            android:background="@drawable/border"
+            android:padding="@dimen/common_margine"
+            android:hint="Enter Amount (\u20B9.)"
+            android:maxLength="15"
+            android:textColor="@color/white"
+            android:textColorHint="@color/silver"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:textSize="@dimen/common_textsize"
+            android:textStyle="bold"/>
+
+        <include layout="@layout/custom_spinner"
+            android:id="@+id/bank_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:layout_marginTop="@dimen/activity_vertical_margin"/>
+
+        <Button
+            android:id="@+id/proceed"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:background="@drawable/bg_orange_btn"
+            android:layout_marginTop="@dimen/item_height"
+            android:layout_marginBottom="@dimen/large_margine"
+            android:text="PROCEED"
+            android:paddingLeft="@dimen/large_margine"
+            android:paddingRight="@dimen/large_margine"
+            android:textAllCaps="false"
+            android:textSize="@dimen/large_textsize"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/withdrawn_note"
+            android:textColor="@color/silver"
+            android:textSize="@dimen/common_textsize"
+            android:layout_below="@+id/linear"
+            android:layout_centerHorizontal="true"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

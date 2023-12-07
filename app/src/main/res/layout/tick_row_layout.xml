@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    android:background="@color/black">
+
+        <TextView
+            android:id="@+id/date"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="10sp"/>
+        <TextView
+            android:id="@+id/open"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="10sp"/>
+        <TextView
+            android:id="@+id/high"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:textSize="10sp"/>
+        <TextView
+            android:id="@+id/low"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:textSize="10sp"/>
+       <TextView
+         android:id="@+id/close"
+         android:gravity="center"
+           android:textColor="@color/white"
+         android:layout_weight="1"
+           android:textSize="10sp"/>
+    <TextView
+        android:id="@+id/volume"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_weight="1"
+        android:textSize="10sp"/>
+    </TableRow>

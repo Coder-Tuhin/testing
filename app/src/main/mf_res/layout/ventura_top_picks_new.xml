@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/analytics_background">
+    <view.TvRegular
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_4"
+        android:text="@string/Ventura_top_picks"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/text_16" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dividend"
+            android:gravity="right"
+            android:textSize="@dimen/text_10"
+            android:textColor="@color/white"/>
+        <Switch
+            android:id="@+id/diySwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:thumbTint="@color/colorAccent"
+            android:trackTint="@color/colorAccent"
+            android:textColor="@color/text_primary"
+            android:checked="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Growth"
+            android:gravity="left"
+            android:textSize="@dimen/text_10"
+            android:textColor="@color/white"
+            android:layout_marginRight="@dimen/dimen_10"/>
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rdgroup"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="5"/>
+
+    <ExpandableListView
+        android:id="@+id/expandable_list"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+
+</LinearLayout>

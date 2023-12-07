@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ventura_image"
+            android:layout_width="@dimen/dimen_36"
+            android:layout_height="@dimen/dimen_36"
+            android:src="@drawable/ventura_icon"
+            android:layout_margin="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_36"
+            android:textSize="@dimen/text_16"
+            android:text="SIP Mandate Registration"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/ventura_image"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/closeAlert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_18"
+            android:text="X"
+            android:textColor="@color/black"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:textStyle="bold"
+            android:padding="@dimen/dimen_4"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/sip_conf_msg"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/white"
+        android:padding="@dimen/dimen_10"
+        android:textSize="@dimen/text_14"
+        android:text="@string/sip_mandate_success_msg"
+        android:layout_below="@+id/header_layout"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/enache_process_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sip_conf_msg"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dimen_10"
+        android:text="@string/enach_heading_mandate"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_16"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/enache_notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dimen_20"
+        android:paddingRight="@dimen/dimen_20"
+        android:layout_below="@+id/enache_process_title"
+        android:text="@string/enache_process"
+        android:textSize="@dimen/text_14"/>
+
+    <TextView
+        android:id="@+id/ok_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60"
+        android:text="OK"
+        android:textSize="@dimen/text_16"
+        android:textColor="@color/ventura_color"
+        android:gravity="center_vertical|right"
+        android:layout_marginRight="@dimen/dimen_30"
+        android:layout_below="@+id/enache_notes"/>
+</RelativeLayout>

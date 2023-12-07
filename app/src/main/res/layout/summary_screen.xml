@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_orange_btn"
+            android:gravity="center"
+            android:padding="@dimen/activity_vertical_margin"
+            android:text="@string/summaryText"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/item_height"
+            android:textSize="@dimen/common_textsize" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/currentInvestment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.00"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Invested Amount(\u20B9.)"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/small_textsize" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/common_margine"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/marketValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.00"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Market Value(\u20B9.)"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/small_textsize" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@drawable/bg_orange_btn"
+             android:paddingLeft="30dp"
+             android:paddingRight="30dp">
+             <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                 android:layout_centerVertical="true"
+                 android:src="@drawable/arrow_right"/>
+             <LinearLayout
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerInParent="true"
+                 android:gravity="center"
+                 android:orientation="vertical">
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textSize="30sp"
+                     android:text="0.00%"
+                     android:textStyle="bold"
+                     android:textColor="@color/white"/>
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textSize="@dimen/common_textsize"
+                     android:text="GROWTH RATE"
+                     android:textStyle="bold"
+                     android:textColor="@color/white"
+                     android:gravity="center"
+                     android:drawablePadding="@dimen/common_margine"
+                     android:drawableRight="@drawable/info"/>
+             </LinearLayout>
+             <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentRight="true"
+                 android:layout_centerVertical="true"
+                 android:src="@drawable/arrow_left"/>
+         </RelativeLayout>-->
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/item_height"
+        android:layout_marginRight="@dimen/item_height">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentLeft="true"
+            android:gravity="center">
+            <Button
+                android:id="@+id/withdraw"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:textSize="40sp"
+                android:text="-"
+                android:textStyle="bold"
+                android:background="@drawable/red_circle"
+                android:textColor="@color/red"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/common_textsize"
+                android:text="WITHDRAW"
+                android:textStyle="bold"
+                android:textColor="@color/silver"
+                android:layout_marginTop="@dimen/s_margin"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:gravity="center">
+            <Button
+                android:id="@+id/invest"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:textSize="40sp"
+                android:text="+"
+                android:textStyle="bold"
+                android:background="@drawable/green_circle"
+                android:textColor="@color/green1"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/common_textsize"
+                android:text="INVEST"
+                android:textStyle="bold"
+                android:textColor="@color/silver"
+                android:layout_marginTop="@dimen/s_margin"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

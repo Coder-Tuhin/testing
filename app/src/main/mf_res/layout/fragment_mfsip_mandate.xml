@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    android:orientation="vertical">
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <RadioButton
+            android:id="@+id/approved_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/ventura_color"
+            android:text="Approved"
+            android:checked="true"
+            android:textColor="@color/white"/>
+        <RadioButton
+            android:id="@+id/other_radio"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/ventura_color"
+            android:text="Pending"
+            android:textColor="@color/white"/>
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+        <view.TvRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textColor="@color/ventura_color"
+            android:autoLink="email|phone"
+            android:padding="@dimen/dimen_6"
+            android:text="For any assistance, contact on +91 22 6754 7042 or email \nus at mfonline@ventura1.com"
+            android:textSize="@dimen/text_13"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/bottom_layout">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        <LinearLayout
+            android:id="@+id/register_a_sip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dimen_4"
+            android:paddingRight="@dimen/dimen_4"
+            android:gravity="center_horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_20">
+                <view.TvLarge
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_40"
+                    android:background="@drawable/mf_button_bg"
+                    android:gravity="center"
+                    android:text="Register SIP Mandate"
+                    android:textColor="@color/text_primary"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dimen_4"
+            android:paddingRight="@dimen/dimen_4"
+            android:gravity="right">
+
+            <LinearLayout
+                android:id="@+id/add_mandate_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_44"
+                android:orientation="horizontal"
+                android:layout_marginRight="@dimen/dimen_10">
+                <view.TvLarge
+                    android:layout_width="@dimen/dimen_30"
+                    android:layout_height="@dimen/dimen_30"
+                    android:background="@drawable/mf_button_bg"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="@color/text_primary"
+                    android:textSize="@dimen/text_22"
+                    android:textStyle="bold"/>
+                <view.TvRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="  New Mandate"
+                    android:textColor="@color/silver"
+                    android:textSize="@dimen/text_14"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

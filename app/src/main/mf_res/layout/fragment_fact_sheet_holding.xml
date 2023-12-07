@@ -1,0 +1,224 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_4"
+    tools:context="wealth.new_mutualfund.factSheet.FactSheetAllocationFragment">
+    <view.TvLarge
+        android:id="@+id/scheme_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_4"
+        android:layout_marginBottom="@dimen/dimen_18"
+        android:text="-"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_18"
+        android:textStyle="bold" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <view.TvLarge
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_4"
+                android:layout_marginBottom="@dimen/dimen_4"
+                android:text="Top 10 Holdings"
+                android:textColor="@color/ventura_color"
+                android:textSize="@dimen/text_18"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/company_no_data_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No data available"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_14"
+                android:visibility="gone"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_10"/>
+
+            <LinearLayout
+                android:id="@+id/holding_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/fact_sheet_layout_border">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_30"
+                    android:orientation="horizontal">
+
+                    <view.TvRegular
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_alignParentRight="true"
+                        android:gravity="left|center_vertical"
+                        android:text="Company Name"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_16"
+                        android:paddingLeft="@dimen/dimen_10"/>
+
+                    <View
+                        android:layout_width="@dimen/dimen_1"
+                        android:layout_height="match_parent"
+                        android:background="@color/ventura_color" />
+
+                    <view.TvRegular
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:text="Allocation (%)"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_16" />
+                </LinearLayout>
+                <!--<View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1"
+                    android:background="@color/ventura_color"/>-->
+                <LinearLayout
+                    android:id="@+id/parentLayout_comp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_2"
+                    android:orientation="vertical"/>
+
+                <ListView
+                    android:id="@+id/listView_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@color/ventura_color"
+                    android:dividerHeight="@dimen/dimen_1"
+                    android:layout_marginLeft="@dimen/dimen_2"
+                    android:layout_marginRight="@dimen/dimen_2"
+                    tools:listitem="@layout/fact_sheet_holding_list_item"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_40"/>
+
+            <view.TvLarge
+                android:id="@+id/credit_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_4"
+                android:layout_marginBottom="@dimen/dimen_4"
+                android:text="Top 10 Sectors"
+                android:textColor="@color/ventura_color"
+                android:textSize="@dimen/text_18"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/sectors_no_data_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No data available"
+                android:textSize="@dimen/text_14"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:textColor="@color/white"
+                android:visibility="gone"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_10"/>
+            <LinearLayout
+                android:id="@+id/sector_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/fact_sheet_layout_border">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_30"
+                    android:orientation="horizontal">
+
+                    <view.TvRegular
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_alignParentRight="true"
+                        android:gravity="left|center_vertical"
+                        android:text="Sector Name"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_16"
+                        android:paddingLeft="@dimen/dimen_10"/>
+
+                    <View
+                        android:layout_width="@dimen/dimen_1"
+                        android:layout_height="match_parent"
+                        android:background="@color/ventura_color" />
+
+                    <view.TvRegular
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:text="Allocation (%)"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_16" />
+                </LinearLayout>
+                <!--<View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1"
+                    android:background="@color/ventura_color"/>-->
+
+                <LinearLayout
+                    android:id="@+id/parentLayout_sec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_2"
+                    android:orientation="vertical"/>
+
+                <ListView
+                    android:id="@+id/listView_sectors"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@color/ventura_color"
+                    android:dividerHeight="@dimen/dimen_1"
+                    android:layout_margin="@dimen/dimen_2"
+                    tools:listitem="@layout/fact_sheet_holding_list_item"
+                    android:visibility="gone"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/marketCapNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/dimen_6"
+                android:layout_marginBottom="@dimen/dimen_6"
+                android:layout_marginTop="@dimen/dimen_10">
+                <view.TvRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Note: "
+                    android:textStyle="italic"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_10"/>
+                <view.TvRegular
+                    android:id="@+id/note_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textStyle="italic"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_10"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

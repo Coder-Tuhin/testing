@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/popup_border">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="Add To Watchlist"
+                android:textColor="@color/silver"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"/>
+
+            <ImageButton
+                android:id="@+id/wlClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@android:drawable/btn_dialog"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/silver" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:layout_margin="@dimen/common_margine"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sGroupName"
+                android:layout_alignParentStart="true"
+                android:text="Selected Group"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/text_20"
+                android:textStyle="bold"
+                android:paddingLeft="@dimen/common_margine"/>
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:id="@+id/txtOk"
+                android:layout_alignParentRight="true"
+                android:text="Ok"
+                android:gravity="center"
+                android:background="@drawable/button_background_round"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/silver" />
+        <ListView
+            android:id="@+id/groupList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:dividerHeight="0.3dp"
+            android:divider="@color/silver"/>
+</LinearLayout>

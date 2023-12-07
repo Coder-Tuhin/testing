@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black_faded">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dimen_10">
+            <ImageView
+                android:id="@+id/backarrow"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/arrow_back" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp">
+
+                <EditText
+                    android:id="@+id/edit_query"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:hint="Search eg: infy, nifty"
+                    android:textColor="@color/white"
+                    android:background="@color/black_deep"
+                    android:textColorHint="@color/gray_color"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:imeOptions="actionSearch"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789&amp;-* "
+                    android:layout_marginEnd="@dimen/dimen_10"
+                    android:padding="@dimen/dimen_10"/>
+            </LinearLayout>
+        </LinearLayout>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioGroup
+                    android:id="@+id/searchscriprdgrp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_30"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/allRDbutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:button="@android:color/transparent"
+                        android:gravity="center"
+                        android:text="ALL"
+                        android:paddingLeft="@dimen/dimen_10"
+                        android:paddingRight="@dimen/dimen_10"
+                        android:textSize="@dimen/common_textsize"
+                        android:checked="true"
+                        android:layout_marginEnd="@dimen/dimen_10"
+                        android:background="@drawable/hometab_drawable1"
+                        android:textColor="@drawable/hometab_textcolor1" />
+                    <RadioButton
+                        android:id="@+id/stockRDbutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="@dimen/dimen_10"
+                        android:paddingRight="@dimen/dimen_10"
+                        android:button="@android:color/transparent"
+                        android:gravity="center"
+                        android:text="Stocks"
+                        android:textSize="@dimen/common_textsize"
+                        android:layout_marginEnd="@dimen/dimen_10"
+                        android:background="@drawable/hometab_drawable1"
+                        android:textColor="@drawable/hometab_textcolor1" />
+                    <RadioButton
+                        android:id="@+id/futureRDbutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="@dimen/dimen_10"
+                        android:paddingRight="@dimen/dimen_10"
+                        android:button="@android:color/transparent"
+                        android:gravity="center"
+                        android:text="Futures"
+                        android:textSize="@dimen/common_textsize"
+                        android:layout_marginEnd="@dimen/dimen_10"
+                        android:background="@drawable/hometab_drawable1"
+                        android:textColor="@drawable/hometab_textcolor1" />
+                    <RadioButton
+                        android:id="@+id/optionRDbutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="@dimen/dimen_10"
+                        android:paddingRight="@dimen/dimen_10"
+                        android:button="@android:color/transparent"
+                        android:gravity="center"
+                        android:text="Options"
+                        android:textSize="@dimen/common_textsize"
+                        android:layout_marginEnd="@dimen/dimen_10"
+                        android:background="@drawable/hometab_drawable1"
+                        android:textColor="@drawable/hometab_textcolor1" />
+                    <RadioButton
+                        android:id="@+id/indicesRDbutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="@dimen/dimen_10"
+                        android:paddingRight="@dimen/dimen_10"
+                        android:button="@android:color/transparent"
+                        android:gravity="center"
+                        android:text="Indices"
+                        android:textSize="@dimen/common_textsize"
+                        android:layout_marginEnd="@dimen/dimen_10"
+                        android:background="@drawable/hometab_drawable1"
+                        android:textColor="@drawable/hometab_textcolor1" />
+                    <RadioButton
+                        android:id="@+id/nseRDbutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="@dimen/dimen_10"
+                        android:paddingRight="@dimen/dimen_10"
+                        android:button="@android:color/transparent"
+                        android:gravity="center"
+                        android:text="NSE"
+                        android:textSize="@dimen/common_textsize"
+                        android:layout_marginEnd="@dimen/dimen_10"
+                        android:background="@drawable/hometab_drawable1"
+                        android:textColor="@drawable/hometab_textcolor1" />
+                    <RadioButton
+                        android:id="@+id/bseRDbutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="@dimen/dimen_10"
+                        android:paddingRight="@dimen/dimen_10"
+                        android:button="@android:color/transparent"
+                        android:gravity="center"
+                        android:text="BSE"
+                        android:textSize="@dimen/common_textsize"
+                        android:layout_marginEnd="@dimen/dimen_10"
+                        android:background="@drawable/hometab_drawable1"
+                        android:textColor="@drawable/hometab_textcolor1" />
+                    <RadioButton
+                        android:id="@+id/fnoRDbutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="@dimen/dimen_10"
+                        android:paddingRight="@dimen/dimen_10"
+                        android:button="@android:color/transparent"
+                        android:gravity="center"
+                        android:text="FNO"
+                        android:textSize="@dimen/common_textsize"
+                        android:layout_marginEnd="@dimen/dimen_10"
+                        android:background="@drawable/hometab_drawable1"
+                        android:textColor="@drawable/hometab_textcolor1" />
+                    <RadioButton
+                        android:id="@+id/currRDbutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="@dimen/dimen_10"
+                        android:paddingRight="@dimen/dimen_10"
+                        android:button="@android:color/transparent"
+                        android:gravity="center"
+                        android:text="CURR"
+                        android:textSize="@dimen/common_textsize"
+                        android:layout_marginEnd="@dimen/dimen_10"
+                        android:background="@drawable/hometab_drawable1"
+                        android:textColor="@drawable/hometab_textcolor1" />
+                    <RadioButton
+                        android:id="@+id/slbRDbutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="@dimen/dimen_10"
+                        android:paddingRight="@dimen/dimen_10"
+                        android:button="@android:color/transparent"
+                        android:gravity="center"
+                        android:text="SLB"
+                        android:textSize="@dimen/common_textsize"
+                        android:layout_marginEnd="@dimen/dimen_10"
+                        android:background="@drawable/hometab_drawable1"
+                        android:textColor="@drawable/hometab_textcolor1" />
+                    <RadioButton
+                        android:id="@+id/mcxRDbutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="@dimen/dimen_10"
+                        android:paddingRight="@dimen/dimen_10"
+                        android:button="@android:color/transparent"
+                        android:gravity="center"
+                        android:text="MCX"
+                        android:textSize="@dimen/common_textsize"
+                        android:visibility="gone"
+                        android:layout_marginEnd="@dimen/dimen_10"
+                        android:background="@drawable/hometab_drawable1"
+                        android:textColor="@drawable/hometab_textcolor1" />
+                    <RadioButton
+                        android:id="@+id/ncdexRDbutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="@dimen/dimen_10"
+                        android:paddingRight="@dimen/dimen_10"
+                        android:button="@android:color/transparent"
+                        android:gravity="center"
+                        android:text="NCDEX"
+                        android:textSize="@dimen/common_textsize"
+                        android:visibility="gone"
+                        android:layout_marginEnd="@dimen/dimen_10"
+                        android:background="@drawable/hometab_drawable1"
+                        android:textColor="@drawable/hometab_textcolor1" />
+
+                </RadioGroup>
+            </LinearLayout>
+        </HorizontalScrollView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="@color/black"
+            android:layout_marginTop="5dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:visibility="gone"
+            android:background="@color/white"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginTop="5dp"/>
+        <ListView
+            android:id="@+id/searchedListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/silver"
+            android:dividerHeight="0.3dp"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:listSelector="@android:color/transparent">
+        </ListView>
+    </LinearLayout>
+</FrameLayout>

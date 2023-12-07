@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:layout_marginTop="@dimen/dimen_4"
+    android:orientation="vertical">
+    <view.TvRegular
+        android:id="@+id/scheme_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scheme Name"
+        android:singleLine="true"
+        android:textColor="@color/ventura_color"
+        android:textSize="@dimen/text_15" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_2"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                >
+                <view.TvRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price Band (Rs.) :  "
+                    android:textColor="#fff"
+                    android:textSize="@dimen/text_13" />
+                <view.TvRegular
+                    android:id="@+id/priceband"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="@color/text_primary_light"
+                    android:textSize="@dimen/text_13" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                >
+                <view.TvRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Open :  "
+                    android:textColor="#fff"
+                    android:textSize="@dimen/text_13" />
+                <view.TvRegular
+                    android:id="@+id/dateOpen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="@color/text_primary_light"
+                    android:textSize="@dimen/text_13" />
+                <view.TvRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  Close :  "
+                    android:textColor="#fff"
+                    android:textSize="@dimen/text_13" />
+                <view.TvRegular
+                    android:id="@+id/dateClose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="@color/text_primary_light"
+                    android:textSize="@dimen/text_13" />
+            </LinearLayout>
+        </LinearLayout>
+        <RadioGroup
+            android:id="@+id/individualshareRd"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/rd_group_border"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/indivitualRbtn"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/toggle_widget_background"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="Individual-Retail"
+                android:checked="true"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/shareholderRbtn"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_widget_background"
+                android:button="@null"
+                android:gravity="center"
+                android:text="Shareholder"
+                android:textColor="@color/white" />
+            <RadioButton
+                android:id="@+id/policyHolderRbtn"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_widget_background"
+                android:button="@null"
+                android:gravity="center"
+                android:text="Policyholder"
+                android:textColor="@color/white" />
+        </RadioGroup>
+        <RadioGroup
+            android:id="@+id/retailhniRd"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/retailRbtn"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="2dp"
+                android:buttonTint="@color/white"
+                android:layout_width="@dimen/dimen_100"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text=" Retail "
+                android:checked="true"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/hniRbtn"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_width="@dimen/dimen_100"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text=" HNI "
+                android:buttonTint="@color/white"
+                android:textColor="@color/white" />
+        </RadioGroup>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:gravity="center_vertical">
+
+            <view.TvRegular
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:text="Bid Qty."
+                android:textColor="#fff"
+                android:textSize="@dimen/text_14" />
+
+            <include
+                android:id="@+id/bidQtySpinner"
+                layout="@layout/mf_spinner_round"
+                android:layout_width="@dimen/dimen_140"
+                android:layout_height="@dimen/dimen_30"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:paddingRight="@dimen/dimen_4"
+            android:id="@+id/bidpricell">
+
+            <view.TvRegular
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:text="Bid Price(Rs.):"
+                android:textColor="#fff"
+                android:textSize="@dimen/text_14" />
+
+            <view.EtRegular
+                android:id="@+id/bidprice"
+                android:layout_width="@dimen/dimen_140"
+                android:layout_height="@dimen/dimen_30"
+                android:text=""
+                android:background="@drawable/mf_et_border"
+                android:textColor="@color/text_primary"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="10"
+                android:paddingLeft="@dimen/dimen_4"
+                android:paddingRight="@dimen/dimen_4"
+                android:textColorHint="@color/spinner_divider"
+                android:textSize="@dimen/text_14" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:paddingRight="@dimen/dimen_4">
+
+            <view.TvRegular
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Amount(Rs.):"
+                android:textColor="#fff"
+                android:textSize="@dimen/text_14" />
+
+            <view.TvRegular
+                android:id="@+id/bidamount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/text_primary_light"
+                android:textSize="@dimen/text_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:gravity="center_vertical">
+
+            <view.TvRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UPI ID"
+                android:textColor="#fff"
+                android:textSize="@dimen/text_14" />
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_36"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/addUpi"
+                android:layout_marginLeft="@dimen/dimen_10">
+                <ImageView
+                    android:id="@+id/actionIV"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="@string/DEFAULT_DESCRIPTION"
+                    android:src="@mipmap/plus" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <include
+                android:id="@+id/upiSpinner"
+                layout="@layout/mf_spinner_round"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_30"
+                android:layout_weight="6"
+                />
+            <!--android:layout_width="140dp"-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/statuslayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:visibility="gone"
+            android:paddingRight="@dimen/dimen_4">
+
+            <view.TvRegular
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Status:"
+                android:textColor="#fff"
+                android:textSize="@dimen/text_14" />
+
+            <view.TvRegular
+                android:id="@+id/statuipo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/ventura_color"
+                android:textSize="@dimen/text_14"
+                android:textStyle="bold"
+                android:textAllCaps="true"/>
+        </LinearLayout>
+        <!--<LinearLayout
+            android:id="@+id/applicationformlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:visibility="gone"
+            android:paddingRight="@dimen/dimen_4">
+
+            <view.TvRegular
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Application Form:\nNote:- You can download application form only when Bid is accepted."
+                android:textColor="#fff"
+                android:textSize="@dimen/text_14" />
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_36"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/dimen_10">
+                <ImageView
+                    android:id="@+id/appform"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="@string/DEFAULT_DESCRIPTION"
+                    android:src="@mipmap/download" />
+            </LinearLayout>
+        </LinearLayout>-->
+        <LinearLayout
+            android:id="@+id/termsipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/termcondChkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/text_primary"
+                android:text="I hereby agree to the"
+                android:textColor="@color/text_secondary" />
+
+            <view.TvLarge
+                android:id="@+id/termcondclick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" terms \u0026 conditions "
+                android:textColor="@color/colorAccent" />
+
+        </LinearLayout>
+        <view.TvLarge
+            android:layout_marginTop="@dimen/dimen_10"
+            android:id="@+id/issuenote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/white"/>
+
+        <view.TvLarge
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:background="@drawable/mf_button_bg"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dimen_24"
+            android:paddingTop="@dimen/dimen_6"
+            android:paddingRight="@dimen/dimen_24"
+            android:paddingBottom="@dimen/dimen_6"
+            android:text="Submit"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_15" />
+
+        <view.TvLarge
+            android:layout_marginTop="@dimen/dimen_10"
+            android:id="@+id/discountnote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/text_primary" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0.6"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:background="@color/lineseperator"/>
+</LinearLayout>

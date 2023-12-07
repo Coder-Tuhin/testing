@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/invest_border_black">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"/>
+    <wealth.new_mutualfund.Custom.CricleProgressBarCustom
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_20"/>
+
+
+
+    <view.TvRegular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dimen_18"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/dimen_6"
+        android:layout_marginRight="@dimen/dimen_6"
+        android:text="Kindly wait for authentication to be completed."
+        android:gravity="center"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"/>
+
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/dummy_border_fs">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/ventura_color"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:orientation="horizontal">
+        <view.TvRegular
+            android:id="@+id/returnOf"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_alignParentRight="true"
+            android:gravity="left|center_vertical"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_13"
+            android:paddingLeft="@dimen/dimen_10"/>
+
+        <View
+            android:layout_width="@dimen/dimen_1"
+            android:layout_height="match_parent"
+            android:background="@color/ventura_color" />
+
+        <view.TvRegular
+            android:id="@+id/ytd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="YTD"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_13" />
+        <View
+            android:layout_width="@dimen/dimen_1"
+            android:layout_height="match_parent"
+            android:background="@color/ventura_color" />
+
+        <view.TvRegular
+            android:id="@+id/oneYear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="1Y"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_13" />
+        <View
+        android:layout_width="@dimen/dimen_1"
+        android:layout_height="match_parent"
+        android:background="@color/ventura_color" />
+
+        <view.TvRegular
+            android:id="@+id/threeYears"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="3Y"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_13" />
+        <View
+            android:layout_width="@dimen/dimen_1"
+            android:layout_height="match_parent"
+            android:background="@color/ventura_color" />
+
+        <view.TvRegular
+            android:id="@+id/fiveYears"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="5Y"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_13" />
+    </LinearLayout>
+</LinearLayout>

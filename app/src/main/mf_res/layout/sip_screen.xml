@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <view.TvRegular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header"
+        android:padding="@dimen/dimen_4"
+        android:text="Systematic Investment Plan (SIP)"
+        android:textStyle="italic|bold"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/text_16" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header"
+        android:gravity="bottom"
+        android:padding="@dimen/dimen_4">
+
+        <view.TvRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scheme_name"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/text_14" />
+
+        <view.TvLarge
+            android:id="@+id/schemeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_4"
+            android:text=""
+            android:textColor="@color/ventura_color"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_16" />
+    </LinearLayout>
+    <!--
+    <include layout="@layout/mf_spinner"
+        android:id="@+id/schemeNameSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40" />
+    -->
+    <view.TvRegular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_4"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:text="@string/Open_ended_equity"
+        android:textColor="@color/text_secondary"
+        android:textSize="@dimen/text_13"
+        android:textStyle="italic" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_4"
+            android:paddingRight="@dimen/dimen_4">
+
+            <LinearLayout
+                android:id="@+id/folioLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_36"
+                android:orientation="horizontal">
+                <view.TvRegular
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/dimen_4"
+                    android:gravity="center_vertical|right"
+                    android:text="Folio: "
+                    android:textColor="@color/text_secondary"
+                    android:textSize="@dimen/text_13"/>
+
+                <include layout="@layout/mf_spinner"
+                    android:id="@+id/folioSpinner"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_marginBottom="@dimen/dimen_10">
+                <view.TvRegular
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/text_secondary"
+                    android:text="Frequency:"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/text_14"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/dimen_4"
+                    android:gravity="right">
+                    <Switch
+                        android:id="@+id/frequency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Monthly"
+                        android:textSize="@dimen/text_14"
+                        android:thumbTint="@color/ventura_color"
+                        android:trackTint="@color/ventura_color"
+                        android:textColor="@color/text_primary" />
+
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/amountPerRd"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rd_group_border"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/amount"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="1dp"
+                        android:background="@drawable/toggle_widget_background"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="Monthly"
+                        android:checked="true"
+                        android:textColor="@color/white" />
+
+                    <RadioButton
+                        android:id="@+id/perAge"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/toggle_widget_background"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="Quarterly"
+                        android:textColor="@color/white" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mf_layer_bg"
+                android:padding="@dimen/dimen_6"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_margin="@dimen/dimen_4">
+                    <view.TvRegular
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/sip_day"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="@dimen/text_14" />
+                        <!--android:text="@string/sip_day"-->
+
+
+                    <include layout="@layout/mf_spinner"
+                        android:id="@+id/sipDaySpinner"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="@dimen/dimen_30"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:layout_margin="@dimen/dimen_4">
+                    <view.TvRegular
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sip_start_date"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="@dimen/text_14" />
+
+                    <view.EtRegular
+                        android:id="@+id/startdate"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="@dimen/dimen_36"
+                        android:background="@drawable/mf_et_gray_border"
+                        android:gravity="center"
+                        android:hint="@string/sip_startdate_format"
+                        android:text=""
+                        android:inputType="date"
+                        android:imeOptions="actionNext"
+                        android:paddingLeft="@dimen/dimen_6"
+                        android:paddingRight="@dimen/dimen_6"
+                        android:enabled="false"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/spinner_divider"
+                        android:textSize="@dimen/text_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:layout_margin="@dimen/dimen_4">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                    <CheckBox
+                        android:id="@+id/validChk"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/text_primary"
+                        android:text="Valid until Cancelled"
+                        android:textColor="@color/text_secondary" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/sipPeriodLinear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:layout_margin="@dimen/dimen_4">
+                    <view.TvRegular
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sip_period"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="@dimen/text_14" />
+
+                    <view.EtRegular
+                        android:id="@+id/period"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="@dimen/dimen_36"
+                        android:background="@drawable/mf_et_border"
+                        android:gravity="center"
+                        android:hint="@string/no_of_mnths_qrtr"
+                        android:text=""
+                        android:inputType="number"
+                        android:maxLength="5"
+                        android:imeOptions="actionNext"
+                        android:paddingLeft="@dimen/dimen_6"
+                        android:paddingRight="@dimen/dimen_6"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/spinner_divider"
+                        android:textSize="@dimen/text_14" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/endDateLinear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:layout_margin="@dimen/dimen_4">
+                    <view.TvRegular
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sip_end_date"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="@dimen/text_14" />
+
+                    <view.TvRegular
+                        android:id="@+id/enddate"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="@dimen/dimen_36"
+                        android:background="@drawable/mf_et_border"
+                        android:gravity="center"
+                        android:text=""
+                        android:inputType="date"
+                        android:imeOptions="actionDone"
+                        android:paddingLeft="@dimen/dimen_6"
+                        android:paddingRight="@dimen/dimen_6"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/spinner_divider"
+                        android:textSize="@dimen/text_14" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/dimen_20"
+                android:paddingTop="@dimen/dimen_20">
+
+                <view.TvRegular
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:text="@string/sip_amount"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="@dimen/text_14" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dimen_36"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <view.EtRegular
+                        android:id="@+id/amountEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/mf_et_border"
+                        android:gravity="center"
+                        android:hint="Enter Amount"
+                        android:text=""
+                        android:inputType="numberDecimal"
+                        android:maxLength="7"
+                        android:imeOptions="actionDone"
+                        android:layout_marginRight="@dimen/dimen_4"
+                        android:paddingLeft="@dimen/dimen_6"
+                        android:paddingRight="@dimen/dimen_6"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/spinner_divider"
+                        android:textSize="@dimen/text_16" >
+                        <requestFocus/>
+                    </view.EtRegular>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/termcondChkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/text_primary"
+                    android:text="I/ We hereby agree with "
+                    android:textColor="@color/text_secondary" />
+
+                <view.TvLarge
+                    android:id="@+id/termcondclick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/terms_conditions"
+                    android:textColor="@color/colorAccent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen_4">
+
+                <view.TvLarge
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" as well as "
+                    android:textColor="@color/text_secondary" />
+
+                <view.TvLarge
+                    android:id="@+id/cuttofclick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Cut off Timings "
+                    android:textColor="@color/colorAccent" />
+
+                <view.TvLarge
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=" for applicability of NAV."
+                    android:textColor="@color/text_secondary" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_48"
+                android:layout_marginTop="@dimen/dimen_20">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <view.TvLarge
+                    android:id="@+id/startasipbtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/mf_button_bg"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:text="START A SIP"
+                    android:textColor="@color/text_primary"
+                    android:textSize="@dimen/text_18" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/navlinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:paddingTop="@dimen/dimen_6"
+                android:paddingBottom="@dimen/dimen_6"
+                android:gravity="bottom">
+                <view.TvRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Last_nav"
+                    android:textSize="@dimen/text_14"
+                    android:textColor="@color/spinner_divider"/>
+                <view.TvRegular
+                    android:id="@+id/navvalue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text=""
+                    android:textSize="@dimen/text_16"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_6"
+                android:paddingBottom="@dimen/dimen_6"
+                android:gravity="bottom">
+                <view.TvRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Minimum_sip_amt"
+                    android:textSize="@dimen/text_14"
+                    android:textColor="@color/spinner_divider"/>
+                <view.TvRegular
+                    android:id="@+id/minimum_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text=""
+                    android:textSize="@dimen/text_16"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_6"
+                android:paddingBottom="@dimen/dimen_6"
+                android:gravity="bottom">
+                <view.TvRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Multiples_of"
+                    android:textSize="@dimen/text_14"
+                    android:textColor="@color/spinner_divider"/>
+                <view.TvRegular
+                    android:id="@+id/multiply"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text=""
+                    android:textSize="@dimen/text_16"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_6"
+                android:paddingBottom="@dimen/dimen_6"
+                android:gravity="bottom">
+                <view.TvRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Exit_load"
+                    android:textSize="@dimen/text_14"
+                    android:textColor="@color/spinner_divider"/>
+                <view.TvRegular
+                    android:id="@+id/exitloadvalue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text=""
+                    android:textSize="@dimen/text_16"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

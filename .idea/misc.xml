@@ -1,0 +1,50 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../../../layout/custom_preview.xml" value="0.1" />
+        <entry key="app/src/main/mf_res/drawable/bg_oange_corner_8dp.xml" value="0.1" />
+        <entry key="app/src/main/mf_res/layout/mf_holdingreports.xml" value="0.1787037037037037" />
+        <entry key="app/src/main/res/drawable/eye_password.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_eye_close.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/selector_box_stroke_color.xml" value="0.1" />
+        <entry key="app/src/main/res/layout-v21/transferprocess_layout.xml" value="0.2375" />
+        <entry key="app/src/main/res/layout/about_screen.xml" value="0.2375" />
+        <entry key="app/src/main/res/layout/activity_sso_login.xml" value="0.2375" />
+        <entry key="app/src/main/res/layout/custom_spinner.xml" value="0.23055555555555557" />
+        <entry key="app/src/main/res/layout/fragment_edis.xml" value="0.15925925925925927" />
+        <entry key="app/src/main/res/layout/home_radiogroup.xml" value="0.125" />
+        <entry key="app/src/main/res/layout/home_screen.xml" value="0.12037037037037036" />
+        <entry key="app/src/main/res/layout/mpin_popup_layout.xml" value="0.2375" />
+        <entry key="app/src/main/res/layout/report_screen.xml" value="0.23055555555555557" />
+        <entry key="app/src/main/res/layout/sso_accountlock_screen.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/sso_chnage_mpin_screen.xml" value="0.23384615384615384" />
+        <entry key="app/src/main/res/layout/sso_chnagepin.xml" value="0.13860369609856263" />
+        <entry key="app/src/main/res/layout/sso_clientpin_screen.xml" value="0.23384615384615384" />
+        <entry key="app/src/main/res/layout/sso_commonscreen.xml" value="0.23384615384615384" />
+        <entry key="app/src/main/res/layout/sso_confirmlogin_screen.xml" value="0.23384615384615384" />
+        <entry key="app/src/main/res/layout/sso_enter_pin_screen.xml" value="0.23384615384615384" />
+        <entry key="app/src/main/res/layout/sso_forgotpin.xml" value="0.23384615384615384" />
+        <entry key="app/src/main/res/layout/sso_login_screen.xml" value="0.23384615384615384" />
+        <entry key="app/src/main/res/layout/sso_otpvalidation_screen.xml" value="0.23384615384615384" />
+        <entry key="app/src/main/res/layout/sso_sentotpscreen.xml" value="0.23384615384615384" />
+        <entry key="app/src/main/res/layout/sso_uservalidity_screen.xml" value="0.23384615384615384" />
+        <entry key="app/src/main/res/layout/trade_sso.xml" value="0.23384615384615384" />
+        <entry key="app/src/main/res/layout/whatsnew_screen.xml" value="0.33" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.01049197672368189" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

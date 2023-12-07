@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_height">
+    <TextView
+        android:id="@+id/event_scriptname"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.6"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:gravity="center_vertical|left"
+        android:textColor="@color/white"/>
+    <TextView
+        android:id="@+id/event_scriptrate"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/white"/>
+    <TextView
+        android:id="@+id/event"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="center_vertical|right"
+        android:textColor="@color/white"/>
+</LinearLayout>

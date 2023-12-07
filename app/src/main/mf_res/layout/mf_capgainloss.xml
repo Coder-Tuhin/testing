@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dimen_8"
+        android:paddingBottom="@dimen/dimen_4"
+        android:paddingLeft="@dimen/dimen_2"
+        android:paddingRight="@dimen/dimen_2"
+        android:background="@color/header">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_30">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <view.TvRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/text_secondary"
+                    android:text="Family:"
+                    android:layout_marginRight="@dimen/dimen_4"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/text_14"/>
+
+                <include layout="@layout/mf_spinner_round"
+                    android:id="@+id/mfSpinnerfamily"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_30"
+            android:layout_marginTop="@dimen/dimen_10">
+            <RadioGroup
+                android:id="@+id/indexationRd"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@drawable/rd_group_border"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/withoutRbtn"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:background="@drawable/toggle_widget_background"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="Without"
+                    android:checked="true"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/withRbtn"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/toggle_widget_background"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="With"
+                    android:textColor="@color/white" />
+            </RadioGroup>
+            <view.TvRegular
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/text_primary"
+                android:text="Indexation"
+                android:paddingLeft="@dimen/dimen_4"
+                android:layout_marginLeft="@dimen/dimen_4"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/text_14"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.1"
+                android:layout_marginLeft="@dimen/dimen_4"
+                android:gravity="center_vertical">
+                <view.TvRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/spinner_divider"
+                    android:text="F.Y. "
+                    android:textSize="@dimen/text_14"/>
+                <include layout="@layout/mf_spinner_round"
+                    android:id="@+id/mfSpinnerFinancialYear"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/withoutIndexSationLinear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <view.TvRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ventura_color"
+            android:text="Scheme Name"
+            android:textSize="@dimen/text_13"/>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_2"
+            android:gravity="center_vertical"
+            android:background="@color/black">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+                <view.TvRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/ventura_color"
+                    android:text="Debt"
+                    android:textSize="@dimen/text_13"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <view.TvRegular
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/ventura_color"
+                        android:text="Short Term"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_13"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="10dp"
+                        android:background="@color/ventura_color"/>
+                    <view.TvRegular
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/ventura_color"
+                        android:gravity="center"
+                        android:text="Long Term"
+                        android:textSize="@dimen/text_13"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+                <view.TvRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/ventura_color"
+                    android:text="Equity"
+                    android:textSize="@dimen/text_13"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <view.TvRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/ventura_color"
+                        android:text="Short Term"
+                        android:textSize="@dimen/text_13"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="10dp"
+                        android:background="@color/text_secondary"/>
+                    <view.TvRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/ventura_color"
+                        android:gravity="center"
+                        android:text="Long Term (Gr.)"
+                        android:textSize="@dimen/text_13"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_2"
+            android:background="@color/header"/>
+        <view.TvRegular
+            android:id="@+id/comingsoonTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:text="Data Not Available"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dimen_6"
+            android:paddingBottom="@dimen/dimen_6"
+            android:paddingLeft="@dimen/dimen_2"
+            android:paddingRight="@dimen/dimen_2"
+            android:orientation="vertical"
+            android:background="@color/header">
+
+
+            <view.TvRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="@string/Grand_Total"
+                android:textSize="@dimen/text_15"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_2"
+                android:paddingBottom="@dimen/dimen_4"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <view.TvRegular
+                        android:id="@+id/totstd"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/green1"
+                        android:text=""
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/text_14"/>
+
+                    <view.TvRegular
+                        android:id="@+id/totste"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/green1"
+                        android:text=""
+                        android:textStyle="bold"
+                        android:textSize="@dimen/text_14"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <view.TvRegular
+                        android:id="@+id/totltd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/green1"
+                        android:text=""
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/text_14"/>
+                    <view.TvRegular
+                        android:id="@+id/totlte"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/green1"
+                        android:text=""
+                        android:textStyle="bold"
+                        android:textSize="@dimen/text_14"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <view.TvRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColor="@color/ventura_color"
+                android:autoLink="email|phone"
+                android:padding="@dimen/dimen_6"
+                android:text="@string/capital_gainloss_note"
+                android:textSize="@dimen/text_13"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_16"
+            android:text="@string/congratulationtext"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@+id/ventura_image"
+            android:gravity="center"
+
+            android:layout_marginTop="@dimen/dimen_40"/>
+
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/enache_process_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Following are the steps:"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_16"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:paddingLeft="@dimen/dimen_10"
+        android:layout_below="@+id/sip_conf_msg"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/dimen_30"
+        android:layout_marginRight="@dimen/dimen_30">
+
+
+    <TextView
+        android:id="@+id/enache_notes1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/enache_process1"
+        android:clickable="true"
+        android:autoLink="web"
+
+        android:layout_marginTop="@dimen/dimen_20"
+        android:textSize="@dimen/text_14"/>
+    <TextView
+        android:id="@+id/enache_notes2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:text="@string/enache_process2"
+        android:clickable="true"
+        android:textSize="@dimen/text_14"/>
+
+        <TextView
+            android:id="@+id/enache_notes3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:clickable="true"
+            android:text="@string/enache_process3"
+            android:autoLink="web"
+            android:textSize="@dimen/text_14"/>
+        <TextView
+            android:id="@+id/enache_notes4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:text="@string/enache_process4"
+            android:clickable="true"
+            android:textSize="@dimen/text_14"/>
+        <TextView
+            android:id="@+id/enache_notes4a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:text="@string/enache_process4a"
+            android:clickable="true"
+            android:textSize="@dimen/text_14"/>
+        <TextView
+            android:id="@+id/enache_notes4b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:text="@string/enache_process4b"
+            android:clickable="true"
+            android:textSize="@dimen/text_14"/>
+        <TextView
+            android:id="@+id/enache_notes5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:text="@string/enache_process5"
+            android:clickable="true"
+            android:textSize="@dimen/text_14"/>
+        <TextView
+            android:id="@+id/enache_notes6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:clickable="true"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:text="@string/enache_process6"
+            android:textSize="@dimen/text_14"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="@dimen/dimen_200"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_50">
+        <view.TvLarge
+            android:id="@+id/submitbtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:background="@drawable/mf_button_bg"
+            android:gravity="center"
+            android:text="OK"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_16"
+            android:textStyle="bold"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/dimen_50">
+            <TextView
+                android:id="@+id/mandatenonotes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dimen_20"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_below="@+id/enache_process_title"
+                android:text="Your Mandate no. is "
+                android:linksClickable="true"
+                android:textSize="@dimen/text_14"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/ventura_site"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_20"
+                    android:textColor="@color/white"
+                    android:text="@string/enache_process7"
+                    android:clickable="true"
+                    android:autoLink="all"
+                    android:linksClickable="true"
+                    android:textSize="@dimen/text_14"/>
+                <TextView
+                    android:id="@+id/ventura_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_20"
+                    android:textColor="@color/white"
+                    android:text="@string/enache_process8"
+                    android:clickable="true"
+                    android:autoLink="all"
+                    android:linksClickable="true"
+                    android:textSize="@dimen/text_14"/>
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

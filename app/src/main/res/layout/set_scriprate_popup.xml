@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Scrip Rate Alert"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:layout_marginBottom="@dimen/common_margine"/>
+
+        <ImageButton
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:src="@android:drawable/btn_dialog"
+            android:background="@null"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/silver"
+        android:layout_marginBottom="@dimen/common_margine"/>
+
+    <RadioGroup
+        android:id="@+id/rdgroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/bse"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_script_button"
+            android:button="@android:color/transparent"
+            android:checked="true"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="BSE"
+            android:textColor="#fff" />
+
+        <RadioButton
+            android:id="@+id/nse"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_script_button"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="NSE"
+            android:textColor="#fff" />
+
+        <RadioButton
+            android:id="@+id/nse_fno"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_script_button"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="NSE FNO"
+            android:textColor="#fff" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/fno_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:text="Instrument:"
+                android:textColor="#fff"
+                android:textSize="24dp" />
+
+            <include
+                android:id="@+id/spinner_Instrument"
+                layout="@layout/custom_spinner_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"></include>
+
+            <!-- <Spinner android:layout_width="fill_parent" android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/img_dropdowns"
+                    android:id="@+id/spinner_Instrument"
+                    android:spinnerMode="dropdown">
+
+                    </Spinner>-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:text="Contract:"
+                android:textColor="#fff"
+                android:textSize="24dp" />
+
+            <include
+                android:id="@+id/spinner_Contract"
+                layout="@layout/custom_spinner_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"></include>
+
+            <!-- <Spinner android:layout_width="fill_parent" android:layout_height="fill_parent"
+                      android:layout_weight="1"
+                      android:background="@drawable/img_dropdowns"
+                      android:id="@+id/spinner_Contract"
+                      android:spinnerMode="dropdown"></Spinner>-->
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/scrip_rate_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:padding="2dp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text=""
+            />
+
+        <TextView
+            android:id="@+id/scrip_rate_value"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:padding="2dp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text=""
+            />
+
+        <LinearLayout
+            android:id="@+id/condition_Layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Condition"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_gravity="center"/>
+            <RadioGroup
+                android:id="@+id/radioCondition"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                >
+
+                <RadioButton
+                    android:id="@+id/radioGreater"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:checked="true"
+                    android:buttonTint="@color/colorAccent"
+                    android:textColor="@color/white"
+                    android:text="@string/greater" />
+
+                <RadioButton
+                    android:id="@+id/radioSmaller"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:buttonTint="@color/colorAccent"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/smaller" />
+            </RadioGroup>
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/script_value"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/item_height"
+            android:layout_margin="3dp"
+            android:background="@drawable/radio_script_button"
+            android:hint=" Enter Value"
+            android:inputType="numberDecimal"
+            android:padding="@dimen/common_margine"
+            android:textColor="#fff"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:gravity="center">
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/item_height"
+            android:layout_margin="2dp"
+            android:background="@drawable/radio_script_button"
+            android:gravity="center"
+            android:text="Submit"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@drawable/radio_script_button"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textColor="#fff"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/ListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="visible">
+    </ListView>
+
+</LinearLayout>

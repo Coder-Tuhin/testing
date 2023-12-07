@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/dropdownarrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="75dp"
+        android:src="@drawable/help_arrow_right" />
+
+    <TextView
+        android:id="@+id/dropdowntext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/dropdownarrow"
+        android:layout_marginRight="60dp"
+        android:text="click here to switch from \n'NE' to 'BE' and vice versa"
+        android:textColor="@color/help_textcolor"
+        android:textSize="17sp" />
+
+    <ImageView
+        android:id="@+id/arrowOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/arrow_down"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="75dp"
+        android:layout_marginRight="40dp"
+        android:text="click on the Plus Sign to 'Add Script'"
+        android:textColor="@color/help_textcolor"
+        android:textSize="17sp"
+        android:visibility="invisible"/>
+    <ImageView
+        android:id="@+id/arrowTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="40dp"
+        android:src="@drawable/arrow_one"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="75dp"
+        android:layout_marginRight="40dp"
+        android:text="click on the message \nsign for 'Messages'"
+        android:textColor="@color/help_textcolor"
+        android:textSize="17sp"
+        android:visibility="invisible"/>
+    <ImageView
+        android:id="@+id/arrowThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="85dp"
+        android:src="@drawable/arrow_two"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="75dp"
+        android:layout_marginRight="10dp"
+        android:text="click on the 'O' button for 'Order Book'"
+        android:textColor="@color/help_textcolor"
+        android:textSize="17sp"
+        android:visibility="invisible"/>
+    <ImageView
+        android:id="@+id/arrowFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="125dp"
+        android:src="@drawable/arrow_three"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="75dp"
+        android:layout_marginRight="20dp"
+        android:text="\tclick on the 'T' \nbutton for 'Trade Book'"
+        android:textColor="@color/help_textcolor"
+        android:textSize="17sp"
+        android:visibility="invisible"/>
+    <ImageView
+        android:id="@+id/arrowFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="170dp"
+        android:src="@drawable/arrow_four"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="75dp"
+        android:layout_marginRight="20dp"
+        android:text="\tclick on the 'N' \nbutton for 'Net Position'"
+        android:textColor="@color/help_textcolor"
+        android:textSize="17sp"
+        android:visibility="invisible"/>
+</RelativeLayout>

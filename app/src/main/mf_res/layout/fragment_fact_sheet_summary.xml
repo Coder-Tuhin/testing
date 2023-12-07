@@ -1,0 +1,562 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context="wealth.new_mutualfund.factSheet.FactSheetSummaryFragment">
+
+    <view.TvLarge
+        android:id="@+id/scheme_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_4"
+        android:layout_marginBottom="@dimen/dimen_6"
+        android:text="-"
+        android:textColor="@color/ventura_color"
+        android:textSize="@dimen/text_18"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <view.TvRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_4"
+            android:text="NAV(Rs): "
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_13" />
+
+        <view.TvRegular
+            android:id="@+id/nav_price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_4"
+            android:text="-"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_26"
+            android:textStyle="bold"/>
+
+        <view.TvRegular
+            android:id="@+id/nav_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_4"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_13" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <view.TvRegular
+                android:id="@+id/category_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_4"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:text="Category: -"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_13"
+                android:singleLine="false"/>
+
+            <view.TvRegular
+                android:id="@+id/inception_date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_4"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:text="Inception date: -"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_13" />
+
+            <view.TvRegular
+                android:id="@+id/week52_high_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_4"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:text="52 wk. H (Rs.): -"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_13" />
+
+            <view.TvRegular
+                android:id="@+id/week52_low_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_4"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:text="52 wk. L (Rs.): -"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_13" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_120"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/speedView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_110" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/dark_gray"
+                    android:visibility="gone">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Low"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_8"
+                        android:padding="@dimen/dimen_4"
+                        android:layout_centerVertical="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="High"
+                        android:textColor="@color/white"
+                        android:layout_alignParentRight="true"
+                        android:textSize="@dimen/text_8"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/dimen_4"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <view.TvRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_4"
+            android:layout_marginTop="@dimen/dimen_6"
+            android:text="Fund Manager: "
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_13" />
+
+        <view.TvRegular
+            android:id="@+id/fund_manager_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_4"
+            android:layout_marginTop="@dimen/dimen_6"
+            android:text="-"
+            android:textColor="#76D7C4"
+            android:textSize="@dimen/text_13" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <view.TvRegular
+            android:id="@+id/exit_load_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_4"
+            android:layout_marginTop="@dimen/dimen_6"
+            android:text="Exit Load (%)"
+            android:textColor="#76D7C4"
+            android:textSize="@dimen/text_13" />
+
+        <view.TvRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_4"
+            android:layout_marginTop="@dimen/dimen_6"
+            android:text="Nil for 10% of investment and 1% for remaining investment on or before 12M, Nil after 12M"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_13"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fact_sheet_layout_border"
+            android:orientation="vertical">
+
+            <view.TvRegular
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_30"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:gravity="center_vertical"
+                android:text="Minimum Amount  (Rs.)"
+                android:textColor="@color/ventura_color"
+                android:textSize="@dimen/text_16"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1"
+                android:background="@color/ventura_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_28"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:orientation="horizontal">
+
+                <view.TvRegular
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="One Time "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_13" />
+
+                <View
+                    android:layout_width="@dimen/dimen_1"
+                    android:layout_height="match_parent"
+                    android:background="@color/ventura_color" />
+
+                <view.TvRegular
+                    android:id="@+id/min_inv_price_tv"
+                    android:layout_width="@dimen/dimen_65"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right|center_vertical"
+                    android:text="-"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_13" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1"
+                android:background="@color/ventura_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_28"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:orientation="horizontal">
+
+                <view.TvRegular
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Top Up"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_13" />
+
+                <View
+                    android:layout_width="@dimen/dimen_1"
+                    android:layout_height="match_parent"
+                    android:background="@color/ventura_color" />
+
+                <view.TvRegular
+                    android:id="@+id/min_add_inv_price_tv"
+                    android:layout_width="@dimen/dimen_65"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right|center_vertical"
+                    android:text="-"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_13" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1"
+                android:background="@color/ventura_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_28"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:orientation="horizontal">
+
+                <view.TvRegular
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="SIP"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_13" />
+
+                <View
+                    android:layout_width="@dimen/dimen_1"
+                    android:layout_height="match_parent"
+                    android:background="@color/ventura_color" />
+
+                <view.TvRegular
+                    android:id="@+id/min_sip_inv_pric_tv"
+                    android:layout_width="@dimen/dimen_65"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right|center_vertical"
+                    android:text="-"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_13" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_24" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fact_sheet_layout_border"
+            android:orientation="vertical">
+
+            <view.TvRegular
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_30"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:gravity="center_vertical"
+                android:text="Ratios (%)"
+                android:textColor="@color/ventura_color"
+                android:textSize="@dimen/text_16"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1"
+                android:background="@color/ventura_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_28"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <view.TvRegular
+                        android:id="@+id/beta_title_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Beta "
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_13"
+                        android:gravity="center_vertical"/>
+
+                    <ImageView
+                        android:id="@+id/beta_iv"
+                        android:layout_width="@dimen/dimen_10"
+                        android:layout_height="@dimen/dimen_10"
+                        android:src="@drawable/fact_sheet_info"
+                        android:layout_gravity="center_vertical"
+                        android:visibility="visible"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/dimen_1"
+                    android:layout_height="match_parent"
+                    android:background="@color/ventura_color" />
+
+                <view.TvRegular
+                    android:id="@+id/beta_tv"
+                    android:layout_width="@dimen/dimen_65"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right|center_vertical"
+                    android:text="-"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_13" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1"
+                android:background="@color/ventura_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_28"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <view.TvRegular
+                        android:id="@+id/turnover_title_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Turnover Ratio "
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_13"
+                        android:gravity="center_vertical"/>
+
+                    <ImageView
+                        android:id="@+id/turnover_iv"
+                        android:layout_width="@dimen/dimen_10"
+                        android:layout_height="@dimen/dimen_10"
+                        android:src="@drawable/fact_sheet_info"
+                        android:layout_gravity="center_vertical"
+                        android:visibility="visible"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/dimen_1"
+                    android:layout_height="match_parent"
+                    android:background="@color/ventura_color" />
+
+                <view.TvRegular
+                    android:id="@+id/turnover_tv"
+                    android:layout_width="@dimen/dimen_65"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right|center_vertical"
+                    android:text="-"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_13" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1"
+                android:background="@color/ventura_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_28"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <view.TvRegular
+                        android:id="@+id/sd_title_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Standard Deviation "
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_13"
+                        android:gravity="center_vertical"/>
+
+                    <ImageView
+                        android:id="@+id/sd_iv"
+                        android:layout_width="@dimen/dimen_10"
+                        android:layout_height="@dimen/dimen_10"
+                        android:src="@drawable/fact_sheet_info"
+                        android:layout_gravity="center_vertical"
+                        android:visibility="visible"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/dimen_1"
+                    android:layout_height="match_parent"
+                    android:background="@color/ventura_color" />
+
+                <view.TvRegular
+                    android:id="@+id/sd_tv"
+                    android:layout_width="@dimen/dimen_65"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right|center_vertical"
+                    android:text="-"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_13" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1"
+                android:background="@color/ventura_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_28"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <view.TvRegular
+                        android:id="@+id/alpha_title_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Jensen's Alpha "
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_13"
+                        android:gravity="center_vertical"/>
+
+                    <ImageView
+                        android:id="@+id/alpah_iv"
+                        android:layout_width="@dimen/dimen_10"
+                        android:layout_height="@dimen/dimen_10"
+                        android:src="@drawable/fact_sheet_info"
+                        android:layout_gravity="center_vertical"
+                        android:visibility="visible"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/dimen_1"
+                    android:layout_height="match_parent"
+                    android:background="@color/ventura_color" />
+
+                <view.TvRegular
+                    android:id="@+id/alpha_tv"
+                    android:layout_width="@dimen/dimen_65"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right|center_vertical"
+                    android:text="-"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_13" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/black">
+
+    <view.TvRegular
+        android:id="@+id/msgtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/sso_otpsent"
+        android:textSize="@dimen/dimen_16"
+        android:layout_marginRight="@dimen/dimen_6"
+        android:layout_marginLeft="@dimen/dimen_6"
+        android:textStyle="normal"
+        android:gravity="center" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TIL_Otp"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:theme="@style/TextInputLayoutStyle"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintEnabled="true"
+        android:clickable="false"
+        android:textColorHint="@color/ventura_color"
+        app:boxStrokeColor="@drawable/selector_box_stroke_color"
+        app:boxStrokeWidth="@dimen/dimen_1"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_marginRight="@dimen/dimen_20"
+        app:expandedHintEnabled="false"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleDrawable="@drawable/eye_password"
+        app:errorIconDrawable="@null"
+        app:passwordToggleTint="@color/white"
+        app:errorTextColor="@color/highlight"
+        android:hint="Enter OTP">
+
+        <!--this is the actual edit text which takes the input-->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:inputType="number"
+            android:longClickable="false"
+            android:maxLength="6"
+            android:textColor="@color/white"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_marginRight="@dimen/dimen_20"
+        android:orientation="horizontal">
+        <view.TvRegular
+            android:id="@+id/timertext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="OTP validity(mm:ss)10:00 "
+            android:textSize="@dimen/dimen_14"
+            android:textStyle="italic"
+            android:gravity="left"
+            android:layout_marginRight="@dimen/dimen_20"/>
+
+        <view.TvRegular
+            android:id="@+id/tv_resentotp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Re-send OTP"
+            android:textSize="@dimen/dimen_14"
+            android:textStyle="italic"
+            android:gravity="right"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/text_45"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:background="@drawable/bg_oange_corner_8dp"
+        android:text="Verify"
+        android:gravity="center"
+        android:textSize="@dimen/text_20"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:paddingStart="@dimen/item_height"
+        android:paddingEnd="@dimen/item_height"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:id="@+id/ortext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimen_14"
+        android:justificationMode="inter_word"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:text="OR"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dimen_20"/>
+
+    <TextView
+        android:id="@+id/google_auth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:text="@string/verify_gauth"
+        android:gravity="center"
+        android:textSize="@dimen/text_20"
+        android:textColor="@color/ventura_color"
+        android:textAllCaps="false"
+        android:layout_gravity="center_horizontal"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_new"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginRight="@dimen/dimen_70"
+        android:layout_marginLeft="@dimen/dimen_70"/>
+
+</LinearLayout>

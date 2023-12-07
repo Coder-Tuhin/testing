@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+
+    <RadioGroup android:id="@+id/rdGrp"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/item_height"
+        android:orientation="horizontal"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/black">
+        <RadioButton
+            android:id="@+id/goal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:checked="true"
+            android:text="GOAL"
+            android:textSize="@dimen/common_textsize"
+            android:textStyle="bold"
+            android:background="@drawable/hometab_drawable"
+            android:textColor="@drawable/hometab_textcolor" />
+        <RadioButton
+            android:id="@+id/bucket"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:text="BUCKET"
+            android:textSize="@dimen/common_textsize"
+            android:textStyle="bold"
+            android:background="@drawable/hometab_drawable"
+            android:textColor="@drawable/hometab_textcolor"/>
+
+    </RadioGroup>
+    <LinearLayout
+        android:id="@+id/containerlinear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"/>
+
+</LinearLayout>

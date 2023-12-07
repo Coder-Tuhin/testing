@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--JSON TAGS-->
+    <string name="BankName">BankName</string>
+    <string name="AvailableAmt">AvailableAmt</string>
+    <string name="AccountNo">AccountNo</string>
+    <string name="MandateAmt">MandateAmt</string>
+    <string name="MandateCode">MandateCode</string>
+    <string name="SIPMandateEndDate">SIPMandateEndDate</string>
+    <string name="SIPMandateStartDate">SIPMandateStartDate</string>
+    <string name="SIPType">SIPType</string>
+<!--    <string name="missedsip">Missed SIP</string>-->
+    <string name="TransactionAmt">TransactionAmt</string>
+    <string name="mandatedata">mandatedata</string>
+    <string name="MandateStatus">MandateStatus</string>
+    <string name="UsedAmount">UsedAmount</string>
+    <string name="banklist"><u>Download participating bank list</u></string>
+    <string name="iponotetitle"><u>Process to apply IPO</u></string>
+    <string name="iponotetitle1">Retail - Bids will be sent only at cut-off price.\n\nYou can apply either for Retail or HNI category.</string>
+
+    <string name="activeupi"><u>List of valid UPI handles</u></string>
+    <string name="noipo">Currently no issue in progress.</string>
+    <string name="terms_conditions"> Terms \u0026 Conditions </string>
+    <string name="terms_conditions_select"> Please Select Terms \u0026 Conditions </string>
+
+    <!--<string name="stampduty">Note: W.e.f 1st July,2020 stamp duty of 0.005% will be applicable on all the purchases, switch and dividend re-investment transactions.</string>>-->
+
+    <!--
+    this point removed from ipo notes on 14 Sep, 2020 as per Hars
+    5.	Once the funds are blocked, you need to sign &amp; email the application form to us on onlineipo@ventura1.com\n\n
+    -->
+    <string name="ipo_notes">1.	You will receive an automated SMS from NPCI on your registered Mobile No., to block funds through BHIM app (Kindly ensure adequate balance is maintained in your bank account to apply).\n\n
+2.	If you do not receive SMS from NPCI, kindly visit the UPI section of your bank account using your Mobile Banking app, you will find pending request in the UPI section to block funds for the IPO application.\n\n
+3.	In case you fail to block your funds within 24 hours of placing the bid, then the IPO application is liable to be rejected.\n\n
+4.	Registered Email ID and Mobile No. with Ventura will be considered for all communication.\n\n
+5.	Kindly note Ventura Securities Ltd is not responsible for rejection and non acceptance of any application.\n\n
+*In case of any queries, write us at onlineipo@ventura1.com and we would be happy to assist you.
+    </string>
+
+    <string name="enache_process">
+        1. On receipt of email from BSESTARMF, kinldy click on “Online E-Mandate Registration Authentication” to proceed for mandate registration.\n
+        2. Proceed with email verification code by clicking continue and enter the 6 digit code sent on your registered email id by DIGIO.
+        Click on Submit to proceed.\n
+        3. You will be redirected to the “Create Mandate” page and you can verify either by Net Banking (Bank User id and password required) or use Debit Card. Click on confirm and then click on submit.\n
+        4. In case you are using a Debit card you will be redirected to the Bank website where you need to enter your debit card details and click on submit.\n
+        5. In case you selected Net banking enter your bank user id and password to proceed further and complete the process.\n
+        6. You will receive a success message once registration is complete.
+    </string>
+    <string name="sip_mandate_success_msg">Your SIP mandate has been registered successfully - </string>
+    <string name="enach_heading_mandate"><u>Process for ENACH:</u></string>
+    <string name="mandate_icon_info">With AutoPay Mandate your mutual fund SIPs will be paid automatically from your registered bank account to the Exchange. We suggest you to keep the amount high so that your future SIPs can be debited using the same AutoPay Mandate. </string>
+    <string name="reactemandate_text">AutoPay mandate set up can be used for all mutual fund payments. We suggest you to keep it high so that your future investments can be debited using the same mandate.</string>
+    <string name="bank_eligible">Since your Bank is not registered for E-Nach, kindly download the physical mandate sent on your registered email id and email the same to us at mfonline@ventura1.com mentioning your client code in the subject.</string>
+    <string name="noteforPran"><b>Note :</b> Please copy the PRAN no. before you click on Contribute Now, you will be further asked to enter the PRAN.</string>
+
+
+    <string name="enach_heading">Terms &amp; Conditions for applying on-line through Ventura Securities Ltd. In Bond IPO(s):</string>
+    <string name="term">
+        I understand that Ventura Securities Ltd. (hereinafter referred to as "Ventura") allows me to apply for placing the Bonds Initial Public Offer (hereinafter referred to as "IPO") through their website www.ventura1.com and mobile application on the terms and conditions specified below. By making the application I explicitly agree to be bound by the Terms and Conditions mentioned here in below including any terms &amp; conditions as may be notified by Ventura from time to time in any mode of communication. I understand and agree that Ventura reserves the right to change, modify and/or   alter the terms and conditions at any point of time with or without notice.
+
+
+    </string>
+    <string name="term1">
+        I hereby instruct and authorize Ventura to make an application for placing the IPO through the Website (www.ventura1.com) or mobile application.
+
+
+    </string>
+    <string name="term2">
+        I am aware that  post application ,blocking of funds is mandatory.
+
+
+    </string>
+    <string name="term3">
+       I hereby agree &amp; understand that only customers of Ventura  who are registered with it for online trading &amp; investment transactions and who are in the category of Resident Indians are allowed to make an application for placement of an IPO with the Company through Ventura Securities Limited. Other categories of registered customers of Ventura Securities Limited. may be allowed to apply for the issue through Ventura  only at the sole &amp; absolute discretion of Ventura Securities Limited.
+    </string>
+    <string name="term4">
+       I further agree &amp; understand that the IPO receipt will be issued in the name of the Sole/First holder in whose name the trading account is opened with Ventura.
+    </string>
+    <string name="term5">
+       I/we hereby understand and agree that:
+    </string>
+    <string name="term6">
+       I Ventura shall purely in its capacity as a broker make the IPO application as applied and instructed by me. I further understand that making of such application by Ventura does not constitute any obligation on it with respect to providing me with IPO Receipt / re-payment of my Deposits, interest payable thereon, request for change of address or matters incidental thereto.
+    </string>
+    <string name="term7">
+       All obligations arising after my IPO application is accepted by the Registrar to the IPO Scheme (Registrar) shall be governed by the Terms and Conditions of the Scheme and in particular the company / concerned Registrar will be my single point of contact for all queries/ actionable arising subsequent to the application request sent to the exchange  from Ventura.
+    </string>
+    <string name="term8">
+       I hereby understand and agree that the Company reserves the right to accept or reject any Application in whole or in part without assigning any reason thereof.
+    </string><string name="term9">
+       I hereby agree that Ventura shall not be held responsible and/or accountable for non-issue of IPO to me/us, for any reason whatsever.
+    </string><string name="term10">
+       I hereby confirm that I have read and understood the IPO application form and Terms and Conditions of the IPO Scheme and voluntarily instruct and authorize Ventura to make the above IPO application on my behalf. I hereby authorize Ventura to do all such acts, deeds and things, as may be necessary for or incidental to make the above IPO Application.
+    </string><string name="term11">
+       I hereby agree that I will abide by all the terms and conditions of the IPO Scheme of the company.
+    </string>
+    <string name="term12">
+     No liability for third party acts I hereby agree that IPO receipt will be issued to me by the Company. Ventura shall not be responsible for non receipt/ delayed receipt of IPO receipt.
+    </string>
+    <string name="term13" formatted="false">
+
+    </string>
+
+    <string name="term14">
+     I hereby agree that Ventura Securities Ltd. shall not be responsible if the performance of their obligations is prevented, hindered or delayed by a Force Majeure event (defined below). "Force Majeure Event" means any event due to any cause beyond the reasonable control of Ventura Securities Ltd. , including, without limitation, unavailability of any communication system including failure of internet links, Exchange links,  sabotage, fire, flood, explosion, earthquake, acts of God, civil commotion, strikes or industrial action of any kind, riots, insurrection, war, or acts of government/regulatory bodies.
+    </string>
+
+    <string name="term15">
+     I hereby agree that in the event of my death or insolvency or otherwise I becoming incapable of receiving and paying for the IPO applied for, Ventura may close out the transaction and I/ or my/ legal representative shall be liable for any loss, costs which may arise there from.
+I agree to indemnify and hold Ventura and their affiliates and associates, harmless against any loss (actual or notional), costs, expenses etc. which may be suffered by Ventura Securities or against any claim, demand, action, proceeding that may be initiated against either Ventura which is in any way the result of my/our instruction to Ventura to make an application for placement of the IPO, for and on my/our behalf, for the Scheme including but not limited to any improper use of the web Transaction, power of attorney, electronic communication, application, digital signatures, user ID   and password.
+I/we have read and accepted the above terms &amp; conditions and hereby agree to apply for placement of an IPO through Ventura Securities Limited.
+
+    </string>
+
+    <string name="term16">
+     I fully understand and am aware that the above terms and conditions are in addition and supplemental to the client agreement entered into by me with Ventura and the same will be read in accordance with the client agreement.
+    </string>
+
+    <string name="conf_msg">
+        In case of any query you can write to us at bondsonline@ventura1.com<a/>
+    </string>
+
+    <string name="hyperlinktext"><![CDATA[<b><font color=#0000FF>bondsonline@ventura1.com</font></b>]]></string>
+
+
+
+
+
+    <string name="untillcancelmsg">
+        You can also select <b>“Until cancelled”</b> , this option will allow you to stop your SIP whenever you want.
+    </string>
+    <string name="congratulationtext">
+
+    <b>Congratulations!</b> You are just a few steps away from completing your Auto Debit for your investment
+    </string>
+
+    <string name="enache_process1">
+        1. You will receive an email on your registered email-id from <a href="https://bsestarmf@bseindia.in">bsestarmf@bseindia.in</a> Please click on <b>“Online E-Mandate Registration Authentication”</b>
+    </string>
+    <string name="enache_process2">
+        2. Once the link is open, click on the option <b>“Proceed with Email Verification Code”</b>.
+    </string>
+    <string name="enache_process3">
+    3. You will receive a 6 digit code from <b>Digio</b>- <a href="https://noreply@digio.in">noreply@digio.in</a> on your registered email-id.
+    </string>
+    <string name="enache_process4">
+    4. Kindly enter the 6 digit code and you will be directed to <b>“Create Mandate”</b> page. You can verify the mandate using 2 options:
+
+ </string>
+    <string name="enache_process4a">
+             a. <b>Debit Card</b> (use this option if you do not have net-banking facility) or
+    </string>
+    <string name="enache_process4b">
+             b.	<b>Net-Banking</b> (use this option if you have your login and password of your bank account).
+    </string>
+    <string name="enache_process5">
+
+    5. For <b>“Debit Card”</b>, you will need to enter your debit card details and accept the terms and conditions. An OTP will be sent on your registered mobile no. to complete the process.
+    </string>
+    <string name="enache_process6">
+    6. For <b>“Net-Banking”</b>, you will be redirected to your bank site. You need to login with your Net-Banking credentials and confirm the mandate and complete the process.
+        </string>
+    <string name="enache_process7">
+    <b>For any assistance please write on</b> <a href ="https://mfcustomercare@ventura1.com">mfcustomercare@ventura1.com</a> <b>or call</b>
+        </string>
+    <string name="enache_process8">
+    <b>+91 22 67547042</b>
+        </string>
+    <string name="untilcancel_info">This option will allow you to stop your SIP whenever you want. </string>
+
+    <string name="fact_beta">Beta is a measure of the volatility of the portfolio to that of the index. In simple words it shows the movement of the portfolio in comparison. The Higher the Beta, higher the volatility of the scheme to the index. If its greater than1 , then the portfolio is highly volatile to the movemnts in the index. If the beta is lesser than 1 , then scheme is less volatile to the index and beta which is close to 1 implies that the scheme is closely following the index.</string>
+    <string name="fact_turn_over">The turnover ratio represents the percentage of a fund\'s holdings that change every year.To put it simply, a turnover rate of 100 per cent implies that the fund manager has replaced his entire portfolio during the period given.Technically, the turnover ratio is the lower of the total sales or total purchases over the period divided by the average of the net assets.Higher the turnover ratio, greater is the volume of trading carried out by the fund.</string>
+    <string name="fact_sd">Standard Deviation is the measure of the deviation in the returns of the portfolio. In Simple Words it tells us how much the return on the fund is deviating from the expected normal return.</string>
+    <string name="fact_jensen_alpha">It measures whether the Scheme is generating excess returns over the normal returns.For example, if there are two mutual funds that both have a 12% return, a rational investor will want the fund that is less risky.If the value is positive, then the portfolio is earning excess returns. In other words, a positive value for Jensen\'s alpha means a fund manager has \'beat the market\' w with his or her stock picking skills. The Higher the value the better the performance.</string>
+<!--
+    <string name="mf_cutoff_time"><b>Below are the cut-off times for processing of transactions for Liquid and Non-Liquid category.</b>
+        \n\n<b>CUT OFF for Purchase :</b>.
+        \nLiquid and Overnight Funds : <b>01.00 P.M. (Previous day NAV)</b>.
+        \n\nLiquid and Overnight Funds ( Order received after 01.00 PM ) : <b>02:30 P.M. (Same day NAV)</b>.
+        \n\nAll schemes other than Liquid and Overnight Funds : <b>02:30 P.M. (Same day NAV)</b>
+        \n\n<b>CUT OFF for Redemption :</b>.
+        \nFor all Schemes : <b>3.00 P.M. (Same day NAV)</b>.\n
+
+
+         </string>
+        -->
+
+    <string name="mf_cutoff_time"><b>Below are the cut-off times for processing of transactions for Liquid and Non-Liquid category.</b>
+        \n\n<b>CUT OFF for Purchase :</b>.
+        \nLiquid and Overnight Funds : <b>12.30 P.M. (Previous day NAV)</b>.
+        \n\nLiquid and Overnight Funds ( Order received after 12.30 P.M. ) : <b>02:30 P.M. (Same day NAV)</b>.
+        \n\nAll schemes other than Liquid and Overnight Funds : <b>02:30 P.M. (Same day NAV)</b>
+        \n\n<b>CUT OFF for Redemption :</b>.
+        \nFor all Schemes : <b>3.00 P.M. (Same day NAV)</b>.\n
+
+    </string>
+    <string name="FactSheetAllocationNote">-Large Cap: Top 100 companies\n-Mid Cap: 101-250 companies\n-Small Cap: 251 and Above companies\n</string>
+
+    <string name="notepledge1"><b>Shares in DP and Ventura Beneficiary (VB)</b>\n\n</string>
+    <string name="notepledge2">⦁	The shares seen by you in the options above\n\n
+i.	Lying in your demat a/c ( Shares in DP )\n\n
+ii.	Shares that are lying with Ventura Securities  Shares in Ventura Beneficiary (VB).\n\n
+⦁	You can select the shares from both the above options to pledge to Ventura, thereby enhancing your buying power.\n\n
+⦁	Once you select the shares to be pledged the system shows you the approximate amount that would be available as margin (this is after adjusting the hair cut value)\n\n
+⦁	The quantity to be pledged by you should be equal to or less than the available quantity in both the options (DP and VB)\n\n
+⦁	Once you click on the Pledge button, system will direct you to the NSDL Page where you will be able to see all those stocks which you wished to pledge. You need to select those stocks on the NSDL Page and click on the submit button. You will immediately receive an OTP from NSDL which you need to validate on the NSDL Page after which the shares in you DP are marked as pledge.\n\n
+⦁	Incase you sell the shares post you pledge them, the pledge would fail if the quantity in your DP is not found to the extent of the quantity you have pledged.\n\n
+⦁	Facility for pledge is available to you on all trading days between 9:00 am and 5:00 pm\n\n
+⦁	Charges for pledge would be Rs.15/- + GST....\n\n
+        </string>
+
+    <string name="notepledge3"><b>Shares Receivable</b>\n\n
+</string>
+    <string name="notepledge4">
+⦁	We allow you to pledge the share on the very next day of purchase. This gives you an option to create a margin against the shares receivable in the fastest possible time.\n\n
+⦁	The above option can also be used for margin funding in case you have bought shares that you wish to be margin funded. At the same time you can also create a collateral for those shares that you have requested to be funded.\n\n
+⦁	We explain this via an example : You have bought 100 shares of SBI worth Rs 25000 which you want to be margin funded. So against this 25000 you will need about 30 % as collateral margin. You may create this margin by pledging further shares of about Rs 8000…. ( we give you the option of selecting the shares of your choice )\n\n
+⦁	The charges for pledge for margin funding are Rs 35/- and for unpledge of margin funded shares Rs 15/- plus GST in both the cases.\n\n
+⦁	Only those shares which can be margin funded would show up in your margin funding option ( please note we do not have the option to margin fund shares bought on the BSE )\n\n
+⦁	We advise you to margin fund the shares only when you plan to hold them for more than 7 trading days to avoid paying the higher pledge charges of NSDL\n\n
+⦁	You have the option to select shares for margin funding till T + 1 day only. For example: shares bought on Monday you request them to be margin funding till Tuesday 4 pm.\n\n
+⦁	The value of margin is seen by you as and when you select the shares to be funded.. ( the system will allow you to margin fund shares as per your ledger balances available with us )\n\n
+⦁	If you are in credit there would no option for you to avail the margin funding facility\n\n
+⦁	The margin funding is available on all shares in Q / A / B category\n
+</string>
+    <string name="proced_email"><b>“Proceed with Email Verification Code”</b></string>
+    <string name="assistance_text">For any assistance please call us on <font color='#F96129'>(022) 6754 7042</font></string>
+
+    <string name="Gain_Loss_new">* Gain/Loss</string>
+    <string name="mandateCreateText">Your Autopay request has been received successfully with the bank account linked to your demat account &amp; Mandate approval will take 7 days</string>
+
+
+</resources>

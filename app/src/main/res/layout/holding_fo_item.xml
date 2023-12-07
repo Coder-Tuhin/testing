@@ -1,0 +1,136 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/common_margine"
+    android:background="@color/black">
+    <TextView
+        android:id="@+id/scripName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scrip Name"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textSize="@dimen/small_textsize"
+        android:textColor="@color/white"
+        android:layout_alignParentLeft="true"/>
+    <RelativeLayout
+        android:id="@+id/relativeLayout_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true">
+        <TextView
+            android:id="@+id/qtyTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Net Qty :"
+            android:textSize="@dimen/common_textsize"
+            android:textColor="@color/text_secondary" />
+        <TextView
+            android:id="@+id/totalValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/common_textsize"
+            android:textColor="@color/white"
+            android:paddingLeft="3dp"
+            android:layout_toRightOf="@+id/qtyTitle"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativeLayout_bse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_below="@+id/relativeLayout_total">
+        <TextView
+            android:id="@+id/bse_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Net Obligation: "
+            android:textSize="@dimen/common_textsize"
+            android:textColor="@color/text_secondary" />
+        <TextView
+            android:id="@+id/netObgVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/common_textsize"
+            android:textColor="@color/white"
+            android:paddingLeft="3dp"
+            android:layout_toRightOf="@+id/bse_textview"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativeLayout_nse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relativeLayout_total">
+        <TextView
+            android:id="@+id/nse_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LTP :"
+            android:textSize="@dimen/common_textsize"
+            android:textColor="@color/text_secondary" />
+        <TextView
+            android:id="@+id/ltpValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/common_textsize"
+            android:textColor="@color/white"
+            android:paddingLeft="3dp"
+            android:layout_toRightOf="@+id/nse_textview"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativeLayout_bk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_below="@+id/relativeLayout_bse">
+        <TextView
+            android:id="@+id/bk_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Booked: "
+            android:textSize="@dimen/common_textsize"
+            android:textColor="@color/text_secondary" />
+        <TextView
+            android:id="@+id/bookedVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/common_textsize"
+            android:textColor="@color/white"
+            android:paddingLeft="3dp"
+            android:layout_toRightOf="@+id/bk_textview"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativeLayout_mtm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/relativeLayout_nse">
+        <TextView
+            android:id="@+id/mtm_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MTM :"
+            android:textSize="@dimen/common_textsize"
+            android:textColor="@color/text_secondary" />
+        <TextView
+            android:id="@+id/mtmValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/common_textsize"
+            android:textColor="@color/white"
+            android:paddingLeft="3dp"
+            android:layout_toRightOf="@+id/mtm_textview"/>
+    </RelativeLayout>
+</RelativeLayout>

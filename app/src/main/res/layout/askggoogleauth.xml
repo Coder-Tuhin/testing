@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@color/black"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_160"
+                android:layout_height="@dimen/dimen_160"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/googleauthenticator"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/authenticator_desc10"
+                android:layout_gravity="center"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="10dp" />
+            <TextView
+                android:id="@+id/authenticator_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/authenticator_desc11"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:justificationMode="inter_word"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:textSize="@dimen/dimen_16"
+                android:textColor="@color/silver"
+                android:layout_marginTop="@dimen/dimen_20" />
+            <TextView
+                android:id="@+id/authenticator_text11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/authenticator_desc12"
+                android:layout_gravity="center"
+                android:justificationMode="inter_word"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:textSize="@dimen/dimen_16"
+                android:visibility="gone"
+                android:textColor="@color/silver"
+                android:layout_marginTop="@dimen/dimen_20" />
+            <TextView
+                android:id="@+id/authenticator_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/authenticator_desc2"
+                android:layout_gravity="center"
+                android:textSize="@dimen/dimen_20"
+                android:gravity="center"
+                android:textColor="@color/ventura_color"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/dimen_30" />
+            <TextView
+                android:id="@+id/btn_enablenow"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_45"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:background="@drawable/bg_oange_corner_8dp"
+                android:text="@string/auth_yes"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="@dimen/text_15"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:layout_marginRight="@dimen/dimen_30"
+                android:layout_marginLeft="@dimen/dimen_30"
+
+                android:layout_gravity="center_horizontal"/>
+            <TextView
+                android:id="@+id/btn_enablelater"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_45"
+                android:layout_marginTop="@dimen/dimen_6"
+                android:text="@string/auth_no"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_15"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+
+                android:layout_marginRight="@dimen/dimen_30"
+                android:layout_marginLeft="@dimen/dimen_30"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

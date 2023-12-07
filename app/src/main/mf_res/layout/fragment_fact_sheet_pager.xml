@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="wealth.new_mutualfund.factSheet.FactSheetPagerFragment"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <view.TvRegular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header"
+        android:padding="@dimen/dimen_10"
+        android:text="Fund Factsheet"
+        android:gravity="center"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/text_16" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_28"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/dimen_6"
+        android:layout_marginRight="@dimen/dimen_6"
+        android:layout_marginTop="@dimen/dimen_10">
+        <view.TvLarge
+            android:id="@+id/summary_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/pager_tab_background"
+            android:gravity="center"
+            android:text="Summary"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_13" />
+        <Space
+            android:layout_width="@dimen/dimen_4"
+            android:layout_height="match_parent"/>
+        <view.TvLarge
+            android:id="@+id/performance_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/pager_tab_background"
+            android:gravity="center"
+            android:text="Performance"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_13" />
+        <Space
+            android:layout_width="@dimen/dimen_4"
+            android:layout_height="match_parent"/>
+        <view.TvLarge
+            android:id="@+id/holding_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/pager_tab_background"
+            android:gravity="center"
+            android:text="Holding"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_13" />
+        <Space
+            android:layout_width="@dimen/dimen_4"
+            android:layout_height="match_parent"/>
+        <view.TvLarge
+            android:id="@+id/allocation_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/pager_tab_background"
+            android:gravity="center"
+            android:text="Allocation"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_13" />
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10"/>
+</LinearLayout>

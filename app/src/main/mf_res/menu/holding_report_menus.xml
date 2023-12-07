@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/purchase"
+        android:title="Purchase" />
+    <item
+        android:id="@+id/redemption"
+        android:title="Redemption" />
+    <item
+        android:id="@+id/swtch"
+        android:title="Switch" />
+    <item
+        android:id="@+id/sip"
+        android:title="Monthly SIP" />
+    <item
+        android:id="@+id/stp"
+        android:title="STP" />
+    <item
+        android:id="@+id/swp"
+        android:title="SWP" />
+</menu>

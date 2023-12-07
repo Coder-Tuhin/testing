@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/analytics_background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dimen_28">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello! "
+            android:textColor="@color/ventura_color"
+            android:gravity="center"
+            android:textSize="@dimen/text_16"
+            android:textStyle="normal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harslata Sarag"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="@dimen/text_20"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Mutual Fund investment is few steps away"
+        android:textColor="@color/ventura_color"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:textSize="@dimen/text_14"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Are you looking to?"
+        android:textColor="@color/ventura_color"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:textSize="@dimen/text_20"
+        android:textStyle="bold"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/dimen_20"
+            android:paddingLeft="@dimen/dimen_20"
+            android:paddingBottom="@dimen/dimen_20"
+            android:paddingTop="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+                <LinearLayout
+                    android:id="@+id/ll_create_wealth"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/dimen_16"
+                    android:paddingTop="@dimen/dimen_16"
+                    >
+                    <ImageView
+                        android:layout_width="@dimen/dimen_60"
+                        android:layout_height="@dimen/dimen_60"
+                        android:src="@drawable/ic_createwealth"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_4"
+                        android:text="Create Wealth"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_16"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_4"
+                        android:text="Achive Your"
+                        android:textColor="@color/ventura_color"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_10"
+                        android:textStyle="normal"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="goals by by investing in equity"
+                        android:textColor="@color/ventura_color"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_10"
+                        android:textStyle="normal"/>
+
+                </LinearLayout>
+                <Space
+                    android:layout_width="@dimen/dimen_10"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:id="@+id/ll_preserve_capital"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/dimen_16"
+                    android:paddingTop="@dimen/dimen_16"
+                    >
+                    <ImageView
+                        android:layout_width="@dimen/dimen_60"
+                        android:layout_height="@dimen/dimen_60"
+                        android:src="@drawable/ic_preservecapital"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_4"
+                        android:text="Preserve Capital"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_16"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_4"
+                        android:text="Earn higher returns by"
+                        android:textColor="@color/ventura_color"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_10"
+                        android:textStyle="normal"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="safeguarding your principal"
+                        android:textColor="@color/ventura_color"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_10"
+                        android:textStyle="normal"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:weightSum="2">
+                <LinearLayout
+                    android:id="@+id/ll_save_tax"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/dimen_16"
+                    android:paddingTop="@dimen/dimen_16">
+                    <ImageView
+                        android:layout_width="@dimen/dimen_60"
+                        android:layout_height="@dimen/dimen_60"
+                        android:src="@drawable/ic_savetax"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_4"
+                        android:text="Save Tax"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_16"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_4"
+                        android:text="Achieve dual benefit of"
+                        android:textColor="@color/ventura_color"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_10"
+                        android:textStyle="normal"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="wealth creation and tax saving"
+                        android:textColor="@color/ventura_color"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_10"
+                        android:textStyle="normal"/>
+
+                </LinearLayout>
+                <Space
+                    android:layout_width="@dimen/dimen_10"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:id="@+id/ll_park_fund"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/dimen_16"
+                    android:paddingTop="@dimen/dimen_16">
+                    <ImageView
+                        android:layout_width="@dimen/dimen_60"
+                        android:layout_height="@dimen/dimen_60"
+                        android:src="@drawable/ic_parkfund"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_4"
+                        android:gravity="center"
+                        android:text="Park Funds"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_16"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_4"
+                        android:text="Invest your idle money to"
+                        android:textColor="@color/ventura_color"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_10"
+                        android:textStyle="normal"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="earn more than your savings account"
+                        android:textColor="@color/ventura_color"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_10"
+                        android:textStyle="normal"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:weightSum="2">
+                <LinearLayout
+                    android:id="@+id/ll_invest_overseas"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/dimen_16"
+                    android:paddingTop="@dimen/dimen_16">
+                    <ImageView
+                        android:layout_width="@dimen/dimen_60"
+                        android:layout_height="@dimen/dimen_60"
+                        android:src="@drawable/ic_investoverseas"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_4"
+                        android:text="Invest Overseas"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_16"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_4"
+                        android:text="Take exposure"
+                        android:textColor="@color/ventura_color"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_10"
+                        android:textStyle="normal"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="in Top Global Companies"
+                        android:textColor="@color/ventura_color"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_10"
+                        android:textStyle="normal"/>
+
+                </LinearLayout>
+                <Space
+                    android:layout_width="@dimen/dimen_10"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:id="@+id/ll_focus_sector"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/dimen_16"
+                    android:paddingTop="@dimen/dimen_16">
+                    <ImageView
+                        android:layout_width="@dimen/dimen_60"
+                        android:layout_height="@dimen/dimen_60"
+                        android:src="@drawable/ic_focussector"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_4"
+                        android:text="Focus on a sector"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_16"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_4"
+                        android:text="Invest in"
+                        android:textColor="@color/ventura_color"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_10"
+                        android:textStyle="normal"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="a specific Theme/Sector"
+                        android:textColor="@color/ventura_color"
+                        android:gravity="center"
+                        android:textSize="@dimen/text_10"
+                        android:textStyle="normal"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

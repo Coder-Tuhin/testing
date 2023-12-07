@@ -1,0 +1,1001 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativelay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomLinear"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/touch_outside"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:layout_marginTop="@dimen/s_margin"
+            android:orientation="horizontal">
+            <include
+                android:id="@+id/spinner"
+                layout="@layout/custom_spinner"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s_margin"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/total_vol_textview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="1.5"
+                android:text="0"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/time_value_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0%"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/large_textsize" />
+
+                <TextView
+                    android:id="@+id/time_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/small_textsize" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/dash_line" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="2dp">
+                <include layout="@layout/marketdepth_table" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Total Buy: "
+                                android:textColor="@color/silver" />
+
+                            <TextView
+                                android:id="@+id/total_buy_value"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="0"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="Total Sell: "
+                                android:textColor="@color/silver" />
+
+                            <TextView
+                                android:id="@+id/total_sell_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Lower Ckt: "
+                                android:textColor="@color/silver" />
+
+                            <TextView
+                                android:id="@+id/lower_ckt_value"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="0"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:text="Upper Ckt: "
+                                android:textColor="@color/silver" />
+
+                            <TextView
+                                android:id="@+id/upper_ckt_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/indicatorLinear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_centerInParent="true"
+                        android:visibility="visible">
+                        <TextView
+                            android:id="@+id/totalBuyPer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="10sp"
+                            android:layout_marginRight="4dp"
+                            android:visibility="visible"
+                            android:text="0%"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/green1"/>
+                        <ProgressBar
+                            android:id="@+id/progressIndicator"
+                            style="@android:style/Widget.ProgressBar.Horizontal"
+                            android:layout_width="54dp"
+                            android:layout_height="10dp"
+                            android:max="100"
+                            android:progress="20"
+                            android:progressDrawable="@drawable/progressindicator_inactive" />
+                        <TextView
+                            android:id="@+id/totalSellPer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="10sp"
+                            android:layout_marginLeft="4dp"
+                            android:visibility="visible"
+                            android:gravity="right"
+                            android:text="0%"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/red"/>
+                    </LinearLayout>
+
+                    <include
+                        layout="@layout/speedometer_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone" />
+                </RelativeLayout>
+                <View
+                    android:id="@+id/buysellTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/silver" />
+
+                <LinearLayout
+                    android:id="@+id/buysellLinear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_two"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/s_margin"
+                    android:paddingTop="@dimen/s_margin"/>
+                <View
+                    android:id="@+id/buysellBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:background="@drawable/dash_line"
+                    android:visibility="gone"/>
+                <View
+                    android:id="@+id/nsebseTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/silver"
+                    android:visibility="gone"/>
+                <LinearLayout
+                    android:id="@+id/nsebsetrade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/s_margin"
+                    android:paddingTop="@dimen/s_margin"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_weight="1">
+                        <TextView
+                            android:id="@+id/nsebseratetitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="NSE LTQ : "
+                            android:textStyle="bold"
+                            android:textColor="@color/cyan" />
+                        <TextView
+                            android:id="@+id/nsebseqty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/bsenserate"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/item_height"
+                        android:background="@drawable/bse_btn_border"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/nsebseltptime"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text=""
+                        android:textSize="@dimen/small_textsize"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+                <View
+                    android:id="@+id/detailsTopView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/silver" />
+
+                <RadioGroup
+                    android:id="@+id/detailsRadiogrp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/detailRd"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/depth_rdselector"
+                        android:button="@android:color/transparent"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:text="Details"
+                        android:textColor="@drawable/checked_text_color"
+                        android:textSize="@dimen/common_textsize"
+                        android:textStyle="bold" />
+                    <RadioButton
+                        android:id="@+id/orderRd"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/depth_rdselector"
+                        android:button="@android:color/transparent"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@drawable/checked_text_color"
+                        android:textSize="@dimen/common_textsize"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/qtyRd"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/depth_rdselector"
+                        android:button="@android:color/transparent"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@drawable/checked_text_color"
+                        android:textSize="@dimen/common_textsize"
+                        android:textStyle="bold" />
+                    <RadioButton
+                        android:id="@+id/news_Rd"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/depth_rdselector"
+                        android:button="@android:color/transparent"
+                        android:gravity="center"
+                        android:text="News"
+                        android:textColor="@drawable/checked_text_color"
+                        android:textSize="@dimen/common_textsize"
+                        android:textStyle="bold" />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="2dp">
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:id="@+id/details"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:id="@+id/oiLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:id="@+id/oi_curr"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="OI Curr: "
+                                            android:textColor="@color/silver" />
+
+                                        <TextView
+                                            android:id="@+id/oi_curr_value"
+                                            android:layout_width="0dp"
+                                            android:layout_weight="1"
+                                            android:gravity="right"
+                                            android:layout_height="wrap_content"
+                                            android:text="0"
+                                            android:textColor="@color/white" />
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal"
+                                        android:layout_marginLeft="@dimen/common_margine">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="OI Chg: "
+                                            android:textColor="@color/silver" />
+                                        <TextView
+                                            android:id="@+id/oi_chg_value"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:gravity="right"
+                                            android:text=""
+                                            android:textColor="@color/white" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="OI Low: "
+                                            android:textColor="@color/silver"/>
+                                        <TextView
+                                            android:id="@+id/oi_low_value"
+                                            android:layout_width="0dp"
+                                            android:layout_weight="1"
+                                            android:gravity="right"
+                                            android:layout_height="wrap_content"
+                                            android:text="0"
+                                            android:textColor="@color/white" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:orientation="horizontal"
+                                        android:layout_marginLeft="@dimen/common_margine">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="OI High: "
+                                            android:textColor="@color/silver" />
+                                        <TextView
+                                            android:id="@+id/oi_high_value"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:gravity="right"
+                                            android:text="0"
+                                            android:textColor="@color/white" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                                <View
+                                    android:id="@+id/oiView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0.5dp"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:background="@color/silver" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Avg: "
+                                        android:textColor="@color/silver" />
+                                    <TextView
+                                        android:id="@+id/avg_value"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content"
+                                        android:text="0"
+                                        android:gravity="right"
+                                        android:textColor="@color/white" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:id="@+id/trdExcLayout"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:visibility="invisible"
+                                    android:layout_marginLeft="@dimen/common_margine"
+                                    android:layout_weight="1">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="LPP: "
+                                        android:textColor="@color/silver" />
+                                    <TextView
+                                        android:id="@+id/trdExc"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:layout_height="wrap_content"
+                                        android:text="0"
+                                        android:gravity="right"
+                                        android:textColor="@color/white" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Open: "
+                                        android:textColor="@color/silver" />
+
+                                    <TextView
+                                        android:id="@+id/open_value"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:gravity="right"
+                                        android:layout_height="wrap_content"
+                                        android:text="0"
+                                        android:textColor="@color/white" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:layout_marginLeft="@dimen/common_margine">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="P.Close: "
+                                        android:textColor="@color/silver" />
+
+                                    <TextView
+                                        android:id="@+id/pclose_value"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:gravity="right"
+                                        android:layout_height="wrap_content"
+                                        android:text="0"
+                                        android:textColor="@color/white" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Low: "
+                                        android:textColor="@color/silver" />
+
+                                    <TextView
+                                        android:id="@+id/low_value"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:gravity="right"
+                                        android:layout_height="wrap_content"
+                                        android:text="0"
+                                        android:textColor="@color/white" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:layout_marginLeft="@dimen/common_margine"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="High: "
+                                        android:textColor="@color/silver"/>
+                                    <TextView
+                                        android:id="@+id/high_value"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:gravity="right"
+                                        android:layout_height="wrap_content"
+                                        android:text="0"
+                                        android:textColor="@color/white" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:text="Vol: "
+                                        android:textColor="@color/silver" />
+                                    <TextView
+                                        android:id="@+id/vol_value"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:gravity="right"
+                                        android:layout_height="wrap_content"
+                                        android:text="0"
+                                        android:textColor="@color/white" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:layout_marginLeft="@dimen/common_margine">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentLeft="true"
+                                        android:text="Val: "
+                                        android:textColor="@color/silver" />
+                                    <TextView
+                                        android:id="@+id/val_value"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:gravity="right"
+                                        android:layout_height="wrap_content"
+                                        android:text="0"
+                                        android:textColor="@color/white" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/weekLinear"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="52 Week Low: "
+                                        android:textColor="@color/silver" />
+
+                                    <TextView
+                                        android:id="@+id/weeklow_value"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:gravity="right"
+                                        android:layout_height="wrap_content"
+                                        android:text="0"
+                                        android:textColor="@color/white" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:layout_marginLeft="@dimen/common_margine"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="52 Week High: "
+                                        android:textColor="@color/silver" />
+
+                                    <TextView
+                                        android:id="@+id/weekhigh_value"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:gravity="right"
+                                        android:layout_height="wrap_content"
+                                        android:text="0"
+                                        android:textColor="@color/white" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/holdingLinear1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:id="@+id/hldqty_title"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Holding Qty: "
+                                        android:textColor="@color/silver" />
+                                    <TextView
+                                        android:id="@+id/hldqty_value"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:gravity="right"
+                                        android:layout_height="wrap_content"
+                                        android:text="0"
+                                        android:textColor="@color/white" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:layout_marginLeft="@dimen/common_margine"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:id="@+id/holdcurr_title"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Curr Value: "
+                                        android:textColor="@color/silver" />
+                                    <TextView
+                                        android:id="@+id/holdcurr_value"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:gravity="right"
+                                        android:layout_height="wrap_content"
+                                        android:text="0"
+                                        android:textColor="@color/white" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/holdingLinear2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:id="@+id/holdpurprice_title"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Avg Pur Price: "
+                                        android:textColor="@color/silver" />
+                                    <TextView
+                                        android:id="@+id/holdpurprice_value"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:gravity="right"
+                                        android:layout_height="wrap_content"
+                                        android:text="0"
+                                        android:textColor="@color/white" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:layout_marginLeft="@dimen/common_margine"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:id="@+id/holdpl_title"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="PL: "
+                                        android:textColor="@color/silver" />
+                                    <TextView
+                                        android:id="@+id/holdpl_value"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:gravity="right"
+                                        android:layout_height="wrap_content"
+                                        android:text="0"
+                                        android:textColor="@color/white" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/pendingLinear"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone" />
+                        </FrameLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/item_height"
+                        android:layout_marginTop="@dimen/common_margine"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/button_valution"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_background"
+                            android:gravity="center"
+                            android:text="Valuation"
+                            android:textColor="@color/white"
+                            android:textAllCaps="false"
+                            android:textSize="@dimen/small_textsize" />
+
+                        <Button
+                            android:id="@+id/button_viewchart"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/common_margine"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_background"
+                            android:gravity="center"
+                            android:text="View Charts"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/small_textsize" />
+                        <Button
+                            android:id="@+id/button_tradingview"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/common_margine"
+                            android:layout_marginRight="@dimen/common_margine"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_background"
+                            android:gravity="center"
+                            android:text="Trading View"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/small_textsize" />
+
+                        <Button
+                            android:id="@+id/button_latestresult"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/button_background"
+                            android:gravity="center"
+                            android:text="Latest Results"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/small_textsize" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:id="@+id/latestnewslinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/border"
+            android:visibility="gone"
+            >
+            <ImageView
+                android:id="@+id/sharebtn"
+                android:padding="5dp"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/help_arrow_right"/>
+            <TextView
+                android:id="@+id/latestNews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:minHeight="@dimen/item_height"
+                android:autoLink="web"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/common_margine"
+                android:paddingRight="@dimen/common_margine"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_textsize"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/event_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/common_margine"
+            android:paddingRight="44dp"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/bottomLinear"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:paddingTop="@dimen/common_margine"
+            android:layout_alignParentBottom="true"
+            android:gravity="right">
+
+            <Button
+                android:id="@+id/netpositionBtn"
+                android:layout_width="@dimen/item_height"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/view"
+                android:layout_marginRight="@dimen/common_margine"
+                android:background="@drawable/button_border"
+                android:scaleType="fitXY"
+                android:text="N"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/tradebookBtn"
+                android:layout_width="@dimen/item_height"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/view"
+                android:layout_marginRight="@dimen/common_margine"
+                android:background="@drawable/button_border"
+                android:scaleType="fitXY"
+                android:text="T"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/orderbookBtn"
+                android:layout_width="@dimen/item_height"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/view"
+                android:layout_marginRight="@dimen/common_margine"
+                android:background="@drawable/button_border"
+                android:scaleType="fitXY"
+                android:text="O"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:id="@+id/messageRelative"
+                android:layout_width="@dimen/item_height"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/view"
+                android:layout_marginRight="@dimen/common_margine"
+                android:background="@drawable/button_border"
+                android:gravity="center"
+                android:padding="@dimen/common_margine">
+
+                <ImageButton
+                    android:id="@+id/msgBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/message" />
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/depth_addscriptBtn"
+                android:layout_width="@dimen/item_height"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@mipmap/img_plus" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

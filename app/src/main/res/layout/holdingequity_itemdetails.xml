@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/common_margine">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/common_margine"
+            android:paddingLeft="@dimen/common_margine"
+            android:paddingRight="@dimen/common_margine">
+
+            <RelativeLayout
+                android:id="@+id/holding_relativeone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Holding:"
+                    android:textColor="@color/silver"
+                    android:textSize="@dimen/small_textsize" />
+
+                <TextView
+                    android:id="@+id/holding_value_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margine"
+                    android:layout_toRightOf="@+id/textview"
+                    android:text="--"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/large_textsize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/holding_relativetwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/holding_relativeone"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/common_margine"
+                android:background="@drawable/border"
+                android:padding="@dimen/common_margine">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Total Quantity:"
+                    android:textColor="@color/silver"
+                    android:textSize="@dimen/small_textsize" />
+
+                <TextView
+                    android:id="@+id/total_qty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/common_margine"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_textsize" />
+
+                <TextView
+                    android:id="@+id/nonpoa_qty_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="NON POA Quantity:"
+                    android:textColor="@color/silver"
+                    android:layout_below="@+id/total_qty"
+                    android:visibility="gone"
+                    android:textSize="@dimen/small_textsize" />
+
+                <TextView
+                    android:id="@+id/nonpoa_qty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/common_margine"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/total_qty"
+                    android:visibility="gone"
+                    android:textSize="@dimen/common_textsize" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/nonpoa_qty"
+                    android:text="Today's Trade:"
+                    android:textColor="@color/silver"
+                    android:textSize="@dimen/small_textsize" />
+
+                <TextView
+                    android:id="@+id/todaytrade_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/nonpoa_qty"
+                    android:layout_marginLeft="@dimen/common_margine"
+                    android:text="0.00"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_textsize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/holding_relativethree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/holding_relativetwo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/common_margine"
+                android:background="@drawable/border"
+                android:padding="@dimen/common_margine">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="DP Quantity:"
+                    android:textColor="@color/silver"
+                    android:textSize="@dimen/small_textsize" />
+
+                <TextView
+                    android:id="@+id/dp_qty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/common_margine"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_textsize" />
+
+                <TextView
+                    android:id="@+id/vb_qty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/dp_qty"
+                    android:text="VB Quantity:"
+                    android:textColor="@color/silver"
+                    android:textSize="@dimen/small_textsize" />
+
+                <TextView
+                    android:id="@+id/vbqty_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/dp_qty"
+                    android:layout_marginLeft="@dimen/common_margine"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_textsize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/vb_qty"
+                    android:text="SR1 Quantity:"
+                    android:textColor="@color/silver"
+                    android:textSize="@dimen/small_textsize" />
+
+                <TextView
+                    android:id="@+id/srqty_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/vb_qty"
+                    android:layout_marginLeft="@dimen/common_margine"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_textsize" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/srqty_textview"
+                    android:text="SR2 Quantity:"
+                    android:textColor="@color/silver"
+                    android:textSize="@dimen/small_textsize" />
+
+                <TextView
+                    android:id="@+id/srqty2_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/srqty_textview"
+                    android:layout_marginLeft="@dimen/common_margine"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_textsize" />
+                <TextView
+                    android:id="@+id/slbs_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/srqty2_textview"
+                    android:text="SLBS Quantity:"
+                    android:textColor="@color/silver"
+                    android:textSize="@dimen/small_textsize" />
+
+                <TextView
+                    android:id="@+id/slbsqty_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/srqty2_textview"
+                    android:layout_marginLeft="@dimen/common_margine"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_textsize" />
+                <RelativeLayout
+                    android:id="@+id/stocksRelative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/slbsqty_textview"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/fsqtytitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="FSL Quantity:"
+                        android:textColor="@color/silver"
+                        android:visibility="gone"
+                        android:textSize="@dimen/small_textsize" />
+
+                    <TextView
+                        android:id="@+id/fsQty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="@dimen/common_margine"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:visibility="gone"
+                        android:textSize="@dimen/common_textsize" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/fsQty"
+                        android:text="Collateral Quantity Others:"
+                        android:textColor="@color/silver"
+                        android:textSize="@dimen/small_textsize" />
+
+                    <TextView
+                        android:id="@+id/csQty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/fsQty"
+                        android:layout_marginLeft="@dimen/common_margine"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/common_textsize" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/csQty"
+                        android:text="Collateral Quantity MTF:"
+                        android:textColor="@color/silver"
+                        android:textSize="@dimen/small_textsize" />
+
+                    <TextView
+                        android:id="@+id/csQtyMtf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/csQty"
+                        android:layout_marginLeft="@dimen/common_margine"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/common_textsize" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/holding_relativefour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/holding_relativethree"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/common_margine"
+                android:background="@drawable/border"
+                android:padding="@dimen/common_margine">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="NSE:"
+                    android:textColor="@color/silver"
+                    android:textSize="@dimen/small_textsize" />
+
+                <TextView
+                    android:id="@+id/nse_value_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/common_margine"
+                    android:text="0.00"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_textsize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/nse_value_textview"
+                    android:text="BSE:"
+                    android:textColor="@color/silver"
+                    android:textSize="@dimen/small_textsize" />
+
+                <TextView
+                    android:id="@+id/bse_value_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/nse_value_textview"
+                    android:layout_marginLeft="@dimen/common_margine"
+                    android:text="0.00"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_textsize" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/stocksRelative"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/common_margine"
+                android:text="@string/holding_equitytext_one"
+                android:textColor="@color/silver"
+                android:textSize="@dimen/small_textsize" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/bottom_percent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/common_margine"
+        android:background="@color/white" />
+
+
+    <LinearLayout
+        android:id="@+id/bottom_percent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/previnit_imagebutton"
+                android:layout_width="@dimen/item_height"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_backbtn" />
+
+            <ImageButton
+                android:id="@+id/prevbtn_textview"
+                android:layout_width="@dimen/item_height"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/common_margine"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_prevbtn" />
+
+            <TextView
+                android:id="@+id/pagecount_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="@dimen/common_margine"
+                android:paddingRight="@dimen/common_margine"
+                android:text="1/2"
+                android:textColor="@color/white" />
+
+            <ImageButton
+                android:id="@+id/nextbtn_textview"
+                android:layout_width="@dimen/item_height"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_nextbtn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/sell_nse_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="SELL\nNSE"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_textsize"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/sell_bse_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/padding"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="SELL\nBSE"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_textsize"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/buy_nse_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/padding"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="BUY\nNSE"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_textsize"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/buy_bse_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/padding"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:text="BUY\nBSE"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_textsize"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+

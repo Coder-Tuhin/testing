@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:id="@+id/alreadyappliedlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:visibility="visible">
+        <view.TvRegular
+            android:id="@+id/bondNameapplied"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sdasdasd"
+            android:textStyle="bold"
+            android:textColor="@color/ventura_color"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/dimen_18"/>
+        <view.TvRegular
+            android:id="@+id/msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You have already applied for this Bond"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/dimen_16"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:textColor="@color/ventura_color"/>
+        <View
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1"
+            android:background="@color/white"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/totallayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <view.TvRegular
+            android:id="@+id/bondName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tenor"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/dimen_16"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:textColor="@color/white"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <view.TvRegular
+                android:id="@+id/creditRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tenor"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/text_15"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:textColor="@color/white"/>
+            <view.TvRegular
+                android:id="@+id/closedate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tenor"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/text_15"
+                android:layout_marginTop="@dimen/dimen_4"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="top"
+            android:layout_marginLeft="@dimen/dimen_6"
+            android:layout_marginRight="@dimen/dimen_6">
+
+            <view.TvRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tenor"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/text_15"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:textColor="@color/ventura_color"/>
+
+            <view.TvRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:layout_weight="1"
+                android:text="Interest\nFreq *"
+                android:textColor="@color/ventura_color"
+                android:textSize="@dimen/text_15" />
+            <view.TvRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Interest\nRate(%)"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_15"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:textColor="@color/ventura_color"/>
+
+            <view.TvRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Minimum\nAmount (\u20B9)"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_15"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:textColor="@color/ventura_color"/>
+            <view.TvRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_weight="1"
+                android:textSize="@dimen/text_15"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:textColor="@color/ventura_color"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_bonddetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_10"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+        <Button
+            android:id="@+id/button_buy"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/item_height"
+            android:background="@drawable/background_border_popup"
+            android:text="Apply"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:layout_marginBottom="@dimen/dimen_10"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1"
+            android:background="@color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>

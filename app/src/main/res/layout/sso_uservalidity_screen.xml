@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/black">
+
+
+    <view.TvRegular
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/ventura_color"
+        android:text="Hi"
+        android:textSize="@dimen/dimen_30"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:gravity="center"
+       />
+    <view.TvRegular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Let's validate your details..."
+        android:textSize="@dimen/dimen_20"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:gravity="center" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/PanTextfield"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:theme="@style/TextInputLayoutStyle"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintEnabled="true"
+        android:clickable="false"
+        android:textColorHint="@color/ventura_color"
+        app:boxStrokeColor="@drawable/selector_box_stroke_color"
+        app:boxStrokeWidth="@dimen/dimen_1"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:layout_marginRight="@dimen/dimen_20"
+        app:expandedHintEnabled="false"
+        app:errorTextColor="@color/highlight"
+        android:hint="PAN">
+
+        <!--this is the actual edit text which takes the input-->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Et_pan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:longClickable="false"
+            android:maxLength="10"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:inputType="textCapCharacters"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/text_45"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:background="@drawable/bg_oange_corner_8dp"
+        android:text="Submit"
+        android:gravity="center"
+        android:textSize="@dimen/text_20"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:paddingStart="@dimen/item_height"
+        android:paddingEnd="@dimen/item_height"
+        android:layout_gravity="center_horizontal"/>
+
+    <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/logo_new"
+        android:layout_marginTop="@dimen/dimen_20"
+    android:layout_marginRight="@dimen/dimen_70"
+    android:layout_marginLeft="@dimen/dimen_70"/>
+
+</LinearLayout>

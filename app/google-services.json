@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "671744275030",
+    "firebase_url": "https://ventura-wealth.firebaseio.com",
+    "project_id": "ventura-wealth",
+    "storage_bucket": "ventura-wealth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:671744275030:android:ea0be03aa26e1edf",
+        "android_client_info": {
+          "package_name": "com.ventura.venturawealth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "671744275030-41k6ohg08u1pp4uf1gug83pr3apocvqc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ventura.venturawealth",
+            "certificate_hash": "d2f99a5f4215e64306a290b7ea782259e4142fb1"
+          }
+        },
+        {
+          "client_id": "671744275030-ktb5dur0mb5826g6fmbqld3orio3umt4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANrnQQQhfrE_OV43SdW9ztNXmezdZT26o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "671744275030-ktb5dur0mb5826g6fmbqld3orio3umt4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/demo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transperent"> <!-- This is alpha 68/255, black -->
+
+        <ImageView
+            android:id="@+id/spinnerarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/help_arrow_right"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/spinnertext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/spinnerarrow"
+            android:layout_marginLeft="90dp"
+            android:text="Choose your action like BUY or SELL"
+            android:textColor="@color/help_textcolor"
+            android:textSize="18sp"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/enablearrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="110dp"
+            android:src="@drawable/help_arrow_left"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/enabletext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/enablearrow"
+            android:layout_marginLeft="40dp"
+            android:text="Enable the selected action on \nNavigation Drawer"
+            android:textColor="@color/help_textcolor"
+            android:textSize="18sp"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/selectarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="140dp"
+            android:src="@drawable/help_arrow_right"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/selecttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/selectarrow"
+            android:layout_marginLeft="100dp"
+            android:text="Click to select Script Name"
+            android:textColor="@color/help_textcolor"
+            android:textSize="18sp"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/orderarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="210dp"
+            android:src="@drawable/help_arrow_left"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/ordertext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/orderarrow"
+            android:layout_marginLeft="100dp"
+            android:text="Choose the Order Type"
+            android:textColor="@color/help_textcolor"
+            android:textSize="18sp"
+            android:visibility="invisible" />
+        <Button
+            android:id="@+id/btnGot"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/item_height"
+            android:background="@drawable/button_got"
+            android:text="GOT IT"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@android:color/black"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:textSize="16sp"
+            android:layout_gravity="right"/>
+</RelativeLayout>

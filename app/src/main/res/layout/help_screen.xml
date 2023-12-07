@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/helpFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transperent"/>
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnPrev"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_height"
+            android:layout_weight="1"
+            android:background="@drawable/button_got"
+            android:text="Previous"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:gravity="center" />
+        <Button
+            android:id="@+id/btnGot"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/item_height"
+            android:background="@drawable/button_got"
+            android:text="GOT IT"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:layout_marginLeft="@dimen/item_height"
+            android:layout_marginRight="@dimen/item_height"/>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/item_height"
+            android:background="@drawable/button_got"
+            android:text="Next"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

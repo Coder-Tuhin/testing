@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/editViewLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding"
+        android:background="@drawable/popup_style"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <include layout="@layout/popup_header" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding">
+
+            <LinearLayout
+                android:id="@+id/periodLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Periods:"
+                    android:textColor="@color/white"
+                    android:padding="@dimen/common_margine"
+                    android:textSize="@dimen/small_textsize" />
+
+                <EditText
+                    android:id="@+id/editPeriod"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_height"
+                    android:padding="@dimen/common_margine"
+                    android:textColor="@color/white"
+                    android:inputType="number"
+                    android:textSize="@dimen/small_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/coeffLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="UpperCoeff:"
+                        android:textColor="@color/white"
+                        android:padding="@dimen/common_margine"
+                        android:textSize="@dimen/small_textsize" />
+
+                    <EditText
+                        android:id="@+id/editUpperCoef"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/item_height"
+                        android:padding="@dimen/common_margine"
+                        android:textColor="@color/white"
+                        android:inputType="numberDecimal"
+                        android:textSize="@dimen/small_textsize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="LowerCoeff:"
+                        android:textColor="@color/white"
+                        android:padding="@dimen/common_margine"
+                        android:textSize="@dimen/small_textsize" />
+
+                    <EditText
+                        android:id="@+id/editLowerCoeff"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/item_height"
+                        android:padding="@dimen/common_margine"
+                        android:textColor="@color/white"
+                        android:inputType="numberDecimal"
+                        android:textSize="@dimen/small_textsize" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/percentLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Percent:"
+                    android:textColor="@color/white"
+                    android:padding="@dimen/common_margine"
+                    android:textSize="@dimen/small_textsize" />
+
+                <EditText
+                    android:id="@+id/editPercent"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/item_height"
+                    android:padding="@dimen/common_margine"
+                    android:textColor="@color/white"
+                    android:inputType="numberDecimal"
+                    android:textSize="@dimen/small_textsize" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/macdLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Long:"
+                        android:textColor="@color/white"
+                        android:padding="@dimen/common_margine"
+                        android:textSize="@dimen/small_textsize" />
+
+                    <EditText
+                        android:id="@+id/editLongMacdPeriod"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/item_height"
+                        android:padding="@dimen/common_margine"
+                        android:textColor="@color/white"
+                        android:inputType="numberDecimal"
+                        android:textSize="@dimen/small_textsize" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Short:"
+                        android:textColor="@color/white"
+                        android:padding="@dimen/common_margine"
+                        android:textSize="@dimen/small_textsize" />
+                    <EditText
+                        android:id="@+id/editShortMacdPeriod"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/item_height"
+                        android:padding="@dimen/common_margine"
+                        android:textColor="@color/white"
+                        android:inputType="numberDecimal"
+                        android:textSize="@dimen/small_textsize" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Signal:"
+                        android:textColor="@color/white"
+                        android:padding="@dimen/common_margine"
+                        android:textSize="@dimen/small_textsize" />
+
+                    <EditText
+                        android:id="@+id/editSignalMacdPeriod"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/item_height"
+                        android:padding="@dimen/common_margine"
+                        android:textColor="@color/white"
+                        android:inputType="numberDecimal"
+                        android:textSize="@dimen/small_textsize" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/slowLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SlowD:"
+                        android:textColor="@color/white"
+                        android:padding="@dimen/common_margine"
+                        android:textSize="@dimen/small_textsize" />
+
+                    <EditText
+                        android:id="@+id/editSlowD"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/item_height"
+                        android:padding="@dimen/common_margine"
+                        android:textColor="@color/white"
+                        android:inputType="numberDecimal"
+                        android:textSize="@dimen/small_textsize" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SlowK:"
+                        android:textColor="@color/white"
+                        android:padding="@dimen/common_margine"
+                        android:textSize="@dimen/small_textsize" />
+
+                    <EditText
+                        android:id="@+id/editSlowK"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/item_height"
+                        android:padding="@dimen/common_margine"
+                        android:textColor="@color/white"
+                        android:inputType="numberDecimal"
+                        android:textSize="@dimen/small_textsize" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnApply"
+            android:layout_width="@dimen/l_btn_width"
+            android:layout_height="@dimen/s_btn_height"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/l_margin"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:text="Apply"
+            android:layout_marginTop="@dimen/common_margine"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_textsize" />
+    </LinearLayout>
+</LinearLayout>

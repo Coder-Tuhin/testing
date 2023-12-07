@@ -1,0 +1,285 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none"
+    android:background="@color/black">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <HorizontalScrollView
+        android:id="@+id/horizontal_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dimen_40"
+        android:fillViewport="true"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/niftytitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="NIFTY"
+                    android:paddingEnd="@dimen/dimen_6"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/sensextitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="SENSEX"
+                    android:paddingEnd="@dimen/dimen_6"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/niftyVal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dimen_6"
+                    android:paddingRight="@dimen/dimen_6"
+                    android:text="0.00"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/sensexVal"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/dimen_6"
+                    android:paddingRight="@dimen/dimen_6"
+                    android:text="0.00"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/niftyAbsChg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:paddingLeft="@dimen/dimen_6"
+                    android:paddingRight="@dimen/dimen_6"
+                    android:text="0.00"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/sensexAbsChg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:paddingLeft="@dimen/dimen_6"
+                    android:paddingRight="@dimen/dimen_6"
+                    android:text="0.00"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/niftyline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="|"
+                    android:textColor="@android:color/white" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="|"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/niftyPerChg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:paddingLeft="@dimen/dimen_6"
+                    android:paddingRight="@dimen/dimen_6"
+                    android:text="0.00%"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/sensexPerChg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:paddingLeft="@dimen/dimen_6"
+                    android:paddingRight="@dimen/dimen_6"
+                    android:text="0.00%"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/niftyAdv"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="@dimen/dimen_6"
+                    android:paddingRight="@dimen/dimen_6"
+                    android:text="A: 0"
+                    android:textColor="@android:color/white" />
+                <TextView
+                    android:id="@+id/sensexAdv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:paddingLeft="@dimen/dimen_6"
+                    android:paddingRight="@dimen/dimen_6"
+                    android:text="A: 0"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/niftyDec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="@dimen/dimen_6"
+                    android:paddingRight="@dimen/dimen_6"
+                    android:text="D: 0"
+                    android:textColor="@android:color/white" />
+                <TextView
+                    android:id="@+id/sensexDec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="@dimen/dimen_6"
+                    android:paddingRight="@dimen/dimen_6"
+                    android:text="D: 0"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/niftySame"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="@dimen/dimen_6"
+                    android:paddingRight="@dimen/dimen_6"
+                    android:text="S: 0"
+                    android:textColor="@android:color/white" />
+                <TextView
+                    android:id="@+id/sensexSame"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="@dimen/dimen_6"
+                    android:paddingRight="@dimen/dimen_6"
+                    android:text="S: 0"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+        </LinearLayout>
+<!--
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/niftyRow"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_20"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/sensextable"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dimen_20"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+
+
+
+
+
+                            </LinearLayout>
+        </LinearLayout>-->
+    </HorizontalScrollView>
+    </ScrollView>
+    <ImageView
+        android:id="@+id/tool_logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/logo_new"
+        android:scaleType="fitStart"
+        android:background="@color/ventura_color"
+        android:paddingLeft="@dimen/dimen_40"
+        android:visibility="gone"/>
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/connection_bg"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true">
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:background="@color/white"/>
+        <ImageView
+            android:id="@+id/connection_logo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/connect"/>
+    </RelativeLayout>
+</RelativeLayout>

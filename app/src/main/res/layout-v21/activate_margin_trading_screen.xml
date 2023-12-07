@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_10"
+            android:paddingRight="@dimen/dimen_10"
+            android:paddingTop="@dimen/dimen_6"
+            android:paddingBottom="@dimen/dimen_6"
+            android:text="Activate Margin Trading"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_18" />
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dimen_6">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dimen_10"
+                android:paddingRight="@dimen/dimen_10"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/margin_trading_desc"
+                    android:textColor="@color/text_primary_light"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:id="@+id/rightsObligation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_6"
+                    android:paddingTop="@dimen/dimen_4"
+                    android:paddingBottom="@dimen/dimen_4"
+                    android:text="@string/click_here_for_rights_obligation"
+                    android:textColor="@color/text_primary"
+                    android:textSize="@dimen/text_14"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/rmsPolicy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/dimen_4"
+                    android:paddingBottom="@dimen/dimen_4"
+                    android:textStyle="bold"
+                    android:text="@string/click_here_for_rms"
+                    android:textColor="@color/text_primary"
+                    android:textSize="@dimen/text_14" />
+                <CheckBox
+                    android:id="@+id/agreeChk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/text_primary"
+                    android:paddingTop="@dimen/dimen_6"
+                    android:paddingBottom="@dimen/dimen_6"
+                    android:text="@string/activate_margin_tc"
+                    android:textColor="@color/text_primary_light" />
+                <TextView
+                    android:id="@+id/submitCancel"
+                    android:layout_width="@dimen/dimen_140"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:layout_marginBottom="@dimen/dimen_10"
+                    android:background="@drawable/rounded_btn"
+                    android:paddingBottom="@dimen/dimen_10"
+                    android:paddingTop="@dimen/dimen_10"
+                    android:gravity="center"
+                    android:text="CANCEL"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/roundDown"
+        android:layout_width="@dimen/dimen_36"
+        android:layout_height="@dimen/dimen_36"
+        android:src="@drawable/down_round"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="@dimen/dimen_20"
+        android:layout_marginRight="@dimen/dimen_10"/>
+</FrameLayout>

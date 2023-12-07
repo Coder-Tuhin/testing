@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <view.TvRegular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header"
+        android:padding="@dimen/dimen_4"
+        android:text="Spread Order"
+        android:textColor="@color/text_primary"
+        android:textStyle="bold|italic"
+        android:textSize="@dimen/text_16" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header"
+        android:gravity="bottom"
+        android:padding="@dimen/dimen_4">
+
+        <view.TvRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Available_balance"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/text_14" />
+
+        <view.TvLarge
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_4"
+            android:text="50,000.30"
+            android:textColor="@color/ventura_color"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_16" />
+    </LinearLayout>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@color/header"
+        android:padding="@dimen/dimen_4"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_30"
+            android:layout_weight="1"
+            android:background="@drawable/mf_radio_drawable_square"
+            android:button="@null"
+            android:gravity="center"
+            android:text="Overnight"
+            android:textColor="@color/white" />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/mf_radio_drawable_square"
+            android:button="@null"
+            android:gravity="center"
+            android:text="Lequid"
+            android:checked="true"
+            android:layout_marginLeft="@dimen/dimen_4"
+            android:layout_marginRight="@dimen/dimen_4"
+            android:textColor="@color/white" />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/mf_radio_drawable_square"
+            android:button="@null"
+            android:gravity="center"
+            android:text="Ultra Short"
+            android:textColor="@color/white" />
+        <view.TvRegular
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/dimen_4"
+            android:text="Term Fund"
+            android:gravity="center"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_14" />
+    </RadioGroup>
+
+    <include layout="@layout/mf_spinner"
+        android:id="@+id/spreadSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40" />
+
+    <view.TvRegular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_4"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginBottom="@dimen/dimen_4"
+        android:text="@string/Open_ended_equity"
+        android:textColor="@color/text_secondary"
+        android:textSize="@dimen/text_13"
+        android:textStyle="italic" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_4"
+            android:paddingRight="@dimen/dimen_4">
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_10" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <view.TvRegular
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimen_4"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:text="@string/Investment_amt"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="@dimen/text_14" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dimen_36"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <view.EtRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/mf_et_border"
+                        android:gravity="center"
+                        android:hint="Enter Amount"
+                        android:text=""
+                        android:inputType="number"
+                        android:maxLength="7"
+                        android:cursorVisible="true"
+                        android:focusedByDefault="true"
+                        android:focusable="true"
+                        android:imeOptions="actionDone"
+                        android:layout_marginRight="@dimen/dimen_4"
+                        android:paddingLeft="@dimen/dimen_6"
+                        android:paddingRight="@dimen/dimen_6"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/spinner_divider"
+                        android:textSize="@dimen/text_16" >
+                        <requestFocus/>
+                    </view.EtRegular>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mf_layer_bg"
+                android:padding="@dimen/dimen_6"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:layout_margin="@dimen/dimen_4">
+                    <view.TvRegular
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/redemption_date"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="@dimen/text_14" />
+                    <view.EtRegular
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="@dimen/dimen_36"
+                        android:background="@drawable/mf_et_gray_border"
+                        android:gravity="center"
+                        android:hint="@string/sip_startdate_format"
+                        android:text=""
+                        android:inputType="date"
+                        android:maxLength="10"
+                        android:imeOptions="actionNext"
+                        android:paddingLeft="@dimen/dimen_6"
+                        android:paddingRight="@dimen/dimen_6"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/spinner_divider"
+                        android:textSize="@dimen/text_14" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_margin="@dimen/dimen_4">
+                    <view.TvRegular
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Redemption"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="@dimen/text_14" />
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="All Units"
+                        android:checked="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_14"
+                        android:buttonTint="@color/ventura_color"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/text_primary"
+                    android:text="I/ We hereby agree with"
+                    android:textColor="@color/text_secondary" />
+
+                <view.TvLarge
+                    android:id="@+id/termcondclick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" T \u0026 C "
+                    android:textColor="@color/colorAccent" />
+
+                <view.TvLarge
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=" as well as"
+                    android:textColor="@color/text_secondary" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen_4">
+
+                <view.TvLarge
+                    android:id="@+id/cuttofclick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Cut off Timings "
+                    android:textColor="@color/colorAccent" />
+
+                <view.TvLarge
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=" for applicability of NAV."
+                    android:textColor="@color/text_secondary" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_48"
+                android:layout_marginTop="@dimen/dimen_20">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <view.TvLarge
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/mf_button_bg"
+                    android:gravity="center"
+                    android:text="INVEST NOW"
+                    android:textColor="@color/text_primary"
+                    android:textSize="@dimen/text_18" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:paddingTop="@dimen/dimen_6"
+                android:paddingBottom="@dimen/dimen_6"
+                android:gravity="bottom">
+                <view.TvRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Last_nav"
+                    android:textSize="@dimen/text_14"
+                    android:textColor="@color/spinner_divider"/>
+                <view.TvRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="25.72 (11Apr2018)"
+                    android:textSize="@dimen/text_16"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_6"
+                android:paddingBottom="@dimen/dimen_6"
+                android:gravity="bottom">
+                <view.TvRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Minimum_amt"
+                    android:textSize="@dimen/text_14"
+                    android:textColor="@color/spinner_divider"/>
+                <view.TvRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="5,000"
+                    android:textSize="@dimen/text_16"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_6"
+                android:paddingBottom="@dimen/dimen_6"
+                android:gravity="bottom">
+                <view.TvRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Multiples_of"
+                    android:textSize="@dimen/text_14"
+                    android:textColor="@color/spinner_divider"/>
+                <view.TvRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="100"
+                    android:textSize="@dimen/text_16"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_6"
+                android:paddingBottom="@dimen/dimen_6"
+                android:gravity="bottom">
+                <view.TvRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Exit_load"
+                    android:textSize="@dimen/text_14"
+                    android:textColor="@color/spinner_divider"/>
+                <view.TvRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="1% on or before 1 yr"
+                    android:textSize="@dimen/text_16"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

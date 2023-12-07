@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get started with"
+            android:layout_gravity="center"
+            android:textSize="@dimen/dimen_40"
+            android:textColor="@color/ventura_color"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Google authenticator app"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/ventura_color"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_20"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dimen_40"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:gravity="left">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_10"
+                android:layout_height="@dimen/dimen_10"
+                android:background="@drawable/dot"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:text="Click on"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/copyicon_white"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:backgroundTint="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="to copy the code given below"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_20"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_16"
+
+            android:gravity="left">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_10"
+                android:layout_height="@dimen/dimen_10"
+                android:background="@drawable/dot"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:text="Open Google Authenticator on your phone"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_20"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:gravity="left"
+            tools:ignore="ExtraText">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_10"
+                android:layout_height="@dimen/dimen_10"
+                android:background="@drawable/dot"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:text="Click on '+' or add Account"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_20"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:gravity="left">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_10"
+                android:layout_height="@dimen/dimen_10"
+                android:background="@drawable/dot"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:text="Paste the code to link your Ventura account"
+                android:textColor="@color/white"
+                android:textSize="13dp"/>
+        </LinearLayout>
+<!--
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start_authenticator_app"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            android:padding="@dimen/dimen_6"
+            android:layout_marginTop="@dimen/dimen_20"
+            />
+-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_10"
+
+            android:layout_gravity="center"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:layout_marginRight="@dimen/dimen_10"
+
+                android:background="@drawable/border_orange"
+                >
+                <TextView
+                    android:id="@+id/text_key"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:padding="@dimen/dimen_10"
+                    android:textSize="@dimen/dimen_20"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/copy_key"
+                android:layout_width="@dimen/dimen_30"
+                android:layout_height="@dimen/dimen_30"
+                android:background="@drawable/copyicon_white"
+                android:layout_marginRight="@dimen/dimen_10"
+
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/btn_continue"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/text_45"
+            android:layout_marginTop="@dimen/dimen_80"
+            android:background="@drawable/bg_oange_corner_8dp"
+            android:text="Open Google Authenticator"
+            android:gravity="center"
+            android:textSize="@dimen/text_20"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:paddingStart="@dimen/item_height"
+            android:paddingEnd="@dimen/item_height"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+</LinearLayout>

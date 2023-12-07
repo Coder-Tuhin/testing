@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@color/black">
+        <CheckBox
+            android:id="@+id/dragger_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:buttonTint="@color/white"
+            android:button="@drawable/chk_btn"/>
+        <TextView
+            android:id="@+id/dragger_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/common_margine"
+            android:textSize="@dimen/common_textsize"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf ="@+id/dragger_checkbox"
+            android:layout_toLeftOf="@+id/dragger_imageview"/>
+        <ImageView
+            android:id="@+id/dragger_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/grabber"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="@color/silver"
+        android:layout_alignParentBottom="true"/>
+    </RelativeLayout>

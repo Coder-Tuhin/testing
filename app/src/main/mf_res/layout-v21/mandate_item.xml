@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/black">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dimen_6"
+        android:paddingBottom="@dimen/dimen_6"
+        android:paddingLeft="@dimen/dimen_2"
+        android:paddingRight="@dimen/dimen_10">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.6"
+            android:orientation="vertical">
+            <view.TvRegular
+                android:id="@+id/bankName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_primary"
+                android:text="Bank Name"
+                android:textSize="@dimen/text_13"/>
+            <view.TvRegular
+                android:id="@+id/accountNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_2"
+                android:textColor="@color/text_primary"
+                android:text="Account No"
+                android:textSize="@dimen/text_13"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:orientation="vertical">
+            <view.TvRegular
+                android:id="@+id/mandateAmt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="@color/text_primary"
+                android:text="@string/Mandate_Amt"
+                android:textSize="@dimen/text_13"/>
+            <view.TvRegular
+                android:id="@+id/avlAmt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginTop="@dimen/dimen_2"
+                android:textColor="@color/text_primary"
+                android:text="@string/Avl_Amt"
+                android:textSize="@dimen/text_13"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/radioBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/ventura_color" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/spinner_divider"/>
+</LinearLayout>

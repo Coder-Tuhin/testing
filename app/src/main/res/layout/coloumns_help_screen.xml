@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transperent">
+    <TextView
+        android:id="@+id/coloumntext"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingLeft="@dimen/item_height"
+        android:paddingRight="@dimen/item_height"
+        android:text="You can select and rearrange the Watch Items by using drop up and drop down button on the right site of the screen. \n\nThese items will appear on the 'Watch Screen according to your action.'"
+        android:textColor="@color/help_textcolor"
+        android:textSize="18sp"/>
+    <Button
+        android:id="@+id/btnGot"
+        android:layout_width="100dp"
+        android:layout_height="@dimen/item_height"
+        android:background="@drawable/button_got"
+        android:text="GOT IT"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/activity_vertical_margin"/>
+
+</LinearLayout>

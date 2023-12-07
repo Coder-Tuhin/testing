@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.xtrem.chartxtrem.view.PieChartView
+        android:id="@+id/cpChart"
+        android:layout_width="@dimen/chart_size"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+    </com.xtrem.chartxtrem.view.PieChartView>
+
+    <com.xtrem.chartxtrem.view.PieChartView
+        android:id="@+id/expChart"
+        android:layout_width="@dimen/chart_size"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+    </com.xtrem.chartxtrem.view.PieChartView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/padding"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/callPut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/padding"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:text="callput"
+            android:textSize="@dimen/fist_small_font_size" />
+
+        <TextView
+            android:id="@+id/sExpiry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/padding"
+            android:text="sExpiry"
+            android:textColor="@color/white"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <AutoCompleteTextView
+                android:id="@+id/edit_query"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:hint="SYMBOL NAME"
+                android:textColorHint="#eae7e7"
+                android:textColor="@color/white"
+                android:maxLength="20"
+                android:textAllCaps="false"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:inputType="textNoSuggestions|text"/>
+
+            <Space
+                android:layout_width="7dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/search"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/border"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="@dimen/l_margin"
+                android:paddingTop="@dimen/l_margin"
+                android:text="Search"
+                android:textSize="9sp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

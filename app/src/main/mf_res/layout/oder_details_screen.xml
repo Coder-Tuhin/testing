@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/analytics_background"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Order Details "
+            android:gravity="center"
+            android:textColor="@color/ventura_color"
+            android:textSize="@dimen/text_22"
+            android:textStyle="bold"/>
+        <ImageView
+            android:layout_width="@dimen/dimen_70"
+            android:layout_height="@dimen/dimen_70"
+            android:src="@drawable/ic_choices_vw"
+            android:layout_marginLeft="@dimen/dimen_30"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_24"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dimen_30">
+        <TextView
+            android:id="@+id/tv_schemenane"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:gravity="center"
+            android:textColor="@color/ventura_color"
+            android:textSize="@dimen/text_16"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Amount per month"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_16"/>
+            <TextView
+                android:id="@+id/tv_amount"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="Rs. 2000"
+                android:gravity="center"
+                android:textColor="@color/ventura_color"
+                android:textSize="@dimen/text_20"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Monthly due date "
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_16"/>
+            <TextView
+                android:id="@+id/installment"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="7th"
+                android:gravity="center"
+                android:textColor="@color/ventura_color"
+                android:textSize="@dimen/text_20"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Start date"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_16"/>
+            <TextView
+                android:id="@+id/tv_startdate"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="dd/mmm/yyyy"
+                android:gravity="center"
+                android:textColor="@color/ventura_color"
+                android:textSize="@dimen/text_20"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="End date"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_16"/>
+            <TextView
+                android:id="@+id/tv_enddate"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="dd/mmm/yyyy"
+                android:gravity="center"
+                android:textColor="@color/ventura_color"
+                android:textSize="@dimen/text_20"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp">
+        <CheckBox
+            android:id="@+id/termcondChkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/white"
+
+            android:checked="false"
+            android:textSize="@dimen/text_12"
+            android:textColor="@color/white"
+            android:text="I/We hereby agree with"/>
+        <view.TvLarge
+            android:id="@+id/termcondclick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/terms_conditions"
+            android:textColor="@color/colorAccent" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="as well as"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_12"
+            android:layout_marginLeft="@dimen/dimen_4"/>
+        <view.TvLarge
+            android:id="@+id/cuttofclick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cut off timing"
+            android:layout_marginLeft="@dimen/dimen_4"
+            android:textColor="@color/colorAccent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="for applicability of NAV"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_12"
+            android:layout_marginLeft="@dimen/dimen_4"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_36"
+        android:layout_marginTop="@dimen/big_margine"
+        android:background="@drawable/bg_oange_corner_8dp"
+        android:text="Confirm"
+        android:textSize="@dimen/common_textsize"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:paddingStart="@dimen/item_height"
+        android:paddingEnd="@dimen/item_height"/>
+</LinearLayout>

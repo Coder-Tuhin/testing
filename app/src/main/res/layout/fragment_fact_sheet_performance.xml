@@ -1,0 +1,479 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="@dimen/dimen_4"
+    android:orientation="vertical"
+    tools:context="wealth.new_mutualfund.factSheet.FactSheetPerformance">
+
+    <view.TvLarge
+        android:id="@+id/scheme_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_4"
+        android:layout_marginBottom="@dimen/dimen_18"
+        android:text="-"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_18"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <view.TvLarge
+                    android:id="@+id/p2p_quarterly_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_4"
+                    android:layout_marginBottom="@dimen/dimen_4"
+                    android:text="Point to Point Returns(%)"
+                    android:textColor="@color/ventura_color"
+                    android:textSize="@dimen/text_18"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+
+                    <!--Quarterly Returns-->
+                    <Switch
+                        android:id="@+id/p2p_quarterly_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/text_primary"
+                        android:thumbTint="@color/ventura_color"
+                        android:trackTint="@color/ventura_color"
+                        android:textSize="@dimen/text_11"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/company_no_data_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:text="No data available"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_14"
+                android:visibility="gone" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_10" />
+
+            <LinearLayout
+                android:id="@+id/holding_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fact_sheet_layout_border"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_40"
+                    android:orientation="horizontal">
+
+                    <view.TvRegular
+                        android:id="@+id/p2p_q_col1_title"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="2"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="@dimen/dimen_10"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_15"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="@dimen/dimen_1"
+                        android:layout_height="match_parent"
+                        android:background="@color/ventura_color" />
+
+                    <view.TvRegular
+                        android:id="@+id/p2p_q_col2_title"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="YTD"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_15"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="@dimen/dimen_1"
+                        android:layout_height="match_parent"
+                        android:background="@color/ventura_color" />
+
+                    <view.TvRegular
+                        android:id="@+id/p2p_q_col3_title"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Yr. 1"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_15"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="@dimen/dimen_1"
+                        android:layout_height="match_parent"
+                        android:background="@color/ventura_color" />
+
+                    <view.TvRegular
+                        android:id="@+id/p2p_q_col4_title"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Yr. 3"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_15"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="@dimen/dimen_1"
+                        android:layout_height="match_parent"
+                        android:background="@color/ventura_color" />
+
+                    <view.TvRegular
+                        android:id="@+id/p2p_q_col5_title"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Yr. 5"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_15"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <!--<View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1"
+                    android:background="@color/ventura_color"/>-->
+                <LinearLayout
+                    android:id="@+id/parentLayout_p2p"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_2"
+                    android:layout_marginRight="@dimen/dimen_2"
+                    android:layout_marginBottom="@dimen/dimen_2"
+                    android:orientation="vertical" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_10" />
+
+            <view.TvRegular
+                android:id="@+id/p2p_footer_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="left"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_8"
+                android:textStyle="italic"/>
+
+            <view.TvRegular
+                android:id="@+id/p2p_footer_note_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="left"
+                android:text="Note: Returns less than 1 year are absolute. 1 year and above returns are on CAGR basis."
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_12"
+                android:visibility="gone"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_20" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <view.TvLarge
+                    android:id="@+id/sip_lumpsum_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_4"
+                    android:layout_marginBottom="@dimen/dimen_4"
+                    android:text="SIP Returns"
+                    android:textColor="@color/ventura_color"
+                    android:textSize="@dimen/text_18"
+                    android:textStyle="bold"  />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+
+                    <!--Lumpsum Returns-->
+                    <Switch
+                        android:id="@+id/sip_lumpsum_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/text_primary"
+                        android:thumbTint="@color/ventura_color"
+                        android:trackTint="@color/ventura_color"
+                        android:textSize="@dimen/text_11"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <view.TvRegular
+                android:id="@+id/sip_lumpsum_amount_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="left"
+                android:text="SIP for Rs. 10,000/- per month"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_12"
+                android:layout_marginTop="@dimen/dimen_10"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:text="No data available"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_14"
+                android:visibility="gone" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_10" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fact_sheet_layout_border"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <view.TvRegular
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="2"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="@dimen/dimen_10"
+                        android:text="Period"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_15"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="@dimen/dimen_1"
+                        android:layout_height="match_parent"
+                        android:background="@color/ventura_color" />
+
+                    <view.TvRegular
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="1.3"
+                        android:gravity="center"
+                        android:text="Amount\n(Rs.)"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_15"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="@dimen/dimen_1"
+                        android:layout_height="match_parent"
+                        android:background="@color/ventura_color" />
+
+                    <view.TvRegular
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_weight="0.8"
+                        android:gravity="center"
+                        android:text="XIRR\n(%)"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_15"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!--<View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/ventura_color"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_30"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+                    <view.TvRegular
+                        android:id="@+id/returnOf"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:layout_alignParentRight="true"
+                        android:gravity="left|center_vertical"
+                        android:text="Since inception (DD/MMM/YYYY)"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_13"
+                        android:paddingLeft="@dimen/dimen_10"/>
+
+                    <View
+                        android:layout_width="@dimen/dimen_1"
+                        android:layout_height="match_parent"
+                        android:background="@color/ventura_color" />
+
+                    <view.TvRegular
+                        android:id="@+id/threeYears"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_13" />
+                    <View
+                        android:layout_width="@dimen/dimen_1"
+                        android:layout_height="match_parent"
+                        android:background="@color/ventura_color" />
+
+                    <view.TvRegular
+                        android:id="@+id/fiveYears"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_13" />
+                </LinearLayout>-->
+
+                <LinearLayout
+                    android:id="@+id/parentLayout_sip_return"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_2"
+                    android:layout_marginRight="@dimen/dimen_2"
+                    android:layout_marginBottom="@dimen/dimen_2"
+                    android:orientation="vertical" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_20" />
+
+            <LinearLayout
+                android:id="@+id/dividend_data_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <view.TvLarge
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_4"
+                    android:layout_marginBottom="@dimen/dimen_4"
+                    android:text="Dividend History"
+                    android:textColor="@color/ventura_color"
+                    android:textSize="@dimen/text_18"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:text="No data available"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14"
+                    android:visibility="gone" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_10" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fact_sheet_layout_border"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_30"
+                        android:orientation="horizontal">
+
+                        <view.TvRegular
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_weight="1.5"
+                            android:gravity="center"
+                            android:text="Date"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_15"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="@dimen/dimen_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/ventura_color" />
+
+                        <view.TvRegular
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:text="Dividend per unit (Rs.)"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_15"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/parent_layout_dividend_hist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_2"
+                        android:layout_marginRight="@dimen/dimen_2"
+                        android:layout_marginBottom="@dimen/dimen_2"
+                        android:orientation="vertical" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

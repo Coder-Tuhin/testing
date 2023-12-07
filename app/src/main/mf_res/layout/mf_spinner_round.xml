@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Spinner xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_height"
+    android:background="@drawable/mf_spinner_bg_round"
+    android:ellipsize="middle"
+    android:gravity="start"
+    android:spinnerMode="dropdown"
+    android:popupBackground="@color/colorPrimaryDark"
+    android:overlapAnchor="true"/>

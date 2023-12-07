@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/black">
+        <TextView
+            android:id="@+id/screpname_trdbk_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="scrept name"
+            android:textStyle="normal"
+            android:textColor="@color/silver"
+            android:textSize="@dimen/small_textsize"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/screpvalue_trdbk_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buy 1 @ 531.00"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_textsize"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+</RelativeLayout>

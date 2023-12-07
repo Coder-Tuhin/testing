@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/analytics_background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/dimen_70"
+            android:layout_height="@dimen/dimen_70"
+            android:src="@drawable/ic_preservecapital"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preserve Capital"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_20"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="@dimen/dimen_20"
+        android:paddingLeft="@dimen/dimen_20"
+        android:orientation="vertical"
+
+        android:layout_marginTop="@dimen/dimen_100">
+        <LinearLayout
+            android:id="@+id/ll_conservativehybrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_140"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:background="@drawable/conservativehybrid"
+                android:paddingBottom="@dimen/dimen_16"
+                android:paddingTop="@dimen/dimen_16"
+                android:paddingLeft="@dimen/dimen_8"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_equitysavings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_140"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:background="@drawable/euitysavings"
+                android:paddingBottom="@dimen/dimen_16"
+                android:paddingTop="@dimen/dimen_16"
+                android:paddingLeft="@dimen/dimen_8"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lessthnfive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:background="@drawable/bg_white_20dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:background="@drawable/bg_imageround_white_1dp">
+                <ImageView
+                    android:layout_width="@dimen/dimen_30"
+                    android:layout_height="@dimen/dimen_30"
+                    android:src="@drawable/ic_less_than_vw"></ImageView>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:text="Less than 3 Years"
+                android:textColor="@color/ventura_color"
+                android:textSize="@dimen/dimen_18"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

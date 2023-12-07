@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="175px"
+                android:src="@drawable/logo_new"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="W  E  A  L  T  H"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:text="Version 1.2"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/link_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:padding="@dimen/common_margine"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:autoLink="web"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:text="Please visit www.ventura1.com for more information."
+            android:textColor="@android:color/white"
+            android:background="@drawable/border"/>
+        <LinearLayout
+            android:id="@+id/exchdetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/link_textview"
+            android:background="@drawable/border"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/common_margine"
+            android:paddingBottom="@dimen/common_margine"
+            android:paddingLeft="@dimen/common_margine">
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="NSE CM INB230760432 / NSE FO INF230760432"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/common_textsize"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="NSE CD INE230760432 / MCX-SX INB260760435"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/common_textsize"
+                        android:layout_marginTop="@dimen/common_margine"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="BSE CM INB010760438 / BSE FO INF010760438"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/common_textsize"
+                        android:layout_marginTop="@dimen/common_margine"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="NSE Member Code no: 07604"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/common_textsize"
+                        android:layout_marginTop="@dimen/common_margine"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="BSE Member Code no: 307"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/common_textsize"
+                        android:layout_marginTop="@dimen/common_margine"/>-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SEBI Registration no: INZ000194736"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/common_textsize"
+                        android:layout_marginTop="@dimen/common_margine"
+                        android:layout_marginBottom="@dimen/common_margine"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/exchdetail"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Powered by "
+                android:textColor="@android:color/white"
+                />
+            <ImageView
+                android:id="@+id/xtremlogo"
+                android:layout_width="@dimen/dimen_160"
+                android:layout_height="wrap_content"
+                android:src="@drawable/xtremesoftlogo"
+                android:contentDescription="@string/DEFAULT_DESCRIPTION"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/version_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textColor="@color/silver"
+        android:textSize="@dimen/common_textsize" />
+</RelativeLayout>

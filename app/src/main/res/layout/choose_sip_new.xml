@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/analytics_background"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dimen_50">
+        <ImageView
+            android:layout_width="@dimen/dimen_60"
+            android:layout_height="@dimen/dimen_60"
+            android:src="@drawable/ic_bluechip_vw"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How would you like to invest ?"
+            android:textColor="@color/ventura_color"
+            android:textSize="@dimen/text_20"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/dimen_16"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/dimen_60"
+        android:layout_gravity="center">
+        <ImageView
+            android:id="@+id/tv_onetime"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_160"
+            android:text="One Time"
+            android:background="@drawable/onetime"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/tv_monthly"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_160"
+            android:text="Invest Monthly"
+            android:background="@drawable/monthly"
+
+            android:gravity="center"/>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

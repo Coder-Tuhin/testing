@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="8dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include layout="@layout/avl_bal_layout">
+
+            </include>
+
+            <RelativeLayout
+                android:id="@+id/rl_layout_scheme_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:orientation="horizontal">
+
+                <wealth.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Scheme"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/wealth_textSize" />
+
+                <wealth.FontTextView
+                    android:id="@+id/scheme_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="scheme name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/wealth_textSize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/frequency_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <wealth.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Frequency"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/wealth_textSize" />
+
+                <RadioGroup
+                    android:id="@+id/rg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_monthly"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="25dp"
+                        android:checked="true"
+                        android:text="Monthly"
+                        android:buttonTint="@color/colorAccent"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/common_textsize" />
+
+                    <RadioButton
+                        android:id="@+id/rb_quarterly"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:checked="false"
+                        android:text="Quarterly"
+                        android:buttonTint="@color/colorAccent"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/common_textsize"/>
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sip_period_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <wealth.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Period"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/wealth_textSize" />
+
+                <EditText
+                    android:id="@+id/sip_period"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/border"
+                    android:gravity="right"
+                    android:hint="no. of months"
+                    android:textColor="@color/white"
+                    android:textColorHint="#ffaeaeae"
+                    android:maxLength="3"
+                    android:padding="5dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/sip_date_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+                <wealth.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="6dp"
+                    android:text="SIP Date"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/wealth_textSize" />
+                <LinearLayout
+                    android:id="@+id/sipdate_spinner"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal"
+                    tools:ignore="InvalidId">
+                    <include layout="@layout/custom_spinner_layout">
+                    </include>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_purchase_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:orientation="horizontal">
+                <wealth.FontTextView
+                    android:id="@+id/edit_purchase_amount_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Purchase Amount (Rs.)"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/wealth_textSize" />
+
+                <EditText
+                    android:id="@+id/edit_purchase_amount"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/border"
+                    android:textColor="#fff"
+                    android:textColorHint="#ffaeaeae"
+                    android:gravity="right"
+                    android:hint="Enter Amount"
+                    android:padding="5dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_units_to_redeem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+                <wealth.FontTextView
+                    android:id="@+id/edit_amount_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Units to Redeem"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/wealth_textSize" />
+                <EditText
+                    android:id="@+id/edit_redeem_amount"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/border"
+                    android:textColor="@color/white"
+                    android:textColorHint="#ffaeaeae"
+                    android:gravity="right"
+                    android:hint="Enter Units"
+                    android:padding="5dp" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/checkbox"
+                    android:buttonTint="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <wealth.FontTextView
+                    android:id="@+id/txt_terms_conditions1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/wealth_textSize" />
+                <wealth.FontTextView
+                    android:id="@+id/txt_terms_conditions2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/wealth_textSize" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/btnLinear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/rl_layout_last_nav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:orientation="horizontal">
+                <wealth.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Last NAV (Rs.)"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/wealth_textSize" />
+                <wealth.FontTextView
+                    android:id="@+id/last_nav_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/wealth_textSize" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_redemption_cut_off_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+                <wealth.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Redemption Cut Off Time"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/wealth_textSize" />
+                <wealth.FontTextView
+                    android:id="@+id/redemption_cutoff_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/wealth_textSize" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_min_redemption_qty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <wealth.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Minimum Redemption Quantity"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/wealth_textSize" />
+
+                <wealth.FontTextView
+                    android:id="@+id/min_redem_qty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="scheme name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/wealth_textSize" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_min_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:orientation="horizontal">
+
+                <wealth.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Minimum Amount (Rs.)"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/wealth_textSize" />
+
+                <wealth.FontTextView
+                    android:id="@+id/minimum_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="1000"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/wealth_textSize" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_multiple_rs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:orientation="horizontal">
+
+                <wealth.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Multiples of (Rs.)"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/wealth_textSize" />
+
+                <wealth.FontTextView
+                    android:id="@+id/multiple_rs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="1000"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/wealth_textSize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_cut_off_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:orientation="horizontal">
+
+                <wealth.FontTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Cut Off Time"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/wealth_textSize" />
+
+                <wealth.FontTextView
+                    android:id="@+id/cutoff_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/wealth_textSize" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_multiple_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <wealth.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Multiples of (Nos)"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/wealth_textSize" />
+
+                <wealth.FontTextView
+                    android:id="@+id/multiple_nos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="1000"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/wealth_textSize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_available_units"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <wealth.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Available Units"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/wealth_textSize" />
+
+                <wealth.FontTextView
+                    android:id="@+id/available_units"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="1000"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/wealth_textSize" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black">
+    <LinearLayout
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <view.TvLarge
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Demat Holding Without PoA"
+            android:textColor="@color/ventura_color"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:textSize="@dimen/dimen_16"/>
+
+
+        <RadioGroup
+            android:id="@+id/radiogroupedis"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:background="@drawable/rd_group_border"
+            android:layout_margin="@dimen/dimen_10"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/t2btn"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/toggle_widget_background"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="T2"
+                android:checked="true"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/t1btn"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_widget_background"
+                android:button="@null"
+                android:gravity="center"
+                android:text="T1"
+                android:textColor="@color/white" />
+        </RadioGroup>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/edisheader"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginBottom="@dimen/dimen_4"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        android:layout_height="@dimen/dimen_50"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/dimen_6"
+        android:layout_marginRight="@dimen/dimen_6">
+
+
+        <CheckBox
+            android:id="@+id/checkboxlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:buttonTint="@color/ventura_color"/>
+        <view.TvRegular
+            android:id="@+id/stockname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Stock Name"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textSize="@dimen/text_13"
+            android:textColor="@color/ventura_color"/>
+        <view.TvRegular
+            android:id="@+id/isinno"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="ISIN NO"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_13"
+            android:textColor="@color/ventura_color"/>
+        <view.TvRegular
+            android:id="@+id/nonpoa_quantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Non POA Qty"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/text_13"
+            android:textColor="@color/ventura_color"/>
+        <view.TvRegular
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Non POA Req"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/text_13"
+            android:textColor="@color/ventura_color"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@+id/edisheader"
+        android:background="@color/gray_color"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_dematholding"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+</androidx.constraintlayout.widget.ConstraintLayout>

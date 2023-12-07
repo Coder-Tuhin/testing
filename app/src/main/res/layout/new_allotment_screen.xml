@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:paddingTop="@dimen/s_margin">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Company:"
+            android:textColor="@color/white"
+            android:textSize="@dimen/common_textsize"/>
+        <include layout="@layout/custom_spinner"
+            android:id="@+id/allotment_spinner"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_width="0dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/common_margine"
+        android:paddingBottom="@dimen/common_margine">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/s_margin">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Company Name"
+                android:textColor="@color/gray_color"
+                android:textSize="@dimen/common_textsize"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trans. Date:"
+                android:textColor="@color/gray_color"
+                android:gravity="right"
+                android:textSize="@dimen/common_textsize"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Bid Qty1/2/3"
+            android:gravity="right"
+            android:textColor="@color/gray_color"
+            android:textSize="@dimen/common_textsize"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Allotted Shares"
+            android:textColor="@color/gray_color"
+            android:gravity="right"
+            android:textSize="@dimen/common_textsize"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="@color/silver"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/allotment_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

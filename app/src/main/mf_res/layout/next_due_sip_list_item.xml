@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:paddingTop="@dimen/dimen_6"
+        android:paddingBottom="@dimen/dimen_6"
+        android:paddingLeft="@dimen/dimen_2"
+        android:paddingRight="@dimen/dimen_2">
+        <view.TvRegular
+            android:id="@+id/scheme_name"
+            android:layout_width="0dp"
+            android:layout_weight="2.2"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Scheme"
+            android:textSize="@dimen/text_13"
+            android:singleLine="false"/>
+        <view.TvRegular
+            android:id="@+id/sip_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:text="SIP Amt.(Rs.)"
+            android:gravity="right"
+            android:textSize="@dimen/text_13"/>
+        <view.TvRegular
+            android:id="@+id/sip_next_date"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Next Date"
+            android:textSize="@dimen/text_13"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:background="@color/white"/>
+</LinearLayout>

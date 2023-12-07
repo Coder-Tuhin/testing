@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/nameLinear"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/header_height"
+            android:background="@color/black"
+            android:gravity="left|center_vertical"
+            android:text="Name"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="@color/silver" />
+
+        <swipemenu.SwipeMenuListView
+            android:id="@+id/nameListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/spinner_backcolor"
+            android:dividerHeight="0.2dp"
+            android:scrollbars="none"
+            android:splitMotionEvents="false" />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/valueHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/valueListTitle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/header_height"
+                android:background="@color/black"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"></LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="@color/silver" />
+
+            <ListView
+                android:id="@+id/valueListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/spinner_backcolor"
+                android:dividerHeight="0.2dp"
+                android:splitMotionEvents="false" />
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

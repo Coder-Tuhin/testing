@@ -1,0 +1,299 @@
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="start">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:background="@color/black"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+            <include layout="@layout/indices" />
+        </androidx.appcompat.widget.Toolbar>
+        <include layout="@layout/home_radiogroup" />
+        <LinearLayout
+            android:id="@+id/reportSpinnerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:visibility="gone"
+            android:paddingTop="4dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:orientation="horizontal">
+                <include layout="@layout/custom_spinner"
+                    android:id="@+id/report_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+                <ImageButton
+                    android:id="@+id/refresh_button"
+                    android:layout_width="@dimen/item_height"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/img_refreshbtn"
+                    android:layout_marginLeft="@dimen/common_margine"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_margine"
+                android:layout_marginTop="@dimen/common_margine"
+                android:background="@drawable/dash_line"/>
+        </LinearLayout>
+        <!--<FrameLayout
+            android:id="@+id/container_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black" />-->
+
+        <RelativeLayout
+            android:id="@+id/container_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black">
+
+            <view.MovableFloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen_40"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="@dimen/dimen_20"
+                android:layout_marginBottom="@dimen/dimen_20"
+                android:text="Maintenance Mode"
+                android:textAllCaps="false"
+                android:textColor="@color/silver"
+                android:textStyle="bold"
+                android:textSize="@dimen/dimen_14"
+                android:layout_gravity="bottom|right"
+                android:paddingRight="@dimen/dimen_10"
+                android:paddingLeft="@dimen/dimen_10"
+                android:background="@drawable/round_border_ventura"
+                app:layout_anchorGravity="bottom|right|end" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="@dimen/nav_drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:layout_marginTop="46dp"
+        android:background="@color/black">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/common_margine"
+            android:paddingRight="@dimen/common_margine">
+
+            <utils.ExpandableHeightListView
+                android:id="@+id/exp_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:choiceMode="singleChoice"
+                android:visibility="gone"
+                android:descendantFocusability="beforeDescendants" />
+
+            <RelativeLayout
+                android:id="@+id/home_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/home"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|left"
+                    android:paddingBottom="@dimen/common_margine"
+                    android:paddingTop="@dimen/common_margine"
+                    android:text="Home"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/navigation_textsize"
+                    android:typeface="normal" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_home_white_24dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/mywealth_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|left"
+                    android:paddingBottom="@dimen/common_margine"
+                    android:paddingTop="@dimen/common_margine"
+                    android:text="My Wealth"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/navigation_textsize"
+                    android:typeface="normal" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_trending_up_white_24dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/subscribe_online"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:paddingBottom="@dimen/common_margine"
+                android:paddingTop="@dimen/common_margine"
+                android:text="Subscribe Online:"
+                android:textColor="@color/white"
+                android:textSize="@dimen/navigation_textsize"
+                android:typeface="normal" />
+
+            <TextView
+                android:id="@+id/mf_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:paddingBottom="@dimen/common_margine"
+                android:paddingLeft="@dimen/common_margine"
+                android:paddingTop="@dimen/common_margine"
+                android:text="Mutual Funds"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_textsize"
+                android:typeface="normal" />
+            <TextView
+                android:id="@+id/startsip_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:paddingBottom="@dimen/common_margine"
+                android:paddingLeft="@dimen/common_margine"
+                android:paddingTop="@dimen/common_margine"
+                android:text="Start SIP"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_textsize"
+                android:visibility="visible"
+                android:typeface="normal" />
+            <TextView
+                android:id="@+id/nfo_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:paddingBottom="@dimen/common_margine"
+                android:paddingLeft="@dimen/common_margine"
+                android:paddingTop="@dimen/common_margine"
+                android:text="NFO"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_textsize"
+                android:visibility="visible"
+                android:typeface="normal" />
+            <TextView
+                android:id="@+id/ipo_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:paddingBottom="@dimen/common_margine"
+                android:paddingLeft="@dimen/common_margine"
+                android:paddingTop="@dimen/common_margine"
+                android:text="IPO"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_textsize"
+                android:typeface="normal" />
+
+            <TextView
+                android:id="@+id/bond_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:paddingBottom="@dimen/common_margine"
+                android:paddingLeft="@dimen/common_margine"
+                android:paddingTop="@dimen/common_margine"
+                android:text="Bonds"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_textsize"
+                android:typeface="normal" />
+
+            <TextView
+                android:id="@+id/sgb_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:paddingBottom="@dimen/common_margine"
+                android:paddingLeft="@dimen/common_margine"
+                android:paddingTop="@dimen/common_margine"
+                android:text="Sov. Gold Bonds"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_textsize"
+                android:typeface="normal" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/fd_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|left"
+                    android:paddingBottom="@dimen/common_margine"
+                    android:paddingLeft="@dimen/common_margine"
+                    android:paddingTop="@dimen/common_margine"
+                    android:layout_gravity="center"
+                    android:text="Fixed Deposit"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_textsize"
+                    android:visibility="visible"
+                    android:typeface="normal" />
+
+                <ImageView
+                    android:id="@+id/gifimage"
+                    android:layout_width="@dimen/dimen_24"
+                    android:layout_height="@dimen/dimen_24"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:src="@drawable/gifanimation"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/gray_color" />
+            <ExpandableListView
+                android:id="@+id/menuExpandableList"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:groupIndicator="@android:color/transparent"
+                android:divider="@color/spinner_backcolor"
+                android:dividerHeight="0.6dp"
+                android:childDivider="@color/spinner_backcolor" />
+        </LinearLayout>
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

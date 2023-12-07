@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_20"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:layout_weight="5"
+                    android:text="RISK DISCLOSURES ON DERIVATIVES  : "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_15"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/closeriskbtn"
+                    android:layout_width="@dimen/dimen_30"
+                    android:layout_height="@dimen/dimen_30"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:layout_marginRight="@dimen/dimen_20"
+                    android:src="@drawable/img_cross"
+                    app:tint="@color/ventura_color" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/risktext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_marginBottom="@dimen/dimen_8"
+                android:gravity="left"
+                android:text="@string/risk_note"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_15" />
+
+
+            <TextView
+                android:id="@+id/btn_ok_risk"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/text_45"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_20"
+                android:layout_marginBottom="@dimen/dimen_20"
+                android:background="@drawable/bg_oange_corner_8dp"
+                android:gravity="center"
+                android:paddingStart="@dimen/item_height"
+                android:paddingEnd="@dimen/item_height"
+                android:text="Ok"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_20" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

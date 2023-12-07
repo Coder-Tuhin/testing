@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/custom_background">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_cross"
+            android:layout_width="@dimen/dimen_20"
+            android:layout_height="@dimen/dimen_20"
+            android:src="@drawable/img_cross"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bankdetails_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+
+
+
+        <view.TvRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bank Details"
+            android:textStyle="italic|bold"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/text_16"
+            android:layout_gravity="center_horizontal"/>
+        <LinearLayout
+            android:id="@+id/BankLayOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/bank_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_40"
+                android:background="@drawable/mf_et_boarder_white"
+                android:textColor="@color/white"
+                android:text="ICICI BANK LTD..."
+                android:gravity="center"
+                android:visibility="gone"
+                android:textSize="@dimen/dimen_18"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:orientation="horizontal">
+
+                <include layout="@layout/mf_spinner_round"
+                    android:id="@+id/sipSpinnerBankList"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dimen_40"
+                    android:layout_weight="2"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <view.TvRegular
+        android:id="@+id/titletext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_4"
+        android:gravity="center_horizontal"
+        android:text="How would you like to pay your first installment?"
+        android:textStyle="italic|bold"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/text_16"/>
+
+
+    <RadioGroup
+        android:layout_marginTop="@dimen/dimen_14"
+        android:id="@+id/paymentradiogrp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <RadioButton
+            android:id="@+id/netbanking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:textAlignment="textStart"
+            android:text="Netbanking"
+            android:checked="true"
+            android:textColor="@color/white"
+            android:buttonTint="@color/ventura_color"
+            android:textSize="@dimen/text_15"/>
+
+        <RadioButton
+            android:id="@+id/upi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            android:textAlignment="textStart"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:buttonTint="@color/ventura_color"
+            android:text="UPI              "
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_15"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/ll_UPI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/banktext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/dimen_20"
+            android:layout_marginRight="@dimen/dimen_20"
+            android:text="Kindly ensure that your UPI id is mapped to your registered bank, ICICI BANK LTD a/c no ********5487"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:gravity="center_vertical">
+            <view.EtRegular
+                android:id="@+id/upiEditText"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/dimen_36"
+                android:background="@drawable/mf_et_border"
+                android:gravity="center"
+                android:hint="Enter UPI ID"
+                android:text=""
+                android:inputType="textVisiblePassword"
+                android:maxLength="30"
+                android:cursorVisible="true"
+                android:focusedByDefault="true"
+                android:focusable="true"
+                android:imeOptions="actionDone"
+                android:layout_marginRight="@dimen/dimen_16"
+                android:paddingLeft="@dimen/dimen_6"
+                android:paddingRight="@dimen/dimen_6"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/spinner_divider"
+                android:textSize="@dimen/text_16" >
+                <requestFocus/>
+            </view.EtRegular>
+
+
+            <view.TvLarge
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/mf_button_bg"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimen_24"
+                android:paddingTop="@dimen/dimen_6"
+                android:paddingRight="@dimen/dimen_24"
+                android:paddingBottom="@dimen/dimen_6"
+                android:text="Verify"
+                android:textColor="@color/text_primary"
+                android:textSize="@dimen/text_15" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/UPIName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ventura_color"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:visibility="gone"
+            android:text="HARSHLATA SARANG"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/okBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_30"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@drawable/rounded_boarder_ventura"
+        android:text="OK"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"/>
+
+
+</LinearLayout>

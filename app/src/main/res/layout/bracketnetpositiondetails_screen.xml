@@ -1,0 +1,456 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/common_margine">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/common_margine"
+            android:paddingRight="@dimen/common_margine">
+            <RelativeLayout
+                android:id="@+id/net_position_relativeone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Net Position : "
+                    android:textColor="@color/silver"
+                    android:textSize="@dimen/common_textsize" />
+
+                <TextView
+                    android:id="@+id/screptname_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_margine"
+                    android:layout_toRightOf="@+id/textview"
+                    android:text="NE - WIPRO"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/large_textsize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/net_position_relativetwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/net_position_relativeone"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/total_buy_value_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="+ 2 @ 1,059.00"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/net_position_relativethree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/net_position_relativetwo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/common_margine"
+                android:background="@drawable/border"
+                android:padding="@dimen/common_margine">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Current Rate:"
+                    android:textColor="@color/silver"
+                    android:textSize="@dimen/common_textsize" />
+
+                <TextView
+                    android:id="@+id/current_ratevalue_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="531.00"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_textsize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/net_position_relativefore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/net_position_relativethree"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/common_margine"
+                android:background="@drawable/border"
+                android:padding="@dimen/common_margine">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/mtm"
+                    android:textColor="@color/silver"
+                    android:textSize="@dimen/common_textsize" />
+
+                <TextView
+                    android:id="@+id/mtm_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="0.00"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_textsize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/mtm_textview"
+                    android:text="@string/booked"
+                    android:textColor="@color/silver"
+                    android:textSize="@dimen/common_textsize" />
+
+                <TextView
+                    android:id="@+id/booked_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/mtm_textview"
+                    android:text="0.00"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_textsize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/net_position_relativefive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/net_position_relativefore"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/common_margine"
+                android:background="@drawable/border"
+                android:padding="@dimen/common_margine">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Entry:"
+                    android:textColor="@color/silver"
+                    android:textSize="@dimen/common_textsize" />
+
+                <TextView
+                    android:id="@+id/entry_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="1 @ 531.00"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_textsize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/entry_textview"
+                    android:text="Entry Time:"
+                    android:textColor="@color/silver"
+                    android:textSize="@dimen/common_textsize" />
+
+                <TextView
+                    android:id="@+id/entrytime_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/entry_textview"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_textsize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/net_position_relativesix"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/net_position_relativefive"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/common_margine"
+                android:background="@drawable/border"
+                android:padding="@dimen/common_margine">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Close :"
+                    android:textColor="@color/silver"
+                    android:textSize="@dimen/common_textsize" />
+
+                <TextView
+                    android:id="@+id/close_value_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_textsize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/close_value_textview"
+                    android:text="Close Time :"
+                    android:textColor="@color/silver"
+                    android:textSize="@dimen/common_textsize" />
+
+                <TextView
+                    android:id="@+id/closetime_value_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/close_value_textview"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_textsize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/net_position_relativeseven"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/net_position_relativesix"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/common_margine"
+                android:background="@drawable/border"
+                android:padding="@dimen/common_margine">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Position ID :"
+                    android:textColor="@color/silver"
+                    android:textSize="@dimen/common_textsize" />
+
+                <TextView
+                    android:id="@+id/positionid_value_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_textsize" />
+
+                <TextView
+                    android:id="@+id/takeprofit_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/positionid_value_textview"
+                    android:text="Take Profit :"
+                    android:textColor="@color/silver"
+                    android:textSize="@dimen/common_textsize" />
+
+                <TextView
+                    android:id="@+id/takeprofit_value_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/positionid_value_textview"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_textsize" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/takeprofit_value_textview"
+                    android:text="Stop Loss :"
+                    android:textColor="@color/silver"
+                    android:textSize="@dimen/common_textsize" />
+
+                <TextView
+                    android:id="@+id/stoploss_value_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/takeprofit_value_textview"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_textsize" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/net_position_relativeseight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/net_position_relativeseven"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/common_margine"
+                android:background="@drawable/border"
+                android:padding="@dimen/common_margine">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Order Type :"
+                    android:textColor="@color/silver"
+                    android:textSize="@dimen/common_textsize" />
+
+                <TextView
+                    android:id="@+id/netoisition_ordertype_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Delivery"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_textsize" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/netoisition_ordertype_textview"
+                    android:text="Status :"
+                    android:textColor="@color/silver"
+                    android:textSize="@dimen/common_textsize" />
+
+                <TextView
+                    android:id="@+id/status_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/netoisition_ordertype_textview"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_textsize" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/status_textview"
+                    android:text="Direction :"
+                    android:textColor="@color/silver"
+                    android:textSize="@dimen/common_textsize" />
+
+                <TextView
+                    android:id="@+id/direction_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/status_textview"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_textsize" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/bottom_percent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/common_margine"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/bottom_percent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/previnit_imagebutton"
+                android:layout_width="@dimen/item_height"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_backbtn" />
+
+            <ImageButton
+                android:id="@+id/prevbtn_textview"
+                android:layout_width="@dimen/item_height"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/common_margine"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_prevbtn" />
+
+            <TextView
+                android:id="@+id/pagecount_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="@dimen/common_margine"
+                android:paddingRight="@dimen/common_margine"
+                android:text="1/2"
+                android:textColor="@color/white" />
+
+            <ImageButton
+                android:id="@+id/nextbtn_textview"
+                android:layout_width="@dimen/item_height"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_nextbtn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/modify_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="MODIFY"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_textsize"
+                android:background="@drawable/border"
+                android:visibility="visible"/>
+            <Button
+                android:id="@+id/exit_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="EXIT"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_textsize"
+                android:background="@drawable/border"
+                android:layout_marginLeft="@dimen/common_margine"
+                android:visibility="visible"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+
+

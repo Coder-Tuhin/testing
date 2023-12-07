@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:paddingTop="@dimen/s_margin">
+    <LinearLayout
+        android:id="@+id/dataAvailable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/s_margin">
+            <include layout="@layout/custom_spinner"
+                android:id="@+id/message_spinner"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/item_height"
+                android:layout_weight="1"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <include layout="@layout/view"/>
+         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/total_message_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/common_margine"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/noData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="No Message Available"
+        android:textSize="@dimen/large_textsize"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:visibility="gone"/>
+
+</RelativeLayout>

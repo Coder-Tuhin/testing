@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <view.TvRegular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header"
+        android:padding="@dimen/dimen_4"
+        android:text="@string/Park_funds"
+        android:textStyle="italic|bold"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/text_16" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header"
+        android:gravity="bottom"
+        android:padding="@dimen/dimen_4">
+
+        <view.TvRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Available_balance"
+            android:textColor="@color/text_secondary"
+            android:textSize="@dimen/text_14" />
+
+        <view.TvLarge
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_4"
+            android:text="50,000.30"
+            android:textColor="@color/ventura_color"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_16" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_10"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_10">
+            <ImageView
+                android:layout_width="@dimen/dimen_24"
+                android:layout_height="@dimen/dimen_24"
+                android:src="@mipmap/minus" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dimen_20"
+                android:paddingRight="@dimen/dimen_20"
+                android:gravity="center">
+                <view.TvRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rupees"
+                    android:textColor="@color/text_primary"
+                    android:textSize="@dimen/text_30"/>
+
+                <view.TvRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1,00,000"
+                    android:layout_marginLeft="@dimen/dimen_4"
+                    android:textColor="@color/text_primary"
+                    android:textSize="@dimen/text_30"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/dimen_2"
+                android:background="@color/header"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_10">
+            <ImageView
+                android:layout_width="@dimen/dimen_22"
+                android:layout_height="@dimen/dimen_22"
+                android:src="@mipmap/plus"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <view.TvRegular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/Multiple_of_5000"
+        android:textColor="@color/text_secondary"
+        android:textSize="@dimen/text_13"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_30"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:paddingLeft="@dimen/dimen_10"
+        android:paddingRight="@dimen/dimen_10">
+
+        <view.TvRegular
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_14"
+            android:textColor="@color/white"
+            android:background="@drawable/mf_button_border"
+            android:text="2L"
+            android:gravity="center"/>
+        <view.TvRegular
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_14"
+            android:textColor="@color/white"
+            android:background="@drawable/mf_button_border"
+            android:layout_marginLeft="@dimen/dimen_6"
+            android:layout_marginRight="@dimen/dimen_6"
+            android:text="5L"
+            android:gravity="center"/>
+        <view.TvRegular
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_14"
+            android:textColor="@color/white"
+            android:background="@drawable/mf_button_border"
+            android:text="10L"
+            android:gravity="center"/>
+        <view.TvRegular
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_14"
+            android:layout_marginLeft="@dimen/dimen_6"
+            android:layout_marginRight="@dimen/dimen_6"
+            android:textColor="@color/white"
+            android:background="@drawable/mf_button_border"
+            android:text="20L"
+            android:gravity="center"/>
+        <view.TvRegular
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_14"
+            android:textColor="@color/white"
+            android:background="@drawable/mf_button_border"
+            android:text="25L"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:orientation="horizontal">
+
+        <view.TvRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/spinner_divider"
+            android:text="Period (Months)"
+            android:textSize="@dimen/text_14"/>
+        <RadioGroup
+            android:id="@+id/parkFundRd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="@dimen/dimen_10"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/zeroThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0-3"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_14"
+                android:buttonTint="@color/ventura_color"/>
+            <RadioButton
+                android:id="@+id/threeSix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3-6"
+                android:textColor="@color/white"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:textSize="@dimen/text_14"
+                android:buttonTint="@color/ventura_color"/>
+            <RadioButton
+                android:id="@+id/sixPlus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6+"
+                android:checked="true"
+                android:textColor="@color/white"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:textSize="@dimen/text_14"
+                android:buttonTint="@color/ventura_color"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1.4"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <view.TvRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_secondary"
+                android:text="@string/Scheme_name"
+                android:textSize="@dimen/text_13"/>
+            <view.TvRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_secondary"
+                android:text="@string/Nav_rs"
+                android:textSize="@dimen/text_13"/>
+
+        </LinearLayout>
+        <view.TvRegular
+            android:id="@+id/sipDayTv"
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:textColor="@color/text_secondary"
+            android:text="@string/Sip_day"
+            android:textSize="@dimen/text_13"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <view.TvRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_secondary"
+                android:text="@string/Amount"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimen_2"
+                android:paddingRight="@dimen/dimen_2"
+                android:singleLine="true"
+                android:textSize="@dimen/text_13"/>
+            <view.TvRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimen_2"
+                android:paddingRight="@dimen/dimen_2"
+                android:textColor="@color/text_secondary"
+                android:text="@string/Allocation_percent"
+                android:singleLine="true"
+                android:textSize="@dimen/text_13"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1.4"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <view.TvRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_secondary"
+                android:text="@string/Absolute_return"
+                android:textSize="@dimen/text_13"
+                android:singleLine="true"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <view.TvRegular
+                    android:id="@+id/absOne"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_secondary"
+                    android:text="3M"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_13"/>
+                <view.TvRegular
+                    android:id="@+id/absTwo"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_secondary"
+                    android:text="6M"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_13"/>
+                <view.TvRegular
+                    android:id="@+id/absThree"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_secondary"
+                    android:gravity="center"
+                    android:text="1Yr"
+                    android:textSize="@dimen/text_13"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_2"
+        android:background="@color/header"
+        android:layout_marginTop="@dimen/dimen_4"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dimen_120"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/header"
+            android:orientation="vertical"
+            android:layout_gravity="bottom">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/text_primary"
+                    android:text="I/ We hereby agree with"
+                    android:textColor="@color/text_secondary" />
+                <view.TvLarge
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" T\u0026 C "
+                    android:textColor="@color/colorAccent" />
+                <view.TvLarge
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=" as well as"
+                    android:textColor="@color/text_secondary" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen_4">
+                <view.TvLarge
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Cut off Timings "
+                    android:textColor="@color/colorAccent" />
+                <view.TvLarge
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=" for applicability of NAV."
+                    android:textColor="@color/text_secondary" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_48"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_marginBottom="@dimen/dimen_10">
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+                <view.TvLarge
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/mf_button_bg"
+                    android:gravity="center"
+                    android:text="INVEST NOW"
+                    android:textColor="@color/text_primary"
+                    android:textSize="@dimen/text_18" />
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
